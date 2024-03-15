@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<!-- datasoure ibatis para el schema sara web -->
+	<bean id="ibatisSqlConfig" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfig.xml</value></property>
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	
+	<!-- datasoure ibatis para el schema log -->
+	<bean id="ibatisSqlConfigSaraWeb" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfigSara.xml</value></property>
+		<property name="dataSource"><ref bean="dataSourceSara" />
+		</property>
+	</bean>
+	
+	<!-- datasoure ibatis para el schema ITF -->
+	<bean id="ibatisSqlConfigITF" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfigITF.xml</value></property>
+		<property name="dataSource"><ref bean="dataSourceITF" />
+		</property>
+	</bean>
+
+	<!-- datasoure ibatis para el schema ESTADOCTA -->
+	<bean id="ibatisSqlConfigESTADOCTA" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfigESTADOCTA.xml</value></property>
+		<property name="dataSource"><ref bean="dataSourceESTADOCTA" />
+		</property>
+	</bean>
+	
+	<!-- datasoure ibatis para el schema SABM -->
+	<bean id="ibatisSqlConfigSABM" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfigSABM.xml</value></property>
+		<property name="dataSource"><ref bean="dataSourceSABM" />
+		</property>
+	</bean>
+
+	<!-- datasoure ibatis para el schema BCO 
+	<bean id="ibatisSqlConfigBCO" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfigBCO.xml</value></property>
+		<property name="dataSource"><ref bean="dataSourceBCO" />
+		</property>
+	</bean>
+	-->
+
+	<bean id="saraWebLogDAO" class="pe.cosapi.dao.impl.SaraWebLogIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSourceSara" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfigSaraWeb" /> </property>
+	</bean>
+	
+	<bean id="generalDAO" class="pe.cosapi.dao.impl.GeneralIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+
+	<bean id="descripcionDAO" class="pe.cosapi.dao.impl.DescripcionIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSourceESCT" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+	
+	<bean id="loginDAO" class="pe.bn.login.dao.impl.LoginIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+
+	<bean id="afiliacionDAO" class="pe.bn.afiliacion.dao.impl.AfiliacionIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+
+	<bean id="itfDAO" class="pe.cosapi.dao.impl.ItfIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSourceITF" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfigITF" /> </property>
+	</bean>
+
+	<bean id="estadoCtaDAO" class="pe.cosapi.dao.impl.EstadoCtaIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSourceESTADOCTA" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfigESTADOCTA" /> </property>
+	</bean>
+	
+	<bean id="sabmDAO" class="pe.cosapi.dao.impl.SabmIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSourceSABM" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfigSABM" /> </property>
+	</bean>
+
+<!--
+	<bean id="agenciaDAO" class="pe.cosapi.dao.impl.AgenciaIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSourceBCO" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfigBCO" /> </property>
+	</bean>
+	
+	 --> 
+	 
+	<bean id="tarjetaCreditoDAO" class="pe.bn.tcredito.dao.impl.TarjetaCreditoIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+	
+	<bean id="claveDinamicaDAO" class="pe.bn.cldinamica.dao.impl.ClaveDinamicaIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+        <property name="dataSource"><ref bean="dataSource" /></property>
+        <property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+    </bean>
+	
+	<bean id="transaccionDAO" class="pe.bn.notificaciones.dao.impl.TransaccionIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+	
+	<bean id="parametrosSiatDAO" class="pe.bn.notificaciones.dao.impl.ParametrosSiatIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+	
+	<bean id="serviciosAntiphishingDAO" class="pe.bn.antiphishing.dao.impl.ServiciosAntiphishingIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+</beans>

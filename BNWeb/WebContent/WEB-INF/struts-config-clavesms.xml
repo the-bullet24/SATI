@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Orígenes de datos -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulario -->
+	<form-beans>
+		<form-bean name="frmClaveSms" 	type="pe.bn.afiliacion.action.form.ClaveSmsForm"></form-bean>		
+		<form-bean name="dummy" 		type="pe.bn.resources.DummyForm"></form-bean>
+		<form-bean name="dummy1" 		type="pe.bn.login.action.form.ClaveDinamicaForm"></form-bean>
+	</form-beans>
+
+	<!-- Excepciones globales -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Reenvíos globales -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Correlaciones de acción --> 
+	<action-mappings>
+
+	<!-- Módulo de Afiliaciones(Afil) - Pagos(Pago) -->
+	
+		<action path="/claveSMSDesafilia" type="pe.bn.clavesms.action.ClaveSMSAction" name="dummy1" input="/WEB-INF/page/claveSms/desafiliacion/principalDesafiliacionClaveSms.jsp" validate="false" >
+			<forward name="iniciarDesafiliacion"	path="/WEB-INF/page/claveSms/desafiliacion/principalDesafiliacionClaveSms.jsp"></forward>
+			<forward name="mostrarDesafiliacion"	path="/WEB-INF/page/claveSms/desafiliacion/confirmarDesafiliacion.jsp"></forward>
+			<forward name="finalizarDesafiliacion"	path="/WEB-INF/page/claveSms/desafiliacion/finDesafiliacion.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+		
+		<action path="/claveSMSMigra" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/migracion/inicioMigracion.jsp" validate="false" >
+			<forward name="inicioMigrarClaveSms"      path="/WEB-INF/page/claveSms/migracion/iniciarMigracion.jsp"></forward>
+			<forward name="datosMigrarClaveSms" 	  path="/WEB-INF/page/claveSms/migracion/ingresarDatos.jsp"></forward>
+			<forward name="actualizaMigrarClaveSms"   path="/WEB-INF/page/claveSms/migracion/actualizaMigracion.jsp"></forward>
+			<forward name="redirActivaMigrarClaveSms" path="/WEB-INF/page/claveSms/migracion/activaMigracion.jsp"></forward>
+			<forward name="activaMigrarClaveSms" 	  path="/WEB-INF/page/claveSms/migracion/activaMigracion.jsp"></forward>
+			<forward name="confirmarMigrarClaveSms"   path="/WEB-INF/page/claveSms/migracion/confirmarMigracion.jsp"></forward>
+			<forward name="finMigracionClaveSms" 	  path="/WEB-INF/page/claveSms/migracion/finMigracion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+		</action>
+		
+		<action path="/claveSMSMigraInvitacion" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/migracion/ingresarDatos.jsp" validate="false" >
+			<forward name="inicioMigrarClaveSms"      path="/WEB-INF/page/claveSms/migracion/ingresarDatos.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+		
+		<action path="/claveSMSActiva" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/activacion/iniciarActivacion.jsp" validate="false" >
+			<forward name="inicioActivarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarActivacion.jsp"></forward>
+			<!-- <forward name="mostrarActivarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/activarClaveSms.jsp"></forward> -->
+			<forward name="mostrarActivarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/helloWorld.jsp"></forward>
+			<forward name="finActivarClaveSms" 		path="/WEB-INF/page/claveSms/activacion/finActivacion.jsp"></forward>
+			<forward name="refreshMenu" 			path="/WEB-INF/page/frame/frameInicio.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+		
+		<action path="/claveSMSAfilia" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/afiliacion/inicioAfiliacion.jsp" validate="false" >
+			<forward name="inicioAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/afiliacion/inicioAfiliacion.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+		
+	<!-- Módulo de Afiliaciones - Transferencias  path=AfilTranOther-->
+	
+	</action-mappings>
+
+	<!-- Recursos de mensaje -->
+
+</struts-config>

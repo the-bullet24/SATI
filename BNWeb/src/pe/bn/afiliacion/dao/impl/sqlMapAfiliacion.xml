@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapAfiliacion">
+	
+  	<resultMap id="resultAfiliacion" class="pe.bn.afiliacion.domain.impl.AfiliacionImpl">
+		<result property="tipoAfiliacion" 					column="tipoAfiliacion"/> 
+		<result property="nroTarjeta" 						column="nroTarjeta"/> 
+		<result property="secuencia" 						column="secuencia"/> 
+		<result property="tipoDocumento" 					column="tipoDocumento"/> 
+		<result property="nroDocumento" 					column="nroDocumento"/> 
+		<result property="fechaNacimiento" 					column="fechaNacimiento"/> 
+		<result property="sexo" 							column="sexo"/> 
+		<result property="email" 							column="email"/> 
+		<result property="codigoLocalidad" 					column="codigoLocalidad"/> 
+		<result property="codigoServicio" 					column="codigoServicio"/> 
+		<result property="numeroServicio" 					column="numeroServicio"/> 
+		<result property="descripcion" 						column="descripcion"/> 
+		<result property="cuentaPropia" 					column="cuentaPropia"/> 
+		<result property="beneficiario" 					column="beneficiario"/> 
+		<result property="objBenef.nombre" 					column="nombreBenef"/> 
+		<result property="objBenef.apellidoPaterno" 		column="apellidoPatBenef"/> 
+		<result property="objBenef.apellidoMaterno" 		column="apellidoMatBenef"/>
+		<result property="tipoTarjeta" 						column="tipoTarjeta"/>
+		<result property="flagDes" 							column="flagDes"/>
+		<result property="fecDesafilia" 					column="fecDesafilia"/>
+		<result property="tipoDocumentoBenef" 				column="tipoDocumentoBen"/>
+		<result property="nroDocumentoBenef" 				column="nroDocumentoBen"/>
+	
+	</resultMap>
+
+	
+	<select id="getAfiliacion" resultMap="resultAfiliacion" parameterClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl">	
+		select TIPAFI as tipoAfiliacion,
+		       NUMTAR as nroTarjeta,
+		       numsec as secuencia,
+		       typdoc as tipoDocumento,
+		       numdoc as nroDocumento,
+		       fecnac as fechaNacimiento,
+		       sexper as sexo,
+		       email as email,
+		       codloc as codigoLocalidad,
+		       codser as codigoServicio,
+		       numser as numeroServicio,
+		       desafil as descripcion,
+		       ctapro as cuentaPropia,
+			   nomben as beneficiario,
+			   NOMBRE as nombreBenef,
+			   APPBEN as apellidoPatBenef,
+			   APMBEN as apellidoMatBenef,
+			   TIPTAR as tipoTarjeta,
+			   FLGAFI as flagDes,
+			   FECDES as fecDesafilia,
+			   TYPDOCBEN as tipoDocumentoBen,
+			   NUMDOCBEN as nroDocumentoBen
+
+		  from 
+			   PV_SWB.TAFIDAT
+		 where 
+			   FLGAFI = 'A'
+		   and TIPAFI = #tipoAfiliacion#
+		   and NUMTAR = #nroTarjeta#
+			<isNotNull property="secuencia">
+		   and numsec = #secuencia#
+			</isNotNull>
+	</select>
+
+	<select id="getAfiliaExiste" resultMap="resultAfiliacion" parameterClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl">	
+		select TIPAFI as tipoAfiliacion,
+		       NUMTAR as nroTarjeta,
+		       numsec as secuencia,
+		       typdoc as tipoDocumento,
+		       numdoc as nroDocumento,
+		       fecnac as fechaNacimiento,
+		       sexper as sexo,
+		       email as email,
+		       codloc as codigoLocalidad,
+		       codser as codigoServicio,
+		       numser as numeroServicio,
+		       desafil as descripcion,
+		       ctapro as cuentaPropia,
+			   nomben as beneficiario,
+			   NOMBRE as nombreBenef,
+			   APPBEN as apellidoPatBenef,
+			   APMBEN as apellidoMatBenef,
+			   TIPTAR as tipoTarjeta,
+			   FLGAFI as flagDes,
+			   FECDES as fecDesafilia,
+			   TYPDOCBEN as tipoDocumentoBen,
+			   NUMDOCBEN as nroDocumentoBen
+
+		  from 
+			   PV_SWB.TAFIDAT
+		 where 
+			   FLGAFI = 'A'
+		   and TIPAFI = #tipoAfiliacion#
+		   and NUMTAR = #nroTarjeta#
+		   and numser = #numeroServicio#
+		   <isNotNull property="secuencia">
+		   and numsec = #secuencia#
+			</isNotNull>
+	</select>
+	
+	
+	<select id="getAfiliaExisteDebito" resultMap="resultAfiliacion" parameterClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl">	
+		select TIPAFI as tipoAfiliacion,
+		       NUMTAR as nroTarjeta,
+		       numsec as secuencia,
+		       typdoc as tipoDocumento,
+		       numdoc as nroDocumento,
+		       fecnac as fechaNacimiento,
+		       sexper as sexo,
+		       email as email,
+		       codloc as codigoLocalidad,
+		       codser as codigoServicio,
+		       numser as numeroServicio,
+		       desafil as descripcion,
+		       ctapro as cuentaPropia,
+			   nomben as beneficiario,
+			   NOMBRE as nombreBenef,
+			   APPBEN as apellidoPatBenef,
+			   APMBEN as apellidoMatBenef,
+			   TIPTAR as tipoTarjeta,
+			   FLGAFI as flagDes,
+			   FECDES as fecDesafilia,
+			   TYPDOCBEN as tipoDocumentoBen,
+			   NUMDOCBEN as nroDocumentoBen
+
+		  from 
+			   PV_SWB.TAFIDAT
+		 where 
+			   FLGAFI = 'A'
+		   and TIPAFI = #tipoAfiliacion#
+		   and NUMTAR = #nroTarjeta#
+		   and numser = #numeroServicio#
+		   and codser = #codigoServicio#
+		   
+		   
+	
+		   <isNotNull property="secuencia">
+		   and numsec = #secuencia#
+			</isNotNull>
+	</select>
+	<select id="getAfiliacionByValues"  parameterClass="java.util.HashMap" resultClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl" >	
+		 SELECT 
+		       HLPDET.TXTHLP as descripcion,
+		       AFI.NUMSEC    as secuencia
+		 FROM 
+		       (SELECT 
+		               THLPDET.TXTHLP,
+		               THLPDET.TXTHLPDAT
+		       FROM
+		           PV_SWB.THLPDET
+		       WHERE 
+		             trim(THLPDET.CODHLP) = trim(#codigoAyuda#) 
+		       ) HLPDET,
+		      (SELECT 
+				      TAFIDAT.CODSER,
+		              TAFIDAT.NUMSEC
+				FROM 
+		              PV_SWB.TAFIDAT
+				WHERE 
+		            TIPAFI 		= #tipoAfiliacion#
+				    AND NUMTAR 	= #numTarjeta#
+		      ) AFI
+		   WHERE 
+		         HLPDET.TXTHLPDAT = AFI.CODSER
+	</select>
+
+	<insert id="insertar" parameterClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl">
+		insert into PV_SWB.TAFIDAT
+		  (TIPAFI,
+		   NUMTAR,
+		   numsec
+			<isNotNull property="tipoDocumento">
+		   ,typdoc
+			</isNotNull>
+			<isNotNull property="nroDocumento">
+		   ,numdoc
+			</isNotNull>
+			<isNotNull property="fechaNacimiento">
+		   ,fecnac
+			</isNotNull>
+			<isNotNull property="sexo">
+		   ,sexper
+			</isNotNull>
+			<isNotNull property="email">
+		   ,email
+			</isNotNull>
+			<isNotNull property="codigoLocalidad">
+		   ,codloc
+			</isNotNull>
+			<isNotNull property="codigoServicio">
+		   ,codser
+			</isNotNull>
+			<isNotNull property="numeroServicio">
+		   ,numser
+			</isNotNull>
+			<isNotNull property="descripcion">
+		   ,desafil
+			</isNotNull>
+			<isNotNull property="cuentaPropia">
+		   ,ctapro
+			</isNotNull>
+			<isNotNull property="beneficiario">
+		   ,nomben
+			</isNotNull>
+
+			<isNotNull property="objBenef">
+				<isNotNull property="objBenef.nombre">
+			   ,NOMBRE
+				</isNotNull>
+			</isNotNull>
+
+			<isNotNull property="objBenef">
+				<isNotNull property="objBenef.apellidoPaterno">
+		   		,APPBEN
+				</isNotNull>
+			</isNotNull>
+
+			<isNotNull property="objBenef">
+				<isNotNull property="objBenef.apellidoMaterno">
+		   		,APMBEN
+				</isNotNull>
+			</isNotNull>
+			
+			<isNotNull property="tipoTarjeta">
+		   		,TIPTAR
+			</isNotNull>
+
+			<isNotNull property="flagDes">
+		   		,FLGAFI
+			</isNotNull>
+
+			<isNotNull property="fecDesafilia">
+		   		,FECDES
+			</isNotNull>
+			
+			<isNotNull property="tipoDocumentoBenef">
+		   		,TYPDOCBEN
+			</isNotNull>
+			<isNotNull property="nroDocumentoBenef">
+		   		,NUMDOCBEN
+			</isNotNull>
+
+		  )
+		values
+		  (	#tipoAfiliacion#,
+			#nroTarjeta#,
+			#secuencia#
+			<isNotNull property="tipoDocumento">
+			,#tipoDocumento#
+			</isNotNull>
+			<isNotNull property="nroDocumento">
+			,#nroDocumento#
+			</isNotNull>
+			<isNotNull property="fechaNacimiento">
+			,#fechaNacimiento#
+			</isNotNull>
+			<isNotNull property="sexo">
+			,#sexo#
+			</isNotNull>
+			<isNotNull property="email">
+			,#email#
+			</isNotNull>
+			<isNotNull property="codigoLocalidad">
+			,#codigoLocalidad#
+			</isNotNull>
+			<isNotNull property="codigoServicio">
+			,#codigoServicio#
+			</isNotNull>
+			<isNotNull property="numeroServicio">
+			,#numeroServicio#
+			</isNotNull>
+			<isNotNull property="descripcion">
+			,#descripcion#
+			</isNotNull>
+			<isNotNull property="cuentaPropia">
+			,#cuentaPropia#
+			</isNotNull>			
+			<isNotNull property="beneficiario">
+		    ,#beneficiario#
+			</isNotNull>
+
+			<isNotNull property="objBenef">
+				<isNotNull property="objBenef.nombre">
+		    	,#objBenef.nombre#
+				</isNotNull>
+			</isNotNull>
+			<isNotNull property="objBenef">
+				<isNotNull property="objBenef.apellidoPaterno">
+		    	,#objBenef.apellidoPaterno#
+				</isNotNull>
+			</isNotNull>
+
+			<isNotNull property="objBenef">
+				<isNotNull property="objBenef.apellidoMaterno">
+		    	,#objBenef.apellidoMaterno#
+				</isNotNull>
+			</isNotNull>
+			
+			<isNotNull property="tipoTarjeta">
+		   		,#tipoTarjeta#
+			</isNotNull>
+
+			<isNotNull property="flagDes">
+		   		,#flagDes#
+			</isNotNull>
+
+			<isNotNull property="fecDesafilia">
+		   		,#fecDesafilia#
+			</isNotNull>
+			<isNotNull property="tipoDocumentoBenef">
+		   		,#tipoDocumentoBenef#
+			</isNotNull>
+				<isNotNull property="nroDocumentoBenef">
+		   		,#nroDocumentoBenef#
+			</isNotNull>
+		  )
+	</insert>
+		
+	<delete id="desafiliar" parameterClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl">
+		Update PV_SWB.tafidat 
+				Set FLGAFI = 'D', FECDES = sysdate
+		where 
+			TIPAFI 		= #tipoAfiliacion#
+			and NUMTAR 	= #nroTarjeta# 
+			and NUMSEC 	= #secuencia#
+	</delete>
+	
+	<delete id="desafiliarDebito" parameterClass="pe.bn.afiliacion.domain.impl.AfiliacionImpl">
+		Update PV_SWB.tafidat 
+				Set FLGAFI = 'D', FECDES = sysdate
+		where 
+			TIPAFI 		= #tipoAfiliacion#
+			and NUMTAR 	= #nroTarjeta# 
+			and NUMSEC 	= #secuencia#
+	</delete>
+	
+	
+	
+	<select id="getMaximaSecuencia" parameterClass="java.util.HashMap" resultClass="java.lang.Long">
+		select nvl(max(NUMSEC),0)+ 1 as value
+		from 
+			PV_SWB.TAFIDAT 
+		where 
+			TIPAFI 		= #tipAfiliacion#
+			and NUMTAR 	= #numTarjeta# 
+	</select>
+
+</sqlMap>

@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_m64aENiFEduNOekNlXdEzQ" type="Class" name="ModeloTransaccion.dnx">
+  <children xmi:id="_vfITENiFEduNOekNlXdEzQ" targetEdges="_wVSfANiFEduNOekNlXdEzQ _iu_9kNiHEduNOekNlXdEzQ">
+    <children xmi:id="_vfuwANiFEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_vfuwAdiFEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_vfuwAtiFEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_vfuwA9iFEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_vfuwBNiFEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_vfuwBdiFEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_vfuwBtiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_vfuwB9iFEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_vfuwCNiFEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_vfuwCdiFEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_vfuwCtiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_vfITEdiFEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vfITEtiFEduNOekNlXdEzQ" x="636" y="954"/>
+  </children>
+  <children xmi:id="_wUiRENiFEduNOekNlXdEzQ" sourceEdges="_wVSfANiFEduNOekNlXdEzQ">
+    <children xmi:id="_wUiRE9iFEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_wUiRFNiFEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_wUiRFdiFEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_wUiRFtiFEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_wUiRF9iFEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wUiRGNiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_wUiRGdiFEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wUiRGtiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_wUiRG9iFEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wUiRHNiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_wUiRHdiFEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_wUiRHtiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wUiREdiFEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wUiREtiFEduNOekNlXdEzQ" x="6042" y="636"/>
+  </children>
+  <children xmi:id="_zjTTINiFEduNOekNlXdEzQ" sourceEdges="_zlPM0NiFEduNOekNlXdEzQ">
+    <children xmi:id="_zjTTI9iFEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_zjTTJNiFEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_zjTTJdiFEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zjTTJtiFEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zjTTJ9iFEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zjTTKNiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zjTTKdiFEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zjTTKtiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zjTTK9iFEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zjTTLNiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zjTTLdiFEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zjTTLtiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zjTTIdiFEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zjTTItiFEduNOekNlXdEzQ" x="6042" y="3498"/>
+  </children>
+  <children xmi:id="_zj5JANiFEduNOekNlXdEzQ" targetEdges="_zlPM0NiFEduNOekNlXdEzQ _iu2MoNiHEduNOekNlXdEzQ">
+    <children xmi:id="_zj5JA9iFEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_zj5JBNiFEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_zj5JBdiFEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zj5JBtiFEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zj5JB9iFEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zj5JCNiFEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zj5JCdiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zj5JCtiFEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zj5JC9iFEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_zj5JDNiFEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zj5JDdiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_zj5JAdiFEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zj5JAtiFEduNOekNlXdEzQ" x="636" y="3816"/>
+  </children>
+  <children xmi:id="_8Oru4NiFEduNOekNlXdEzQ" sourceEdges="_8QBysNiFEduNOekNlXdEzQ _8QByt9iFEduNOekNlXdEzQ" targetEdges="_8QByt9iFEduNOekNlXdEzQ">
+    <children xmi:id="_8Oru49iFEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_8Oru5NiFEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_8Oru5diFEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8Oru5tiFEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8Oru59iFEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8Oru6NiFEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8Oru6diFEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8Oru6tiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8Oru69iFEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8Oru7NiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8Oru7diFEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_8Oru7tiFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8Oru4diFEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Oru4tiFEduNOekNlXdEzQ" x="6042" y="7314"/>
+  </children>
+  <children xmi:id="_8PIa0NiFEduNOekNlXdEzQ" targetEdges="_8QBysNiFEduNOekNlXdEzQ _iu2MkNiHEduNOekNlXdEzQ">
+    <children xmi:id="_8PIa09iFEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_8PIa1NiFEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_8PIa1diFEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8PIa1tiFEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8PIa19iFEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8PIa2NiFEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8PIa2diFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8PIa2tiFEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8PIa29iFEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_8PIa3NiFEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8PIa3diFEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_8PIa0diFEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8PIa0tiFEduNOekNlXdEzQ" x="636" y="7314"/>
+  </children>
+  <children xmi:id="_cTVXINiGEduNOekNlXdEzQ" targetEdges="_d_syUNiGEduNOekNlXdEzQ _iu_9qNiHEduNOekNlXdEzQ">
+    <children xmi:id="_cTVXI9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_cTVXJNiGEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_cTVXJdiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_cTVXJtiGEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_cTVXJ9iGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_cTVXKNiGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cTVXKdiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_cTVXKtiGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cTVXK9iGEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_cTVXLNiGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cTVXLdiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_cTVXIdiGEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cTVXItiGEduNOekNlXdEzQ" x="636" y="11448"/>
+  </children>
+  <children xmi:id="_d_QtcNiGEduNOekNlXdEzQ" sourceEdges="_d_syUNiGEduNOekNlXdEzQ">
+    <children xmi:id="_d_Qtc9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_d_QtdNiGEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_d_QtddiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_d_QtdtiGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_d_Qtd9iGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_d_QteNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_d_QtediGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_d_QtetiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_d_Qte9iGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_d_QtfNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_d_QtfdiGEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_d_QtftiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_d_QtcdiGEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_QtctiGEduNOekNlXdEzQ" x="6042" y="11448"/>
+  </children>
+  <children xmi:id="_jP3EYNiGEduNOekNlXdEzQ" sourceEdges="_jRy-E9iGEduNOekNlXdEzQ">
+    <children xmi:id="_jP3EY9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_jP3EZNiGEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_jP3EZdiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQAOUNiGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQAOUdiGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jQAOUtiGEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQAOU9iGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jQAOVNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQAOVdiGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jQAOVtiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQAOV9iGEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_jQAOWNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_jP3EYdiGEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jP3EYtiGEduNOekNlXdEzQ" x="6059" y="14440"/>
+  </children>
+  <children xmi:id="_jQwcQNiGEduNOekNlXdEzQ" targetEdges="_jRy-E9iGEduNOekNlXdEzQ _iu_9mNiHEduNOekNlXdEzQ">
+    <children xmi:id="_jQwcQ9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_jQwcRNiGEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_jQwcRdiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQwcRtiGEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQwcR9iGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQwcSNiGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jQwcSdiGEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQwcStiGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jQwcS9iGEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_jQwcTNiGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jQwcTdiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_jQwcQdiGEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQwcQtiGEduNOekNlXdEzQ" x="636" y="14310"/>
+  </children>
+  <children xmi:id="_oft0cNiGEduNOekNlXdEzQ" targetEdges="_pmhrgNiGEduNOekNlXdEzQ _iu2MmNiHEduNOekNlXdEzQ">
+    <children xmi:id="_oft0c9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_oft0dNiGEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_oft0ddiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_oft0dtiGEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_oft0d9iGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_oft0eNiGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_oft0ediGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_oft0etiGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_oft0e9iGEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_oft0fNiGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_oft0fdiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_oft0cdiGEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oft0ctiGEduNOekNlXdEzQ" x="636" y="17198"/>
+  </children>
+  <children xmi:id="_pmE_kNiGEduNOekNlXdEzQ" sourceEdges="_pmhrgNiGEduNOekNlXdEzQ">
+    <children xmi:id="_pmE_k9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_pmE_lNiGEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_pmE_ldiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_pmE_ltiGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_pmE_l9iGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pmE_mNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_pmE_mdiGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pmE_mtiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_pmE_m9iGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pmE_nNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_pmE_ndiGEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_pmE_ntiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pmE_kdiGEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pmE_ktiGEduNOekNlXdEzQ" x="6042" y="17490"/>
+  </children>
+  <children xmi:id="_umSKENiGEduNOekNlXdEzQ" sourceEdges="_um3_8NiGEduNOekNlXdEzQ">
+    <children xmi:id="_umSKE9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_umSKFNiGEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_umSKFdiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umSKFtiGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umSKF9iGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_umSKGNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umSKGdiGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_umSKGtiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umSKG9iGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_umSKHNiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umSKHdiGEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_umSKHtiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_umSKEdiGEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_umSKEtiGEduNOekNlXdEzQ" x="6042" y="20034"/>
+  </children>
+  <children xmi:id="_umlFANiGEduNOekNlXdEzQ" targetEdges="_um3_8NiGEduNOekNlXdEzQ _iu_9oNiHEduNOekNlXdEzQ">
+    <children xmi:id="_umlFA9iGEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_umlFBNiGEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_umlFBdiGEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umlFBtiGEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umlFB9iGEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umlFCNiGEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_umlFCdiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umlFCtiGEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_umlFC9iGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_umlFDNiGEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_umlFDdiGEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_umlFAdiGEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_umlFAtiGEduNOekNlXdEzQ" x="636" y="20034"/>
+  </children>
+  <children xmi:id="_T5804NiHEduNOekNlXdEzQ" targetEdges="_ZF2SCNiHEduNOekNlXdEzQ _ivJHgNiHEduNOekNlXdEzQ">
+    <children xmi:id="_T58049iHEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_T5805NiHEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_T5805diHEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_T5805tiHEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_T58059iHEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_T5806NiHEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_T5806diHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_T5806tiHEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_T58069iHEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_T5807NiHEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_T5807diHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_T5804diHEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T5804tiHEduNOekNlXdEzQ" x="954" y="23850"/>
+  </children>
+  <children xmi:id="_XuNwsNiHEduNOekNlXdEzQ" sourceEdges="_cljTENiHEduNOekNlXdEzQ">
+    <children xmi:id="_XuNws9iHEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_XuNwtNiHEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_XuNwtdiHEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_XuNwttiHEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_XuNwt9iHEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_XuNwuNiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_XuNwudiHEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_XuNwutiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_XuNwu9iHEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_XuNwvNiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_XuNwvdiHEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_XuNwvtiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_XuNwsdiHEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuNwstiHEduNOekNlXdEzQ" x="6042" y="30210"/>
+  </children>
+  <children xmi:id="_ZENTQtiHEduNOekNlXdEzQ" sourceEdges="_ZF2SANiHEduNOekNlXdEzQ _ZF2SCNiHEduNOekNlXdEzQ" targetEdges="_ZF2SANiHEduNOekNlXdEzQ">
+    <children xmi:id="_ZENTRdiHEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ZENTRtiHEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ZENTR9iHEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ZENTSNiHEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ZENTSdiHEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ZENTStiHEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ZEXEQNiHEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ZEXEQdiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ZEXEQtiHEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ZEXEQ9iHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ZEXERNiHEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ZEXERdiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ZENTQ9iHEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZENTRNiHEduNOekNlXdEzQ" x="6042" y="21942"/>
+  </children>
+  <children xmi:id="_clGnINiHEduNOekNlXdEzQ" targetEdges="_cljTENiHEduNOekNlXdEzQ">
+    <children xmi:id="_clGnI9iHEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_clGnJNiHEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_clGnJdiHEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_clGnJtiHEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_clGnJ9iHEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_clGnKNiHEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_clGnKdiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_clGnKtiHEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_clGnK9iHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_clGnLNiHEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_clGnLdiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_clGnIdiHEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_clGnItiHEduNOekNlXdEzQ" x="1272" y="30210"/>
+  </children>
+  <children xmi:id="_itzqwNiHEduNOekNlXdEzQ" sourceEdges="_iu2MkNiHEduNOekNlXdEzQ _iu2MmNiHEduNOekNlXdEzQ _iu2MoNiHEduNOekNlXdEzQ _iu_9kNiHEduNOekNlXdEzQ _iu_9mNiHEduNOekNlXdEzQ _iu_9oNiHEduNOekNlXdEzQ _iu_9qNiHEduNOekNlXdEzQ _ivJHgNiHEduNOekNlXdEzQ _kQnhUNiHEduNOekNlXdEzQ">
+    <children xmi:id="_itzqw9iHEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_itzqxNiHEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_itzqxdiHEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_itzqxtiHEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_itzqx9iHEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_itzqyNiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_itzqydiHEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_itzqytiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_itzqy9iHEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_itzqzNiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_itzqzdiHEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_itzqztiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_itzqwdiHEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_itzqwtiHEduNOekNlXdEzQ" x="-8268" y="9222"/>
+  </children>
+  <children xmi:id="_kQT_UNiHEduNOekNlXdEzQ" targetEdges="_kQnhUNiHEduNOekNlXdEzQ">
+    <children xmi:id="_kQT_U9iHEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_kQT_VNiHEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_kQT_VdiHEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_kQT_VtiHEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_kQT_V9iHEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kQT_WNiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_kQT_WdiHEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kQT_WtiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_kQT_W9iHEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kQT_XNiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_kQT_XdiHEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_kQT_XtiHEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_kQT_UdiHEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kQT_UtiHEduNOekNlXdEzQ" x="-7950" y="5406"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_m64aEdiFEduNOekNlXdEzQ"/>
+  <edges xmi:id="_wVSfANiFEduNOekNlXdEzQ" source="_wUiRENiFEduNOekNlXdEzQ" target="_vfITENiFEduNOekNlXdEzQ">
+    <children xmi:id="_wVSfA9iFEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_wVSfBdiFEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_wVSfBtiFEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wVSfBNiFEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wVSfAdiFEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionFacadeImpl[jcu^name=AfiliacionFacadeImpl.java[jpack^name=pe.bn.afiliacion.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wVSfAtiFEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_zlPM0NiFEduNOekNlXdEzQ" source="_zjTTINiFEduNOekNlXdEzQ" target="_zj5JANiFEduNOekNlXdEzQ">
+    <children xmi:id="_zlPM09iFEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_zlPM1diFEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_zlPM1tiFEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zlPM1NiFEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zlPM0diFEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaFacadeImpl[jcu^name=ConsultaFacadeImpl.java[jpack^name=pe.bn.consulta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zlPM0tiFEduNOekNlXdEzQ" points="[-14, 1733, -14, -3307]$[-14, 3320, -14, -1720]"/>
+  </edges>
+  <edges xmi:id="_8QBysNiFEduNOekNlXdEzQ" source="_8Oru4NiFEduNOekNlXdEzQ" target="_8PIa0NiFEduNOekNlXdEzQ">
+    <children xmi:id="_8QBys9iFEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_8QBytdiFEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_8QByttiFEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8QBytNiFEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_8QBysdiFEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8QBystiFEduNOekNlXdEzQ" points="[-14, 1164, 0, -2673]$[-14, 2752, 0, -1085]"/>
+  </edges>
+  <edges xmi:id="_8QByt9iFEduNOekNlXdEzQ" source="_8Oru4NiFEduNOekNlXdEzQ" target="_8Oru4NiFEduNOekNlXdEzQ">
+    <children xmi:id="_8QByutiFEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_8QByvNiFEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_8QByvtiFEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_8QByvdiFEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8QByu9iFEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_8QByuNiFEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacadeImpl[jcu^name=LoginFacadeImpl.java[jpack^name=pe.bn.login.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8QByudiFEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_d_syUNiGEduNOekNlXdEzQ" source="_d_QtcNiGEduNOekNlXdEzQ" target="_cTVXINiGEduNOekNlXdEzQ">
+    <children xmi:id="_d_2jUNiGEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_d_2jUtiGEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_d_2jU9iGEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_d_2jUdiGEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_d_syUdiGEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PagoFacadeImpl[jcu^name=PagoFacadeImpl.java[jpack^name=pe.bn.pago.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d_syUtiGEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_jRy-E9iGEduNOekNlXdEzQ" source="_jP3EYNiGEduNOekNlXdEzQ" target="_jQwcQNiGEduNOekNlXdEzQ">
+    <children xmi:id="_jRy-FtiGEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_jRy-GNiGEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_jRy-GdiGEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_jRy-F9iGEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jRy-FNiGEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jRy-FdiGEduNOekNlXdEzQ" points="[-1, 1375, -1, -2885]$[-1, 2963, -1, -1297]"/>
+  </edges>
+  <edges xmi:id="_pmhrgNiGEduNOekNlXdEzQ" source="_pmE_kNiGEduNOekNlXdEzQ" target="_oft0cNiGEduNOekNlXdEzQ">
+    <children xmi:id="_pmhrg9iGEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_pmhrhdiGEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_pmhrhtiGEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pmhrhNiGEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pmhrgdiGEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TelegiroFacadeImpl[jcu^name=TelegiroFacadeImpl.java[jpack^name=pe.bn.telegiro.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pmhrgtiGEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_um3_8NiGEduNOekNlXdEzQ" source="_umSKENiGEduNOekNlXdEzQ" target="_umlFANiGEduNOekNlXdEzQ">
+    <children xmi:id="_um3_89iGEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_um3_9diGEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_um3_9tiGEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_um3_9NiGEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_um3_8diGEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=TransferenciaFacadeImpl[jcu^name=TransferenciaFacadeImpl.java[jpack^name=pe.bn.transferencia.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_um3_8tiGEduNOekNlXdEzQ" points="[-13, 820, 0, -2395]$[-13, 2408, 0, -807]"/>
+  </edges>
+  <edges xmi:id="_ZF2SANiHEduNOekNlXdEzQ" source="_ZENTQtiHEduNOekNlXdEzQ" target="_ZENTQtiHEduNOekNlXdEzQ">
+    <children xmi:id="_ZF2SA9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_ZF2SBdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_ZF2SB9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_ZF2SBtiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZF2SBNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ZF2SAdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZF2SAtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_ZF2SCNiHEduNOekNlXdEzQ" source="_ZENTQtiHEduNOekNlXdEzQ" target="_T5804NiHEduNOekNlXdEzQ">
+    <children xmi:id="_ZF2SC9iHEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_ZF2SDdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_ZF2SDtiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZF2SDNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ZF2SCdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralFacadeImpl[jcu^name=GeneralFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZF2SCtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_cljTENiHEduNOekNlXdEzQ" source="_XuNwsNiHEduNOekNlXdEzQ" target="_clGnINiHEduNOekNlXdEzQ">
+    <children xmi:id="_cljTE9iHEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_cljTFdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_cljTFtiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cljTFNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_cljTEdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebFacadeImpl[jcu^name=SaraWebFacadeImpl.java[jpack^name=pe.cosapi.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebFacade[jcu^name=SaraWebFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cljTEtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu2MkNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_8PIa0NiFEduNOekNlXdEzQ">
+    <children xmi:id="_iu2Mk9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu2MldiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu2Ml9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu2MltiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu2MlNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu2MkdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginFacade[jcu^name=LoginFacade.java[jpack^name=pe.bn.login.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu2MktiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu2MmNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_oft0cNiGEduNOekNlXdEzQ">
+    <children xmi:id="_iu2Mm9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu2MndiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu2Mn9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu2MntiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu2MnNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu2MmdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TelegiroFacade[jcu^name=TelegiroFacade.java[jpack^name=pe.bn.telegiro.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu2MmtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu2MoNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_zj5JANiFEduNOekNlXdEzQ">
+    <children xmi:id="_iu2Mo9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu2MpdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu2Mp9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu2MptiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu2MpNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu2ModiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaFacade[jcu^name=ConsultaFacade.java[jpack^name=pe.bn.consulta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu2MotiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu_9kNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_vfITENiFEduNOekNlXdEzQ">
+    <children xmi:id="_iu_9k9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu_9ldiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9l9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9ltiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu_9lNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu_9kdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionFacade[jcu^name=AfiliacionFacade.java[jpack^name=pe.bn.afiliacion.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu_9ktiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu_9mNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_jQwcQNiGEduNOekNlXdEzQ">
+    <children xmi:id="_iu_9m9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu_9ndiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9n9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9ntiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu_9nNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu_9mdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TarjetaFacade[jcu^name=TarjetaFacade.java[jpack^name=pe.bn.tarjeta.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu_9mtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu_9oNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_umlFANiGEduNOekNlXdEzQ">
+    <children xmi:id="_iu_9o9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu_9pdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9p9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9ptiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu_9pNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu_9odiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=TransferenciaFacade[jcu^name=TransferenciaFacade.java[jpack^name=pe.bn.transferencia.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu_9otiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_iu_9qNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_cTVXINiGEduNOekNlXdEzQ">
+    <children xmi:id="_iu_9q9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_iu_9rdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9r9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_iu_9rtiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_iu_9rNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_iu_9qdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=PagoFacade[jcu^name=PagoFacade.java[jpack^name=pe.bn.pago.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iu_9qtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_ivJHgNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_T5804NiHEduNOekNlXdEzQ">
+    <children xmi:id="_ivJHg9iHEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_ivJHhdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_ivJHh9iHEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_ivJHhtiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ivJHhNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ivJHgdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralFacade[jcu^name=GeneralFacade.java[jpack^name=pe.cosapi.facade[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ivJHgtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_kQnhUNiHEduNOekNlXdEzQ" source="_itzqwNiHEduNOekNlXdEzQ" target="_kQT_UNiHEduNOekNlXdEzQ">
+    <children xmi:id="_kQnhU9iHEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_kQnhVdiHEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_kQnhVtiHEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_kQnhVNiHEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_kQnhUdiHEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kQnhUtiHEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

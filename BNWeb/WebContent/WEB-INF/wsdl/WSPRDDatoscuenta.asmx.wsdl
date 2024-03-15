@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://10.1.50.211/WSPRDDatosCuenta/WSPRDDatosCuenta" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://10.1.50.211/WSPRDDatosCuenta/WSPRDDatosCuenta">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://10.1.50.211/WSPRDDatosCuenta/WSPRDDatosCuenta">
+      <s:element name="OperacionesDatosCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="wNroCuenta" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OperacionesDatosCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="OperacionesDatosCuentaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OperacionesDatosCuentaSoapIn">
+    <wsdl:part element="tns:OperacionesDatosCuenta" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="OperacionesDatosCuentaSoapOut">
+    <wsdl:part element="tns:OperacionesDatosCuentaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="WSPRDDatosCuentaSoap">
+    <wsdl:operation name="OperacionesDatosCuenta">
+      <wsdl:input message="tns:OperacionesDatosCuentaSoapIn"/>
+      <wsdl:output message="tns:OperacionesDatosCuentaSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSPRDDatosCuentaSoap" type="tns:WSPRDDatosCuentaSoap">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="OperacionesDatosCuenta">
+      <soap:operation soapAction="http://10.1.50.211/WSPRDDatosCuenta/WSPRDDatosCuenta/OperacionesDatosCuenta" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSPRDDatosCuenta">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"/>
+    <wsdl:port binding="tns:WSPRDDatosCuentaSoap" name="WSPRDDatosCuentaSoap">
+      <soap:address location="http://10.1.50.211/WSPRDDatosCuenta/WSPRDDatoscuenta.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

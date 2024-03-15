@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servidor>
+ 
+ <ipWAS>10.7.12.64</ipWAS>
+	<puertoWAS>9080</puertoWAS>
+ 
+ 
+ 
+<!--	
+	
+<ipWAS>10.7.106.115</ipWAS>
+	<puertoWAS>80</puertoWAS>
+
+	<ipWAS>127.0.0.1</ipWAS>
+	<puertoWAS>80</puertoWAS>
+	
+
+ 	
+	<ipWAS>10.7.10.55</ipWAS>
+	<puertoWAS>80</puertoWAS>-->
+	
+</servidor>

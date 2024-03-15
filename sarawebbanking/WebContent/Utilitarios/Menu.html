@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"><!-- Sample HTML file -->
+<HTML>
+<HEAD>
+<TITLE> Put Your Title Here </TITLE>
+<STYLE>
+<!--
+
+#slidemenubar, #slidemenubar2 {
+	position:absolute;
+	left:-155px;
+	width:160px;
+	top:5px;
+	border:1.5px solid green;
+	background-color:lightyellow;
+	layer-background-color:lightyellow;
+	font:bold 12px Verdana;
+	line-height:20px;
+	
+	/*top:170px;
+       border:1.5px solid green;
+       background-color:lightyellow;
+       layer-background-color:lightyellow;
+       font:bold 12px Verdana;
+       line-height:20px;*/
+}
+-->
+</STYLE>
+<SCRIPT language="JavaScript1.2">
+
+/*
+Sliding Menu Bar Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+if (document.all)
+document.write('<div id="slidemenubar2" style="left:-150" onMouseover="pull()" onMouseout="draw()">')
+</SCRIPT> <layer id="slidemenubar" onMouseover="pull()" onMouseout="draw()"> <SCRIPT language="JavaScript1.2">
+var sitems=new Array()
+var sitemlinks=new Array()
+
+//extend or shorten this list
+sitems[0]="Home"
+sitems[1]="Take our survey!"
+sitems[2]="Menus And Navigation"
+sitems[3]="Document Effects"
+sitems[4]="Scrollers"
+sitems[5]="Image Effects"
+sitems[6]="Links And Buttons"
+sitems[7]="Dynamic Clocks & Dates"
+sitems[8]="Text Animations"
+sitems[9]="Browser Window"
+sitems[10]="User System Information"
+sitems[11]="Cascading Style Sheets"
+sitems[12]="Other"
+
+
+//These are the links pertaining to the above text.
+sitemlinks[0]="../test.htm"
+sitemlinks[1]=".."
+sitemlinks[2]="../dynamicindex1/index.html"
+sitemlinks[3]="../dynamicindex3/index.html"
+sitemlinks[4]="../dynamicindex2/index.html"
+sitemlinks[5]="../dynamicindex4/index.html"
+sitemlinks[6]="../dynamicindex5/index.html"
+sitemlinks[7]="../dynamicindex6/index.html"
+sitemlinks[8]="../dynamicindex10/index.html"
+sitemlinks[9]="../dynamicindex8/index.html"
+sitemlinks[10]="../dynamicindex9/index.html"
+sitemlinks[11]="../dynamicindex7/index.html"
+sitemlinks[12]="../dynamicindex11/index.html"
+
+for (i=0;i<=sitems.length-1;i++)
+document.write('<a href='+sitemlinks[i]+'>'+sitems[i]+'</a><br>')
+</SCRIPT> </layer> <SCRIPT language="JavaScript1.2">
+
+function regenerate()
+{
+	window.location.reload();
+}
+
+function regenerate2()
+{
+	if (document.layers)
+		setTimeout("window.onresize=regenerate",400);
+}
+
+window.onload = regenerate2;
+if (document.all)
+{
+	document.write('</div>')
+	themenu = document.all.slidemenubar2.style;
+	rightboundary = 0;
+	leftboundary =- 150;
+}
+else {
+	themenu = document.layers.slidemenubar;
+	rightboundary = 150;
+	leftboundary = 10;
+}
+
+function pull()
+{
+	if (window.drawit)
+		clearInterval(drawit);
+	pullit = setInterval("pullengine()",50);
+}
+
+function draw()
+{
+	clearInterval(pullit);
+	drawit = setInterval("drawengine()",50);
+}
+
+function pullengine()
+{
+	if (document.all && themenu.pixelLeft < rightboundary)
+		themenu.pixelLeft += 5;
+	else if (document.layers && themenu.left < rightboundary)
+		themenu.left += 5;
+	else if (window.pullit)
+		clearInterval(pullit);
+}
+
+function drawengine()
+{
+	if (document.all && themenu.pixelLeft > leftboundary)
+		themenu.pixelLeft -= 5;
+	else if (document.layers && themenu.left > leftboundary)
+		themenu.left -= 5;
+	else if (window.drawit)
+		clearInterval(drawit);
+}
+</SCRIPT> <SCRIPT language="JavaScript1.2">
+
+/*
+Dynamic countdown Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+
+function setcountdown(theyear,themonth,theday)
+{
+	yr = theyear;
+	mo = themonth;
+	da = theday;
+}
+
+//////////CONFIGURE THE COUNTDOWN SCRIPT HERE//////////////////
+
+//STEP 1: Configure the countdown-to date, in the format year, month, day:
+setcountdown(1999,7,28);
+
+//STEP 2: Change the two text below to reflect the occasion, and message to display on that occasion, respectively
+var occasion = "28 de Julio"
+var message_on_occasion = "Felices Fiestas Patrias!"
+
+//STEP 3: Configure the below 5 variables to set the width, height, background color, and text style of the countdown area
+var countdownwidth='518px'
+var countdownheight='20px'
+var countdownbgcolor='lightblue'
+var opentags='<font face="Verdana"><small>'
+var closetags='</small></font>'
+
+//////////DO NOT EDIT PASS THIS LINE//////////////////
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+
+function start_countdown()
+{
+	if (document.layers)
+		document.countdownnsmain.visibility = "show";
+	countdown(2000,1,1);
+}
+
+if (document.all)
+	document.write('<span id="countdownie" style="width:'+countdownwidth+'; background-color:'+countdownbgcolor+'"></span>');
+
+window.onload = start_countdown;
+
+
+function countdown()
+{
+	var today = new Date();
+	var todayy = today.getYear()
+	if (todayy < 1000)
+		todayy += 1900
+	var todaym = today.getMonth();
+	var todayd = today.getDate();
+	var todayh = today.getHours();
+	var todaymin = today.getMinutes();
+	var todaysec = today.getSeconds();
+	var todaystring = montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+futurestring=montharray[mo-1]+" "+da+", "+yr
+	dd = Date.parse(futurestring) - Date.parse(todaystring);
+	dday = Math.floor(dd/(60*60*1000*24)*1);
+	dhour = Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
+	dmin = Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
+	dsec = Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
+	if (dday <= 0 && dhour <= 0 && dmin <= 0 && dsec <= 1)
+	{
+		if (document.layers)
+		{
+			document.countdownnsmain.document.countdownnssub.document.write(opentags + message_on_occasion + closetags);
+			document.countdownnsmain.document.countdownnssub.document.close();
+		}
+		else if (document.all)
+			countdownie.innerHTML = opentags + message_on_occasion + closetags;
+		return
+	}
+	else
+	{
+		if (document.layers)
+		{
+			document.countdownnsmain.document.countdownnssub.document.write(opentags+dday + " days, " + dhour + " hours, " + dmin + " minutes, and " + dsec + " seconds left until "+occasion + closetags);
+			document.countdownnsmain.document.countdownnssub.document.close();
+		}
+		else if (document.all)
+			countdownie.innerHTML = opentags + dday + " days, " + dhour + " hours, " + dmin + " minutes, and " + dsec + " seconds left until " + occasion + closetags;
+	}
+	setTimeout("countdown()",1000);
+}
+</SCRIPT> <ilayer id="countdownnsmain" width=&{countdownwidth}; height=&{countdownheight}; bgColor=&{countdownbgcolor}; visibility=hide> <layer id="countdownnssub" width=&{countdownwidth}; height=&{countdownheight}; left=0 top=0> </layer> </ilayer> </HEAD>
+<BODY bgcolor="#FFFFFF">
+<FORM></FORM>
+</BODY>
+</HTML>

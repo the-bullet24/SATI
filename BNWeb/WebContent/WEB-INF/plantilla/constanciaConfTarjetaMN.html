@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="100%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><b>CONSTANCIA DE CONFIGURACI&Oacute;N DE TARJETA<BR>
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="250px">Canal empleado:</TD>
+		<TD class="texto" width="280px">Multired Virtual</TD>
+	</tr>
+	
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="250px">Titular de Cuenta:</td>
+		<td class="texto" width="280px">${usuario.nombre}</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" width="250px">Fecha:</TD>
+		<TD class="texto" width="280px">${fecpago}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="250px">Hora:</TD>
+		<TD class="texto" width="280px">${horpago}</TD>
+	</tr>
+	<TR>
+		<TD class="texto" width="250px">Trj. Debito Configurada:</TD>
+		<TD class="texto" width="280px">${param.obfuscatedNumberCard}
+	</TD>
+	</TR>
+	
+	
+	#if ($param.typeCard == '1') 
+		#if ($param.transferSettings.available == '1') 
+		<TR>
+			<TD class="texto" width="250px" style="vertical-align: baseline;">Transferencia Giros y Retiros sin Tarjeta:</TD>
+			<TD class="texto" width="280px">
+				#if ($param.transferSettings.status == '1') 
+					ACTIVADO  
+				#else
+				    DESACTIVADO
+				#end
+			</TD>
+		</TR>
+		#end
+	#end
+
+	
+	#if ($param.typeCard == '2') 
+		#if ($param.cashDispositionSettings.available == '1') 
+		<TR>
+			<TD class="texto" width="250px" style="vertical-align: baseline;">Disposicion de efectivo:</TD>
+			<TD class="texto" width="280px">
+				#if ($param.cashDispositionSettings.status == '1') 
+					ACTIVADO  
+				#else
+				    DESACTIVADO
+				#end
+			</TD>
+		</TR>
+		#end
+	#end
+	
+	#if ($param.shoppingInternetSettings.available == '1') 
+		#if ($param.typeCard == '1') 
+			<TR>
+				<TD class="texto" width="250px" style="vertical-align: baseline;">Compras por Internet:</TD>
+				<TD class="texto" width="280px">
+					#if ($param.shoppingInternetSettings.status == '1') 
+						ACTIVADO  
+					#else
+					    DESACTIVADO
+					#end			
+					<br>
+					#if ($param.shoppingInternetSettings.meansNotification == '1') 
+						Email: ${param.shoppingInternetSettings.associatedEmail}
+					#elseif ($param.shoppingInternetSettings.meansNotification == '2') 
+						Mensaje Sms: ${param.shoppingInternetSettings.associatedPhone}
+					#elseif ($param.shoppingInternetSettings.meansNotification == '3') 
+						Email: ${param.shoppingInternetSettings.associatedEmail} <br>
+						Mensaje Sms: ${param.shoppingInternetSettings.associatedPhone} <br>
+					#end		
+				</TD>
+			</TR>
+		#end
+		
+		#if ($param.typeCard == '2') 
+			<TR>
+				<TD class="texto" width="250px" style="vertical-align: baseline;">Compras por Internet:</TD>
+				<TD class="texto" width="280px">
+					#if ($param.shoppingInternetSettings.status == '1') 
+						ACTIVADO  
+					#else
+					    DESACTIVADO
+					#end									
+				</TD>
+			</TR>
+		#end
+	#end
+	
+	
+	#if ($param.shoppingAbroadSettings.available == '1') 
+	<TR>
+		<TD class="texto" width="250px" style="vertical-align: baseline;">Consumo en el Extranjero:</TD>
+		<TD class="texto" width="280px" >
+			#if ($param.shoppingAbroadSettings.status == '1') 
+				ACTIVADO  <br>	
+				Ida: ${param.shoppingAbroadSettings.dateDeparture} Vuelta: ${param.shoppingAbroadSettings.dateReturn}<br>
+				Paises: ${param.shoppingAbroadSettings.countriesStr} 
+			#else
+			    DESACTIVADO
+			#end			
+					
+			
+		</TD>
+	</TR>
+	#end
+	
+	
+	#if ($param.notificationSettings.available == '1') 
+	<TR>
+		<TD class="texto" width="250px" style="vertical-align: baseline;">Notificacion por Operacion:</TD>
+		<TD class="texto" width="280px">			
+			#if ($param.notificationSettings.status == '1') 
+				ACTIVADO  
+			#else
+			    DESACTIVADO
+			#end			
+			<br>	 
+			#if ($param.notificationSettings.typeMoney=='S')
+				A partir de: 
+				<span style="color:black; vertical-align:baseline">S/</span>
+				${param.notificationSettings.amountToReceiveNo} <br>
+			#elseif ($param.notificationSettings.meansNotification == '2')
+				A partir de: 
+				<span style="color:black; vertical-align:baseline">D</span>
+				${param.notificationSettings.amountToReceiveNo} <br>
+			#end		
+			
+			#if ($param.notificationSettings.meansNotification == '1') 
+				Email: ${param.notificationSettings.associatedEmail}
+			#elseif ($param.notificationSettings.meansNotification == '2') 
+				Mensaje Sms: ${param.notificationSettings.associatedPhone}
+			#elseif ($param.notificationSettings.meansNotification == '3') 
+				Email: ${param.notificationSettings.associatedEmail} <br>
+				Mensaje Sms: ${param.notificationSettings.associatedPhone}
+			#end		
+		</TD>
+	</TR>
+	#end
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+	
+</TABLE>
+</BODY>
+</HTML>

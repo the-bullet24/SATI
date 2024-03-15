@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="350" align="center">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA <br>
+		DE AFILIACION TRANSFERENCIAS INTERBANCARIAS<BR>
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="150">Canal empleado:</TD>
+		<TD class="texto" width="200">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="150">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="200">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" width="150">Nro. Tarjeta:</TD>
+		<TD class="texto" width="200">${param.tarjetaOculta}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="150">Banco Destino:</TD>
+		<TD class="texto" width="200">${param.objBenef.objBanco.descripcion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="150">Nro. CCI Destino</TD>
+		<TD class="texto" width="200">${param.numeroServicio}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="150">Nombre del Beneficiario:</TD>
+		<TD class="texto" width="200">${param.beneficiario}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="150">Cuenta Propia:</TD>
+		
+		#if (${param.cuentaPropia}=='S')
+		<TD class="texto" width="200">	SI</TD>
+		#else
+		<TD class="texto" width="200">	NO</TD>
+		#end
+	</tr>
+	<tr>
+		<TD class="texto" width="150">Fecha:</TD>
+		<TD class="texto" width="200">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="150">Hora:</TD>
+		<TD class="texto" width="200">${param.hora}</TD>
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

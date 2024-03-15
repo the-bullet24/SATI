@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+	<parameter>
+ 		 
+		<ClaveSegura>
+			<!-- #Path Para Linux -->
+			<keyPath>/opt/software/key/sati</keyPath>
+			 
+			<!-- #Path Para Windows 
+			<keyPath>c:\opt\software\key\sati</keyPath> -->
+			
+			<keyName>clavesegurades.key</keyName>
+			<sistema>SATI</sistema>
+			<cuenta>USERSATI</cuenta>
+			<semillaKey>semillaSATI</semillaKey>
+			<usuario>USERSATI</usuario>			
+		</ClaveSegura> 
+	</parameter>	 
+</parameters> 

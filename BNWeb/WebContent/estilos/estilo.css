@@ -1,0 +1,449 @@
+BODY {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: left top; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#opplinea {
+	Z-INDEX: 1; LEFT: 0px; POSITION: relative; TOP: 0px
+}
+#banner_central {
+	Z-INDEX: 1; LEFT: 0px; POSITION: relative; TOP: 0px
+}
+#posicion {
+	Z-INDEX: 1; LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+.titulo1 {
+	PADDING-LEFT: 12px; FONT-WEIGHT: normal; FONT-SIZE: 24px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+#fondotablader {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../iconos/fonmenu2.gif); WIDTH: 163px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 46px
+}
+.tabla_texto_s {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.txt_notaa {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_notaa A {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.tabla_cabecera_s {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.csubmenu {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #CC262A; FONT-FAMILY: Arial, Helvetica, sans-serif; 
+}
+.csubmenualter {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px;; MARGIN: 0px; COLOR: #CC262A; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.csubmenu A {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #CC262A; FONT-FAMILY: Arial, Helvetica, sans-serif; text-decoration: none;
+}
+.csubmenu A:hover {
+	COLOR: #CC262A; text-decoration: underline; 
+}
+.generico {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; MARGIN: 0px; COLOR: #666666; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.generico A {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #666666; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.generico A:hover {
+	COLOR: #666666; 
+}
+.genericox {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.genericox A {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.genericox A:hover {
+	COLOR: #000000
+}
+.txt_vtgris10 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #808080; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vblanco9 {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_agevblanco9 {
+	PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_agevgris9 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #4e4e4e; PADDING-TOP: 7px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vrojo {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vrojo A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vrojo A:hover {
+	COLOR: #cc0000
+}
+.txt_vgris_1000 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vgris_10 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vgris_10 A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vgris {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #4e4e4e; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vrojo13 {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vrojo11 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vrojo_titu {
+	FONT-WEIGHT: normal; FONT-SIZE: 20px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vrojo_titupop {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vrojo12 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vrojo12 A {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vrojo12 A:hover {
+	COLOR: #cc0000
+}
+.txt_vgris12 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vgris_age {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #cc0000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_age A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #6a6a6a; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_age A:hover {
+	COLOR: #665a4c
+}
+.txt_vgris_contchico9 {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; MARGIN: 0px; COLOR: #665a4c; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_contchico9 A {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; MARGIN: 0px; COLOR: #665a4c; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_contchico {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #665a4c; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.txt_vgris_negro {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.txt_vazul_contchico {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #666699; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.txt_vgris_contchico A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_contchico A:hover {
+	COLOR: #665a4c
+}
+.txt_vgris_contchico_m {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #665a4c; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.txt_vgris_contchico_m A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_contchico_m A:hover {
+	FONT-WEIGHT: bold; COLOR: #665a4c
+}
+.txt_vazul_contchico A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vazul_contchico A:hover {
+	COLOR: #665a4c
+}
+.txt_vgris_contenido {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.txt_vgris_contenido2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.txt_vgris_contenido22 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txt_vgris_contenidopop10 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.txt_vgris_contenidopop10 A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.txt_vgris_contenidopop {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.txt_vgris_titupop {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.txt_vgris_contenidopop A {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #665a4c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.txt_vgris_contenidopop A:hover {
+	COLOR: #665a4c
+}
+.txt_notadia {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; MARGIN: 0px; COLOR: #908e8b; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.menu_act {
+	FONT-SIZE: 12px; MARGIN: 0px; #cc0000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none ;text-transform:capitalize 
+}
+.menu_act A {
+	FONT-SIZE: 12px; COLOR: white; FONT-FAMILY: Arial, Helvetica, sans-serif;  TEXT-DECORATION: none ;text-transform:capitalize
+}
+.menu_act A:hover {
+	COLOR: #white; text-transform:capitalize; text-decoration: underline;
+}
+
+.rojo_v11 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; MARGIN: 0px; COLOR: #cc0000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.rojo_v11 A {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #cc0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.rojo_v11 A:hover {
+	COLOR: #cc0000
+}
+.link_contenido {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #cc0000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.link_contenido A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc0000; LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.link_contenido A:hover {
+	COLOR: #cc0000
+}
+.link_contenido2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 0px; COLOR: #cc0000; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.link_contenido2 A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc0000; LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.link_contenido2 A:hover {
+	COLOR: #cc0000
+}
+.footer {
+	FONT-SIZE: 9px; COLOR: #666666; FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+A.footer:link {
+	FONT-SIZE: 9px; COLOR: #666666; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.footer:visited {
+	FONT-SIZE: 9px; COLOR: #666666; TEXT-DECORATION: none
+}
+A.footer:hover {
+	FONT-SIZE: 9px; COLOR: #666666
+}
+#cajatexto96x18 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 96px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+.cajatexto174x18 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 174px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto385x17 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 385px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 17px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto193x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 193px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto169x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 169px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto139x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 139px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto37x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 37px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto118x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 118px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto254x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 254px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto149x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 149px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto106x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 106px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto94x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 94px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto353x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 353px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto145x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 145px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto89x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 89px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#cajatexto67x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 67px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#txtarea528x79 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 528px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 79px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista416x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 416px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 20px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista193x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 193px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 20px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista152x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 152px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 20px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista92x20 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 92px; COLOR: #635f59; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 20px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista128x18 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 128px; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista190x18 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 190px; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#lista187x18 {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #878787 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #878787 1px solid; WIDTH: 187px; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; HEIGHT: 17px; TEXT-DECORATION: none; voice-family: inherit
+}
+.txt_form {
+	PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #635f59; FONT-FAMILY: Verdana, Helvetica, sans-serif; TEXT-DECORATION: none; voice-family: inherit
+}
+#boton1 {
+	BORDER-RIGHT: #878787 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #dddddd 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #dddddd 1px solid; WIDTH: 97px; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #878787 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 18px; TEXT-DECORATION: none; voice-family: inherit
+}
+#contenidoinfo {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 250px
+}
+#contenidoinfo34 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 780px
+}
+#contenidoinfo33 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 900px
+}
+#contenidoinfo32 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 850px
+}
+#contenidoinfo29 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 820px
+}
+#contenidoinfo28 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 680px
+}
+#contenidoinfo27 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 740px
+}
+#contenidoinfo26 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 650px
+}
+#contenidoinfo25 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 630px
+}
+#contenidoinfo24 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 500px
+}
+#contenidoinfo23 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 450px
+}
+#contenidoinfo22 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 470px
+}
+#contenidoinfo21 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 350px
+}
+#contenidoinfo18 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 440px
+}
+#contenidoinfo19 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 870px
+}
+#contenidoinfo17 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 130px
+}
+#contenidoinfo16 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 270px
+}
+#contenidoinfo15 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 100px
+}
+#contenidoinfo14 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 200px
+}
+#contenidoinfo13 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 420px
+}
+#contenidoinfo11 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 740px
+}
+#contenidoinfo12 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 700px
+}
+#contenidoinfo10 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 600px
+}
+#contenidoinfo9 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 540px
+}
+#contenidoinfo8 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 530px
+}
+#contenidoinfo7 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 150px
+}
+#contenidoinfo6 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 340px
+}
+#contenidoinfo5 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 180px
+}
+#contenidoinfo4 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 280px
+}
+#contenidoinfo3 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 390px
+}
+#contenidoinfo2 {
+	WIDTH: 344px; POSITION: relative; HEIGHT: 310px
+}
+#masinformacion1 {
+	WIDTH: 344px; POSITION: absolute; TOP: 0px
+}
+#masinformacion2 {
+	VISIBILITY: hidden; WIDTH: 344px; POSITION: absolute; TOP: 0px
+}
+#masinformacion3 {
+	VISIBILITY: hidden; WIDTH: 344px; POSITION: absolute; TOP: 0px
+}
+#canalesgif {
+	Z-INDEX: 1; LEFT: 0px; POSITION: relative; TOP: 24px
+}
+#linea_menu2 {
+	Z-INDEX: 1; LEFT: 0px; POSITION: relative; TOP: 13px
+}
+#menu_canales {
+	LEFT: -29px; POSITION: relative; TOP: 2px
+}
+#menu_canales2 {
+	LEFT: 0px; POSITION: relative; TOP: -14px
+}
+.treeview UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #dedede
+}
+.treeview LI {
+	PADDING-LEFT: 12px; BACKGROUND: url(../list.gif) white no-repeat left center; MARGIN-BOTTOM: 1px; LIST-STYLE-TYPE: none
+}
+.treeview LI.submenu {
+	BACKGROUND: url(../closed.gif) white no-repeat left 1px; CURSOR: pointer! important
+}
+.treeview LI.submenu UL {
+	DISPLAY: none
+}
+.treeview .submenu UL LI {
+	CURSOR: default
+}

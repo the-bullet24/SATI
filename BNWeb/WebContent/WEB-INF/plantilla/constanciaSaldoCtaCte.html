@@ -1,0 +1,84 @@
+
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<TR>
+		<TD align="center" class="texto" colspan="2"><B>CONSULTA DE SALDO -
+		CUENTA CORRIENTE<BR>
+		<BR>
+		</B></TD>
+	</TR>
+
+	<tr>
+		<TD class="texto" >Canal empleado:</TD>
+		<TD class="texto" width="60%">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<TR>
+		<TD class="texto" width="40%">Usuario:</TD>
+		<TD class="texto" width="60%">${usuario.nombre}</TD>
+	</TR>
+	#end
+	<TR>
+		<TD class="texto">Fecha y hora:</TD>
+		<TD class="texto" width="60%">${param.fecha} | ${param.hora}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Nro. Cuenta Corriente:</TD>
+		<TD class="texto" width="60%">${param.cuentaformateada}</TD>
+
+	</TR>
+	<TR>
+		<TD class="texto">Situación de la Cuenta</TD>
+		<TD class="texto" width="60%">${param.situacionCuenta}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Moneda:</TD>
+		<TD class="texto" width="60%">${param.nombreMonedaProductoMail}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Saldo Contable:</TD>
+		<TD class="texto" align="right" width="60%">${param.saldoContable}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Saldo Disponible:</TD>
+		<TD class="texto" align="right" width="60%">${param.saldo}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Retenci&oacute;n:</TD>
+		<TD class="texto" align="right" width="60%">${param.retencion}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Monto Bloqueado:</TD>
+		<TD class="texto" align="right" width="60%">${param.saldoBloqueado}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Línea de Crédito:</TD><TD class="texto" align="right" width="60%">${param.lineaCredito}</TD>
+		
+	</TR>
+	<TR>
+		<TD class="texto">Mensaje de Control:</TD>
+		<TD class="texto" width="60%">Su Consulta ha sido realizada con Éxito</TD>
+	</TR>
+
+	<TR align="justify">
+		<TD colspan="2"><FONT size="-5" face="Arial"><BR>
+		${mensajeDiferenciaSaldo}</FONT></TD>
+	</TR>
+
+</TABLE>
+</BODY>
+</HTML>

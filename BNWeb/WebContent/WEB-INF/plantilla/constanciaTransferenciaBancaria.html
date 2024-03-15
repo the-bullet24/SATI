@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%" style="width:500">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE<BR>
+		TRANSFERENCIAS MISMO BANCO<BR>
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="50%">Canal empleado:</TD>
+		<TD class="texto" width="50%">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="50%">Titular de Cuenta:</td>
+		<td class="texto" width="50%">${usuario.nombre}</td>
+	</tr>
+	#end
+	<TR>
+		<TD class="texto" width="50%">Nro. Cuenta Origen:</TD>
+		<TD class="texto" width="50%">
+		${param.cuentaOrigen.nombreTipoProducto} -
+		${param.cuentaOrigen.simboloMonedaProducto} -
+		${param.cuentaOrigen.cuentaFormateada}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Nro. Cuenta. Destino:</TD>
+		<TD class="texto" width="50%">${param.cuentaDestino.nombreTipoProducto}
+		- ${param.cuentaDestino.simboloMonedaProducto} -
+		${param.cuentaDestino.cuentaFormateada}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Titular Cuenta Destino:</TD>
+		<TD class="texto" width="50%">${param.afiliacion.descripcion}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Moneda de la Transferencia:</TD>
+		<TD class="texto" width="50%">${param.nombreMonedaMail}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Importe de Transferencia:</TD>
+		<TD class="texto" align="right" width="50%">${param.simboloMonedaImporte}
+		${param.importe}</TD>
+	</TR>
+
+	#if ((('04' == ${param.cuentaOrigen.tipoProducto}) && ('08' == ${param.cuentaDestino.tipoProducto})) || (('04' ==	${param.cuentaOrigen.tipoProducto}) && ('06' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="50%">${param.cuentaOrigen.simboloMonedaProducto}
+		${param.importeCargo}</TD>
+	</TR>
+	#end
+
+	#if ((('08' == ${param.cuentaOrigen.tipoProducto}) && ('04' == ${param.cuentaDestino.tipoProducto})) || (('08' ==	${param.cuentaOrigen.tipoProducto}) && ('00' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="50%">${param.cuentaOrigen.simboloMonedaProducto}
+		${param.importeCargo}</TD>
+	</TR>
+	#end
+
+	#if ((('00' == ${param.cuentaOrigen.tipoProducto}) && ('06' == ${param.cuentaDestino.tipoProducto})) || (('00' ==	${param.cuentaOrigen.tipoProducto}) && ('08' ==	${param.cuentaDestino.tipoProducto})))					
+	<TR>
+		<TD class="texto" width="50%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="50%">${param.cuentaOrigen.simboloMonedaProducto}
+		${param.importeCargo}</TD>
+	</TR>
+	#end
+
+	#if ((('06' == ${param.cuentaOrigen.tipoProducto}) && ('00' == ${param.cuentaDestino.tipoProducto})) || (('06' ==	${param.cuentaOrigen.tipoProducto}) && ('04' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="50%">${param.cuentaOrigen.simboloMonedaProducto}
+		${param.importeCargo}</TD>
+	</TR>
+	#end
+
+	#if ((('54' == ${param.cuentaOrigen.tipoProducto}) && ('06' == ${param.cuentaDestino.tipoProducto})) || (('54' ==	${param.cuentaOrigen.tipoProducto}) && ('08' ==	${param.cuentaDestino.tipoProducto})))					
+	<TR>
+		<TD class="texto" width="50%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="50%">${param.cuentaOrigen.simboloMonedaProducto}
+		${param.importeCargo}</TD>
+	</TR>
+	#end
+
+	#if ((('64' == ${param.cuentaOrigen.tipoProducto}) && ('00' == ${param.cuentaDestino.tipoProducto})) || (('64' ==	${param.cuentaOrigen.tipoProducto}) && ('04' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="50%">${param.cuentaOrigen.simboloMonedaProducto}
+		${param.importeCargo}</TD>
+	</TR>
+	#end
+
+	<TR>
+		<TD class="texto" width="50%">Comisi&oacute;n:</TD>
+		<TD class="texto" align="right" width="50%">${param.simboloMonedaComision}
+		${param.comision}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">ITF:</TD>
+		<TD class="texto" align="right" width="50%">${param.simboloMonedaItf}
+		${param.itf}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Total Cargado:</TD>
+		<TD class="texto" align="right" width="50%">${param.simboloMonedaImpNetoCargo} ${param.importeNeto}</TD>
+	</TR>
+
+					#if ((('04' == ${param.cuentaOrigen.tipoProducto}) && ('04' == ${param.cuentaDestino.tipoProducto})) || (('04' ==	${param.cuentaOrigen.tipoProducto}) && ('00' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeCargo}</TD>
+					</TR>
+					#end
+
+					#if ((('08' == ${param.cuentaOrigen.tipoProducto}) && ('08' == ${param.cuentaDestino.tipoProducto})) || (('08' ==	${param.cuentaOrigen.tipoProducto}) && ('06' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeCargo}</TD>
+					</TR>
+					#end
+
+					#if ((('00' == ${param.cuentaOrigen.tipoProducto}) && ('00' == ${param.cuentaDestino.tipoProducto})) || (('00' ==	${param.cuentaOrigen.tipoProducto}) && ('04' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeCargo}</TD>
+					</TR>
+					#end
+
+					#if ((('06' == ${param.cuentaOrigen.tipoProducto}) && ('06' == ${param.cuentaDestino.tipoProducto})) || (('06' ==	${param.cuentaOrigen.tipoProducto}) && ('08' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeCargo}</TD>
+					</TR>
+					#end
+
+					#if ((('04' == ${param.cuentaOrigen.tipoProducto}) && ('08' == ${param.cuentaDestino.tipoProducto})) || (('04' ==	${param.cuentaOrigen.tipoProducto}) && ('06' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeConvertido}</TD>
+					</TR>
+					#end
+
+					#if ((('08' == ${param.cuentaOrigen.tipoProducto}) && ('04' == ${param.cuentaDestino.tipoProducto})) || (('08' ==	${param.cuentaOrigen.tipoProducto}) && ('00' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeConvertido}</TD>
+					</TR>
+					#end
+
+					#if ((('00' == ${param.cuentaOrigen.tipoProducto}) && ('06' == ${param.cuentaDestino.tipoProducto})) || (('00' ==	${param.cuentaOrigen.tipoProducto}) && ('08' ==	${param.cuentaDestino.tipoProducto})))					
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeConvertido}</TD>
+					</TR>
+					#end
+
+					#if ((('06' == ${param.cuentaOrigen.tipoProducto}) && ('00' == ${param.cuentaDestino.tipoProducto})) || (('06' ==	${param.cuentaOrigen.tipoProducto}) && ('04' ==	${param.cuentaDestino.tipoProducto})))
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeConvertido}</TD>
+					</TR>
+					#end
+
+					#if ('64' == ${param.cuentaOrigen.tipoProducto})
+					<TR>
+						<TD class="texto" width="50%">Total Abonado:</TD>
+						<TD class="texto" align="right" width="50%">${param.simboloMonedaAbono} ${param.importeAbono}</TD>
+					</TR>
+					#end
+
+	#if ((('04' == ${param.cuentaOrigen.tipoProducto}) && ('08' == ${param.cuentaDestino.tipoProducto})) || (('04' ==	${param.cuentaOrigen.tipoProducto}) && ('06' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Tipo de Cambio:</TD>
+		<TD class="texto" width="50%">S/
+		${param.tipoCambio}</TD>
+	</TR>
+	#end #if ((('08' == ${param.cuentaOrigen.tipoProducto}) && ('04' ==	${param.cuentaDestino.tipoProducto})) || (('08' ==	${param.cuentaOrigen.tipoProducto}) && ('00' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Tipo de Cambio:</TD>
+		<TD class="texto" width="50%">S/
+		${param.tipoCambio}</TD>
+	</TR>
+	#end #if ((('00' == ${param.cuentaOrigen.tipoProducto}) && ('06' ==	${param.cuentaDestino.tipoProducto})) || (('00' ==	${param.cuentaOrigen.tipoProducto}) && ('08' ==	${param.cuentaDestino.tipoProducto})))
+	<TR>
+		<TD class="texto" width="50%">Tipo de Cambio:</TD>
+		<TD class="texto" width="50%">S/
+		
+		${param.tipoCambio}</TD>
+	</TR>
+	#end #if ((('06' == ${param.cuentaOrigen.tipoProducto}) && ('00' ==	${param.cuentaDestino.tipoProducto})) || (('06'	==${param.cuentaOrigen.tipoProducto}) && ('04' ==	${param.cuentaDestino.tipoProducto})))	<TR>
+		<TD class="texto" width="50%">Tipo de Cambio:</TD>
+		<TD class="texto" width="50%">S/
+		
+		${param.tipoCambio}</TD>
+	</TR>
+	#end
+	#if ('64' == ${param.cuentaOrigen.tipoProducto})	<TR>
+		<TD class="texto" width="50%">Tipo de Cambio:</TD>
+		<TD class="texto" width="50%">S/
+		${param.tipoCambio}</TD>
+	</TR>
+	#end
+	<TR>
+		<TD class="texto" width="50%">Nro. Operaci&oacute;n:</TD>
+		<TD class="texto" width="50%">${param.nroOperacion}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Nro. Transferencia:</TD>
+		<TD class="texto" width="50%">${param.nroTransferencia}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Fecha de Operación:</TD>
+		<TD class="texto" width="50%">${param.fechaOperacion}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="50%">Hora:</TD>
+		<TD class="texto" width="50%">${param.horaOperacion}</TD>
+	</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

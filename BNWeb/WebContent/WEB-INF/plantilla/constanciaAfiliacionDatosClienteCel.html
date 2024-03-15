@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11.5px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="550">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE ACTUALIZACION 
+		DE DATOS <BR> 
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="247">Canal empleado:</TD>
+		<TD class="texto" width="397">Multired Virtual</TD>
+	</tr>
+	
+	<br>
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="247">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="397">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<BR>
+	
+	<tr>
+		<TD class="texto" width="247">Tipo y N&uacute;mero de Documento:</TD>
+		<TD class="texto" width="397">${param.tipoDocumento}-${param.numDocumento}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="247">Operador Telef&oacute;nico - Tel&eacute;fono Celular:</TD>
+		<TD class="texto" width="397">${param.mostrarOperador} - ${param.telCelular}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="247">Fecha:</TD>
+		<TD class="texto" width="397">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Hora:</TD>
+		<TD class="texto" width="397">${param.hora}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Codigo Operaci&oacute;n:</TD>
+		<TD class="texto" width="397">${param.nroOperacion}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" colspan="2">&nbsp;</TD>
+	
+	</tr>
+	
+	<tr>
+				<td class="texto1" colspan="2"><p align="justify">
+				
+				Declaro que la informaci&oacute;n consignada me corresponde y es verdadera, la misma que ser&aacute; tratada por el Banco de la Naci&oacute;n seg&uacute;n la Ley 
+				y Reglamento de Protecci&oacute;n de Datos Personales, si la informaci&oacute;n consignada cambia solicitar&eacute; su actualizaci&oacute;n.	
+				
+			
+												
+			</p></td>
+		</tr>
+	
+</TABLE>
+
+</BODY>
+</HTML>

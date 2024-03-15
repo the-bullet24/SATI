@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://ws.wscn.bn.com.pe" xmlns:impl="http://ws.wscn.bn.com.pe" xmlns:intf="http://ws.wscn.bn.com.pe" xmlns:tns2="http://interoperabilidad.bean.wscn.bn.com.pe" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsi="http://ws-i.org/profiles/basic/1.1/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://interoperabilidad.bean.wscn.bn.com.pe">
+   <complexType name="DesafiliacionRequest">
+    <sequence>
+     <element name="motivoDesafiliacion" nillable="true" type="xsd:string"/>
+     <element name="canal" nillable="true" type="xsd:string"/>
+     <element name="cicCliente" nillable="true" type="xsd:string"/>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="cciOrigen" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="OperacionResponse">
+    <sequence>
+     <element name="codResult" nillable="true" type="xsd:string"/>
+     <element name="data" nillable="true" type="tns2:OperacionData"/>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="msgError" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="OperacionData">
+    <sequence>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="cciCliente" nillable="true" type="xsd:string"/>
+     <element name="fecha" nillable="true" type="xsd:string"/>
+     <element name="numOperacion" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ActualizacionRequest">
+    <sequence>
+     <element name="cic" nillable="true" type="xsd:string"/>
+     <element name="canal" nillable="true" type="xsd:string"/>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="modeloCelular" nillable="true" type="xsd:string"/>
+     <element name="ccicliente" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="AfilicionRequest">
+    <sequence>
+     <element name="ciccliente" nillable="true" type="xsd:string"/>
+     <element name="ccicliente" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="AfilicionResponse">
+    <sequence>
+     <element name="codResult" nillable="true" type="xsd:string"/>
+     <element name="data" nillable="true" type="tns2:Afiliacion"/>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="msgError" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="Afiliacion">
+    <sequence>
+     <element name="cicCliente" nillable="true" type="xsd:string"/>
+     <element name="fechaAfiliacion" nillable="true" type="xsd:string"/>
+     <element name="tipoDocumento" nillable="true" type="xsd:string"/>
+     <element name="numDocumento" nillable="true" type="xsd:string"/>
+     <element name="canal" nillable="true" type="xsd:string"/>
+     <element name="numeroCelular" nillable="true" type="xsd:string"/>
+     <element name="modeloCelular" nillable="true" type="xsd:string"/>
+     <element name="nombreCliente" nillable="true" type="xsd:string"/>
+     <element name="estadoAfiliacion" nillable="true" type="xsd:string"/>
+     <element name="nroCuenta" nillable="true" type="xsd:string"/>
+     <element name="cci" nillable="true" type="xsd:string"/>
+     <element name="trace" nillable="true" type="xsd:string"/>
+     <element name="idRegistro" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="OperacionRequest">
+    <sequence>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="cciCliente" nillable="true" type="xsd:string"/>
+     <element name="nombreCliente" nillable="true" type="xsd:string"/>
+     <element name="cic" nillable="true" type="xsd:string"/>
+     <element name="tipoDocumento" nillable="true" type="xsd:string"/>
+     <element name="numDcoumento" nillable="true" type="xsd:string"/>
+     <element name="canal" nillable="true" type="xsd:string"/>
+     <element name="modeloCelular" nillable="true" type="xsd:string"/>
+     <element name="numcuenta" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="BarridoRequest">
+    <sequence>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="canal" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="BarridoResponse">
+    <sequence>
+     <element name="codResult" nillable="true" type="xsd:string"/>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="msgError" nillable="true" type="xsd:string"/>
+     <element name="data" nillable="true" type="tns2:ArrayOfBarridoData"/>
+    </sequence>
+   </complexType>
+   <complexType name="BarridoData">
+    <sequence>
+     <element name="directorio" nillable="true" type="xsd:string"/>
+     <element name="descDirectorio" nillable="true" type="xsd:string"/>
+     <element name="codEntidad" nillable="true" type="xsd:string"/>
+     <element name="descEntidad" nillable="true" type="xsd:string"/>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOfBarridoData">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="BarridoData" nillable="true" type="tns2:BarridoData"/>
+    </sequence>
+   </complexType>
+   <complexType name="MotivoDesafilaicionResponse">
+    <sequence>
+     <element name="codResult" nillable="true" type="xsd:string"/>
+     <element name="motivos" nillable="true" type="tns2:ArrayOfMotivo"/>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="msgError" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="Motivo">
+    <sequence>
+     <element name="codMotivo" nillable="true" type="xsd:string"/>
+     <element name="motivo" nillable="true" type="xsd:string"/>
+     <element name="isActivo" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOfMotivo">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="Motivo" nillable="true" type="tns2:Motivo"/>
+    </sequence>
+   </complexType>
+  </schema>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.wscn.bn.com.pe">
+   <import namespace="http://interoperabilidad.bean.wscn.bn.com.pe"/>
+   <element name="opEliminarClienteResponse">
+    <complexType>
+     <sequence>
+      <element name="opEliminarClienteReturn" nillable="true" type="tns2:OperacionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opActualizarCliente">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:ActualizacionRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opActualizarClienteResponse">
+    <complexType>
+     <sequence>
+      <element name="opActualizarClienteReturn" nillable="true" type="tns2:OperacionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opConsultaAfilicion">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:AfilicionRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opConsultaAfilicionResponse">
+    <complexType>
+     <sequence>
+      <element name="opConsultaAfilicionReturn" nillable="true" type="tns2:AfilicionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opRegistroContacto">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:OperacionRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opRegistroContactoResponse">
+    <complexType>
+     <sequence>
+      <element name="opRegistroContactoReturn" nillable="true" type="tns2:OperacionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opBarridoClientes">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:BarridoRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opBarridoClientesResponse">
+    <complexType>
+     <sequence>
+      <element name="opBarridoClientesReturn" nillable="true" type="tns2:BarridoResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opObtenerMotivDesaInteroperabilidad">
+    <complexType>
+     <sequence/>
+    </complexType>
+   </element>
+   <element name="opObtenerMotivDesaInteroperabilidadResponse">
+    <complexType>
+     <sequence>
+      <element name="opObtenerMotivDesaInteroperabilidadReturn" nillable="true" type="tns2:MotivoDesafilaicionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opEliminarCliente">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:DesafiliacionRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  </wsdl:types>
+  <wsdl:message name="opActualizarClienteResponse">
+    <wsdl:part element="impl:opActualizarClienteResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opBarridoClientesRequest">
+    <wsdl:part element="impl:opBarridoClientes" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opObtenerMotivDesaInteroperabilidadRequest">
+    <wsdl:part element="impl:opObtenerMotivDesaInteroperabilidad" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opRegistroContactoResponse">
+    <wsdl:part element="impl:opRegistroContactoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opEliminarClienteRequest">
+    <wsdl:part element="impl:opEliminarCliente" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opObtenerMotivDesaInteroperabilidadResponse">
+    <wsdl:part element="impl:opObtenerMotivDesaInteroperabilidadResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opActualizarClienteRequest">
+    <wsdl:part element="impl:opActualizarCliente" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opConsultaAfilicionResponse">
+    <wsdl:part element="impl:opConsultaAfilicionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opBarridoClientesResponse">
+    <wsdl:part element="impl:opBarridoClientesResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opRegistroContactoRequest">
+    <wsdl:part element="impl:opRegistroContacto" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opEliminarClienteResponse">
+    <wsdl:part element="impl:opEliminarClienteResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opConsultaAfilicionRequest">
+    <wsdl:part element="impl:opConsultaAfilicion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServicioBNInteroperabilidad">
+    <wsdl:operation name="opEliminarCliente">
+      <wsdl:input message="impl:opEliminarClienteRequest" name="opEliminarClienteRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opEliminarClienteResponse" name="opEliminarClienteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opActualizarCliente">
+      <wsdl:input message="impl:opActualizarClienteRequest" name="opActualizarClienteRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opActualizarClienteResponse" name="opActualizarClienteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opConsultaAfilicion">
+      <wsdl:input message="impl:opConsultaAfilicionRequest" name="opConsultaAfilicionRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opConsultaAfilicionResponse" name="opConsultaAfilicionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opRegistroContacto">
+      <wsdl:input message="impl:opRegistroContactoRequest" name="opRegistroContactoRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opRegistroContactoResponse" name="opRegistroContactoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opBarridoClientes">
+      <wsdl:input message="impl:opBarridoClientesRequest" name="opBarridoClientesRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opBarridoClientesResponse" name="opBarridoClientesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opObtenerMotivDesaInteroperabilidad">
+      <wsdl:input message="impl:opObtenerMotivDesaInteroperabilidadRequest" name="opObtenerMotivDesaInteroperabilidadRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opObtenerMotivDesaInteroperabilidadResponse" name="opObtenerMotivDesaInteroperabilidadResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioBNInteroperabilidadSoapBinding" type="impl:ServicioBNInteroperabilidad">
+<wsaw:UsingAddressing wsdl:required="false"/>
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="opEliminarCliente">
+      <wsdlsoap:operation soapAction="opEliminarCliente"/>
+      <wsdl:input name="opEliminarClienteRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opEliminarClienteResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opActualizarCliente">
+      <wsdlsoap:operation soapAction="opActualizarCliente"/>
+      <wsdl:input name="opActualizarClienteRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opActualizarClienteResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opConsultaAfilicion">
+      <wsdlsoap:operation soapAction="opConsultaAfilicion"/>
+      <wsdl:input name="opConsultaAfilicionRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opConsultaAfilicionResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opRegistroContacto">
+      <wsdlsoap:operation soapAction="opRegistroContacto"/>
+      <wsdl:input name="opRegistroContactoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opRegistroContactoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opBarridoClientes">
+      <wsdlsoap:operation soapAction="opBarridoClientes"/>
+      <wsdl:input name="opBarridoClientesRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opBarridoClientesResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opObtenerMotivDesaInteroperabilidad">
+      <wsdlsoap:operation soapAction="opObtenerMotivDesaInteroperabilidad"/>
+      <wsdl:input name="opObtenerMotivDesaInteroperabilidadRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opObtenerMotivDesaInteroperabilidadResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioBNInteroperabilidadService">
+    <wsdl:port binding="impl:ServicioBNInteroperabilidadSoapBinding" name="ServicioBNInteroperabilidad">
+      <wsdlsoap:address location="http://10.7.12.129:9080/WSBNConfiguracion/services/ServicioBNInteroperabilidad"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

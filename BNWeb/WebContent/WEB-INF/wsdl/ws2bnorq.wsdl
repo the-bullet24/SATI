@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="BasicGatewayInterfaceService" targetNamespace="http://interfaz.ws.bnws.bn.com.pe" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://interfaz.ws.bnws.bn.com.pe" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://interfaz.ws.bnws.bn.com.pe" version="1.0" xmlns:ns1="http://bean.ws.bnws.bn.com.pe">
+
+  <xs:import namespace="http://bean.ws.bnws.bn.com.pe"/>
+
+  <xs:element name="enviarTramaConsulta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="clave" type="xs:base64Binary"/>
+        <xs:element name="request" nillable="true" type="ns1:RequestGateway"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="enviarTramaConsultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="enviarTramaConsultaReturn" nillable="true" type="ns1:ResponseGateway"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="recargaParametro">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="recargaParametroResponse">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://bean.ws.bnws.bn.com.pe" version="1.0">
+
+  <xs:complexType name="RequestGateway">
+    <xs:sequence>
+      <xs:element name="datos" nillable="true" type="xs:string"/>
+      <xs:element name="filler" nillable="true" type="xs:string"/>
+      <xs:element name="longitud" nillable="true" type="xs:string"/>
+      <xs:element name="transid" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ResponseGateway">
+    <xs:sequence>
+      <xs:element name="datos" nillable="true" type="xs:string"/>
+      <xs:element name="filler" nillable="true" type="xs:string"/>
+      <xs:element name="mensaje" nillable="true" type="xs:string"/>
+      <xs:element name="msgno" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="recargaParametroResponse">
+    <wsdl:part element="tns:recargaParametroResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="recargaParametro">
+    <wsdl:part element="tns:recargaParametro" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarTramaConsulta">
+    <wsdl:part element="tns:enviarTramaConsulta" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarTramaConsultaResponse">
+    <wsdl:part element="tns:enviarTramaConsultaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GatewayInterface">
+    <wsdl:operation name="recargaParametro">
+      <wsdl:input message="tns:recargaParametro" name="recargaParametro">
+    </wsdl:input>
+      <wsdl:output message="tns:recargaParametroResponse" name="recargaParametroResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarTramaConsulta">
+      <wsdl:input message="tns:enviarTramaConsulta" name="enviarTramaConsulta">
+    </wsdl:input>
+      <wsdl:output message="tns:enviarTramaConsultaResponse" name="enviarTramaConsultaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicGatewayInterfaceServiceSoapBinding" type="tns:GatewayInterface">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="recargaParametro">
+      <soap:operation soapAction="recargaParametro" style="document"/>
+      <wsdl:input name="recargaParametro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recargaParametroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarTramaConsulta">
+      <soap:operation soapAction="enviarTramaConsulta" style="document"/>
+      <wsdl:input name="enviarTramaConsulta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="enviarTramaConsultaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BasicGatewayInterfaceService">
+    <wsdl:port binding="tns:BasicGatewayInterfaceServiceSoapBinding" name="GatewayInterfacePort">
+      <soap:address location="http://10.7.12.184:3467/service/ws2bnorq"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

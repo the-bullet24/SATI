@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<center>
+<TABLE width="85%">
+	<tr>
+
+		<TD align="center" class="texto" colspan="2"><B>CONSULTA DE SALDO -
+		TARJETA DE CRÉDITO<BR>
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="35%">Canal empleado:</TD>
+		<TD class="texto" width="65%">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Titular de Cuenta:</td>
+		<td class="texto" width="65%">${usuario.nombre}</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" width="35%">N&deg;&nbsp; Tarjeta:</TD>
+		<TD class="texto" width="65%">${param.numeroProducto}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Linea de Cr&eacute;dito:</TD>
+		<TD class="texto" align="right" width="65%">${param.lineaCreditoTC}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Saldo Disponible:</TD>
+		<TD class="texto" align="right" width="65%">${param.dispConsumo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Pago Total del Mes:</TD>
+		<TD class="texto" align="right" width="65%">${param.montoPagoFacturacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Pago M&iacute;nimo:</TD>
+		<TD class="texto" align="right" width="65%">${param.montoPagoMinimo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Cr&eacute;dito Utilizado:</TD>
+		<TD class="texto" align="right" width="65%">${param.montoPagoTotal}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Situaci&oacute;n:</TD>
+		<TD class="texto" align="right" width="65%">${param.situacion}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="35%">Fecha:</TD>
+		<TD class="texto" width="65%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Hora:</TD>
+		<TD class="texto" width="65%">${param.hora}</TD>
+	</tr>
+
+	<TR align="justify">
+		<TD colspan="2"><FONT size="-5" face="Arial"><BR>
+		${mensajeTarjetaCredito}</FONT></TD>
+	</TR>
+</TABLE>
+</center>
+</BODY>
+</HTML>

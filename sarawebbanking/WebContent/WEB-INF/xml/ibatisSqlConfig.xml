@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+
+	<!-- settings:
+		useStatementNamespaces : "true" significa que los id de los queries deben ser
+		referenciados usando el 'namespace' en los programas java. 
+		Ejemplo: queryForObject("modulo.getByPK") -->	
+		
+	<settings useStatementNamespaces="true" />	
+	<!-- Poner aqui todos los mapas IBatis -->
+	<sqlMap resource="pe/cosapi/common/dao/impl/sqlMapCommon.xml" />
+	<sqlMap resource="pe/cosapi/common/dao/impl/sqlMapBanner.xml" />
+
+</sqlMapConfig>

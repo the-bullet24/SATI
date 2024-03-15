@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean" destroy-method="close">
+		  <property name="jndiName" value="jdbc/dbSWB"/> 
+   	</bean>
+   	
+	<bean id="dataSourceSara" class="org.springframework.jndi.JndiObjectFactoryBean" destroy-method="close">
+		<property name="jndiName" value="jdbc/dbJT"/>
+
+   	</bean>
+
+	<!-- manejador de transaccionalidad declarativa del "lightweight container" spring -->
+	<bean id="baseTransactionProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+			  	<prop key="*">PROPAGATION_REQUIRED,-java.lang.Throwable</prop>
+			</props>				
+		</property>
+	</bean>		
+	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource"><ref local="dataSource" />
+		</property>
+	</bean>
+	
+
+
+</beans>

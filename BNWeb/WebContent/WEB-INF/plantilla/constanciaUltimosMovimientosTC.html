@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 9px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+
+</HEAD>
+<BODY>
+
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="3"><B>CONSTANCIA <br>
+		DE ULTIMOS MOVIMIENTOS - TARJETA DE CRÉDITO<BR>
+		<BR>
+		</B></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="33%">Canal empleado:</TD>
+		<TD class="texto" colspan="2">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="33%">Titular de Cuenta:</td>
+		<td class="texto" colspan="2">${usuario.nombre}</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" width="33%">N&deg;&nbsp;Tarjeta:</TD>
+		<TD class="texto" colspan="2">${param.numeroProducto}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="33%">Tipo Tarjeta:</TD>
+		<TD class="texto" colspan="2">${param.tipoTarjeta}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="33%">Moneda:</TD>
+		<TD class="texto" colspan="2">${param.moneda}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="33%">Linea de Cr&eacute;dito:</TD>
+		<TD class="texto" align="right" width="51%">${param.lineaCreditoTC}</TD>
+		<TD class="texto" align="right" width="16%"></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="33%">Cr&eacute;dito Utilizado:</TD>
+		<TD class="texto" align="right" width="51%">${param.dispConsumo}</TD>
+		<TD class="texto" align="right"></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="33%">Fecha:</TD>
+		<TD class="texto" colspan="2">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="33%">Hora:</TD>
+		<TD class="texto" colspan="2">${param.hora}</TD>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<TD class="texto" width="100%" colspan="3">
+				<TABLE width="500">
+					<TR>
+						<TD class="texto" align="center"  width="3%">
+							<span>N&deg;</span>
+						</TD>
+						<TD class="texto" align="left" width="17%">
+							<span>Fecha</span>
+						</TD>
+						
+						<TD class="texto" align="center" width="50%">
+							<span>Descripción</span>
+						</TD>
+						
+						<TD class="texto" align="center" width="30%">
+							<span>Monto</span>
+						</TD>
+					</TR>
+					#if (0 < ${param.movimientosTC.size()})
+						#set( $a=0)
+						#foreach ($value in ${param.movimientosTC})
+						#set($a=$a+1)
+					<TR>
+						<TD class="texto" align="center" width="3%"><span>${a}</span></TD>
+						<TD class="texto" align="left" width="17%"><span>${value.fechaFormat}</span></TD>
+						<TD class="texto" align="left"   width="50%"><span>${value.desConcepto}</span></TD>
+					
+						<TD class="texto" align="center"   width="30%"><span>${value.monto}</span></TD>
+							
+					</TR>
+						
+						#end
+					#else
+					<TR>
+						<TD colspan="4" class="texto" align="center">
+							<B><span>No existen movimientos asociados</span></B>
+						</TD>
+					</TR>
+					#end
+
+</TABLE>
+		
+		</TD>
+	
+	</tr>
+
+</TABLE>
+<BR>
+
+
+<table width="100%">
+		<TR  align="justify">
+		<TD colspan="4">
+			<FONT size="-5" face="Arial"><BR>
+		${mensajeTarjetaCredito}</FONT>
+		</TD>
+	</TR>
+</table>
+</BODY>
+</HTML>

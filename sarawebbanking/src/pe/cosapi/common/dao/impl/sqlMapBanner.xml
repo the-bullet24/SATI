@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapBanner">
+
+	
+	<update id="updateBanner" parameterClass="pe.cosapi.common.domain.impl.BannerImpl">
+		UPDATE 
+			PV_SWB.TBANDAT 
+       	SET 
+			DATBEG = TO_DATE(#fechaInicio#),
+			DATEND = TO_DATE(#fechaFin#),
+			FILNAM = #nombreArchivo#
+		WHERE 
+			TYPPER = #tipoPersona#
+	</update>
+<select id="getBannerById" resultClass="pe.cosapi.common.domain.impl.BannerImpl">
+		SELECT 
+			TO_CHAR(BAN.DATBEG,'DD/MM/YYYY') as fechaInicio,
+			TO_CHAR(BAN.DATEND,'DD/MM/YYYY') as fechaFin,
+			BAN.FILNAM as nombreArchivo,
+			BAN.TYPPER as tipoPersona
+		FROM 
+			PV_SWB.TBANDAT BAN
+		WHERE 
+			BAN.TYPPER = #value#
+	</select>
+
+
+</sqlMap>

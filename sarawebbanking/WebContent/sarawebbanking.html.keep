@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"><!-- Sample HTML file -->
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Page Designer V3.0  for Windows">
+<TITLE>SARA Web Banking</TITLE>
+</HEAD>
+<BODY vlink="#0000ff" alink="#0000ff" link="#0000ff" text="#000000" bgcolor="#ffffff">
+<CENTER>
+<FORM action="/sarawebbanking/servlet/InicioSesionServlet" method="POST" target="_top"><IMG src="/sarawebbanking/images/1999CS.GIF" border="0" align="middle" width="350" height="70">
+<CENTER>
+<TABLE width="320" height="240" background="/sarawebbanking/images/SWBanking.jpg">
+  <TBODY>
+    <TR>
+      <TD width="320" align="right" valign="middle" height="240"><B><FONT color="#0000ff" size="2" face="Arial"><A href="/sarawebbanking/servlet/InicioDeDia1Servlet?BtnIDia=Otro">Inicio de Día</A></FONT></B><BR>
+      <BR>
+      <FONT color="#0000ff" size="2" face="Arial"><A href="/sarawebbanking/servlet/InicioSesionServlet?Modulo=SARA_Web_Builder&BtnLogin=Otro"><B>SARA Web Builder</B></A><BR>
+      </FONT><BR>
+      <B><FONT color="#0000ff" size="2" face="Arial"><A href="/sarawebbanking/servlet/InicioSesionServlet?Modulo=SARA_Web_Manager&BtnLogin=Otro">SARA Web Manager</A></FONT></B><BR>
+      <BR>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<FONT color="#000000" face="Arial" size="1"><B>Copyright 1990-2000 All rights reserved sarawebbanking</B></FONT></FORM>
+</CENTER>
+</BODY>
+</HTML>

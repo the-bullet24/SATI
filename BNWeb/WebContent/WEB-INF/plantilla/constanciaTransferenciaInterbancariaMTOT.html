@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+
+
+
+</HEAD>
+<BODY>
+<TABLE width="80%" align="center">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE<BR>
+		TRANSFERENCIAS INTERBANCARIAS DIFERIDAS<BR>
+		<BR>
+		</B></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="40%">Canal empleado:</TD>
+		<TD class="texto" width="60%">Multired Virtual</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. Cuenta Origen:</TD>
+		<TD class="texto" width="60%" align="left">${param.cuentaOrigen.nombreTipoProducto} - ${param.cuentaOrigen.simboloMonedaProducto} - 
+		${param.cuentaOrigen.cuentaformateada}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. CCI Destino:</TD>
+		<TD class="texto" width="60%" align="left">${param.afiliacion.numeroServicio}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Banco Destino:</TD>
+		<TD class="texto" width="60%" align="left">${param.afiliacion.objBenef.objBanco.descripcion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="40%" align="left">Nombre del Beneficiario:</TD>
+		<TD class="texto" width="60%" align="left">${param.afiliacion.beneficiario} (*)</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Moneda de Transferencia:</TD>
+		<TD class="texto" width="60%" align="left">${param.nombreMonedaMail}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Importe de Transferencia:</TD>
+		<TD class="texto" width="60%" align="right">${param.simboloMonedaImporte} ${param.importeTransferido}</TD>
+	</tr>
+
+	#if (${param.cuenta.tipoProducto} == '04')
+	#if (${param.moneda} == 'USD')
+	<tr>
+		<TD class="texto" width="40%" align="left">Importe al Cambio:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.importe}</TD>
+	</tr>
+	#end
+	#end
+
+	#if (${param.cuenta.tipoProducto} == '08')
+	#if (${param.moneda} == 'PEI')
+	<tr>
+		<TD class="texto" width="40%" align="left">Importe al Cambio:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.importe}</TD>
+	</tr>
+	#end
+	#end
+
+	#if (${param.cuenta.tipoProducto} == '00')
+	#if (${param.moneda} == 'USD')
+	<tr>
+		<TD class="texto" width="40%" align="left">Importe al Cambio:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.importe}</TD>
+	</tr>
+	#end
+	#end
+
+	#if (${param.cuenta.tipoProducto} == '06')
+	#if (${param.moneda} == 'PEI')
+	<tr>
+		<TD class="texto" width="40%" align="left">Importe al Cambio:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.importe}</TD>
+	</tr>
+	#end
+	#end
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Comisi&oacute;n:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.comision}</TD>
+	</tr>
+
+	#if ('N' == ${param.afiliacion.cuentaPropia})
+	<tr>
+		<TD class="texto" width="40%" align="left">ITF:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.itf}</TD>
+	</tr>
+	#end
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Total Operaci&oacute;n:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.total}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Total Cargado:</TD>
+		<TD class="texto" width="60%" align="right">${param.cuentaOrigen.simboloMonedaProducto} ${param.total}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. Operaci&oacute;n:</TD>
+		<TD class="texto" width="60%" align="left">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. Transferencia:</TD>
+		<TD class="texto" width="60%" align="left">${param.nroTransferencia}</TD>
+	</tr>
+	<TR>
+		<TD class="texto" width="40%" align="left">Fecha de Operación:</TD>
+		<TD class="texto" width="60%" align="left">${fectransib}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%" align="left">Fecha de Proceso:</TD>
+		<TD class="texto" width="60%" align="left">${fectransib}</TD>
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%" align="left">Hora:</TD>
+		<TD class="texto" width="60%" align="left">${hortransib}</TD>
+	</TR>
+	
+	<TR>
+		<TD class="texto" width="40%">&nbsp;</TD>
+		<TD class="texto" width="60%">&nbsp;</TD>
+		
+	</TR>
+	<TR>
+		<TD align="center" class="texto" colspan="2">(*) Dato referencial, no sujeto a verificación por las entidades participantes</TD>
+	</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

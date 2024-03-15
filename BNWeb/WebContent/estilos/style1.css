@@ -1,0 +1,50 @@
+<STYLE TYPE="text/css" title="text">
+
+.text{
+	font: 12px arial;
+	font-color: black;
+}
+</STYLE>
+
+a:active {  color: #FF00FF}
+a:link {
+	text-decoration: none;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:hover {
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.forms {
+	border: 1px solid #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #E5E5DE;
+}
+.formsamar {
+	border: thin solid #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-color: #CCCCCC;
+	cursor: hand;
+}
+.marco {
+	border: thin solid #C9252C;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	cursor: default;
+	text-align: right;
+
+}

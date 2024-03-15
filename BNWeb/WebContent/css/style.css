@@ -1,0 +1,87 @@
+.text8centr {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; color: #333333}
+.text8der {  font-family: Arial, Helvetica, sans-serif; text-align: right; font-size: 12px;}
+.textizq8 {  font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; color: #333333; font-size: 12px}
+.text8just {  font-size: 12px; color: #333333; text-align: justify; font-family: Verdana, Arial, Helvetica, sans-serif}
+.textizq {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	color: #000000;
+	font-size: 12px;
+	text-indent: 3px;
+}
+.textder {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: right;
+	color: #000000;
+	font-size: 12px;
+	text-indent: 3px;
+}
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.fondoMensajeError {  background-color: #FF0000}
+
+.textoMensajeError {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #FF0000; background-color: #FFFFFF}
+
+.fondoRojo {
+	background-color: #C9242C;
+}
+
+.fondoAmarillo {
+	background-color: #FFC311;
+}
+
+.titulo {  
+	font-family: Arial; 
+	text-align: left; 
+	color: #FFFFFF;
+	font-size: 16px; 
+	font-weight: bold;
+}
+
+.subtitulo {  
+	font-family: Arial; 
+	text-align: left; 
+	color: #333333; 
+	font-size: 14px;
+	font-weight: bold
+}
+
+.text8centrb {
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; text-align: center; color: #FFFFFF
+}
+.text8dern {
+font-family: Arial, Helvetica, sans-serif; text-align: right; color: #000000; font-size: 12px; font-size: 12px
+}
+.text8centrn {
+
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; text-align: center; color: #333333
+}
+.textizqn {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	color: #000000;
+	font-size: 12px;
+}
+.textTitMov {
+	font-family: Arial;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.textContentMov {
+	font-family: Arial;
+	font-size: 10px;
+}
+.textituloc {
+
+
+font-family: Arial, Helvetica, sans-serif; text-align: center; color: #000000; font-size: 14px}
+
+
+SELECT {
+	background-color: #FEFEEA;
+}

@@ -1,0 +1,413 @@
+main jue sep 01 09:27:40.835 2011 peformanceApiSeg 718018 FORMATEOIN 092740 092740 31
+main jue sep 01 09:27:41.460 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901092740NOVATRONIC  94885400112233       0151487            25                             45578801   4557880112345678                4557880112345678    
+main jue sep 01 09:27:41.460 2011 peformanceApiSeg 718018 EJECUCIONSIX 092740 092741 578
+main jue sep 01 09:27:41.460 2011 peformanceApiSeg 718018 FORMATEOOU 092741 092741 0
+main jue sep 01 09:31:01.379 2011 peformanceApiSeg 934586 FORMATEOIN 093101 093101 15
+main jue sep 01 09:31:02.020 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901093101NOVATRONIC  26960300112233       0151487            25                             03561922   4214100021758612                4214100021758612    
+main jue sep 01 09:31:02.020 2011 peformanceApiSeg 934586 EJECUCIONSIX 093101 093102 641
+main jue sep 01 09:31:02.020 2011 peformanceApiSeg 934586 FORMATEOOU 093102 093102 0
+main jue sep 01 09:32:20.476 2011 peformanceApiSeg 373731 FORMATEOIN 093220 093220 15
+main jue sep 01 09:32:21.008 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901093220NOVATRONIC  53757300112233       0151487            25                             45578801   4214100021758612                4214100021758612    
+main jue sep 01 09:32:21.008 2011 peformanceApiSeg 373731 EJECUCIONSIX 093220 093221 532
+main jue sep 01 09:32:21.008 2011 peformanceApiSeg 373731 FORMATEOOU 093221 093221 0
+main jue sep 01 09:34:56.562 2011 peformanceApiSeg 845292 FORMATEOIN 093456 093456 16
+main jue sep 01 09:34:57.203 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901093456NOVATRONIC  90656800112233       0151487            25                             1          4214100021758612                4214100021758612    
+main jue sep 01 09:34:57.203 2011 peformanceApiSeg 845292 EJECUCIONSIX 093456 093457 641
+main jue sep 01 09:34:57.203 2011 peformanceApiSeg 845292 FORMATEOOU 093457 093457 0
+main jue sep 01 09:35:43.481 2011 peformanceApiSeg 916704 FORMATEOIN 093543 093543 15
+main jue sep 01 09:35:44.122 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901093543NOVATRONIC  81859000112233       0151487            25                             1          4214100021758612                4214100021758612    
+main jue sep 01 09:35:44.122 2011 peformanceApiSeg 916704 EJECUCIONSIX 093543 093544 641
+main jue sep 01 09:35:44.122 2011 peformanceApiSeg 916704 FORMATEOOU 093544 093544 0
+main jue sep 01 09:37:41.382 2011 peformanceApiSeg 903333 FORMATEOIN 093741 093741 16
+main jue sep 01 09:37:41.803 2011 peformanceApiSeg 903333 EJECUCIONSIX 093741 093741 421
+main jue sep 01 09:37:41.819 2011 peformanceApiSeg 903333 FORMATEOOU 093741 093741 16
+main jue sep 01 09:41:24.499 2011 peformanceApiSeg 414861 FORMATEOIN 094124 094124 16
+main jue sep 01 09:41:25.248 2011 peformanceApiSeg 414861 EJECUCIONSIX 094124 094125 749
+main jue sep 01 09:41:25.248 2011 peformanceApiSeg 414861 FORMATEOOU 094125 094125 0
+main jue sep 01 09:42:32.090 2011 peformanceApiSeg 902123 FORMATEOIN 094232 094232 16
+main jue sep 01 09:42:32.731 2011 peformanceApiSeg 902123 EJECUCIONSIX 094232 094232 641
+main jue sep 01 09:42:32.731 2011 peformanceApiSeg 902123 FORMATEOOU 094232 094232 0
+main jue sep 01 09:46:24.724 2011 peformanceApiSeg 191368 FORMATEOIN 094624 094624 15
+main jue sep 01 09:46:25.365 2011 peformanceApiSeg 191368 EJECUCIONSIX 094624 094625 641
+main jue sep 01 09:46:25.365 2011 peformanceApiSeg 191368 FORMATEOOU 094625 094625 0
+main jue sep 01 09:53:49.324 2011 peformanceApiSeg 7707 FORMATEOIN 095349 095349 15
+main jue sep 01 09:53:50.621 2011 peformanceApiSeg 7707 EJECUCIONSIX 095349 095350 1297
+main jue sep 01 09:53:50.621 2011 peformanceApiSeg 7707 FORMATEOOU 095350 095350 0
+main jue sep 01 09:56:30.103 2011 peformanceApiSeg 240102 FORMATEOIN 095630 095630 16
+main jue sep 01 09:56:30.634 2011 peformanceApiSeg 240102 EJECUCIONSIX 095630 095630 531
+main jue sep 01 09:56:30.634 2011 peformanceApiSeg 240102 FORMATEOOU 095630 095630 0
+main jue sep 01 09:58:42.991 2011 peformanceApiSeg 617486 FORMATEOIN 095842 095842 16
+main jue sep 01 09:58:43.631 2011 peformanceApiSeg 617486 EJECUCIONSIX 095842 095843 640
+main jue sep 01 09:58:43.631 2011 peformanceApiSeg 617486 FORMATEOOU 095843 095843 0
+main jue sep 01 10:00:16.504 2011 peformanceApiSeg 370543 FORMATEOIN 100016 100016 15
+main jue sep 01 10:00:17.364 2011 peformanceApiSeg 370543 EJECUCIONSIX 100016 100017 860
+main jue sep 01 10:00:17.364 2011 peformanceApiSeg 370543 FORMATEOOU 100017 100017 0
+main jue sep 01 10:24:44.946 2011 peformanceApiSeg 978776 FORMATEOIN 102444 102444 16
+main jue sep 01 10:24:45.477 2011 peformanceApiSeg 978776 EJECUCIONSIX 102444 102445 531
+main jue sep 01 10:24:45.477 2011 peformanceApiSeg 978776 FORMATEOOU 102445 102445 0
+main jue sep 01 10:24:45.477 2011 peformanceApiSeg 316361 FORMATEOIN 102445 102445 0
+main jue sep 01 10:24:46.024 2011 peformanceApiSeg 316361 EJECUCIONSIX 102445 102446 547
+main jue sep 01 10:24:46.040 2011 peformanceApiSeg 316361 FORMATEOOU 102446 102446 16
+main jue sep 01 10:24:46.040 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 10:24:46.040 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 10:24:46.040 2011 peformanceApiSeg 134602 FORMATEOIN 102446 102446 0
+main jue sep 01 10:24:46.040 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 10:24:46.571 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 10:24:46.571 2011 peformanceApiSeg 134602 EJECUCIONSIX 102446 102446 531
+main jue sep 01 10:24:46.571 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 10:24:46.571 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 10:24:46.571 2011 peformanceApiSeg 134602 FORMATEOOU 102446 102446 0
+main jue sep 01 10:24:46.571 2011 peformanceApiSeg 879188 FORMATEOIN 102446 102446 0
+main jue sep 01 10:24:47.228 2011 peformanceApiSeg 879188 EJECUCIONSIX 102446 102447 657
+main jue sep 01 10:24:47.228 2011 peformanceApiSeg 879188 FORMATEOOU 102447 102447 0
+main jue sep 01 10:27:53.240 2011 peformanceApiSeg 155376 FORMATEOIN 102753 102753 15
+main jue sep 01 10:27:53.881 2011 peformanceApiSeg 155376 EJECUCIONSIX 102753 102753 641
+main jue sep 01 10:27:53.881 2011 peformanceApiSeg 155376 FORMATEOOU 102753 102753 0
+main jue sep 01 10:27:53.881 2011 peformanceApiSeg 174428 FORMATEOIN 102753 102753 0
+main jue sep 01 10:27:54.537 2011 peformanceApiSeg 174428 EJECUCIONSIX 102753 102754 656
+main jue sep 01 10:27:54.553 2011 peformanceApiSeg 174428 FORMATEOOU 102754 102754 16
+main jue sep 01 10:27:54.553 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 10:27:54.553 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 10:27:54.553 2011 peformanceApiSeg 997396 FORMATEOIN 102754 102754 0
+main jue sep 01 10:27:54.553 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 10:27:55.194 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 10:27:55.194 2011 peformanceApiSeg 997396 EJECUCIONSIX 102754 102755 641
+main jue sep 01 10:27:55.194 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 10:27:55.194 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 10:27:55.194 2011 peformanceApiSeg 997396 FORMATEOOU 102755 102755 0
+main jue sep 01 10:27:55.194 2011 peformanceApiSeg 270975 FORMATEOIN 102755 102755 0
+main jue sep 01 10:27:55.960 2011 peformanceApiSeg 270975 EJECUCIONSIX 102755 102755 766
+main jue sep 01 10:27:55.960 2011 peformanceApiSeg 270975 FORMATEOOU 102755 102755 0
+main jue sep 01 10:28:45.976 2011 peformanceApiSeg 744151 FORMATEOIN 102845 102845 16
+main jue sep 01 10:28:46.398 2011 peformanceApiSeg 744151 EJECUCIONSIX 102845 102846 422
+main jue sep 01 10:28:46.398 2011 peformanceApiSeg 744151 FORMATEOOU 102846 102846 0
+main jue sep 01 10:28:46.398 2011 peformanceApiSeg 560101 FORMATEOIN 102846 102846 0
+main jue sep 01 10:28:46.835 2011 peformanceApiSeg 560101 EJECUCIONSIX 102846 102846 437
+main jue sep 01 10:28:46.835 2011 peformanceApiSeg 560101 FORMATEOOU 102846 102846 0
+main jue sep 01 10:28:46.835 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 10:28:46.835 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 10:28:46.835 2011 peformanceApiSeg 949440 FORMATEOIN 102846 102846 0
+main jue sep 01 10:28:46.835 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 10:28:47.273 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 10:28:47.273 2011 peformanceApiSeg 949440 EJECUCIONSIX 102846 102847 438
+main jue sep 01 10:28:47.273 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 10:28:47.273 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 10:28:47.273 2011 peformanceApiSeg 949440 FORMATEOOU 102847 102847 0
+main jue sep 01 10:28:47.273 2011 peformanceApiSeg 301044 FORMATEOIN 102847 102847 0
+main jue sep 01 10:28:47.930 2011 peformanceApiSeg 301044 EJECUCIONSIX 102847 102847 657
+main jue sep 01 10:28:47.930 2011 peformanceApiSeg 301044 FORMATEOOU 102847 102847 0
+main jue sep 01 10:35:34.485 2011 peformanceApiSeg 847004 FORMATEOIN 103534 103534 47
+main jue sep 01 10:35:34.985 2011 peformanceApiSeg 847004 EJECUCIONSIX 103534 103534 500
+main jue sep 01 10:35:35.001 2011 peformanceApiSeg 847004 FORMATEOOU 103534 103535 16
+main jue sep 01 10:37:57.421 2011 peformanceApiSeg 818761 FORMATEOIN 103757 103757 15
+main jue sep 01 10:37:57.953 2011 peformanceApiSeg 818761 EJECUCIONSIX 103757 103757 532
+main jue sep 01 10:37:57.953 2011 peformanceApiSeg 818761 FORMATEOOU 103757 103757 0
+main jue sep 01 10:43:26.634 2011 peformanceApiSeg 120766 FORMATEOIN 104326 104326 0
+main jue sep 01 10:43:27.291 2011 peformanceApiSeg 120766 EJECUCIONSIX 104326 104327 657
+main jue sep 01 10:43:27.291 2011 peformanceApiSeg 120766 FORMATEOOU 104327 104327 0
+main jue sep 01 10:44:18.817 2011 peformanceApiSeg 901426 FORMATEOIN 104418 104418 15
+main jue sep 01 10:44:19.458 2011 peformanceApiSeg 901426 EJECUCIONSIX 104418 104419 641
+main jue sep 01 10:44:19.458 2011 peformanceApiSeg 901426 FORMATEOOU 104419 104419 0
+main jue sep 01 10:45:54.402 2011 peformanceApiSeg 2892 FORMATEOIN 104554 104554 15
+main jue sep 01 10:45:54.934 2011 peformanceApiSeg 2892 EJECUCIONSIX 104554 104554 532
+main jue sep 01 10:45:54.934 2011 peformanceApiSeg 2892 FORMATEOOU 104554 104554 0
+main jue sep 01 10:58:20.663 2011 peformanceApiSeg 466125 FORMATEOIN 105820 105820 0
+main jue sep 01 10:58:21.429 2011 peformanceApiSeg 466125 EJECUCIONSIX 105820 105821 766
+main jue sep 01 10:58:21.429 2011 peformanceApiSeg 466125 FORMATEOOU 105821 105821 0
+main jue sep 01 10:59:48.292 2011 peformanceApiSeg 695188 FORMATEOIN 105948 105948 15
+main jue sep 01 10:59:49.261 2011 peformanceApiSeg 695188 EJECUCIONSIX 105948 105949 969
+main jue sep 01 10:59:49.261 2011 peformanceApiSeg 695188 FORMATEOOU 105949 105949 0
+main jue sep 01 11:00:48.123 2011 peformanceApiSeg 510975 FORMATEOIN 110048 110048 16
+main jue sep 01 11:00:48.764 2011 peformanceApiSeg 510975 EJECUCIONSIX 110048 110048 641
+main jue sep 01 11:00:48.764 2011 peformanceApiSeg 510975 FORMATEOOU 110048 110048 0
+main jue sep 01 11:01:10.437 2011 peformanceApiSeg 170375 FORMATEOIN 110110 110110 16
+main jue sep 01 11:01:10.968 2011 peformanceApiSeg 170375 EJECUCIONSIX 110110 110110 531
+main jue sep 01 11:01:10.983 2011 peformanceApiSeg 170375 FORMATEOOU 110110 110110 15
+main jue sep 01 11:01:51.016 2011 peformanceApiSeg 904437 FORMATEOIN 110151 110151 15
+main jue sep 01 11:01:51.548 2011 peformanceApiSeg 904437 EJECUCIONSIX 110151 110151 532
+main jue sep 01 11:01:51.548 2011 peformanceApiSeg 904437 FORMATEOOU 110151 110151 0
+main jue sep 01 11:04:32.352 2011 peformanceApiSeg 954966 FORMATEOIN 110432 110432 16
+main jue sep 01 11:04:32.993 2011 peformanceApiSeg 954966 EJECUCIONSIX 110432 110432 641
+main jue sep 01 11:04:32.993 2011 peformanceApiSeg 954966 FORMATEOOU 110432 110432 0
+main jue sep 01 11:04:32.993 2011 peformanceApiSeg 44198 FORMATEOIN 110432 110432 0
+main jue sep 01 11:04:33.758 2011 peformanceApiSeg 44198 EJECUCIONSIX 110432 110433 765
+main jue sep 01 11:04:33.758 2011 peformanceApiSeg 44198 FORMATEOOU 110433 110433 0
+main jue sep 01 11:04:33.774 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 11:04:33.774 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 11:04:33.774 2011 peformanceApiSeg 238943 FORMATEOIN 110433 110433 0
+main jue sep 01 11:04:33.774 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 11:04:34.524 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 11:04:34.524 2011 peformanceApiSeg 238943 EJECUCIONSIX 110433 110434 750
+main jue sep 01 11:04:34.524 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 11:04:34.524 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 11:04:34.524 2011 peformanceApiSeg 238943 FORMATEOOU 110434 110434 0
+main jue sep 01 11:04:34.524 2011 peformanceApiSeg 467848 FORMATEOIN 110434 110434 0
+main jue sep 01 11:04:35.290 2011 peformanceApiSeg 467848 EJECUCIONSIX 110434 110435 766
+main jue sep 01 11:04:35.290 2011 peformanceApiSeg 467848 FORMATEOOU 110435 110435 0
+main jue sep 01 11:09:58.400 2011 peformanceApiSeg 935940 FORMATEOIN 110958 110958 0
+main jue sep 01 11:09:58.838 2011 peformanceApiSeg 935940 EJECUCIONSIX 110958 110958 438
+main jue sep 01 11:09:58.838 2011 peformanceApiSeg 935940 FORMATEOOU 110958 110958 0
+main jue sep 01 11:09:58.838 2011 peformanceApiSeg 16960 FORMATEOIN 110958 110958 0
+main jue sep 01 11:09:59.275 2011 peformanceApiSeg 16960 EJECUCIONSIX 110958 110959 437
+main jue sep 01 11:09:59.275 2011 peformanceApiSeg 16960 FORMATEOOU 110959 110959 0
+main jue sep 01 11:09:59.275 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 11:09:59.275 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 11:09:59.275 2011 peformanceApiSeg 432585 FORMATEOIN 110959 110959 0
+main jue sep 01 11:09:59.275 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 11:09:59.822 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 11:09:59.822 2011 peformanceApiSeg 432585 EJECUCIONSIX 110959 110959 547
+main jue sep 01 11:09:59.822 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 11:09:59.822 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 11:09:59.822 2011 peformanceApiSeg 432585 FORMATEOOU 110959 110959 0
+main jue sep 01 11:09:59.822 2011 peformanceApiSeg 89189 FORMATEOIN 110959 110959 0
+main jue sep 01 11:10:00.478 2011 peformanceApiSeg 89189 EJECUCIONSIX 110959 111000 656
+main jue sep 01 11:10:00.478 2011 peformanceApiSeg 89189 FORMATEOOU 111000 111000 0
+main jue sep 01 11:53:35.800 2011 peformanceApiSeg 92986 FORMATEOIN 115335 115335 16
+main jue sep 01 11:53:36.643 2011 peformanceApiSeg 92986 EJECUCIONSIX 115335 115336 843
+main jue sep 01 11:53:36.643 2011 peformanceApiSeg 92986 FORMATEOOU 115336 115336 0
+main jue sep 01 11:55:12.914 2011 peformanceApiSeg 872058 FORMATEOIN 115512 115512 16
+main jue sep 01 11:55:13.336 2011 peformanceApiSeg 872058 EJECUCIONSIX 115512 115513 422
+main jue sep 01 11:55:13.336 2011 peformanceApiSeg 872058 FORMATEOOU 115513 115513 0
+main jue sep 01 11:59:37.412 2011 peformanceApiSeg 880840 FORMATEOIN 115937 115937 31
+main jue sep 01 11:59:38.474 2011 peformanceApiSeg 880840 EJECUCIONSIX 115937 115938 1062
+main jue sep 01 11:59:38.474 2011 peformanceApiSeg 880840 FORMATEOOU 115938 115938 0
+main jue sep 01 12:01:59.482 2011 peformanceApiSeg 336814 FORMATEOIN 120159 120159 16
+main jue sep 01 12:02:00.232 2011 peformanceApiSeg 336814 EJECUCIONSIX 120159 120200 750
+main jue sep 01 12:02:00.232 2011 peformanceApiSeg 336814 FORMATEOOU 120200 120200 0
+main jue sep 01 12:13:24.751 2011 peformanceApiSeg 56007 FORMATEOIN 121324 121324 15
+main jue sep 01 12:13:25.282 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901121324NOVATRONIC  27884800112233       0151487            25                             45578801   4214100021758612                4214100021758612    
+main jue sep 01 12:13:25.282 2011 peformanceApiSeg 56007 EJECUCIONSIX 121324 121325 531
+main jue sep 01 12:13:25.282 2011 peformanceApiSeg 56007 FORMATEOOU 121325 121325 0
+main jue sep 01 12:13:55.050 2011 peformanceApiSeg 291129 FORMATEOIN 121355 121355 16
+main jue sep 01 12:13:55.800 2011 peformanceApiSeg 291129 EJECUCIONSIX 121355 121355 750
+main jue sep 01 12:13:55.800 2011 peformanceApiSeg 291129 FORMATEOOU 121355 121355 0
+main jue sep 01 12:14:18.348 2011 peformanceApiSeg 839705 FORMATEOIN 121418 121418 16
+main jue sep 01 12:14:19.207 2011 peformanceApiSeg 839705 EJECUCIONSIX 121418 121419 859
+main jue sep 01 12:14:19.207 2011 peformanceApiSeg 839705 FORMATEOOU 121419 121419 0
+main jue sep 01 12:15:01.772 2011 peformanceApiSeg 42055 FORMATEOIN 121501 121501 16
+main jue sep 01 12:15:02.522 2011 peformanceApiSeg 42055 EJECUCIONSIX 121501 121502 750
+main jue sep 01 12:15:02.522 2011 peformanceApiSeg 42055 FORMATEOOU 121502 121502 0
+main jue sep 01 12:15:34.914 2011 peformanceApiSeg 946343 FORMATEOIN 121534 121534 16
+main jue sep 01 12:15:35.445 2011 peformanceApiSeg 946343 EJECUCIONSIX 121534 121535 531
+main jue sep 01 12:15:35.445 2011 peformanceApiSeg 946343 FORMATEOOU 121535 121535 0
+main jue sep 01 12:16:03.791 2011 peformanceApiSeg 831210 FORMATEOIN 121603 121603 16
+main jue sep 01 12:16:04.212 2011 peformanceApiSeg 831210 EJECUCIONSIX 121603 121604 421
+main jue sep 01 12:16:04.212 2011 peformanceApiSeg 831210 FORMATEOOU 121604 121604 0
+main jue sep 01 12:17:08.325 2011 peformanceApiSeg 264169 FORMATEOIN 121708 121708 16
+main jue sep 01 12:17:08.966 2011 peformanceApiSeg 264169 EJECUCIONSIX 121708 121708 641
+main jue sep 01 12:17:08.966 2011 peformanceApiSeg 264169 FORMATEOOU 121708 121708 0
+main jue sep 01 12:17:44.858 2011 peformanceApiSeg 686289 FORMATEOIN 121744 121744 15
+main jue sep 01 12:17:45.608 2011 peformanceApiSeg 686289 EJECUCIONSIX 121744 121745 750
+main jue sep 01 12:17:45.608 2011 peformanceApiSeg 686289 FORMATEOOU 121745 121745 0
+main jue sep 01 12:18:41.517 2011 peformanceApiSeg 153235 FORMATEOIN 121841 121841 15
+main jue sep 01 12:18:42.158 2011 peformanceApiSeg 153235 EJECUCIONSIX 121841 121842 641
+main jue sep 01 12:18:42.158 2011 peformanceApiSeg 153235 FORMATEOOU 121842 121842 0
+main jue sep 01 12:18:42.158 2011 peformanceApiSeg 464573 FORMATEOIN 121842 121842 0
+main jue sep 01 12:18:42.814 2011 peformanceApiSeg 464573 EJECUCIONSIX 121842 121842 656
+main jue sep 01 12:18:42.830 2011 peformanceApiSeg 464573 FORMATEOOU 121842 121842 16
+main jue sep 01 12:18:42.830 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 12:18:42.830 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 12:18:42.830 2011 peformanceApiSeg 119819 FORMATEOIN 121842 121842 0
+main jue sep 01 12:18:42.830 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 12:18:43.580 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 12:18:43.580 2011 peformanceApiSeg 119819 EJECUCIONSIX 121842 121843 750
+main jue sep 01 12:18:43.580 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 12:18:43.580 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 12:18:43.580 2011 peformanceApiSeg 119819 FORMATEOOU 121843 121843 0
+main jue sep 01 12:18:43.580 2011 peformanceApiSeg 311010 FORMATEOIN 121843 121843 0
+main jue sep 01 12:18:44.346 2011 peformanceApiSeg 311010 EJECUCIONSIX 121843 121844 766
+main jue sep 01 12:18:44.346 2011 peformanceApiSeg 311010 FORMATEOOU 121844 121844 0
+main jue sep 01 12:19:23.082 2011 peformanceApiSeg 428335 FORMATEOIN 121923 121923 16
+main jue sep 01 12:19:23.504 2011 peformanceApiSeg 428335 EJECUCIONSIX 121923 121923 422
+main jue sep 01 12:19:23.504 2011 peformanceApiSeg 428335 FORMATEOOU 121923 121923 0
+main jue sep 01 12:19:23.504 2011 peformanceApiSeg 525211 FORMATEOIN 121923 121923 0
+main jue sep 01 12:19:24.051 2011 peformanceApiSeg 525211 EJECUCIONSIX 121923 121924 547
+main jue sep 01 12:19:24.051 2011 peformanceApiSeg 525211 FORMATEOOU 121924 121924 0
+main jue sep 01 12:19:24.051 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 12:19:24.051 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 12:19:24.051 2011 peformanceApiSeg 280246 FORMATEOIN 121924 121924 0
+main jue sep 01 12:19:24.051 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 12:19:24.488 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 12:19:24.488 2011 peformanceApiSeg 280246 EJECUCIONSIX 121924 121924 437
+main jue sep 01 12:19:24.488 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 12:19:24.488 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 12:19:24.488 2011 peformanceApiSeg 280246 FORMATEOOU 121924 121924 0
+main jue sep 01 12:19:24.488 2011 peformanceApiSeg 17023 FORMATEOIN 121924 121924 0
+main jue sep 01 12:19:25.035 2011 peformanceApiSeg 17023 EJECUCIONSIX 121924 121925 547
+main jue sep 01 12:19:25.035 2011 peformanceApiSeg 17023 FORMATEOOU 121925 121925 0
+main jue sep 01 12:20:56.931 2011 peformanceApiSeg 970945 FORMATEOIN 122056 122056 16
+main jue sep 01 12:20:57.352 2011 peformanceApiSeg 970945 EJECUCIONSIX 122056 122057 421
+main jue sep 01 12:20:57.368 2011 peformanceApiSeg 970945 FORMATEOOU 122057 122057 16
+main jue sep 01 12:20:57.368 2011 peformanceApiSeg 11012 FORMATEOIN 122057 122057 0
+main jue sep 01 12:20:57.790 2011 peformanceApiSeg 11012 EJECUCIONSIX 122057 122057 422
+main jue sep 01 12:20:57.790 2011 peformanceApiSeg 11012 FORMATEOOU 122057 122057 0
+main jue sep 01 12:20:57.790 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 12:20:57.790 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 12:20:57.790 2011 peformanceApiSeg 954172 FORMATEOIN 122057 122057 0
+main jue sep 01 12:20:57.790 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 12:20:58.228 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 12:20:58.228 2011 peformanceApiSeg 954172 EJECUCIONSIX 122057 122058 438
+main jue sep 01 12:20:58.228 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 12:20:58.228 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 12:20:58.228 2011 peformanceApiSeg 954172 FORMATEOOU 122058 122058 0
+main jue sep 01 12:20:58.228 2011 peformanceApiSeg 820573 FORMATEOIN 122058 122058 0
+main jue sep 01 12:20:58.884 2011 peformanceApiSeg 820573 EJECUCIONSIX 122058 122058 656
+main jue sep 01 12:20:58.884 2011 peformanceApiSeg 820573 FORMATEOOU 122058 122058 0
+main jue sep 01 12:35:49.367 2011 peformanceApiSeg 621862 FORMATEOIN 123549 123549 16
+main jue sep 01 12:35:50.117 2011 peformanceApiSeg 621862 EJECUCIONSIX 123549 123550 750
+main jue sep 01 12:35:50.117 2011 peformanceApiSeg 621862 FORMATEOOU 123550 123550 0
+main jue sep 01 12:35:50.117 2011 peformanceApiSeg 632876 FORMATEOIN 123550 123550 0
+main jue sep 01 12:35:50.773 2011 peformanceApiSeg 632876 EJECUCIONSIX 123550 123550 656
+main jue sep 01 12:35:50.773 2011 peformanceApiSeg 632876 FORMATEOOU 123550 123550 0
+main jue sep 01 12:35:50.773 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 12:35:50.773 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 12:35:50.773 2011 peformanceApiSeg 680809 FORMATEOIN 123550 123550 0
+main jue sep 01 12:35:50.773 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 12:35:51.539 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 12:35:51.539 2011 peformanceApiSeg 680809 EJECUCIONSIX 123550 123551 766
+main jue sep 01 12:35:51.539 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 12:35:51.554 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 12:35:51.554 2011 peformanceApiSeg 680809 FORMATEOOU 123551 123551 15
+main jue sep 01 12:35:51.554 2011 peformanceApiSeg 567821 FORMATEOIN 123551 123551 0
+main jue sep 01 12:35:52.414 2011 peformanceApiSeg 567821 EJECUCIONSIX 123551 123552 860
+main jue sep 01 12:35:52.414 2011 peformanceApiSeg 567821 FORMATEOOU 123552 123552 0
+main jue sep 01 14:37:56.272 2011 peformanceApiSeg 253453 FORMATEOIN 143756 143756 47
+main jue sep 01 14:37:56.725 2011 peformanceApiSeg 253453 EJECUCIONSIX 143756 143756 437
+main jue sep 01 14:37:56.725 2011 peformanceApiSeg 253453 FORMATEOOU 143756 143756 0
+main jue sep 01 14:37:56.740 2011 peformanceApiSeg 26092 FORMATEOIN 143756 143756 0
+main jue sep 01 14:37:57.131 2011 peformanceApiSeg 26092 EJECUCIONSIX 143756 143757 391
+main jue sep 01 14:37:57.131 2011 peformanceApiSeg 26092 FORMATEOOU 143757 143757 0
+main jue sep 01 14:37:57.131 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 14:37:57.162 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 14:37:57.162 2011 peformanceApiSeg 387377 FORMATEOIN 143757 143757 31
+main jue sep 01 14:37:57.162 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 14:37:57.521 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 14:37:57.537 2011 peformanceApiSeg 387377 EJECUCIONSIX 143757 143757 359
+main jue sep 01 14:37:57.537 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 14:37:57.537 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 14:37:57.537 2011 peformanceApiSeg 387377 FORMATEOOU 143757 143757 0
+main jue sep 01 14:37:57.537 2011 peformanceApiSeg 633453 FORMATEOIN 143757 143757 0
+main jue sep 01 15:02:10.631 2011 peformanceApiSeg 724737 FORMATEOIN 150210 150210 0
+main jue sep 01 15:02:11.131 2011 peformanceApiSeg 724737 EJECUCIONSIX 150210 150211 469
+main jue sep 01 15:02:11.131 2011 peformanceApiSeg 724737 FORMATEOOU 150211 150211 0
+main jue sep 01 15:02:11.131 2011 peformanceApiSeg 284794 FORMATEOIN 150211 150211 0
+main jue sep 01 15:02:11.630 2011 peformanceApiSeg 284794 EJECUCIONSIX 150211 150211 499
+main jue sep 01 15:02:11.630 2011 peformanceApiSeg 284794 FORMATEOOU 150211 150211 0
+main jue sep 01 15:02:11.630 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 15:02:11.630 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 15:02:11.630 2011 peformanceApiSeg 470906 FORMATEOIN 150211 150211 0
+main jue sep 01 15:02:11.630 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 15:02:12.333 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 15:02:12.333 2011 peformanceApiSeg 470906 EJECUCIONSIX 150211 150212 703
+main jue sep 01 15:02:12.333 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 15:02:12.333 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 15:02:12.333 2011 peformanceApiSeg 470906 FORMATEOOU 150212 150212 0
+main jue sep 01 15:02:12.333 2011 peformanceApiSeg 220883 FORMATEOIN 150212 150212 0
+main jue sep 01 15:02:13.036 2011 peformanceApiSeg 220883 EJECUCIONSIX 150212 150213 703
+main jue sep 01 15:02:13.036 2011 peformanceApiSeg 220883 FORMATEOOU 150213 150213 0
+main jue sep 01 15:17:15.867 2011 peformanceApiSeg 847460 FORMATEOIN 151715 151715 15
+main jue sep 01 15:17:16.351 2011 peformanceApiSeg 847460 EJECUCIONSIX 151715 151716 484
+main jue sep 01 15:17:16.367 2011 peformanceApiSeg 847460 FORMATEOOU 151716 151716 16
+main jue sep 01 15:17:16.367 2011 peformanceApiSeg 726475 FORMATEOIN 151716 151716 0
+main jue sep 01 15:17:16.757 2011 peformanceApiSeg 726475 EJECUCIONSIX 151716 151716 390
+main jue sep 01 15:17:16.757 2011 peformanceApiSeg 726475 FORMATEOOU 151716 151716 0
+main jue sep 01 15:17:16.757 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 15:17:16.757 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 15:17:16.757 2011 peformanceApiSeg 404096 FORMATEOIN 151716 151716 0
+main jue sep 01 15:17:16.757 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 15:17:17.273 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 15:17:17.273 2011 peformanceApiSeg 404096 EJECUCIONSIX 151716 151717 516
+main jue sep 01 15:17:17.273 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 15:17:17.273 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 15:17:17.273 2011 peformanceApiSeg 404096 FORMATEOOU 151717 151717 0
+main jue sep 01 15:17:17.273 2011 peformanceApiSeg 740288 FORMATEOIN 151717 151717 0
+main jue sep 01 15:17:17.866 2011 peformanceApiSeg 740288 EJECUCIONSIX 151717 151717 593
+main jue sep 01 15:17:17.866 2011 peformanceApiSeg 740288 FORMATEOOU 151717 151717 0
+main jue sep 01 15:18:41.222 2011 peformanceApiSeg 466580 FORMATEOIN 151841 151841 16
+main jue sep 01 15:18:41.706 2011 peformanceApiSeg 466580 EJECUCIONSIX 151841 151841 484
+main jue sep 01 15:18:41.706 2011 peformanceApiSeg 466580 FORMATEOOU 151841 151841 0
+main jue sep 01 15:18:41.706 2011 peformanceApiSeg 285071 FORMATEOIN 151841 151841 0
+main jue sep 01 15:18:42.206 2011 peformanceApiSeg 285071 EJECUCIONSIX 151841 151842 500
+main jue sep 01 15:18:42.221 2011 peformanceApiSeg 285071 FORMATEOOU 151842 151842 15
+main jue sep 01 15:18:42.221 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 15:18:42.221 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 15:18:42.221 2011 peformanceApiSeg 721161 FORMATEOIN 151842 151842 0
+main jue sep 01 15:18:42.221 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 15:18:42.815 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 15:18:42.815 2011 peformanceApiSeg 721161 EJECUCIONSIX 151842 151842 594
+main jue sep 01 15:18:42.815 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 15:18:42.815 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 15:18:42.815 2011 peformanceApiSeg 721161 FORMATEOOU 151842 151842 0
+main jue sep 01 15:18:42.815 2011 peformanceApiSeg 46387 FORMATEOIN 151842 151842 0
+main jue sep 01 15:18:43.408 2011 peformanceApiSeg 46387 EJECUCIONSIX 151842 151843 593
+main jue sep 01 15:18:43.408 2011 peformanceApiSeg 46387 FORMATEOOU 151843 151843 0
+main jue sep 01 15:19:32.176 2011 peformanceApiSeg 648583 FORMATEOIN 151932 151932 0
+main jue sep 01 15:19:32.566 2011 peformanceApiSeg 648583 EJECUCIONSIX 151932 151932 390
+main jue sep 01 15:19:32.566 2011 peformanceApiSeg 648583 FORMATEOOU 151932 151932 0
+main jue sep 01 15:19:32.566 2011 peformanceApiSeg 983116 FORMATEOIN 151932 151932 0
+main jue sep 01 15:19:33.066 2011 peformanceApiSeg 983116 EJECUCIONSIX 151932 151933 500
+main jue sep 01 15:19:33.081 2011 peformanceApiSeg 983116 FORMATEOOU 151933 151933 15
+main jue sep 01 15:19:33.081 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 15:19:33.081 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 15:19:33.081 2011 peformanceApiSeg 244286 FORMATEOIN 151933 151933 0
+main jue sep 01 15:19:33.081 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 15:19:33.581 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 15:19:33.581 2011 peformanceApiSeg 244286 EJECUCIONSIX 151933 151933 500
+main jue sep 01 15:19:33.581 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 15:19:33.581 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 15:19:33.581 2011 peformanceApiSeg 244286 FORMATEOOU 151933 151933 0
+main jue sep 01 15:19:33.581 2011 peformanceApiSeg 238139 FORMATEOIN 151933 151933 0
+main jue sep 01 15:19:34.284 2011 peformanceApiSeg 238139 EJECUCIONSIX 151933 151934 703
+main jue sep 01 15:19:34.284 2011 peformanceApiSeg 238139 FORMATEOOU 151934 151934 0
+main jue sep 01 15:20:12.792 2011 peformanceApiSeg 296102 FORMATEOIN 152012 152012 0
+main jue sep 01 15:20:13.182 2011 peformanceApiSeg 296102 EJECUCIONSIX 152012 152013 390
+main jue sep 01 15:20:13.182 2011 peformanceApiSeg 296102 FORMATEOOU 152013 152013 0
+main jue sep 01 15:20:13.182 2011 peformanceApiSeg 334810 FORMATEOIN 152013 152013 0
+main jue sep 01 15:20:13.588 2011 peformanceApiSeg 334810 EJECUCIONSIX 152013 152013 406
+main jue sep 01 15:20:13.588 2011 peformanceApiSeg 334810 FORMATEOOU 152013 152013 0
+main jue sep 01 15:20:13.588 2011 peformanceApiSeg Listo para formatear
+main jue sep 01 15:20:13.588 2011 peformanceApiSeg Procesado a trama
+main jue sep 01 15:20:13.588 2011 peformanceApiSeg 37097 FORMATEOIN 152013 152013 0
+main jue sep 01 15:20:13.588 2011 peformanceApiSeg ejecutando en six
+main jue sep 01 15:20:13.979 2011 peformanceApiSeg ejecutado en six
+main jue sep 01 15:20:13.979 2011 peformanceApiSeg 37097 EJECUCIONSIX 152013 152013 391
+main jue sep 01 15:20:13.979 2011 peformanceApiSeg tranformando a objeto
+main jue sep 01 15:20:13.994 2011 peformanceApiSeg tranformado a objeto
+main jue sep 01 15:20:13.994 2011 peformanceApiSeg 37097 FORMATEOOU 152013 152013 15
+main jue sep 01 15:20:13.994 2011 peformanceApiSeg 674663 FORMATEOIN 152013 152013 0
+main jue sep 01 15:20:14.697 2011 peformanceApiSeg 674663 EJECUCIONSIX 152013 152014 703
+main jue sep 01 15:20:14.697 2011 peformanceApiSeg 674663 FORMATEOOU 152014 152014 0
+main jue sep 01 15:33:25.737 2011 peformanceApiSeg 571640 FORMATEOIN 153325 153325 16
+main jue sep 01 15:33:26.330 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110901153325NOVATRONIC  64161500112233       0151487            25                             45578801   4214100021758745                4214100021758745    
+main jue sep 01 15:33:26.330 2011 peformanceApiSeg 571640 EJECUCIONSIX 153325 153326 593
+main jue sep 01 15:33:26.330 2011 peformanceApiSeg 571640 FORMATEOOU 153326 153326 0
+main jue sep 01 15:34:35.804 2011 peformanceApiSeg 490310 FORMATEOIN 153435 153435 16
+main jue sep 01 15:34:36.397 2011 peformanceApiSeg 490310 EJECUCIONSIX 153435 153436 593
+main jue sep 01 15:34:36.397 2011 peformanceApiSeg 490310 FORMATEOOU 153436 153436 0
+main jue sep 01 15:35:04.755 2011 peformanceApiSeg 728658 FORMATEOIN 153504 153504 16
+main jue sep 01 15:35:05.239 2011 peformanceApiSeg 728658 EJECUCIONSIX 153504 153505 484
+main jue sep 01 15:35:05.239 2011 peformanceApiSeg 728658 FORMATEOOU 153505 153505 0
+main jue sep 01 15:35:51.399 2011 peformanceApiSeg 192790 FORMATEOIN 153551 153551 16
+main jue sep 01 15:35:51.883 2011 peformanceApiSeg 192790 EJECUCIONSIX 153551 153551 484
+main jue sep 01 15:35:51.883 2011 peformanceApiSeg 192790 FORMATEOOU 153551 153551 0
+main jue sep 01 15:39:05.017 2011 peformanceApiSeg 546190 FORMATEOIN 153905 153905 16
+main jue sep 01 15:39:05.594 2011 peformanceApiSeg 546190 EJECUCIONSIX 153905 153905 577
+main jue sep 01 15:39:05.594 2011 peformanceApiSeg 546190 FORMATEOOU 153905 153905 0
+main jue sep 01 15:39:51.645 2011 peformanceApiSeg 462289 FORMATEOIN 153951 153951 0
+main jue sep 01 15:39:52.254 2011 peformanceApiSeg 462289 EJECUCIONSIX 153951 153952 609
+main jue sep 01 15:39:52.254 2011 peformanceApiSeg 462289 FORMATEOOU 153952 153952 0
+main jue sep 01 15:40:25.827 2011 peformanceApiSeg 111368 FORMATEOIN 154025 154025 0
+main jue sep 01 15:40:26.327 2011 peformanceApiSeg 111368 EJECUCIONSIX 154025 154026 500
+main jue sep 01 15:40:26.327 2011 peformanceApiSeg 111368 FORMATEOOU 154026 154026 0
+main jue sep 01 15:40:52.577 2011 peformanceApiSeg 493480 FORMATEOIN 154052 154052 16
+main jue sep 01 15:40:53.061 2011 peformanceApiSeg 493480 EJECUCIONSIX 154052 154053 484
+main jue sep 01 15:40:53.061 2011 peformanceApiSeg 493480 FORMATEOOU 154053 154053 0
+main jue sep 01 15:42:04.253 2011 peformanceApiSeg 941224 FORMATEOIN 154204 154204 16
+main jue sep 01 15:42:04.643 2011 peformanceApiSeg 941224 EJECUCIONSIX 154204 154204 390
+main jue sep 01 15:42:04.643 2011 peformanceApiSeg 941224 FORMATEOOU 154204 154204 0
+main jue sep 01 15:43:37.431 2011 peformanceApiSeg 806576 FORMATEOIN 154337 154337 0
+main jue sep 01 15:43:38.024 2011 peformanceApiSeg 806576 EJECUCIONSIX 154337 154338 593
+main jue sep 01 15:43:38.024 2011 peformanceApiSeg 806576 FORMATEOOU 154338 154338 0
+main jue sep 01 15:44:40.861 2011 peformanceApiSeg 258001 FORMATEOIN 154440 154440 0
+main jue sep 01 15:44:41.361 2011 peformanceApiSeg 258001 EJECUCIONSIX 154440 154441 484
+main jue sep 01 15:44:41.361 2011 peformanceApiSeg 258001 FORMATEOOU 154441 154441 0

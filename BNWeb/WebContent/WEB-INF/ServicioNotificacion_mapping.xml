@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd">
+    <package-mapping>
+        <package-type>pe.com.bn.wsen.envio.request</package-type>
+        <namespaceURI>http://request.envio.wsen.bn.com.pe</namespaceURI>
+    </package-mapping>
+    <package-mapping>
+        <package-type>pe.com.bn.wsen.envio.service</package-type>
+        <namespaceURI>http://service.envio.wsen.bn.com.pe</namespaceURI>
+    </package-mapping>
+    <package-mapping>
+        <package-type>pe.com.bn.wsen.envio.response</package-type>
+        <namespaceURI>http://response.envio.wsen.bn.com.pe</namespaceURI>
+    </package-mapping>
+    <java-xml-type-mapping>
+        <java-type>byte[]</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:base64Binary</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>pe.com.bn.wsen.envio.request.EnvioNotificacionRequest</java-type>
+        <root-type-qname xmlns:rtq="http://request.envio.wsen.bn.com.pe">rtq:EnvioNotificacionRequest</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>cliente</java-variable-name>
+            <xml-element-name>cliente</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>email</java-variable-name>
+            <xml-element-name>email</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>nroPrestamo</java-variable-name>
+            <xml-element-name>nroPrestamo</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>pe.com.bn.wsen.envio.response.EnvioNotificacionResponse</java-type>
+        <root-type-qname xmlns:rtq="http://response.envio.wsen.bn.com.pe">rtq:EnvioNotificacionResponse</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>codResult</java-variable-name>
+            <xml-element-name>codResult</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>msgResult</java-variable-name>
+            <xml-element-name>msgResult</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>pe.com.bn.wsen.envio.response.AcuseReciboResponse</java-type>
+        <root-type-qname xmlns:rtq="http://response.envio.wsen.bn.com.pe">rtq:AcuseReciboResponse</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>imagen</java-variable-name>
+            <xml-element-name>imagen</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>java.lang.String</java-type>
+        <root-type-qname xmlns:rtq="http://www.w3.org/2001/XMLSchema">rtq:string</root-type-qname>
+        <qname-scope>simpleType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>pe.com.bn.wsen.envio.response.ImagenResponse</java-type>
+        <root-type-qname xmlns:rtq="http://response.envio.wsen.bn.com.pe">rtq:ImagenResponse</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>imagen</java-variable-name>
+            <xml-element-name>imagen</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>pe.com.bn.wsen.envio.request.AcuseReciboRequest</java-type>
+        <root-type-qname xmlns:rtq="http://request.envio.wsen.bn.com.pe">rtq:AcuseReciboRequest</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>ip</java-variable-name>
+            <xml-element-name>ip</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>nroPrestamo</java-variable-name>
+            <xml-element-name>nroPrestamo</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <service-interface-mapping>
+        <service-interface>pe.com.bn.wsen.envio.service.ServicioNotificacionService</service-interface>
+        <wsdl-service-name xmlns:sim="http://service.envio.wsen.bn.com.pe">sim:ServicioNotificacionService</wsdl-service-name>
+        <port-mapping>
+            <port-name>ServicioNotificacion</port-name>
+            <java-port-name>ServicioNotificacion</java-port-name>
+        </port-mapping>
+    </service-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>pe.com.bn.wsen.envio.service.ServicioNotificacion</service-endpoint-interface>
+        <wsdl-port-type xmlns:seimwpt="http://service.envio.wsen.bn.com.pe">seimwpt:ServicioNotificacion</wsdl-port-type>
+        <wsdl-binding xmlns:seimwb="http://service.envio.wsen.bn.com.pe">seimwb:ServicioNotificacionSoapBinding</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>opAcuseRecibo</java-method-name>
+            <wsdl-operation>opAcuseRecibo</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>pe.com.bn.wsen.envio.request.AcuseReciboRequest</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://service.envio.wsen.bn.com.pe">mppm:opAcuseReciboRequest</wsdl-message>
+                    <wsdl-message-part-name>request</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>pe.com.bn.wsen.envio.response.AcuseReciboResponse</method-return-value>
+                <wsdl-message xmlns:wrvm="http://service.envio.wsen.bn.com.pe">wrvm:opAcuseReciboResponse</wsdl-message>
+                <wsdl-message-part-name>opAcuseReciboReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>opLogo</java-method-name>
+            <wsdl-operation>opLogo</wsdl-operation>
+            <wrapped-element/>
+            <wsdl-return-value-mapping>
+                <method-return-value>pe.com.bn.wsen.envio.response.ImagenResponse</method-return-value>
+                <wsdl-message xmlns:wrvm="http://service.envio.wsen.bn.com.pe">wrvm:opLogoResponse</wsdl-message>
+                <wsdl-message-part-name>opLogoReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>opEnviarNotificacionDoc</java-method-name>
+            <wsdl-operation>opEnviarNotificacionDoc</wsdl-operation>
+            <wrapped-element/>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>pe.com.bn.wsen.envio.request.EnvioNotificacionRequest</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:mppm="http://service.envio.wsen.bn.com.pe">mppm:opEnviarNotificacionDocRequest</wsdl-message>
+                    <wsdl-message-part-name>request</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>pe.com.bn.wsen.envio.response.EnvioNotificacionResponse</method-return-value>
+                <wsdl-message xmlns:wrvm="http://service.envio.wsen.bn.com.pe">wrvm:opEnviarNotificacionDocResponse</wsdl-message>
+                <wsdl-message-part-name>opEnviarNotificacionDocReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+</java-wsdl-mapping>

@@ -1,0 +1,42 @@
+.head {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 10pt}
+
+.headbold {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 10pt; font-weight: bold}
+
+.headboldw {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 10pt; font-weight: bold; color: white }
+
+.body {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt}
+
+.tiny {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 6pt}
+
+.eight {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt}
+
+.bodybold {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; font-weight: bold}
+
+.bodyleft {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; margin-left: 3px}
+
+.bodyright {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; margin-right: 20px}
+
+.covercaption {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; margin-left: 40px; margin-top: 0px; margin-bottom: 5px; margin-right: 20px}
+ 
+.wordoftheday {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; margin-left: 45px; margin-top: 15px; margin-bottom: 5px}
+
+.headline {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt}
+
+.scitech {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; margin-left: 1px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px}
+
+.linklist {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 7.5pt; margin-top: -1px; margin-bottom: -1px;}
+
+.footer { font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 7.5pt}
+
+.title {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; font-weight: bold; color: #999999 }
+
+.navlink {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; color: white }
+
+.bold { font-weight: bold }
+
+.headboldwsm {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 8pt; font-weight: bold; color: white }
+
+.bigred {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 12pt; font-weight: bold; color: red }
+
+.bigdrkgray {  font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 12pt; font-weight: bold; color: #333333 }
+

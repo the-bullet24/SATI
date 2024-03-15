@@ -1,0 +1,13 @@
+.sonar
+.metadata
+*/softoken.properties
+*/WebContent/WEB-INF/classes/
+*/src/www/bn/simm/ws/open/bean/
+*/src/pe/com/bn/wsen/envio/request/
+*/src/pe/com/bn/wsen/envio/response/
+*.ear
+*.war
+.gradle
+build
+sarawebbankingEAR/*
+

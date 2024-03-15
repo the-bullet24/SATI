@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><b>CONSTANCIA <br>
+		DE PAGO DE CUOTA PRESTAMO MULTIRED<BR></b>
+		<BR>
+		</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%">Canal empleado:</TD>
+		<TD class="texto" width="60%">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="40%">
+			Cliente:
+		</td>
+		<td class="texto" width="60%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<TR>
+		<TD class="texto" width="40%">Nro.Cuenta de Ahorros MN:</TD>
+		<TD class="texto" width="60%">
+			${param.cuenta.cuentaFormateada}
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">
+			Nro. de Pagaré:</TD>
+		<TD class="texto" width="60%">
+			${param.nroPrestamo}
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">
+			Nro. de Préstamo:</TD>
+		<TD class="texto" width="60%">
+			${param.nroDesembolso}
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Nro. de Cuota Cancelada:</TD>
+		<TD class="texto" width="60%">
+			${param.nroCuota}
+		</TD>
+	</TR>
+	#if ($param.nroCuota!='Total')
+	<TR>
+		<TD class="texto" width="40%">Fecha de Vencimiento:</TD>
+		<TD class="texto" width="60%">$date.format('dd/MM/yyyy',$param.fechaVencimiento)
+		</TD>
+	</TR>
+	#end
+	<TR>
+		<TD class="texto" width="40%">
+			Amortización de la Cuota:</TD>
+         <TD class="texto" align="left" width="60%">S/ ${param.amortizacion}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%">
+			Intereses:</TD>
+		<TD class="texto" align="left" width="60%">S/ ${param.intereses}- (${param.nroDiasInteres} Días)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%">
+			Interes Compensatorio:</TD>
+		<TD class="texto" align="left" width="60%">S/ ${param.inteCompesatorios}- (${param.nroDiasInteresCompensatorio} Días)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%">
+			Interes Moratorio:</TD>					
+		<TD class="texto" align="left" width="60%">S/ ${param.inteMoratorios}- (${param.nroDiasInteresMoratorio} Días)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>		
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%">Importe de Cuota Cancelada:(*)</TD>
+		<TD class="texto" align="left" width="60%">S/ ${param.importe}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">ITF:</TD>
+		<TD class="texto" align="left" width="60%">S/ ${param.itf}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	
+	<TR>
+		<TD class="texto" width="40%">Pago Total:(*)</TD>
+		<TD class="texto" align="left" width="60%">
+			S/ ${param.deuda}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Nro. de Transacci&oacute;n:</TD>
+		<TD class="texto" width="60%">
+			${param.nroOperacion}
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">
+			Nro. de Operación:</TD>
+		<TD class="texto" width="60%">
+			${param.nroTransaccion}
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Fecha y hora de pago:</TD>
+		<TD class="texto" width="60%">${fecpago}  ${horpago}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">&nbsp;</TD>
+		<TD class="texto" width="60%">&nbsp;</TD>
+	</TR>
+	<TR>
+						<TD align="center" colspan="2"><BR>
+						<FONT size="-2" face="Arial">(*)
+						Incluye intereses generados a la fecha de pago.</FONT></TD>
+					</TR>
+					<TR>
+						<TD align="center" colspan="2"><FONT size="-2" face="Arial">Si
+						desea pagar otra cuota del mismo u otro Préstamo Multired, puede realizar la misma operación</FONT></TD>
+					</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation">
+  <notation:Diagram xmi:id="_HBusIKeIEd6rXJ5XYcP2cw" type="Sequence" element="_HBusKaeIEd6rXJ5XYcP2cw" name="SecPrueba.dnx">
+    <children xmi:id="_HBusIaeIEd6rXJ5XYcP2cw" element="_HBusKaeIEd6rXJ5XYcP2cw">
+      <children xmi:id="_HBusIqeIEd6rXJ5XYcP2cw" type="interaction_compartment" element="_HBusKaeIEd6rXJ5XYcP2cw">
+        <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_HBusI6eIEd6rXJ5XYcP2cw"/>
+      </children>
+      <children xmi:id="_HBusJKeIEd6rXJ5XYcP2cw" type="Name" element="_HBusKaeIEd6rXJ5XYcP2cw"/>
+      <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_HBusJaeIEd6rXJ5XYcP2cw" showStereotype="Label"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HBusJqeIEd6rXJ5XYcP2cw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_HBusJ6eIEd6rXJ5XYcP2cw"/>
+  </notation:Diagram>
+  <uml:Collaboration xmi:id="_HBusKKeIEd6rXJ5XYcP2cw">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_HBusKaeIEd6rXJ5XYcP2cw" name="Interaction1"/>
+  </uml:Collaboration>
+</xmi:XMI>

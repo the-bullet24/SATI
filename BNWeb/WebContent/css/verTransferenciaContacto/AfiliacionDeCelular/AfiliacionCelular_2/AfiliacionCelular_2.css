@@ -1,0 +1,122 @@
+@font-face {
+  font-family: DaxCompact-Regular;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-regular.ttf);
+}
+
+@font-face {
+  font-family: DaxCompact-Medium;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+#maindiv {
+  width: 440px;
+  display: grid;
+  align-content: start;  
+}
+
+h1 {
+  font-family: DaxCompact-Regular;
+  color: rgba(197, 20, 22, 1);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.89px;
+  margin-bottom: 19px;
+}
+
+/* Celular Container*/
+.container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.container p {
+  margin-bottom: 36px;
+}
+
+.CelularContainer {
+  display: flex;
+  border: solid 2px blue;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  border-color: rgba(215, 215, 215, 1);
+}
+
+.CelularContainer h2 {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(79, 79, 79, 1);
+}
+
+#CodeValidation {
+  margin-top: 48px;
+}
+
+input {
+  padding: 3px;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #757575;
+  box-shadow: none;
+  width: 260px;
+  border-color: #4f4f4f;
+  color: #4F4F4F;
+}
+
+label {
+  display: block;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+.codeContainer {
+  display: flex;
+  margin-top:3px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.codeContainer a {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
+  color: #C51416;
+  text-decoration: none;
+}

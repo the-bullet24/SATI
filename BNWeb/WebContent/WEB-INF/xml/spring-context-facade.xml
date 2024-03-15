@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	<!-- Facades Modulo -->
+	<bean id="consultaFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.consulta.facade.impl.ConsultaFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="loginFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.login.facade.impl.LoginFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="pagoFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.pago.facade.impl.PagoFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="transferenciaFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.transferencia.facade.impl.TransferenciaFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="generalFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.cosapi.facade.impl.GeneralFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+
+	<bean id="tarjetaFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.tarjeta.facade.impl.TarjetaFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+
+	<bean id="telegiroFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.telegiro.facade.impl.TelegiroFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+
+	<bean id="afiliacionFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.afiliacion.facade.impl.AfiliacionFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	
+	<bean id="tarjetaCreditoFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.tcredito.facade.impl.TarjetaCreditoFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	
+	<bean id="seleccionMontoFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.consulta.facade.impl.SeleccionMontoFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	
+	<bean id="transaccionFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.notificaciones.facade.impl.TransaccionFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	<bean id="parametrosSiatFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.notificaciones.facade.impl.ParametrosSiatFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	<bean id="serviciosAntiphishingFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.antiphishing.facade.impl.ServiciosAntiphishingFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	
+	<bean id="transferenciaContactoFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.trasferenciacontacto.facade.impl.TransferenciaContactoFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	
+	<bean id="prestamoFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.bn.consulta.facade.impl.PrestamoFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+</beans>

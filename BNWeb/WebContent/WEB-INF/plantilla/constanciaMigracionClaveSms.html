@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA 
+		DE MIGRACI&Oacute;N<br>CLAVE DIN&Aacute;MICA DIGITAL<BR>
+		
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="30%">Canal empleado:</TD>
+		<TD class="texto" width="70%">Multired Virtual</TD>
+	</tr>
+	
+	<br>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="30%">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="70%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	
+	<tr>
+		<TD class="texto" width="30%">Operador Telefono Afiliado:</TD>
+		<TD class="texto" width="70%">${param.operadorDesc}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">N&uacute;mero Telefono Afiliado:</TD>
+		<TD class="texto" width="70%">${param.numeroCelular}</TD>
+	</tr>	
+	<tr>
+		<TD class="texto" width="30%">Codigo Operacion:</TD>
+		<TD class="texto" width="70%">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">Fecha:</TD>
+		<TD class="texto" width="70%">${param.fecha} &nbsp;&nbsp; ${param.hora}</TD>
+	</tr>
+	
+</TABLE>
+</BODY>
+</HTML>

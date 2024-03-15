@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wscbnd:ClientBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wscbnd="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wscbnd.xmi" xmi:id="ClientBinding_1177690775588">
+  <serviceRefs xmi:id="ServiceRef_1632149164601" serviceRefLink="service/WSPINBLOCK">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164602" portQnameLocalNameLink="WSPINBLOCKSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164602" serviceRefLink="service/WSDatosCuenta">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164603" portQnameLocalNameLink="WSDatosCuentaSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164604" serviceRefLink="service/WSCertiPINBLOCK">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164605" portQnameLocalNameLink="WSCertiPINBLOCKSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164605" serviceRefLink="service/WSCertiDatosCuenta">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164606" portQnameLocalNameLink="WSCertiDatosCuentaSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164606" serviceRefLink="service/WSPRDDatosCuenta">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164607" portQnameLocalNameLink="WSPRDDatosCuentaSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164607" serviceRefLink="service/WSPRDPINBLOCK">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164608" portQnameLocalNameLink="WSPRDPINBLOCKSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164610" serviceRefLink="service/ParametroInterfazService">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164611" portQnameLocalNameLink="ParametroInterfaz"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1689643747215" serviceRefLink="service/BasicGatewayInterfaceService">
+    <portQnameBindings xmi:id="PortQnameBinding_1689643747215" portQnameNamespaceLink="http://interfaz.ws.bnws.bn.com.pe" portQnameLocalNameLink="GatewayInterfacePort" overriddenEndpointURI="http://10.7.12.184:3467/service/ws2bnorq"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1697045958692" serviceRefLink="service/ServicioBNSmsService">
+    <portQnameBindings xmi:id="PortQnameBinding_1697045958692" portQnameLocalNameLink="ServicioBNSms"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1699050912469" serviceRefLink="service/ServicioBNInteroperabilidadService">
+    <portQnameBindings xmi:id="PortQnameBinding_1699050912469" portQnameLocalNameLink="ServicioBNInteroperabilidad"/>
+  </serviceRefs>
+</com.ibm.etools.webservice.wscbnd:ClientBinding>

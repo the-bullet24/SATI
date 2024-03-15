@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+<STYLE>
+<!--
+.textod {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+text-align: justify;
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE PAGO DE
+		TASAS<BR>
+		<BR>
+		</B></TD>
+
+	</tr>
+
+	<tr>
+		<TD class="texto" valign="top" width="30%">Canal empleado:</TD>
+		<TD class="texto" width="70%">
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+			<TR>
+				<TD class="texto" align="left" width="30%">Multired Virtual</TD>
+			</TR>
+		</TABLE>
+		</TD>
+	</tr>
+
+	<tr>
+
+		<TD align="center" class="texto" colspan="2"><B>${param.administradorTrib}
+		<BR>
+		<BR>
+		</B></TD>
+	</tr>
+	<tr>
+		<TD class="texto" valign="top" width="30%">Fecha de Operación:</TD>
+		<TD class="texto" width="70%">
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+			<TR>
+				<TD class="texto" align="left" width="30%">${param.fechaOpe}</TD>
+				
+			</TR>
+		</TABLE>
+		</TD>
+	</tr>
+		<TR>
+		<TD class="texto" valign="top" width="30%">Hora de Operación::</TD>
+		<TD class="texto" width="70%">
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+			<TR>
+				<TD class="texto" align="left" width="30%">${param.horaOpe}</TD>
+				<TD class="texto" align="left" width="40%"></TD>
+				<TD class="texto" align="left" width="30%"></TD>
+			</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" valign="top" width="30%">Fecha de Proceso:</TD>
+		<TD class="texto" width="70%">
+		<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+			<TR>
+				<TD class="texto" align="left" width="30%">${param.fecha}</TD>
+				<TD class="texto" align="left" width="40%"></TD>
+				<TD class="texto" align="left" width="30%"></TD>
+			</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" valign="top" width="30%">Titular de Cuenta:</td>
+		<td class="texto" width="70%">${usuario.nombre}</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" valign="top" width="30%">Nro. de Operaci&oacute;n:</TD>
+		<TD class="texto" valign="middle" width="70%">${param.nroOperacion}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" valign="top" width="30%">C&oacute;digo Tributo:</TD>
+		<TD class="texto" width="70%">${param.nomtribcbo}</TD>
+	</tr>
+	#if (${tasasDetalleTributo} != "")
+	<tr>
+		<TD class="texto" valign="top" width="30%">Detalle Tributo:</TD>
+		<TD class="texto" width="70%">${tasasDetalleTributo}</TD>
+	</tr>
+	#end
+	#if (${param.flgExpedienteVisible} == "1")
+	<tr>
+		<TD class="texto" valign="top" width="30%">Nro. Expediente:</TD>
+		<TD class="texto" width="70%">${param.nroExpediente}</TD>
+	</tr>
+	#end
+	#if (${param.flgDistritoJuzgadoVisible} == "1")
+	<tr>
+		<TD class="texto" valign="top" width="30%">Dependencia Judicial:</TD>
+		<TD class="texto" width="70%">${param.descripcionDependencia}</TD>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" valign="top" width="30%">Documento:</TD>
+		<TD class="texto" width="70%">${param.documento.descripcion}
+		${param.documento.numero}</TD>
+	</tr>
+	#if (true == ${param.mostrarCiudad})
+	<tr>
+		<TD class="texto" valign="top" width="30%">Ciudad:</TD>
+		<TD class="texto" width="70%">${param.ciudad.descripcion}</TD>
+	</tr>
+	#end
+	#if (${param.flgCantidadVisible} == "1")
+	<tr>
+		<TD class="texto" valign="top" width="30%">Cantidad:</TD>
+		<TD class="texto" width="70%">${param.cantidad}</TD>
+	</tr>
+	<tr>
+		
+		<TD class="texto" valign="top" width="30%">Importe Total:</TD>
+		<TD class="texto" width="70%">S/ ${param.importeTotal}</TD>
+	</tr>
+	#end
+	#if (${param.flgCantidadVisible} != "1")	
+	<tr>
+		
+		<TD class="texto" valign="top" width="30%">Importe Pagado:</TD>
+		<TD class="texto" width="70%">S/ ${param.importe}</TD>
+	</tr>
+	#end
+	#if ('USD' == ${param.cuenta.monedaProducto})
+	<tr>
+		<TD class="texto" valign="top" width="30%">Tipo de Cambio:</TD>
+		<TD class="texto" width="70%">${param.tipoCambio}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" valign="top" width="30%">Importe al Cambio:</TD>
+		<TD class="texto" width="70%">$ ${param.importeAlCambio}</TD>
+	</tr>
+	#end
+<br>
+	<tr>
+		<TD colspan="2" class="texto" align="center" style="width:592px;">
+		${param.numeroSecuencia} ${param.fecha} ${param.codTransaccion}
+		${param.codUsuario} ${param.codAgencia} ${param.hora}</TD>
+		</tr>
+<br>
+	<tr>
+		<TD colspan="2" class="texto" align="center" style="width:592px;">
+		${param.digitoControl}
+
+	</tr>
+	<tr>
+		<TD colspan="2" class="texto" style="text-align: justify"><br>
+		</TD>
+
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

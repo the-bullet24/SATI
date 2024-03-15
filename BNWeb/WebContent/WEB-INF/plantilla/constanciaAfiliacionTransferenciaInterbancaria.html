@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="350">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA <br>
+		DE AFILIACION TRANSFERENCIAS INTERBANCARIAS<BR>
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto">Canal empleado:</TD>
+		<TD class="texto" width="187">Multired Virtual</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto">Nro. Tarjeta:</TD>
+		<TD class="texto" width="187">1111-1111-1111-1111</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Banco Destino:</TD>
+		<TD class="texto" width="187">Banco de Credito Del Per&uacute;</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Moneda:</TD>
+		<TD class="texto" width="187">D&oacute;lares</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Nro. CCI Destino:</TD>
+		<TD class="texto" width="187">111-111-1111-1111</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Nombre Beneficiario:</TD>
+		<TD class="texto" width="187">Juan P&eacute;rez Soto</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Cuenta propia:</TD>
+		<TD class="texto" width="187">NO</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Fecha:</TD>
+		<TD class="texto" width="187">06/03/2007</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Hora:</TD>
+		<TD class="texto" width="187">05:57 p.m.</TD>
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

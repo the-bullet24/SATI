@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE RENOVACIÓN 
+		<BR>
+		PRÉSTAMO MULTIRED
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="50%">Canal empleado:</TD>
+		<TD class="texto" width="50%">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="50%">Titular de Cuenta:</td>
+		<td class="texto" width="50%">${usuario.nombre}</td>
+	</tr>
+	#end
+	
+
+
+	<tr>
+		<TD class="texto" width="50%">Importe desembolsado:</TD>
+		<TD class="texto" width="50%">S/ ${param.saldoNeto}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Importe Nuevo Prestamo:</TD>
+		<TD class="texto" width="50%">S/ ${param.montoPrestamo}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="50%">Valor de Cuota del Nuevo Préstamo:</TD>
+		<TD class="texto" width="50%">S/ ${param.montoCuota}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Deuda préstamo anterior:</TD>
+		<TD class="texto" width="50%">S/ ${param.saldoDeuda}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Seguro Cuota Protegida:</TD>
+		<TD class="texto" width="50%">S/ ${param.montoCuotaProtegida}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Prima de Seguro de Desgravamen:</TD>
+		<TD class="texto" width="50%">${param.segDesgravamen}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Plazo del Nuevo Préstamo:</TD>
+		<TD class="texto" width="50%">${param.nroCuotasDes}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Día de Vencimiento:</TD>
+		<TD class="texto" width="50%">${param.diaPago}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Fecha de Vencimiento Primera Cuota:</TD>
+		<TD class="texto" width="50%">${param.fechaVenCuota}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Fecha de Vencimiento Préstamo:</TD>
+		<TD class="texto" width="50%">${param.fechaVenPrestamo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">TEA Fija:</TD>
+		<TD class="texto" width="50%">${param.tasa}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="50%">TCEA:</TD>
+		<TD class="texto" width="50%">${param.tcea}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Periodo de Gracia:</TD>
+		<TD class="texto" width="50%">${param.desPeriodoGracia}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Nro. de Préstamo:</TD>
+		<TD class="texto" width="50%">${param.numPrestamo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Nro. Operación:</TD>
+		<TD class="texto" width="50%">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Fecha:</TD>
+		<TD class="texto" width="50%">${param.fechaOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Hora:</TD>
+		<TD class="texto" width="50%">${param.horaOperacion}</TD>
+	</tr>
+#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

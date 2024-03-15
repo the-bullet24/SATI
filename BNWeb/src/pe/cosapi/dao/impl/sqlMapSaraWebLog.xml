@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapSaraWebLog">
+
+	<delete id="setBorraDiarioElectronico">
+			Delete From bn_swb_log.tjoutra 
+	</delete>
+
+	<delete id="setEliminaDuplicados">
+			Delete From bn_swb_log.tjoutra t Where t.numlog in (Select h.numlog From bn_swb_log.hjoutra h)
+	</delete>
+
+	<insert id="setActualizaDiarioHistorico">
+			Insert Into bn_swb_log.hjoutra
+		    		 (numlog,
+		    		 datpro,
+		    		 horpro,
+		    		 coddoc,
+		    		 numdoc,
+		    		 cipadr,
+		    		 codtra,
+		    		 codtrahst,
+		    		 tipprdsrc,
+		    		 numprdsrc,
+		    		 tipprdtar,
+		    		 numprdtar,
+		    		 amotra,
+		    		 codcur,
+		    		 numref,
+		    		 codent,
+		    		 msghst,
+		    		 idetrapro,
+		    		 idetracom,
+		    		 amotxn,
+		    		 baltra,
+		    		 msgerror,
+		    		 typper,
+		    		 clobcons,
+		    		 numope,
+		    		 flgcha,
+		    		 nrocta,
+		    		 flgcom,
+		    		 typtar,
+		    		 flgerror,
+		    		 nomben)
+		    		 select numlog,
+		    		 datpro,
+		    		 horpro,
+		    		 coddoc,
+		    		 numdoc,
+		    		 cipadr,
+		    		 codtra,
+		    		 codtrahst,
+		    		 tipprdsrc,
+		    		 numprdsrc,
+		    		 tipprdtar,
+		    		 numprdtar,
+		    		 amotra,
+		    		 codcur,
+		    		 numref,
+		    		 codent,
+		    		 msghst,
+		    		 idetrapro,
+		    		 idetracom,
+		    		 amotxn,
+		    		 baltra,
+		    		 msgerror,
+		    		 typper,
+		    		 clobcons,
+		    		 numope,
+		    		 flgcha,
+		    		 nrocta,
+		    		 flgcom,
+		    		 typtar,
+		    		 flgerror, nomben from bn_swb_log.tjoutra
+	</insert>
+ 
+	<select id="getArrayJournal" parameterClass="java.util.HashMap" resultClass="pe.cosapi.domain.impl.JournalImpl">
+				SELECT
+					NUMLOG 		AS numLog,
+					DATPRO 		AS fechaProceso,
+					HORPRO 		AS horaProceso,
+					CODDOC 		AS codigoDocumento,
+					NUMDOC 		AS numeroDocumento,
+					CIPADR 		AS ipMaquina,
+					CODTRA 		AS codigoTransaccionSara,
+					CODTRAHST 	AS codigoTransaccionHost,
+					TIPPRDSRC 	AS tipoProductoOrigen,
+					NUMPRDSRC 	AS numeroProductoOrigen,
+					TIPPRDTAR 	AS tipoProductoDestino,
+					NUMPRDTAR 	AS numeroProductoDestino,
+					AMOTRA 		AS montoTransaccion,
+					CODCUR 		AS codigoMoneda,
+					NUMREF 		AS numeroReferencia,
+					CODENT 		AS codigoEntidad,
+					MSGHST 		AS mensajeHost,
+					IDETRAPRO 	AS estadoTransaccion,
+					IDETRACOM 	AS estadoComunicaciones,
+					AMOTXN 		AS importeTransaccion,
+					BALTRA 		AS balanceTransaccion,
+					MSGERROR 	AS mensajeError,
+					TYPPER 		AS tipoPersona,
+					NOMBEN 		AS nombreBeneficiario
+				FROM
+					BN_SWB_LOG.TJOUTRA
+				WHERE
+					NUMPRDSRC 		= #numeroCuenta#
+					<isNotNull property="codigoTransaccion">
+					AND CODTRAHST 	= #codigoTransaccion#
+					</isNotNull>
+	</select>
+	
+	<select id="getArrayJournalByNroCuenta"  resultClass="pe.cosapi.domain.impl.JournalImpl">
+				SELECT
+					NUMLOG 		AS numLog,
+					DATPRO 		AS fechaProceso,
+					HORPRO 		AS horaProceso,
+					CODDOC 		AS codigoDocumento,
+					NUMDOC 		AS numeroDocumento,
+					CIPADR 		AS ipMaquina,
+					CODTRA 		AS codigoTransaccionSara,
+					CODTRAHST 	AS codigoTransaccionHost,
+					TIPPRDSRC 	AS tipoProductoOrigen,
+					NUMPRDSRC 	AS numeroProductoOrigen,
+					TIPPRDTAR 	AS tipoProductoDestino,
+					NUMPRDTAR 	AS numeroProductoDestino,
+					NVL(AMOTRA,0.0) 	AS amotra,
+					CODCUR 		AS codigoMoneda,
+					NUMREF 		AS numeroReferencia,
+					CODENT 		AS codigoEntidad,
+					MSGHST 		AS mensajeHost,
+					IDETRAPRO 	AS estadoTransaccion,
+					IDETRACOM 	AS estadoComunicaciones,
+					AMOTXN 		AS importeTransaccion,
+					BALTRA 		AS balanceTransaccion,
+					MSGERROR 	AS mensajeError,
+					TYPPER 		AS tipoPersona,
+					NROCTA      AS nrocta,
+					NOMBEN 		AS nombreBeneficiario,
+					NVL(AMOTXN,0.0) AS AMOTXN
+
+				FROM
+					BN_SWB_LOG.TJOUTRA
+				WHERE
+				NROCTA 		= #numeroCuenta#
+				AND FLGERROR = '0'
+				AND TO_DATE(DATPRO, 'YYYY/MM/DD') = TO_DATE(TO_CHAR(SYSDATE), 'YYYY/MM/DD')
+
+	</select>
+
+
+	<select id="getSecuencia" resultClass="java.lang.Long">
+		select bn_swb_log.seqlogday.nextval as value from dual
+	</select>
+</sqlMap>

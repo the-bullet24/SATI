@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<LINK href="./theme/Master.css" rel="stylesheet" type="text/css">
+<title>SARAWebBanking</title>
+<SCRIPT language="javascript">
+function setActionCommand(id){
+	document.forms[0].actioncommand.value = id;
+	document.forms[0].submit();
+}
+</SCRIPT>
+</head>
+<body>
+<CENTER>
+<img src="./images/Cosapisoft.jpg" width=200px>
+<FORM method="post" action="/sarawebbranchserver/servlet/InicioServlet">
+	<TABLE class="marco1"><TBODY>
+		<TR>
+			<TD align="center">
+			<INPUT type="button" onclick="setActionCommand('mnuInicioDia')" value="Inicio de Día" class="largeButton">
+			</TD>
+		</TR>
+		<TR>
+			<TD align="center">
+			<INPUT type="button" onclick="setActionCommand('mnuConfiguracion')" value="Configuración de Agencia" class="largeButton">
+			</TD>
+		</TR>
+		<TR>
+			<TD align="center">
+			<!-- <INPUT type="button" onclick="setActionCommand('mnuServidorBackup')" value="Iniciar como Servidor Backup" class="largeButton"> -->
+			</TD>
+		</TR>
+		<TR>
+			<TD align="center">
+				<img src="./images/SWBANKI1.JPG" width=350px>
+			</TD>
+		</TR>
+	</TBODY></TABLE>
+	<INPUT type="hidden" name="actioncommand">
+</FORM>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="refrendoSaldoPrestamo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSaldoPrestamo.html"/>
+	</bean>
+	<bean id="refrendoGeneracionClave" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaGeneracionClave.html"/>
+	</bean>
+	<bean id="refrendoCambioClave" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCambioClave.html"/>
+	</bean>
+	<bean id="refrendoDesafiliaClave" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafiliaClave.html"/>
+	</bean>
+	<bean id="refrendoSolicitudClave" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSolicitudClave.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionTDC" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionTDC.html"/>
+	</bean>
+	
+	<bean id="refrendoBloqueoTarjeta" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaBloqueoTarjeta.html"/>
+	</bean>
+	
+	<bean id="refrendoBloqueoTarjetaTDC" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaBloqueoTarjetaTDC.html"/>
+	</bean>
+	
+	<bean id="refrendoBloqueoTarjetaDni" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaBloqueoTarjetaDni.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionServicio" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionServicio.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionTransferenciaBancaria" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionTransferenciaBancaria.html"/>
+	</bean>
+
+	<bean id="refrendoAfiliacionTransferenciaInterbancaria" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionTransferenciaInterbancaria.html"/>
+	</bean>
+
+	<bean id="refrendoTransferenciaInterbancariaMTOT" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaInterbancariaMTOT.html"/>
+	</bean>
+
+	<bean id="refrendoAfiliacionTarjeta" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionTarjeta.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionTelegiro" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionTelegiro.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionOtroBanco" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionOtroBanco.html"/>
+	</bean>
+
+	<bean id="refrendoAfiliacionTraInterBancaria" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionTraInterBancaria.html"/>
+	</bean>
+
+	<bean id="refrendoDesafiliacion" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafiliacion.html"/>
+	</bean>
+	<bean id="refrendoUltimosMovimientosAhorros" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaUltimosMovimientosAhorros.html"/>
+	</bean>
+	<bean id="refrendoUltimosMovimientosCorriente" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaUltimosMovimientosCorriente.html"/>
+	</bean>
+	<bean id="refrendoUltimosMovimientosCTS" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaUltimosMovimientosCTS.html"/>
+	</bean>
+	<bean id="refrendoSaldoCTS" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSaldoCTS.html"/>
+	</bean>
+	<bean id="refrendoSaldoAhorros" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSaldoAhorros.html"/>
+	</bean>
+	<bean id="refrendoSaldoCtaCte" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSaldoCtaCte.html"/>
+	</bean>
+	<bean id="refrendoPagoMultired" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoMultired.html"/>
+	</bean>
+	<bean id="refrendoCalendarioPago" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCalendarioPago.html"/>
+	</bean>
+	<bean id="refrendoTelegiroMN" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTelegiroMN.html"/>
+	</bean>
+	<bean id="refrendoTelegiroME" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTelegiroME.html"/>
+	</bean>
+	<bean id="refrendoTransferenciaBancaria" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaBancaria.html"/>
+	</bean>
+	<bean id="refrendoTransferenciaInterbancaria" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaInterbancaria.html"/>
+	</bean>
+	<bean id="refrendoPagoTarjeta" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjeta.html"/>
+	</bean>
+	<bean id="refrendoPagoTelefonica" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTelefonica.html"/>
+	</bean>
+	<bean id="refrendoITFAnualCuentaCorriente" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaITFAnualCuentaCorriente.html"/>
+	</bean>
+	<bean id="refrendoITFAnualCuentaAhorros" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaITFAnualCuentaAhorros.html"/>
+	</bean>
+	<bean id="refrendoCCIMN" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCCIMN.html"/>
+	</bean>
+	<bean id="refrendoCCICTACTE" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCCICTACTE.html"/>
+	</bean>
+	<bean id="refrendoPagoSedapal" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoSedapal.html"/>
+	</bean>
+	<bean id="refrendoPagoTasas" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTasas.html"/>
+	</bean>
+	<bean id="refrendoRecargaTelefono" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaRecargaTelefono.html"/>
+	</bean>
+	<bean id="refrendoRecargaClaro" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaRecargaClaro.html"/>
+	</bean>
+	<bean id="refrendoPagoCuponera" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoCuponera.html"/>
+	</bean>
+	<bean id="refrendoPagoFactura" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFactura.html"/>
+	</bean>
+	<bean id="refrendoPagoFacturaEsp" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaEsp.html"/>
+	</bean>
+	<bean id="refrendoPagoFacturaWS" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWS.html"/>
+	</bean>
+	<bean id="refrendoPagoFacturaWSClaro" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWSClaro.html"/>
+	</bean>
+	<bean id="refrendoPagoFacturaWSP" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWSParcial.html"/>
+	</bean>
+	<bean id="refrendoPagoFacturaWSMod" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWSMod.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionDebitoAutomatico" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDebitoAutomatico.html"/>
+	</bean>
+	
+	<bean id="refrendoDesAfiliacionDebitoAutomatico" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafilDebitoAutomatico.html"/>
+	</bean>
+	
+	<bean id="refrendoModAfiliacionDebitoAutomatico" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaModDebitoAutomatico.html"/>
+	</bean>
+	
+	<bean id="refrendoAnulDebitoAutomatico" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAnulDebitoAutomatico.html"/>
+	</bean>
+	<bean id="refrendoConsultaAliasBancaCelular" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaConsultaAlias.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionBancaCelTrans" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelTrans.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionBancaCelReca" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelReca.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionBancaCelServ" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelServ.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionBancaCelTasa" class="pe.cosapi.common.Refrendo"> 
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelTasa.html"/>
+	</bean>
+	<bean id="refrendoDesafiliacionBancaCel" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafilBancaCel.html"/>
+	</bean>
+	<bean id="refrendoActivacionSms" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaActivacionClaveSms.html"/>
+	</bean>
+	<bean id="refrendoMigracionSms" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaMigracionClaveSms.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteAcepta" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDatosCliente.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteNoAcepta" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDatosClienteNoAcepta.html"/>
+	</bean>
+	<bean id="refrendoVinculacionBancaCel" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaVinculacion.html"/>
+	</bean>
+		<bean id="refrendoDesvinculacionBancaCel" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesvinculacion.html"/>
+	</bean>
+	<bean id="refrendoEleccionMedioEnvio" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaEleccionMedioEnvio.html"/>
+	</bean>
+	<bean id="refrendoEleccionMedioNoEnvio" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaEleccionMedioNoEnvio.html"/>
+	</bean>
+	<bean id="refrendoSaldoTarjetaCredito" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSaldoTarjetaCredito.html"/>
+	</bean>
+	<bean id="refrendoMovimientosTarjetaCredito" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaUltimosMovimientosTC.html"/>
+	</bean>
+	<bean id="refrendoPagoTarjetaCreditoBN" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjetaCreditoBN.html"/>
+	</bean>
+	<bean id="refrendoPagoTarjetaCreditoOtrosBN" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjetaCreditoOtrosBN.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionclaveInternet" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionClaveInternet.html"/>
+	</bean>
+	<bean id="refrendoOlvidoClaveInternet" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaOlvidoClaveInternet.html"/>
+	</bean>
+	<bean id="refrendoExpiraClaveInternet" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaExpiraClaveInternet.html"/>
+	</bean>
+	<bean id="refrendoTransferenciaInterbancariaLinea" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaInterbancariaLinea.html"/>
+	</bean>
+	<bean id="refrendoTransferenciaInterbancariaLineaRechazo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaInterbancariaLineaRechazo.html"/>
+	</bean>
+	<bean id="refrendoSeleccionMonto" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSeleccionMonto.html"/>
+	</bean>
+	
+	<bean id="refrendoDatosClienteDireccion" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteDireccion.html"/>
+	</bean>
+	
+		
+	<bean id="refrendoAltaDatosClienteDireccion" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAltaDatosClienteDireccion.html"/>
+	</bean>
+	
+	<bean id="refrendoDatosClienteTelefonoFijo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteTelefonoFijo.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteTelefonoMovil" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteTelefonoMovil.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteTelefonoLaboral" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteTelefonoLaboral.html"/>
+	</bean>
+			
+		<bean id="refrendoDatosClienteAltaTelefonoFijo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaTelefonoFijo.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteAltaTelefonoMovil" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaTelefonoMovil.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteAltaTelefonoLaboral" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaTelefonoLaboral.html"/>
+	</bean>
+	
+		<bean id="refrendoDatosClienteBajaTelefonoFijo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaTelefonoFijo.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteBajaTelefonoMovil" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaTelefonoMovil.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteBajaTelefonoLaboral" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaTelefonoLaboral.html"/>
+	</bean>
+	
+	<bean id="refrendoDatosClienteCorreo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteCorreo.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteAltaCorreo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaCorreo.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteBajaCorreo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaCorreo.html"/>
+	</bean>
+	<bean id="refrendoLPDPCliente" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaLPDPCliente.html"/>
+	</bean>
+	<bean id="refrendoNoLPDPCliente" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaNoLPDPCliente.html"/>
+	</bean>
+	
+	<bean id="refrendoPagoTarjetaLineaOB" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjetaLineaOB.html"/>
+	</bean>
+	
+	<bean id="refrendoPagoTarjetaLineaOBRechazo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjetaLineaOBRechazo.html"/>
+	</bean>
+	
+	<bean id="refrendoRenovacionPrestamo" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAprobacionPrestamo.html"/>
+	</bean>
+	
+		<bean id="refrendoPagoUniversidadOtros" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoUniversidadOtros.html"/>
+	</bean>
+	<bean id="refrendoPagoUniversidadAlumno" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoUniversidadAlumno.html"/>
+	</bean>
+	<bean id="refrendoRecargaOtros" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaRecargaOtros.html"/>
+	</bean>
+	
+	<bean id="refrendoPagoTasasEducativas" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTasasEducativas.html"/>
+	</bean>
+	
+	<bean id="refrendoConfTarjetaMN" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaConfTarjetaMN.html"/>
+	</bean>
+	<bean id="refrendoAfiliacionContacto" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionContacto.html"/>
+	</bean>
+	<bean id="refrendoDesafiliacionContacto" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafiliacionContacto.html"/>
+	</bean>
+	<bean id="refrendoActualizacionContacto" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaActualizacionContacto.html"/>
+	</bean>
+	<bean id="refrendoTransferenciaContacto" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaContacto.html"/>
+	</bean>
+	<bean id="refrendoDatosClienteCel" class="pe.cosapi.common.Refrendo">
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDatosClienteCel.html"/>
+	</bean>
+</beans>

@@ -1,0 +1,306 @@
+@font-face {
+  font-family: DaxCompact-Regular;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-regular.ttf);
+}
+
+@font-face {
+  font-family: DaxCompact-Medium;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+#maindiv {
+  width: 440px;
+  display: grid;
+  align-content: start;  
+}
+
+h1 {
+  font-family: DaxCompact-Regular;
+  color: rgba(197, 20, 22, 1);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.89px;
+  margin-bottom: 19px;
+}
+
+#btndiv {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  font-family: DaxCompact-Medium;
+  cursor: pointer;
+}
+
+button.btn1 {
+  border: solid 1px rgba(197, 20, 22, 1);
+  padding: 3px;
+  border-radius: 12px;
+  height: 26px;
+  width: 116px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  color: rgba(197, 20, 22, 1);
+  background-color: white;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: 17.93px;
+  text-align: center;
+}
+
+button.btn2 {
+  padding: 3px;
+  border-radius: 12px;
+  height: 26px;
+  width: 116px;
+  border: none;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  color: rgba(79, 79, 79, 1);
+  background-color: rgba(215, 215, 215, 1);
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: 17.93px;
+  text-align: center;
+}
+
+#maindiv .label {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(79, 79, 79, 1);
+  margin-bottom: 16px;
+}
+
+/* Celular Container*/
+.container .label {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.1px;
+  color: rgba(79, 79, 79, 1);
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.CelularContainer {
+  border: solid 2px blue;
+  padding: 12px;
+  border-radius: 8px;
+  border-color: rgba(215, 215, 215, 1);
+  margin-bottom: 20px;
+  height: 92px;
+
+  display: grid;
+  align-items: center;
+}
+
+.CelularContainer h2 {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(79, 79, 79, 1);
+}
+
+.Cuentacontainer_Info {
+  border: solid 2px blue;
+  justify-content: center;
+  border-radius: 8px;
+  border-color: rgba(215, 215, 215, 1);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  height: 72px;
+  display: grid;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.Cuentacontainer_Info p {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: rgba(79, 79, 79, 1);
+}
+
+.Cuentacontainer_Info .number {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(79, 79, 79, 1);
+}
+
+h5 {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #4f4f4f;
+  margin-bottom: 12px;
+}
+
+#CodeValidation {
+  margin-left: 20px;
+}
+
+input {
+  padding: 3px;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #757575;
+  box-shadow: none;
+  width: 260px;
+  border-color: #4f4f4f;
+  color: #4f4f4f;
+}
+
+label {
+  display: block;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+.codeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.codeContainer p {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(197, 20, 22, 1);
+  width: 84px;
+}
+
+.codeContainer img {
+  margin-left: 30px;
+  margin-top: -8px;
+}
+
+.Reenviar {
+  margin-top: 8px;
+  text-align: start;
+}
+
+.Reenviar a {
+  text-align: start;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
+  color: #c51416;
+  text-decoration: none;
+}
+
+.pdiv p {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: rgba(79, 79, 79, 1);
+}
+
+.pdiv strong {
+  font-size: 14px;
+}
+
+.pdiv .CelNum {
+  font-size: 14px;
+}
+
+.ComiMontocontainer {
+  height: 72px;
+  border-radius: 8px;
+  border: 1px solid rgba(215, 215, 215, 1);
+  background-color: rgba(240, 240, 240, 1);
+  display: grid;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ComiMontocontainer_Info p {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: rgba(79, 79, 79, 1);
+  margin-bottom: 2px;
+}
+
+.ComiMontocontainer_Info strong {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  color: rgba(79, 79, 79, 1);
+}
+
+#entidaddestino{
+  display: flex;
+  justify-content: center;
+}
+
+#entidaddestino img{
+  margin: 0 8px 0 8px
+}

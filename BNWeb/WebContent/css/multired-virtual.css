@@ -1,0 +1,639 @@
+/*
+Project Name: Banco de la Nacion
+URI: http://medialabla.com/extend/themes/banco-de-la-nacion
+Author: the Medialab team
+Author URI: http://www.medialabla.com/
+Description: Main CSS for Banco de la Naci&oacute;n
+Version: 1.0
+Tags: Banco de la Naci&oacute;n, Banco, Banco Peru, Banco Lima, Per&uacute;, per&uacute;, banco provincias...
+*/
+
+/* =Import
+----------------------------------------------- */
+/*@import 'media.css';*/
+
+
+
+/* =Global
+----------------------------------------------- */
+
+div.cysErrorMsg {
+	background-color: #FFD5D5;
+	border-top: 1px solid #FF3C3C;
+	border-bottom: 1px solid #FF3C3C;
+	width: 100%;
+	padding: 4px;
+	font: 12px 'arial';
+}
+
+
+body {
+    background-color: #f0f0f0;
+    color: #575757;
+    font: 13px 'arial';
+    overflow-x:hidden;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+}
+.clear{
+	clear:both;
+}
+#contenedor {
+	background:#FFFFFF none repeat scroll 0 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 75em;
+/*  width: 1000px;*/
+}
+
+#contenedor1 {
+	background:#E5E5DE none repeat scroll 0 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 235px;
+    height: 100%;
+/*  width: 1000px;*/
+}
+
+#cabecera{
+    background: url(../imagenes_OLD/bg-cabecera.png) repeat-x;
+    min-height: 100px;
+    width: 100%;
+}
+
+#cabecera #multired-virtual{
+    float: left;
+    padding: 22px 0px 0px 44px;
+}
+
+#cabecera #logo-bn{
+    float: right;
+    padding: 22px 44px 0px 0px;
+}
+
+#pie-pagina-bienvenidos{
+    color: #9a9a9a;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#cuerpo-bienvenidos{
+    background: #fff;
+    padding: 0px 0px 20px 0px;
+    position: relative;
+    z-index: 1;
+    width: 70%;
+}
+
+#cuerpo{
+    background: #fff;
+    padding: 0px 0px 116px 0px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#cuerpo #cliente{
+    border-bottom: 1px dashed #c1c0c0; 
+    padding: 20px 40px 20px 54px;
+    width: 881px;
+}
+
+#contenido{
+    padding: 36px 40px 20px 54px;
+    width: 881px;
+}
+
+#contenido #enlaces{
+    padding: 0px 50px 0px 0px;
+    float: left;
+    width: 213px;
+}
+
+#contenido #enlaces ul{
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+    width: 213px;
+}
+
+#contenido #enlaces li{
+    text-align: left;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#contenido #enlaces li a{
+    background: url(../imagenes_OLD/vineta-mini-arrow.png) no-repeat 20px 16px;
+    color: #3b3b3b;
+    display: block;
+    font: 12px arial;
+    padding: 12px 0px 12px 38px;
+}
+
+#contenido #enlaces li a:hover, 
+#contenido #enlaces li a.active{
+    background: url(../imagenes_OLD/vineta-mini-arrow.png) no-repeat  20px 16px #f1f1f1;
+}
+
+#enlaces #tipo-cambio{
+    text-align: left;
+    padding: 25px 0px 0px 0px;
+    
+}
+
+#enlaces #tipo-cambio div{
+    color: #000;
+    font: bold 12px arial;
+    padding: 0px 0px 5px 0px;
+    position: absolute;
+}
+
+#enlaces #tipo-cambio ul{
+    border: none;
+}
+
+#enlaces #tipo-cambio li{
+    background: url(../imagenes_OLD/cuadrado-plomo.jpg) no-repeat 0px 1px;
+    border: none;
+    color: #565656;
+    display: block;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 18px;
+}
+
+#enlaces #tipo-cambio li span{
+    color: #c20a13;
+}
+
+#informacion{
+    float: left;
+    width: 618px;
+}
+
+#informacion p{
+    color: #565656;
+    font: 13px arial;
+    text-align: justify;
+    padding: 0px 0px 10px 0px;
+}
+
+#informacion #cuentas-ahorro{
+    padding: 50px 0px 50px 0px;
+}
+
+#informacion #cuentas-ahorro .titulo-cuentas-ahorros{
+    /*background: #616161;*/
+    background: url(../imagenes_OLD/fondo-rojo.png) repeat-x;
+    color: #fff;
+    text-align: left;
+    font: 16px 'daxcompact-regularregular'; 
+    padding: 4px 0px 5px 30px;
+    height:50px;
+}
+
+#informacion #cuentas-ahorro ul{
+    padding: 2px 0px 0px 0px;
+    width: 100%;
+}
+
+#informacion #cuentas-ahorro ul li.bg{
+    background: #cdcdcd;
+}
+
+#informacion #cuentas-ahorro ul li{
+    background: #f1f1f1;
+    float: left;
+    font: 12px arial;
+    text-align: left;
+    padding: 10px 34px 10px 30px;
+    margin: 0px 1px 0px 0px;
+}
+
+#informacion #cuentas-ahorro ul li a{
+    color: #c20a13;
+}
+
+#informacion #cuentas-ahorro ul li.cuenta{
+    width: 130px;
+}
+
+#informacion #cuentas-ahorro ul li.moneda{
+    width: 68px;
+}
+
+#informacion #cuentas-ahorro ul li.saldo{
+    width: 70px;
+}
+
+#informacion #cuentas-ahorro ul li.movimiento{
+    width: 90px;
+}
+
+#cuerpo #cliente #fecha{
+    color: #565656;
+    font: 12px arial;
+    float: left;
+    text-align: left;
+}
+
+#cuerpo #cliente #fecha span{
+    color: #c20a13;
+}
+
+#cuerpo #cliente #usuario{
+    color: #565656;
+    float: left;
+    font: 16px arial;
+    padding: 2px 0px 0px 220px;
+}
+
+#cuerpo #cliente #usuario span{
+    color: #c20a13;
+    font: 20px 'daxcompact-mediumregular';
+}
+
+#cuerpo #cliente #cerar-sesion{
+    float: right;
+}
+
+#cuerpo #cliente #cerar-sesion a{}
+
+
+
+#cuerpo #recomendaciones-seguridad{
+    background: url(../imagenes_OLD/bg-recomendaciones-seguridad.png) no-repeat top right;
+    float: left;
+    padding: 40px 0px 0px 54px;
+    width: 478px;
+}
+
+#cuerpo #recomendaciones-seguridad h1{
+    color: #c20a13;
+    font: 32px/30px 'daxcompact-mediumregular';
+    text-align: left;
+}
+
+#cuerpo #recomendaciones-seguridad ul{
+    padding: 72px 0px 0px 0px;
+    width: 430px;
+}
+
+#cuerpo #recomendaciones-seguridad ul li{
+    background: url(../imagenes_OLD/bg-listado.png) no-repeat 0px 4px;
+    color: #575757;
+    font: 13px arial;
+    text-align: justify;
+    padding: 0px 0px 18px 14px;
+}
+
+#cuerpo #recomendaciones-seguridad ul li a{
+    color: #575757;
+}
+
+#cuerpo #recomendaciones-seguridad ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Contenido Multired */
+
+#contenido-multired{
+    margin: 0 auto;
+    padding: 74px 0px 80px 0px;
+    position: relative;
+    width: 672px;
+}
+
+#contenido-interno{
+    margin: 0 auto;
+    padding: 74px 0px  0px;
+    position: relative;
+    width: 672px;
+}
+
+#contenido-multired #tarjeta{
+    position: absolute;
+    right: 0px;
+    top: 72px;
+}
+
+#contenido-multired form div.contenido-input{
+    display: block;
+    padding: 0px 0px 28px 0px;
+    position: relative;
+    width: 300px;
+}
+
+#contenido-multired form div.contenido-input span, #contenido-multired form div.contenido-input span a, #contenido-multired form div.contenido-input a{
+    color: #ca262d;
+    bottom: 10px;
+    font: 11px arial;
+    right: 12px;
+    position: absolute;
+}
+
+#contenido-multired form{
+    text-align: left;
+}
+
+#contenido-multired form select{
+    color: #565656;
+    height: 32px;
+    float: left;
+    font: 12px/32px arial;
+    width: 180px;
+}
+
+#contenido-multired form label{
+    color: #363636; 
+    float: left;
+    font: 13px/32px arial;
+    padding: 0px 28px 0px 0px;
+    text-align: right;
+    width: 82px;
+}
+
+#contenido-multired form input[type="text"]{
+    background: url(../imagenes_OLD/bg-input.png) no-repeat;
+    border: none;
+    color: #565656;
+    height: 32px;
+    float: left;
+    font: 12px/32px arial;
+    padding: 0px 15px;
+    width: 150px;
+}
+
+#contenido-multired form input[type="password"]{
+    background: url(../imagenes_OLD/bg-input.png) no-repeat;
+    border: none;
+    color: #565656;
+    height: 32px;
+    float: left;
+    font: 12px/32px arial;
+    padding: 0px 15px;
+    width: 150px;
+}
+
+#contenido-multired .teclado-digital{
+    padding: 20px 0 0 115px;
+    position:  relative;
+    width: 105px;
+}
+
+#contenido-multired .teclado-digital input[type="button"]{
+    background: url(../imagenes_OLD/bg-numero.png) no-repeat;
+    border: none;
+    height: 30px;
+    cursor: pointer; 
+    color: #fff;
+    float: left;
+    font: 16px/30px arial;
+    margin: 0px 5px 5px 0px;
+    width: 30px;
+}
+
+#contenido-multired .teclado-digital  input[type="reset"]{
+    background: url(../imagenes_OLD/btn-limpiar.png) no-repeat;
+    border: none;
+    color: #fff;
+    cursor: pointer; 
+    font: 13px/30px arial;
+    height: 30px;
+    width: 65px;
+}
+
+#contenido-multired .teclado-digital input[type="text"]{
+    float: none;
+}
+
+#contenido-multired .teclado-digital .texto-teclado{
+    color: #1E120D;
+    font: 13px arial;
+    position: absolute;
+    right: -150px;
+    top: 18px;
+    width: 130px;
+}
+
+#contenido-multired .teclado-digital .input-teclado{
+    color: #ca262d;
+    font: 13px arial;
+    position: absolute;
+    bottom: 23px;
+    right: -150px;
+    width: 130px;
+}
+
+#contenido-multired .teclado-digital .input-teclado div{
+    padding: 0px 0px 6px 10px;
+}
+
+#contenido-multired .teclado-digital .input-teclado input[type="text"]{
+    background: url(../imagenes_OLD/bg-input-small.png) no-repeat;
+    border: none;
+    color: #565656;
+    height: 32px;
+    float: left;
+    font: 12px/32px arial;
+    padding: 0px 15px;
+    width: 98px;
+}
+
+#contenido-multired .teclado-digital .olvide-clave{
+    color: #c22228;
+    font: 11px arial;
+    text-align: center; 
+    padding: 2px 0px 0px 0px;
+    width: 100%;
+}
+
+#contenido-multired .teclado-digital .olvide-clave a{
+    color: #c22228;
+    font: 11px arial;
+    text-decoration: underline;
+}
+
+#contenido-multired .input-submit {
+    text-align: center;
+    padding: 20px 0 0 115px;
+    position: relative;
+    width: 105px;
+}
+
+#contenido-multired .input-submit input[type="button"]{
+    background: url(../imagenes_OLD/btn-submit.png) no-repeat;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    font: 14px/30px arial;
+    width: 100px;
+}
+
+
+/* Fin Multired */
+
+#tener-cuenta{
+    float: left;
+    margin: 144px 0 0;
+    position: relative;
+}
+
+#tener-cuenta #pico-tener-cuentas{
+    height: 32px;
+    left: 0;
+    margin: 0 0 0 34px;
+    position: absolute;
+    text-align: left;
+    top: -32px;
+}
+
+#tener-cuenta #contenido-tener-cuenta{
+    background: #e9e9e9;
+    padding: 24px 0px 0px 0px;
+    width: 340px;
+}
+
+#tener-cuenta #contenido-tener-cuenta h2{
+    color: #444444;
+    font: 26px/35px 'daxcompact-mediumregular';
+    text-align: left;
+    padding-left: 22px;
+}
+
+#tener-cuenta #contenido-tener-cuenta ul{
+    margin-left: 24px;
+    padding: 10px 0px 0px 0px;
+    width: 290px;
+}
+
+#tener-cuenta #contenido-tener-cuenta li{
+    background: url(../imagenes_OLD/bg-listado.png) no-repeat 0px 4px;
+    color: #575758;
+    font: 13px/16px arial;
+    text-align: justify;
+    padding: 0px 0px 18px 12px;
+}
+
+#guias{
+    text-align: left;
+    padding: 20px 0px 0px 54px;
+}
+
+#guias a{
+    background: url(../imagenes_OLD/icono-pdf.png) no-repeat left center;
+    color: #c7242b;
+    font: 12px/28px arial;
+    text-decoration: underline;
+    display: inline-block;
+    text-align: left;
+    margin: 0px 70px 0px 0px;
+    padding: 0px 0px 0px 40px;
+}
+
+#pie-pagina{
+    background: url(../imagenes_OLD/bg-pie.png) repeat-x;
+    bottom: 90px;
+    color: #fff;
+    height: 56px;
+    font: 14px/56px arial;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+#pie-pagina-izquierda{
+    background: url(../imagenes_OLD/bg-izquierdo-pie.png) no-repeat;
+    height: 69px;
+    left: -14px;
+    position: absolute;
+    width: 14px;
+}
+
+#pie-pagina-derecha{
+    background: url(../imagenes_OLD/bg-derecho-pie.png) no-repeat;
+    height: 69px;
+    right: -14px;
+    position: absolute;
+    width: 14px;
+}
+
+#pie-pagina a{
+    background: url(../imagenes_OLD/boton-entrar.png) no-repeat;
+    display: inline-block;
+    height: 36px;
+    line-height: 54px;
+    margin: 0px 0px 0px 20px;
+    vertical-align: middle;
+    width:143px;
+}
+
+#pie-pagina input[type="submit"]{
+    background: url(../imagenes_OLD/boton-entrar.png) no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    height: 36px;
+    font: 0px arial;
+    line-height: 54px;
+    margin: 0px 0px 0px 20px;
+    vertical-align: middle;
+    width:143px;
+}
+
+#cliente{
+    border-bottom: 1px dashed #565656;
+    padding: 0px 0px 15px 0px;
+}
+
+#fecha{
+    float: left;
+    padding: 24px 0px 0px 50px;
+    text-align: left;
+}
+
+#fecha span{
+    color: #c20a13;
+}
+
+#usuario{
+    float: left;
+    font: 16px 'daxcompact-mediumregular';
+    padding: 24px 0px 0px 180px;
+}
+
+#usuario span{
+    color: #c20a13;
+    font: 20px 'daxcompact-mediumregular';
+    padding: 0px 5px 0px 0px;
+}
+
+#cerar-sesion{
+    float: right;
+    padding: 24px 50px 0px 0px;
+    
+}
+
+.cerar-sesion-multired{
+    position: absolute;
+    right: 23px;
+    bottom: 23px;
+}
+
+
+
+/* =============================================================================
+   CLEARFIX TRICK
+   ========================================================================== */
+.limpiar:after { content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
+.limpiar{ display: inline-block;}
+* html .limpiar { height: 1%; }
+.limpiar{display:block;} 
+
+

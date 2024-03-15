@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_PwuPoF1jEdy2aqrunURT-g" type="Class" name="certiPinBlock.dnx">
+  <children xmi:id="_Q3XHkF1jEdy2aqrunURT-g" sourceEdges="_RAJ3MF1jEdy2aqrunURT-g" targetEdges="_RAToMF1jEdy2aqrunURT-g _RAmjIF1jEdy2aqrunURT-g">
+    <children xmi:id="_Q3XHk11jEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Q3XHlF1jEdy2aqrunURT-g" width="530" height="530"/>
+    </children>
+    <children xmi:id="_Q3XHlV1jEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q3XHll1jEdy2aqrunURT-g" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q3XHl11jEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q3XHmF1jEdy2aqrunURT-g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q3XHmV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q3XHml1jEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q3XHm11jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q3XHnF1jEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q3XHnV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_Q3XHkV1jEdy2aqrunURT-g" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q3XHkl1jEdy2aqrunURT-g" x="9858" y="8586"/>
+  </children>
+  <children xmi:id="_Q39kgF1jEdy2aqrunURT-g" targetEdges="_RAJ3MF1jEdy2aqrunURT-g _RAcyIF1jEdy2aqrunURT-g _RAcyKF1jEdy2aqrunURT-g _RAcyL11jEdy2aqrunURT-g">
+    <children xmi:id="_Q39kg11jEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Q39khF1jEdy2aqrunURT-g" width="530" height="530"/>
+    </children>
+    <children xmi:id="_Q39khV1jEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q39khl1jEdy2aqrunURT-g" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q39kh11jEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q39kiF1jEdy2aqrunURT-g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q39kiV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q39kil1jEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q39ki11jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q39kjF1jEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q39kjV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_Q39kgV1jEdy2aqrunURT-g" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q39kgl1jEdy2aqrunURT-g" x="1378" y="13647"/>
+  </children>
+  <children xmi:id="_Q7FxAF1jEdy2aqrunURT-g" sourceEdges="_RAToMF1jEdy2aqrunURT-g _RAcyIF1jEdy2aqrunURT-g" targetEdges="_RAmjKF1jEdy2aqrunURT-g">
+    <children xmi:id="_Q7O68F1jEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Q7O68V1jEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Q7O68l1jEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q7O6811jEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q7O69F1jEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q7O69V1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q7O69l1jEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q7O6911jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q7O6-F1jEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q7O6-V1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q7O6-l1jEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Q7O6-11jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Q7FxAV1jEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q7FxAl1jEdy2aqrunURT-g" x="15900" y="13674"/>
+  </children>
+  <children xmi:id="_Q8uvwF1jEdy2aqrunURT-g" sourceEdges="_RAcyKF1jEdy2aqrunURT-g">
+    <children xmi:id="_Q835sF1jEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Q835sV1jEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Q835sl1jEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q835s11jEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q835tF1jEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q835tV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q835tl1jEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q835t11jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q835uF1jEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q835uV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q835ul1jEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Q835u11jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Q8uvwV1jEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q8uvwl1jEdy2aqrunURT-g" x="1273" y="6831"/>
+  </children>
+  <children xmi:id="_Q9eWoF1jEdy2aqrunURT-g">
+    <children xmi:id="_Q9eWo11jEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Q9eWpF1jEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Q9eWpV1jEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q9eWpl1jEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q9eWp11jEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q9eWqF1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q9oHoF1jEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q9oHoV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q9oHol1jEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q9oHo11jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q9oHpF1jEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Q9oHpV1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Q9eWoV1jEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKInformation[jcu^name=WSCertiPINBLOCKInformation.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q9eWol1jEdy2aqrunURT-g" x="1272" y="1272"/>
+  </children>
+  <children xmi:id="_Q-g4cF1jEdy2aqrunURT-g" sourceEdges="_RAcyL11jEdy2aqrunURT-g _RAmjIF1jEdy2aqrunURT-g _RAmjKF1jEdy2aqrunURT-g">
+    <children xmi:id="_Q-g4c11jEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Q-g4dF1jEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Q-g4dV1jEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q-g4dl1jEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q-g4d11jEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q-g4eF1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q-g4eV1jEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q-g4el1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q-g4e11jEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Q-g4fF1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Q-g4fV1jEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Q-g4fl1jEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Q-g4cV1jEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q-g4cl1jEdy2aqrunURT-g" x="8904" y="1272"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_PwuPoV1jEdy2aqrunURT-g"/>
+  <edges xmi:id="_RAJ3MF1jEdy2aqrunURT-g" source="_Q3XHkF1jEdy2aqrunURT-g" target="_Q39kgF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAJ3M11jEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_RAJ3NV1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAJ3N11jEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAJ3Nl1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAJ3NF1jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAJ3MV1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAJ3Ml1jEdy2aqrunURT-g" points="[0, 2633, 3611, -2672]$[-3625, 4220, -14, -1085]"/>
+  </edges>
+  <edges xmi:id="_RAToMF1jEdy2aqrunURT-g" source="_Q7FxAF1jEdy2aqrunURT-g" target="_Q3XHkF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAToM11jEdy2aqrunURT-g" type="NameLabel">
+      <children xmi:id="_RAToNV1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAToNl1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAToNF1jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAToMV1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAToMl1jEdy2aqrunURT-g" points="[-14, 4537, 1693, -4220]$[-1707, 6124, 0, -2633]"/>
+  </edges>
+  <edges xmi:id="_RAcyIF1jEdy2aqrunURT-g" source="_Q7FxAF1jEdy2aqrunURT-g" target="_Q39kgF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAcyI11jEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_RAcyJV1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAcyJ11jEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAcyJl1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAcyJF1jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAcyIV1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAcyIl1jEdy2aqrunURT-g" points="[-2619, 105, 13177, -530]$[-13388, 555, 2408, -80]"/>
+  </edges>
+  <edges xmi:id="_RAcyKF1jEdy2aqrunURT-g" source="_Q8uvwF1jEdy2aqrunURT-g" target="_Q39kgF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAcyK11jEdy2aqrunURT-g" type="NameLabel">
+      <children xmi:id="_RAcyLV1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAcyLl1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAcyLF1jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAcyKV1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapStub[jcu^name=WSCertiPINBLOCKSoapStub.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAcyKl1jEdy2aqrunURT-g" points="[-14, 2633, -5650, -2672]$[5622, 4220, -14, -1085]"/>
+  </edges>
+  <edges xmi:id="_RAcyL11jEdy2aqrunURT-g" source="_Q-g4cF1jEdy2aqrunURT-g" target="_Q39kgF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAcyMl1jEdy2aqrunURT-g" type="NameLabel">
+      <children xmi:id="_RAcyNF1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAcyNV1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAcyM11jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAcyMF1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKSoap[jcu^name=WSCertiPINBLOCKSoap.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAcyMV1jEdy2aqrunURT-g" points="[-344, 635, 7647, -14447]$[-7673, 14447, 318, -635]"/>
+  </edges>
+  <edges xmi:id="_RAmjIF1jEdy2aqrunURT-g" source="_Q-g4cF1jEdy2aqrunURT-g" target="_Q3XHkF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAmjI11jEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_RAmjJV1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAmjJ11jEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAmjJl1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAmjJF1jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAmjIV1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCK[jcu^name=WSCertiPINBLOCK.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAmjIl1jEdy2aqrunURT-g" points="[26, 635, -476, -8732]$[370, 8202, -132, -1165]$[370, 8705, -132, -662]"/>
+  </edges>
+  <edges xmi:id="_RAmjKF1jEdy2aqrunURT-g" source="_Q-g4cF1jEdy2aqrunURT-g" target="_Q7FxAF1jEdy2aqrunURT-g">
+    <children xmi:id="_RAmjK11jEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_RAmjLV1jEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAmjL11jEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_RAmjLl1jEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RAmjLF1jEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RAmjKV1jEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSCertiPINBLOCKSoapProxy[jcu^name=WSCertiPINBLOCKSoapProxy.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSCertiPINBLOCKLocator[jcu^name=WSCertiPINBLOCKLocator.java[jpack^name=_11._106._7._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RAmjKl1jEdy2aqrunURT-g" points="[0, 2844, -5332, -6126]$[5318, 4432, -14, -4538]"/>
+  </edges>
+</notation:Diagram>

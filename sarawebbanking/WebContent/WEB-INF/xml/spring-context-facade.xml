@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	<!-- Facades Modulo -->
+	<bean id="commonFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.cosapi.common.facade.impl.CommonFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+			</bean>
+		</property>
+	</bean>
+	<bean id="bannerFacade" parent="baseTransactionProxy" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="target">
+			<bean class="pe.cosapi.common.facade.impl.BannerFacadeImpl" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default" />
+		</property>
+	</bean>
+	
+	
+</beans>

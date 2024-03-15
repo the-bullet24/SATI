@@ -1,0 +1,101 @@
+body {
+	background-image: url(Images/01/fondo.gif);
+}
+.Estilo1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+.Estilo2 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+.Estilo3 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; }
+.Estilo4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.Texto_zonasegura {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	float: left;
+}
+.img_derecha {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url(Images/01/img_der.jpg);
+}
+.img_global {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url(Images/01/img_der_MultiredGlobalDebito.jpg);
+}
+.img_clasica {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url(Images/01/img_der_MultiredClasica.jpg);
+}
+.img_dni {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url(Images/01/img_der_DNI.jpg);
+}
+.img_logotipo {
+	padding-right: 20px;
+	float: right;
+}
+.img_izquierda {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(Images/01/img_izq.jpg);
+}
+.texto_oclave {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	float: left;
+}
+.texto_tc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	float: left;
+	padding: 0px 0px 0px 2px;
+}
+.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	float: none;
+	padding: 0px;
+	margin: 0px;
+}
+.titulo {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	float: none;
+	padding: 0px;
+}
+.Texto_zonasegura1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+}

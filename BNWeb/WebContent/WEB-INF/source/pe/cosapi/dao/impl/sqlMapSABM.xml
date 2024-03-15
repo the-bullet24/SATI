@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapSABM">
+
+	<select id="getGeneracionLog" parameterClass="pe.cosapi.domain.impl.GeneracionLogImpl" resultClass="pe.cosapi.domain.impl.GeneracionLogImpl">
+		select numLog as numLog,
+		       canal as canal,
+		       ipDireccion as ipDireccion
+		  from 
+			   from bn_sabm.BNBMF32_LOG_GENERACION
+		 
+	</select>
+	
+	
+	<procedure id="getInsertarGeneracionLog" parameterMap="parameterMap" resultMap="resultMap">
+    	{call BMPKG_GENERACION_CLAVE_SEIS.BMSP_REGISTRAR_LOG_GENERACION(    
+			#fechaCronoOp,
+			#canal,
+			#ipDireccion,
+			#mac,
+			#numTrans,
+			#cicClte,
+			#tipoDocumento,
+			#numDocumento,
+			#tipoTarjeta,
+			#numTarjeta,
+			#estado,
+			#flagError,
+			#codApp,
+			#codRet,
+			#token,
+			#email,
+			#benef,
+			#tipoToken
+		)}
+	</procedure>
+
+	<parameterMap id="parameterMap" class="your.parameter.class">    	
+    	<parameter property="fechaCronoOp" 					jdbcType="VARCHAR" />
+		<parameter property="canal" 						jdbcType="VARCHAR" />
+		<parameter property="ipDireccion" 					jdbcType="VARCHAR" />
+		<parameter property="mac" 							jdbcType="VARCHAR" />
+		<parameter property="numTrans" 						jdbcType="VARCHAR" />
+		<parameter property="cicClte" 						jdbcType="VARCHAR" />
+		<parameter property="tipoDocumento" 				jdbcType="VARCHAR" />
+		<parameter property="numDocumento" 					jdbcType="VARCHAR" />
+		<parameter property="tipoTarjeta" 					jdbcType="VARCHAR" />
+		<parameter property="numTarjeta" 					jdbcType="VARCHAR" />
+		<parameter property="estado" 						jdbcType="VARCHAR" />
+		<parameter property="flagError" 					jdbcType="VARCHAR" />
+		<parameter property="codApp" 						jdbcType="VARCHAR" />
+		<parameter property="codRet" 						jdbcType="VARCHAR" />
+		<parameter property="token" 						jdbcType="VARCHAR" />
+		<parameter property="email" 						jdbcType="VARCHAR" />
+		<parameter property="benef" 						jdbcType="VARCHAR" />
+		<parameter property="tipoToken" 					jdbcType="VARCHAR" />    	
+	</parameterMap>
+	
+
+	<resultMap id="resultMap" class="pe.cosapi.domain.impl.GeneracionLogImpl">
+		<result property=fechaCronoOp 						column="fechaCronoOp"/> 
+		<result property="canal" 							column="canal"/> 
+		<result property="ipDireccion" 						column="ipDireccion"/> 
+		<result property="mac" 								column="mac"/> 
+		<result property="numTrans" 						column="numTrans"/> 
+		<result property="cicClte" 							column="cicClte"/> 
+		<result property="tipoDocumento" 					column="tipoDocumento"/> 
+		<result property="numDocumento" 					column="numDocumento"/> 
+		<result property="tipoTarjeta" 						column="tipoTarjeta"/> 
+		<result property="numTarjeta" 						column="numTarjeta"/> 
+		<result property="estado" 							column="estado"/> 
+		<result property="flagError" 						column="flagError"/> 
+		<result property="codApp" 							column="codApp"/> 
+		<result property="codRet" 							column="codRet"/> 
+		<result property="token" 							column="token"/> 
+		<result property="email" 							column="email"/> 
+		<result property="benef" 							column="benef"/>
+		<result property="tipoToken" 						column="tipoToken"/>
+	
+	</resultMap>
+	
+	
+	
+	
+	
+	
+
+</sqlMap>

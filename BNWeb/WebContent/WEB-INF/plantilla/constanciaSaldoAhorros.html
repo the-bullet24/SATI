@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+
+		<TD align="center" class="texto" colspan="2"><B>CONSULTA DE SALDO -
+		CUENTA DE AHORROS<BR>
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="35%">Canal empleado:</TD>
+		<TD class="texto" width="65%">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Titular de Cuenta:</td>
+		<td class="texto" width="65%">${usuario.nombre}</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" width="35%">N&deg;&nbsp;Cuenta Ahorros:</TD>
+		<TD class="texto" width="65%">${param.cuentaformateada}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Moneda:</TD>
+		<TD class="texto" width="65%">${param.nombreMonedaProductoMail}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Saldo Contable:</TD>
+		<TD class="texto" align="right" width="65%">${param.saldoContable}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Saldo Disponible:</TD>
+		<TD class="texto" align="right" width="65%">${param.saldo}</TD>
+	</tr>
+
+
+	<tr>
+
+		<TD class="texto" width="35%">Retenci&oacute;n:</TD>
+
+		<TD class="texto" align="right" width="65%">${param.retencion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Fecha:</TD>
+		<TD class="texto" width="65%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Hora:</TD>
+		<TD class="texto" width="65%">${param.hora}</TD>
+	</tr>
+
+	<TR align="justify">
+		<TD colspan="2"><FONT size="-5" face="Arial"><BR>
+		${mensajeDiferenciaSaldo}</FONT></TD>
+	</TR>
+	<TR align="justify">
+		<TD colspan="2"><FONT size="-5" face="Arial"><p> ${mensajeSaldoAhorro}</p></FONT>
+		</TD>
+	</TR>
+
+</TABLE>
+</BODY>
+</HTML>

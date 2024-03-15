@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Orígenes de datos -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulario -->
+	<form-beans>
+		<!--<form-bean name="frmContactoTransf" 	type="pe.bn.afiliacion.action.form.ContactoTransfForm"></form-bean>	-->	
+		<form-bean name="dummy" 							type="pe.bn.resources.DummyForm"></form-bean>
+		<form-bean name="frmContactoTransf" 				type="pe.bn.afiliacion.action.form.AfiliacionDatosContactoForm"></form-bean>
+		
+		<!-- 
+		<form-bean name="dummy1" 		type="pe.bn.login.action.form.ClaveDinamicaForm"></form-bean>
+		 -->
+	</form-beans>
+
+	<!-- Excepciones globales -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Reenvíos globales -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Correlaciones de acción --> 
+	<action-mappings>
+
+	<!-- Módulo de Afiliaciones(Afil) - Pagos(Pago) -->
+	<!-- 
+		<action path="/claveSMSDesafilia" type="pe.bn.clavesms.action.ClaveSMSAction" name="dummy1" input="/WEB-INF/page/claveSms/desafiliacion/principalDesafiliacionClaveSms.jsp" validate="false" >
+			<forward name="iniciarDesafiliacion"	path="/WEB-INF/page/claveSms/desafiliacion/principalDesafiliacionClaveSms.jsp"></forward>
+			<forward name="mostrarDesafiliacion"	path="/WEB-INF/page/claveSms/desafiliacion/confirmarDesafiliacion.jsp"></forward>
+			<forward name="finalizarDesafiliacion"	path="/WEB-INF/page/claveSms/desafiliacion/finDesafiliacion.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+	 -->
+	 <!-- 	
+		<action path="/claveSMSMigra" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/migracion/inicioMigracion.jsp" validate="false" >
+			<forward name="inicioMigrarClaveSms"      path="/WEB-INF/page/claveSms/migracion/iniciarMigracion.jsp"></forward>
+			<forward name="datosMigrarClaveSms" 	  path="/WEB-INF/page/claveSms/migracion/ingresarDatos.jsp"></forward>
+			<forward name="actualizaMigrarClaveSms"   path="/WEB-INF/page/claveSms/migracion/actualizaMigracion.jsp"></forward>
+			<forward name="redirActivaMigrarClaveSms" path="/WEB-INF/page/claveSms/migracion/activaMigracion.jsp"></forward>
+			<forward name="activaMigrarClaveSms" 	  path="/WEB-INF/page/claveSms/migracion/activaMigracion.jsp"></forward>
+			<forward name="confirmarMigrarClaveSms"   path="/WEB-INF/page/claveSms/migracion/confirmarMigracion.jsp"></forward>
+			<forward name="finMigracionClaveSms" 	  path="/WEB-INF/page/claveSms/migracion/finMigracion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+		</action>
+		-->
+	 <!-- 	
+		<action path="/claveSMSMigraInvitacion" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/migracion/ingresarDatos.jsp" validate="false" >
+			<forward name="inicioMigrarClaveSms"      path="/WEB-INF/page/claveSms/migracion/ingresarDatos.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+		-->
+	 <!-- 	
+		<action path="/claveSMSActiva" type="pe.bn.clavesms.action.ClaveSMSAction" name="frmClaveSms" input="/WEB-INF/page/claveSms/activacion/iniciarActivacion.jsp" validate="false" >
+			<forward name="inicioActivarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarActivacion.jsp"></forward>
+			
+			<forward name="mostrarActivarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/helloWorld.jsp"></forward>
+			<forward name="finActivarClaveSms" 		path="/WEB-INF/page/claveSms/activacion/finActivacion.jsp"></forward>
+			<forward name="refreshMenu" 			path="/WEB-INF/page/frame/frameInicio.jsp"></forward>
+			<forward name="cuerpoMigraTokenFisicoPorVencer" 	path="/WEB-INF/page/claveSms/migracion/iniciarMigracionTFVencer.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	  path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+		</action>
+		-->
+	 <!-- <forward name="mostrarActivarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/activarClaveSms.jsp"></forward> -->
+	 
+	 
+		<action path="/trasferenciaContacto" type="pe.bn.trasferenciacontacto.action.trasferenciaContactoAction" name="frmContactoTransf" input="/WEB-INF/page/transferenciaContacto/afiliacion/helloWorld.jsp" validate="false" >
+		
+			<forward name="prueba" 					path="/WEB-INF/page/transferenciaContacto/afiliacion/helloWorld.jsp"></forward>
+			<forward name="iniciarAfiliacion" 		path="/WEB-INF/page/transferenciaContacto/afiliacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="iniciarCuentaEnlazar" 	path="/WEB-INF/page/transferenciaContacto/afiliacion/iniciarCuentaEnlazar.jsp"></forward>
+			
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>	
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>	
+			
+			
+			<forward name="confirmarCambioCelular" 	path="/WEB-INF/page/transferenciaContacto/afiliacion/confirmarCambioCelular.jsp"></forward>
+			<forward name="confirmarRegistroBDUC" 		path="/WEB-INF/page/transferenciaContacto/afiliacion/confirmarRegistroBDUC.jsp"></forward>			
+			
+									
+			<forward name="verificarCelular" 		path="/WEB-INF/page/transferenciaContacto/afiliacion/verificarCelular.jsp"></forward>			
+			<forward name="confirmarAfiliacion" 	path="/WEB-INF/page/transferenciaContacto/afiliacion/confirmarAfiliacion.jsp"></forward>			
+			<forward name="constanciaAfiliacion" 	path="/WEB-INF/page/transferenciaContacto/afiliacion/constanciaAfiliacion.jsp"></forward>
+			
+			
+			<forward name="datosAfiliacion" 	path="/WEB-INF/page/transferenciaContacto/afiliacion/datosAfiliacion.jsp"></forward>
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/transferenciaContacto/desafiliacion/iniciarDesafiliacion.jsp"></forward>
+			<forward name="confirmarDesafiliacion" 	path="/WEB-INF/page/transferenciaContacto/desafiliacion/confirmarDesafiliacion.jsp"></forward>
+			<forward name="constanciaDesafiliacion" 	path="/WEB-INF/page/transferenciaContacto/desafiliacion/constanciaDesafiliacion.jsp"></forward>
+			
+			<forward name="iniciarCambio" 	path="/WEB-INF/page/transferenciaContacto/actualizar/iniciarCambio.jsp"></forward>			
+			
+			<forward name="actualizarRegistroBDUC" 	path="/WEB-INF/page/transferenciaContacto/actualizar/actualizarRegistroBDUC.jsp"></forward>
+						
+			<forward name="confirmarCambio" 	path="/WEB-INF/page/transferenciaContacto/actualizar/confirmarCambio.jsp"></forward>
+			<forward name="verificarCambio" 	path="/WEB-INF/page/transferenciaContacto/actualizar/verificarCambio.jsp"></forward>
+			<forward name="constanciaCambio" 	path="/WEB-INF/page/transferenciaContacto/actualizar/constanciaCambio.jsp"></forward>
+			
+						  
+		</action>
+		
+	<!-- Módulo de Afiliaciones - Transferencias  path=AfilTranOther-->
+	
+	</action-mappings>
+
+	<!-- Recursos de mensaje -->
+
+</struts-config>

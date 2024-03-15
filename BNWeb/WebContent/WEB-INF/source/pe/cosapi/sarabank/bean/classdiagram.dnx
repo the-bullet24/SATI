@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_glc1kFv5EdyrmI7UNT-_vg" type="Class" name="classdiagram.dnx">
+  <children xmi:id="_VDb5AFv7EdyrmI7UNT-_vg" targetEdges="_e2z3mFv7EdyrmI7UNT-_vg">
+    <children xmi:id="_VDb5A1v7EdyrmI7UNT-_vg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_VDb5BFv7EdyrmI7UNT-_vg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_VDb5BVv7EdyrmI7UNT-_vg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_VDb5Blv7EdyrmI7UNT-_vg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_VDb5B1v7EdyrmI7UNT-_vg" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VDb5CFv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_VDb5CVv7EdyrmI7UNT-_vg" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VDb5Clv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_VDlC8Fv7EdyrmI7UNT-_vg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VDlC8Vv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_VDlC8lv7EdyrmI7UNT-_vg" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_VDlC81v7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_VDb5AVv7EdyrmI7UNT-_vg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VDb5Alv7EdyrmI7UNT-_vg" x="3816" y="954"/>
+  </children>
+  <children xmi:id="_WxsxoFv7EdyrmI7UNT-_vg">
+    <children xmi:id="_Wxsxo1v7EdyrmI7UNT-_vg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_WxsxpFv7EdyrmI7UNT-_vg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_WxsxpVv7EdyrmI7UNT-_vg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Wxsxplv7EdyrmI7UNT-_vg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Wxsxp1v7EdyrmI7UNT-_vg" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WxsxqFv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Wx2ioFv7EdyrmI7UNT-_vg" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Wx2ioVv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Wx2iolv7EdyrmI7UNT-_vg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Wx2io1v7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Wx2ipFv7EdyrmI7UNT-_vg" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Wx2ipVv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_WxsxoVv7EdyrmI7UNT-_vg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Host[jcu^name=Host.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wxsxolv7EdyrmI7UNT-_vg" x="3816" y="3180"/>
+  </children>
+  <children xmi:id="_ewtPkFv7EdyrmI7UNT-_vg" sourceEdges="_e2z3mFv7EdyrmI7UNT-_vg">
+    <children xmi:id="_ewtPk1v7EdyrmI7UNT-_vg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ewtPlFv7EdyrmI7UNT-_vg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ewtPlVv7EdyrmI7UNT-_vg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewtPllv7EdyrmI7UNT-_vg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewtPl1v7EdyrmI7UNT-_vg" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ewtPmFv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_bwRvAFv8EdyrmI7UNT-_vg" value="0.05357142857142857"/>
+    </children>
+    <children xmi:id="_ewtPmVv7EdyrmI7UNT-_vg" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ewtPmlv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_bwRvAVv8EdyrmI7UNT-_vg" value="0.9464285714285714"/>
+    </children>
+    <children xmi:id="_ewtPm1v7EdyrmI7UNT-_vg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ewtPnFv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewtPnVv7EdyrmI7UNT-_vg" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ewtPnlv7EdyrmI7UNT-_vg"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ewtPkVv7EdyrmI7UNT-_vg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ewtPklv7EdyrmI7UNT-_vg" x="9222" y="954" width="5499" height="1643"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_glc1kVv5EdyrmI7UNT-_vg"/>
+  <edges xmi:id="_e2z3mFv7EdyrmI7UNT-_vg" source="_ewtPkFv7EdyrmI7UNT-_vg" target="_VDb5AFv7EdyrmI7UNT-_vg">
+    <children xmi:id="_e2z3m1v7EdyrmI7UNT-_vg" type="KindLabel">
+      <children xmi:id="_e2z3nVv7EdyrmI7UNT-_vg" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e29okVv7EdyrmI7UNT-_vg" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e29okFv7EdyrmI7UNT-_vg" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e2z3nFv7EdyrmI7UNT-_vg" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e2z3mVv7EdyrmI7UNT-_vg" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=Error[jcu^name=Error.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e2z3mlv7EdyrmI7UNT-_vg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapITF">
+
+	<select id="getITFAnual" parameterClass="pe.cosapi.domain.impl.ItfImpl" resultClass="pe.cosapi.domain.impl.ItfImpl">
+		select cuenta as cuenta,
+		       servicio as servicio,
+		       tpersona as tpersona,
+		       razon as razon,
+		       documento as documento,
+		       direccion as direccion,
+		       moneda as moneda,
+		       periodo as periodo,
+		       cargos as cargos,
+		       abonos as abonos,
+			   cargos + abonos as retencion,
+		       devoluciones as devoluciones,
+			   cargos + abonos + devoluciones as total,
+		       fecha as fecha,
+		       tdocumento as tdocumento
+		  from 
+			   CITF.bnci001_constancias
+		 where 
+			   cuenta 		= #cuenta#
+		   	   and periodo 	= #periodo#
+	</select>
+
+</sqlMap>

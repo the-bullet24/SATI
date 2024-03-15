@@ -1,0 +1,154 @@
+/*
+Project Name: Banco de la Nacion Multired
+Author: the Medialab team
+Author URI: http://www.medialabla.com/
+Description: Main CSS for Banco de la Naci&oacute;n
+Version: 1.0
+Tags: Banco de la Naci&oacute;n, Banco, Banco Peru, Banco Lima, Per&uacute;, per&uacute;, banco provincias...
+*/
+
+/* =Global
+----------------------------------------------- */
+
+
+#cuerpo h1{
+    font: 24px 'daxcompact-mediumregular';
+    padding: 0px 0px 22px 0px;
+}
+
+#sello-seguridad{
+
+}
+
+#sello-seguridad #border-superior{
+
+}
+
+#sello-seguridad #border-inferior{
+    
+}
+
+#sello-seguridad #sello-seguridad-contenido{
+    background: url(../imagenes/border-derecha.png) repeat-y right top #fff;
+    border-left: 1px solid #d4d4d4;
+    color: #555555;
+    font: 12px arial;
+    margin: 0 auto;
+    position: relative;
+    padding: 18px 32px 30px 30px;
+    overflow: hidden;
+    text-align: left;
+    width: 580px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #border-inferior{
+    border-bottom: 1px dashed #B8B8B8;
+    bottom: 90px;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    width: 99%;
+}
+
+#sello-seguridad #sello-seguridad-contenido p{
+    text-align: justify;
+    margin: 0 auto;
+    width: 536px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #sellos{
+    padding: 40px 0px 64px 0px;
+}
+
+#sello-seguridad .cambia-sello #sellos{
+    padding: 0px 0px 10px 0px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #sellos ul{
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #sellos li{
+    float: left;
+    margin: 0px 20px 0px 0px;
+    width: 100px;
+    position: relative;
+    padding:0px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #sellos li div{
+    background: url(../imagenes/bg-sello-seguridad.jpg) no-repeat;
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    height: 88px;
+    padding: 12px 0px 0px  0px;
+    width: 100px;
+    cursor:pointer;
+}
+
+#sello-seguridad #sello-seguridad-contenido #sellos input[type="radio"]{
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #sellos li a img{
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+#sello-seguridad #sello-seguridad-contenido #botones{
+    margin: 0 auto;
+    text-align: center;
+    width: 242px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #botones div{
+    background: url(../imagenes/boton.jpg) no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 24px;
+    font: 14px/24px 'daxcompact-mediumregular';
+    width: 100px;
+    cursor:pointer;
+}
+
+#sello-seguridad #sello-seguridad-contenido #botones div.regresar{
+    margin: 0px 40px 0px 0px;
+}
+
+#sello-seguridad .cambia-sello{
+	background:#fff !important;
+	border:0px !important;
+	padding:0px !important;
+}
+
+#sello-seguridad #sello-seguridad-contenido #botones div.regresar img{
+    vertical-align: middle;
+    margin: 0px 5px 0px 0px;
+}
+
+#sello-seguridad #sello-seguridad-contenido #botones div img{
+    vertical-align: middle;
+    margin: 0px 0px 0px 5px;
+}
+
+ul.tipo-documento{
+    width: 217px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

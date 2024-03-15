@@ -1,0 +1,17 @@
+for (int i=0;i<500;i++)
+{
+byte[] data = new byte[1];
+data[0]= (byte)i;
+System.out.println("The character " + i + "-"+new String(data));
+
+}
+System.out.println("Default: " + new java.io.InputStreamReader(System.in).getEncoding());
+
+System.out.println((byte)'?');
+byte a[]={(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'ß',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'µ',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'±',(byte)'?',(byte)'?',(byte)'?',(byte)'?',(byte)'÷',(byte)'?'};
+System.out.println(new String(a,"US-ASCII"));
+
+
+java.awt.Frame f=new java.awt.Frame();
+f.setState(~java.awt.Frame.ICONIFIED);
+f.setVisible(true);

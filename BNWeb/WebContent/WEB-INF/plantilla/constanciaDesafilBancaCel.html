@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA 
+		DE DESAFILIACION DE <br>OPERACIONES DE BANCA CELULAR<BR>
+		
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="30%">Canal empleado:</TD>
+		<TD class="texto" width="70%">Multired Virtual</TD>
+	</tr>
+	
+	<br>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="30%">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="70%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+
+	<tr>
+		<TD class="texto" width="30%">Nro. Cuenta Ahorro MN:</TD>
+		<TD class="texto" width="70%">${param.cuenta.cuentaformateada}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="30%">Operador Telefono Afiliado:</TD>
+		<TD class="texto" width="70%">${param.mostrarOperador}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">N&uacute;mero Telefono Afiliado:</TD>
+		<TD class="texto" width="70%">${param.numeroCelular}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">N&uacute;mero Servicio Desafiliado:</TD>
+		<TD class="texto" width="70%">${param.mostrarNumAfil}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">Alias de la Operaci&oacute;n:</TD>
+		<TD class="texto" width="70%">${param.aliasOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">Fecha:</TD>
+		<TD class="texto" width="70%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">Hora:</TD>
+		<TD class="texto" width="70%">${param.hora}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="30%">Codigo Operacion:</TD>
+		<TD class="texto" width="70%">${param.nroOperacion}</TD>
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+	
+</TABLE>
+</BODY>
+</HTML>

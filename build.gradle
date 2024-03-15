@@ -1,0 +1,63 @@
+buildscript {
+    repositories {
+        maven {
+            url "$artifactoryUrl/artifactory/libs-release"
+            credentials {
+                username = "$artifactoryUsername"
+                password = "$artifactoryPassword"
+            }
+        }
+    }
+    dependencies {
+        classpath group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.7.1'
+    }
+}
+
+def versionNumber(){
+    def versionNumber=version;
+    if(hasProperty('buildNumber'))
+        versionNumber=versionNumber+"."+buildNumber;
+    return versionNumber;
+}
+
+subprojects {
+    version = versionNumber();
+}
+
+import groovyx.net.http.RESTClient
+import groovyx.net.http.HttpResponseException
+import org.apache.http.entity.FileEntity
+
+subprojects {
+    task publish {
+        doFirst {
+            def client = new RESTClient("$artifactoryUrl")
+            client.auth.basic("$artifactoryUsername", "$artifactoryPassword")
+            client.encoder.'application/zip' = { data ->
+                def entity = new FileEntity((File) data, 'application/zip');
+                entity.setContentType('application/zip');
+                return entity
+            }
+            def projectTask=project.hasProperty('war')?project.property('war'):project.property('ear')
+            def path = "/artifactory/$artifactoryRepository/$codigoMantenimiento/$project.name/$projectTask.archiveName"
+            try {
+                def response = client.put(path: path,
+                    body: projectTask.archivePath,
+                    requestContentType: 'application/zip'
+                )
+                println "Publicacion exitosa"
+                println("Status: " + response.status)
+                def bytes = new byte[response.data.available()];
+                response.data.read(bytes, 0, response.data.available());
+                println("Body: " + new String(bytes))
+            }catch(HttpResponseException e) {
+                def errorMessage="""
+                LA PUBLICACION HA FALLADO
+                Status:  $e.response.status
+                Reason:  $e.response.statusLine.reasonPhrase
+                """
+                throw new GradleException(errorMessage.stripIndent()) 
+            }
+        }
+    }
+}

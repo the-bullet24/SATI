@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 10px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+<STYLE>
+<!--
+.DetMov {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 9px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+
+<TABLE width="500">
+	<TR>
+		<TD align="center" class="texto" colspan="4"><B>CONSTANCIA DE ULTIMOS MOVIMIENTOS - CUENTA CORRIENTE -
+		#if($param.tipoCuenta=="137")DETRACCIONES #else ORDINARIA #end<BR>
+		<BR>
+		</B></TD>
+	</TR>
+
+	<tr>
+		<TD class="texto" width="30%">Canal empleado:</TD>
+		<TD class="texto" colspan="3">Multired Virtual</TD>
+	</tr>
+
+	<TR>
+		<TD class="texto" width="30%">Fecha y Hora:</TD>
+		<TD class="texto" width="33%">${param.fecha} | ${param.hora}</TD>
+		<TD class="texto" width="28%">Saldo Contable:</TD><TD class="texto" align="left" width="12%">${param.saldoContable}</TD>
+		
+	</TR>
+	<TR>
+		<TD class="texto" width="30%">Nro. Cuenta Corriente:</TD>
+		<TD class="texto" width="33%">${param.cuentaformateada}</TD>
+		<TD class="texto" width="28%">Saldo Disponible:</TD><TD class="texto" align="left" width="12%">${param.saldo}</TD>
+		
+	</TR>
+	<TR>
+		<TD class="texto" width="30%">Moneda:</TD>
+		<TD class="texto" width="33%">${param.nombreMonedaProductoMail}</TD>
+		<TD class="texto" width="28%">Situación de la cuenta:</TD><TD class="texto" align="left" width="12%">${param.situacionCuenta}</TD>
+		
+	</TR>
+	<TR>
+		<TD class="texto" width="30%">Nombre de la cuenta:</TD>
+		<TD class="texto" colspan="3">${param.descripcionCuenta}</TD>
+	</TR>
+</TABLE>
+<BR>
+
+<TABLE width="500" cellspacing="0" cellpadding="0">
+
+	<TR style="border: medium; border-color: #FFFFFF">
+		<TD class="texto" align="center">
+			Nro.
+		</TD>
+		<TD class="texto" align="center" width="10%">
+			Fecha
+		</TD>
+		<TD class="texto" align="center" width="10%">
+			Trans.
+		</TD>
+		<TD class="texto" align="center" width="10%">
+			Documento
+		</TD>
+		#if ($param.tipoCuenta=="137")
+		<TD class="texto" align="center" width="10%">
+			RUC
+		</TD>
+		#end
+		<TD class="texto" align="center" width="10%">
+			Oficina
+		</TD>
+
+		<TD class="texto" align="center" width="20%">
+			Cargo
+		</TD>
+		<TD class="texto" align="center" width="20%">
+			Abono
+		</TD>
+	</TR>
+	#if (0 < ${param.movimientos.size()})
+		#set( $a=0)
+		#foreach ($value in ${param.movimientos})
+		#set($a=$a+1)
+	<TR style="border-bottom: none">
+		<TD class="texto" align="center" 	width="3.8%">${value.secuencia}</TD>
+		<TD class="texto" align="left" 	width="10%">$date.format('dd.MM.yyyy',$value.fecha)</TD>
+		<TD class="texto" align="left" 	width="10%">${value.concepto}</TD>
+		<TD class="texto" align="center" 	width="10%">${value.nroCheque}</TD>
+		#if ($param.tipoCuenta=="137")
+		<TD class="texto" align="center" 	width="10%">${value.ruc}</TD>
+		#end
+		<TD class="texto" align="center" 	width="10%">${value.oficina}</TD>
+		#if ($value.signo=="-")
+		<TD class="texto" align="right" 	width="20%">${value.cargo}</TD>
+		<TD class="texto" align="right" 	width="20%"></TD>
+		#else
+		<TD class="texto" align="right" 	width="20%"></TD>
+		<TD class="texto" align="right" 	width="20%">${value.abono}</TD>
+		#end
+		
+	</TR>
+		#end
+		
+	#else
+	<TR>
+		<TD colspan="5" class="DetMov" align="center">
+			<B>No existen movimientos asociados</B>
+		</TD>
+	</TR>
+	#end
+
+</TABLE>
+<TABLE width="500">
+	<TR  align="justify">
+		<TD colspan="7">
+			<FONT size="-5" face="Arial"><BR>
+		${mensajeDiferenciaSaldo}</FONT>
+		</TD>
+	</TR>
+</TABLE>
+
+</BODY>
+</HTML>

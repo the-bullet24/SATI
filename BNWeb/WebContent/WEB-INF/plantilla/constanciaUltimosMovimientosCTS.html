@@ -1,0 +1,128 @@
+
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 10px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<STYLE>
+<!--
+.DetMov {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 10px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+<TABLE width="360">
+	<tr>
+		<TD align="center" class="texto" colspan="3"><B>CONSTANCIA <br>
+		DE ULTIMOS MOVIMIENTOS - <acronym title="Compensación por Tiempo de Servicios">CTS</acronym><BR>
+		<BR>
+		</B></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="148">Canal empleado:</TD>
+		<TD class="texto" colspan="2">Multired Virtual</TD>
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="148">Titular de Cuenta:</td>
+		<td class="texto" colspan="2">${usuario.nombre}</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto" width="148">N&deg;&nbsp;Cuenta <acronym title="Compensación por Tiempo de Servicios">CTS</acronym>:</TD>
+		<TD class="texto" colspan="2">${param.cuentaformateada}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="148">Moneda:</TD>
+		<TD class="texto" colspan="2">${param.nombreMonedaProductoMail}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="148">Saldo Contable:</TD>
+		<TD class="texto" align="right" width="228">${param.saldoContable}</TD>
+		<TD class="texto" align="right" width="36"></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="148">Saldo Disponible:</TD>
+		<TD class="texto" align="right" width="228">${param.saldo}</TD>
+		<TD class="texto" align="right" width="36"></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="148">Fecha:</TD>
+		<TD class="texto" colspan="2">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="148">Hora:</TD>
+		<TD class="texto" colspan="2">${param.hora}</TD>
+	</tr>
+</TABLE>
+<BR>
+<TABLE width="500">
+
+	<TR>
+		<TD class="texto" align="center">
+			N&deg;
+		</TD>
+		<TD class="texto" align="center" width="10%">
+			Fecha
+		</TD>
+		<TD class="texto" align="center" width="10%">
+			Código
+		</TD>
+		<TD class="texto" align="center" width="10%">
+			Descripción
+		</TD>
+		<TD class="texto" align="center" width="20%">
+			Cargo
+		</TD>
+		<TD class="texto" align="center" width="20%">
+			Abono
+		</TD>
+	</TR>
+	#if (0 < ${param.movimientos.size()})
+		#set( $a=0)
+		#foreach ($value in ${param.movimientos})
+		#set($a=$a+1)
+	<TR>
+		<TD class="texto" align="center" width="3.8%">${a}</TD>
+		<TD class="texto" align="left" width="10%">$date.format('dd.MM.yyyy',$value.fecha)</TD>
+		<TD class="texto" align="left" width="10%">${value.concepto}</TD>
+		<TD class="texto" align="left" width="10%">${value.desConcepto}</TD>
+		#if ($value.signo=="-")
+		<TD class="texto" align="right" 	width="20%">${value.cargo}</TD>
+		<TD class="texto" align="right" 	width="20%"></TD>
+		#else
+		<TD class="texto" align="right" 	width="20%"></TD>
+		<TD class="texto" align="right" 	width="20%">${value.abono}</TD>
+		#end
+	</TR>
+		#end
+	#else
+	<TR>
+		<TD colspan="5" class="texto" align="center" width="100%">
+			<B>No existen movimientos asociados</B>
+		</TD>
+	</TR>
+	#end
+
+	<TR  align="justify">
+		<TD colspan="5">
+			<FONT size="-5" face="Arial"><BR>
+		${mensajeDiferenciaSaldo}</FONT>
+		</TD>
+	</TR>
+</TABLE>
+
+</BODY>
+</HTML>

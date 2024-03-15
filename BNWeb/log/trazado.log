@@ -1,0 +1,162 @@
+[main][vie sep 02 09:46:53.939 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:202]Objeto conexion [1850895954] reporta excepcion en ejecucion
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: SIX010 - Pool[SIX] ConnSIX[[1850895954]] Timeout al esperar respuesta del SIX, maxima espera de lectura [8]seg. Datos ejecucion: [01AC0500Emp0001    01SUX     20110902094644NOVATRONIC  37611200112233       0151487            25                             00000002999000901                                         01]. Informe al productor del servicio de la demora.
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:197)
+	at com.novatronic.pool.ObjectPooledAbs.execute(ObjectPooledAbs.java:195)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.execute(SixSecurityClientImpl.java:154)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.consultarCoordenadas(SixSecurityClientImpl.java:1084)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:117)
+Caused by: 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:155)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readShort(DataInputStream.java:310)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.leerMsg(ClienteSIXConnection.java:580)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:159)
+	... 4 more
+[main][vie sep 02 09:46:54.001 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:228]354794[1850895954] Ejecutado CON ERROR input[ID[354794]VALUE[186][01AC0500Emp0001    01SUX     20110902094644NOVATRONIC  37611200112233       0151487            25                             00000002999000901                                         01]] output[null]
+[main][vie sep 02 09:47:10.470 2011][ERROR][com.novatronic.pool.PoolConnection:destroy:462]No pudo cerrar correctamente el objeto [1850895954] en la posicion [0] del pool
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: Comando Respondido no esperado recibido[SCJSSA  ] esperado[LOGOFF  ].
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.validarRespuesta(ClienteSIXConnection.java:605)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.destroyObject(ClienteSIXConnection.java:285)
+	at com.novatronic.pool.PoolConnection.destroyObject(PoolConnection.java:236)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:460)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:483)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnectionFactory.destroy(ClienteSIXConnectionFactory.java:142)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.destroyFactory(SixSecurityClientImpl.java:128)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:151)
+[main][vie sep 02 09:52:41.089 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:202]Objeto conexion [1393185546] reporta excepcion en ejecucion
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: SIX010 - Pool[SIX] ConnSIX[[1393185546]] Timeout al esperar respuesta del SIX, maxima espera de lectura [8]seg. Datos ejecucion: [01AC0500Emp0001    01SUX     20110902095231NOVATRONIC  26560600112233       0151487            25                             00000002999000901                                         01]. Informe al productor del servicio de la demora.
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:197)
+	at com.novatronic.pool.ObjectPooledAbs.execute(ObjectPooledAbs.java:195)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.execute(SixSecurityClientImpl.java:154)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.consultarCoordenadas(SixSecurityClientImpl.java:1084)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:117)
+Caused by: 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:155)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readShort(DataInputStream.java:310)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.leerMsg(ClienteSIXConnection.java:580)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:159)
+	... 4 more
+[main][vie sep 02 09:52:41.104 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:228]667145[1393185546] Ejecutado CON ERROR input[ID[667145]VALUE[186][01AC0500Emp0001    01SUX     20110902095231NOVATRONIC  26560600112233       0151487            25                             00000002999000901                                         01]] output[null]
+[main][vie sep 02 09:52:57.604 2011][ERROR][com.novatronic.pool.PoolConnection:destroy:462]No pudo cerrar correctamente el objeto [1393185546] en la posicion [0] del pool
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: Comando Respondido no esperado recibido[SCJSSA  ] esperado[LOGOFF  ].
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.validarRespuesta(ClienteSIXConnection.java:605)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.destroyObject(ClienteSIXConnection.java:285)
+	at com.novatronic.pool.PoolConnection.destroyObject(PoolConnection.java:236)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:460)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:483)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnectionFactory.destroy(ClienteSIXConnectionFactory.java:142)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.destroyFactory(SixSecurityClientImpl.java:128)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:151)
+[main][vie sep 02 09:58:12.171 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:202]Objeto conexion [1802267500] reporta excepcion en ejecucion
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: SIX010 - Pool[SIX] ConnSIX[[1802267500]] Timeout al esperar respuesta del SIX, maxima espera de lectura [8]seg. Datos ejecucion: [01AC0500Emp0001    01SUX     20110902095802NOVATRONIC  82010200112233       0151487            25                             00000002999000901                                         01]. Informe al productor del servicio de la demora.
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:197)
+	at com.novatronic.pool.ObjectPooledAbs.execute(ObjectPooledAbs.java:195)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.execute(SixSecurityClientImpl.java:154)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.consultarCoordenadas(SixSecurityClientImpl.java:1084)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:117)
+Caused by: 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:155)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readShort(DataInputStream.java:310)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.leerMsg(ClienteSIXConnection.java:580)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:159)
+	... 4 more
+[main][vie sep 02 09:58:12.186 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:228]922723[1802267500] Ejecutado CON ERROR input[ID[922723]VALUE[186][01AC0500Emp0001    01SUX     20110902095802NOVATRONIC  82010200112233       0151487            25                             00000002999000901                                         01]] output[null]
+[main][vie sep 02 09:58:28.734 2011][ERROR][com.novatronic.pool.PoolConnection:destroy:462]No pudo cerrar correctamente el objeto [1802267500] en la posicion [0] del pool
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: Comando Respondido no esperado recibido[SCJSSA  ] esperado[LOGOFF  ].
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.validarRespuesta(ClienteSIXConnection.java:605)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.destroyObject(ClienteSIXConnection.java:285)
+	at com.novatronic.pool.PoolConnection.destroyObject(PoolConnection.java:236)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:460)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:483)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnectionFactory.destroy(ClienteSIXConnectionFactory.java:142)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.destroyFactory(SixSecurityClientImpl.java:128)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:151)
+[main][vie sep 02 09:58:53.080 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:202]Objeto conexion [61211558] reporta excepcion en ejecucion
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: SIX010 - Pool[SIX] ConnSIX[[61211558]] Timeout al esperar respuesta del SIX, maxima espera de lectura [8]seg. Datos ejecucion: [01AC0500Emp0001    01SUX     20110902095843NOVATRONIC  88332100112233       0151487            25                             00000002999000901                                         01]. Informe al productor del servicio de la demora.
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:197)
+	at com.novatronic.pool.ObjectPooledAbs.execute(ObjectPooledAbs.java:195)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.execute(SixSecurityClientImpl.java:154)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.consultarCoordenadas(SixSecurityClientImpl.java:1084)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:117)
+Caused by: 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:155)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readShort(DataInputStream.java:310)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.leerMsg(ClienteSIXConnection.java:580)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:159)
+	... 4 more
+[main][vie sep 02 09:58:53.095 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:228]834722[61211558] Ejecutado CON ERROR input[ID[834722]VALUE[186][01AC0500Emp0001    01SUX     20110902095843NOVATRONIC  88332100112233       0151487            25                             00000002999000901                                         01]] output[null]
+[Pool_SIX][vie sep 02 09:59:01.721 2011][ERROR][com.novatronic.pool.ThreadFreeResources:run:114]Objeto conexion [61211558] en posicion [0] del pool, presento una excepcion al cerrar objeto por renovacion
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:112)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:128)
+	at java.io.DataOutputStream.writeShort(DataOutputStream.java:175)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.enviarMsg(ClienteSIXConnection.java:575)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.destroyObject(ClienteSIXConnection.java:272)
+	at com.novatronic.pool.PoolConnection.destroyObject(PoolConnection.java:236)
+	at com.novatronic.pool.ThreadFreeResources.run(ThreadFreeResources.java:112)
+	at java.lang.Thread.run(Thread.java:797)
+[main][vie sep 02 15:43:04.995 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:202]Objeto conexion [1770809740] reporta excepcion en ejecucion
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: SIX010 - Pool[SIX] ConnSIX[[1770809740]] Timeout al esperar respuesta del SIX, maxima espera de lectura [8]seg. Datos ejecucion: [01AC0500Emp0001    01SUX     20110902154255NOVATRONIC  93637600112233       0151487            25                             00000002999000902                                         01]. Informe al productor del servicio de la demora.
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:197)
+	at com.novatronic.pool.ObjectPooledAbs.execute(ObjectPooledAbs.java:195)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.execute(SixSecurityClientImpl.java:166)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.consultarCoordenadas(SixSecurityClientImpl.java:1096)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:117)
+Caused by: 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:155)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readShort(DataInputStream.java:310)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.leerMsg(ClienteSIXConnection.java:580)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:159)
+	... 4 more
+[main][vie sep 02 15:43:05.026 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:228]228547[1770809740] Ejecutado CON ERROR input[ID[228547]VALUE[186][01AC0500Emp0001    01SUX     20110902154255NOVATRONIC  93637600112233       0151487            25                             00000002999000902                                         01]] output[null]
+[main][vie sep 02 15:43:21.438 2011][ERROR][com.novatronic.pool.PoolConnection:destroy:462]No pudo cerrar correctamente el objeto [1770809740] en la posicion [0] del pool
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: Comando Respondido no esperado recibido[SCJSSA  ] esperado[LOGOFF  ].
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.validarRespuesta(ClienteSIXConnection.java:605)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.destroyObject(ClienteSIXConnection.java:285)
+	at com.novatronic.pool.PoolConnection.destroyObject(PoolConnection.java:236)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:460)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:483)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnectionFactory.destroy(ClienteSIXConnectionFactory.java:142)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.destroyFactory(SixSecurityClientImpl.java:140)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:151)
+[main][vie sep 02 15:44:05.546 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:202]Objeto conexion [1358844158] reporta excepcion en ejecucion
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: SIX010 - Pool[SIX] ConnSIX[[1358844158]] Timeout al esperar respuesta del SIX, maxima espera de lectura [8]seg. Datos ejecucion: [01AC0500Emp0001    01SUX     20110902154356NOVATRONIC  90943000112233       0151487            25                             00000002999000902                                         01]. Informe al productor del servicio de la demora.
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:197)
+	at com.novatronic.pool.ObjectPooledAbs.execute(ObjectPooledAbs.java:195)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.execute(SixSecurityClientImpl.java:166)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.consultarCoordenadas(SixSecurityClientImpl.java:1096)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:117)
+Caused by: 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:155)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readShort(DataInputStream.java:310)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.leerMsg(ClienteSIXConnection.java:580)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.customExecute(ClienteSIXConnection.java:159)
+	... 4 more
+[main][vie sep 02 15:44:05.562 2011][ERROR][com.novatronic.pool.ObjectPooledAbs:execute:228]225911[1358844158] Ejecutado CON ERROR input[ID[225911]VALUE[186][01AC0500Emp0001    01SUX     20110902154356NOVATRONIC  90943000112233       0151487            25                             00000002999000902                                         01]] output[null]
+[main][vie sep 02 15:44:21.990 2011][ERROR][com.novatronic.pool.PoolConnection:destroy:462]No pudo cerrar correctamente el objeto [1358844158] en la posicion [0] del pool
+com.novatronic.components.sixclient.tcp.exception.ClienteSIXConnectionException: Comando Respondido no esperado recibido[SCJSSA  ] esperado[LOGOFF  ].
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.validarRespuesta(ClienteSIXConnection.java:605)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnection.destroyObject(ClienteSIXConnection.java:285)
+	at com.novatronic.pool.PoolConnection.destroyObject(PoolConnection.java:236)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:460)
+	at com.novatronic.pool.PoolConnection.destroy(PoolConnection.java:483)
+	at com.novatronic.components.sixclient.tcp.ClienteSIXConnectionFactory.destroy(ClienteSIXConnectionFactory.java:142)
+	at com.novatronic.apiclientesixsecurityadvance.SixSecurityClientImpl.destroyFactory(SixSecurityClientImpl.java:140)
+	at pe.cosapi.wilder.test.TestSolicitaCoordena.main(TestSolicitaCoordena.java:151)

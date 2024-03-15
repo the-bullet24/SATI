@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<BLOCKQUOTE>
+<TABLE width="90%">
+	<TR>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE PAGO DE SERVICIOS<BR>
+		<BR>
+		</B></TD>
+	</TR>
+	<TR>
+		<TD align="center" class="texto" colspan="2"><B>${param.empresa}<BR>
+		<BR>
+		</B></TD>
+	</TR>
+	<TR>
+		<TD align="left" class="texto" colspan="2">RUC proveedor: ${param.ruc}<BR>
+		
+		</TD>
+	</TR>
+		<TR>
+		<TD align="left" class="texto" colspan="2">Documento autorizado: ${param.documento}<BR>
+		
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">&nbsp;</TD>
+		<TD class="texto" width="60%">&nbsp;</TD>
+		
+	</TR>
+	<tr>
+		<TD class="texto" width="40%">Canal empleado:</TD>
+		<TD class="texto" align="left" width="60%">Multired Virtual</TD>
+	</tr>
+
+	<TR>
+		<TD class="texto" width="40%">Fecha:</TD>
+		<TD class="texto" align="left" width="60%">${param.fecha}</TD>
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%">Hora:</TD>
+		<TD class="texto" align="left" width="60%">${param.hora}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Nro. Cuenta Origen:</TD>
+		<TD class="texto" align="left" width="60%">${param.ctaFormateada}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Nro. Telef&oacute;nico:</TD>
+		<TD class="texto" align="left" width="60%">${param.codServicio}</TD>
+	</TR>
+
+
+	#if (${param.tipoCambio})
+	<TR>
+		<TD class="texto" width="40%">Tipo de cambio:</TD>
+		<TD class="texto" align="right" width="60%">S/ ${param.tipoCambio}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="60%">US$ ${param.importeDol}</TD>
+
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Importe al Cambio:</TD>
+		<TD class="texto" align="right" width="60%">S/ ${param.importeSol}</TD>
+
+	</TR>
+	#end
+	<TR>
+		<TD class="texto" width="40%">Importe Recarga:</TD>
+		<TD class="texto" align="right" width="60%">S/ ${param.importe}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Valor de Venta:</TD>
+		<TD class="texto" align="right" width="60%">S/ ${param.importeSinImp}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">IGV (18%):</TD>
+		<TD class="texto" align="right" width="60%">S/ ${param.impuesto}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">Total Pagado:</TD>
+		<TD class="texto" align="right" width="60%">S/ ${param.importe}</TD>
+	</TR>
+
+	<TR>
+		<TD class="texto" width="40%">Nro. Operaci&oacute;n:</TD>
+		<TD class="texto" align="left" width="60%">${param.nroOperacion}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%">&nbsp;</TD>
+		<TD class="texto" width="60%">&nbsp;</TD>
+		
+	</TR>
+	
+	<TR>
+		<TD align="center" class="texto" colspan="2">${param.mensaje}</TD>
+	</TR>
+	<TR>
+		<TD align="center" class="texto" colspan="2">&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD align="center" class="texto" colspan="2">Documento autorizado para fines tributarios 
+		</TD>
+	</TR>
+	<TR>
+		<TD align="center" class="texto" colspan="2">
+		Base Legal: Documento autorizado Art.4 Num. 6.1 Inc D.R.S. 007-99/SUNAT</TD>
+	</TR>
+#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BLOCKQUOTE>
+</BODY>
+</HTML>

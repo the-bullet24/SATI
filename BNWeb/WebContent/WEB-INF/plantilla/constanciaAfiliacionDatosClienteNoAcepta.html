@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11.5px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="550">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE ACTUALIZACION
+		DE DATOS <BR> 
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="247">Canal empleado:</TD>
+		<TD class="texto" width="397">Multired Virtual</TD>
+	</tr>
+	
+	<br>
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="247">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="397">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<BR>
+	<tr>
+		<TD class="texto" width="247">Nro. Cuenta Ahorro MN:</TD>
+		<TD class="texto" width="397">${param.cuenta.cuentaformateada}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Tipo y N&uacute;mero de Documento:</TD>
+		<TD class="texto" width="397">${param.tipoDocumento}-${param.numDocumento}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Direcci&oacute;n:</TD>
+		<TD class="texto" width="397">${param.direccion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Tel&eacute;fono Fijo:</TD>
+		<TD class="texto" width="397">${param.telFijo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Tel&eacute;fono Fijo Laboral:</TD>
+		<TD class="texto" width="397">${param.telFijoLab}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Anexo:</TD>
+		<TD class="texto" width="397">${param.anexo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Operador Telef&oacute;nico - Tel&eacute;fono Celular:</TD>
+		<TD class="texto" width="397">${param.mostrarOperador} - ${param.telCelular}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Correo Personal:</TD>
+		<TD class="texto" width="397">${param.correo}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Correo Adicional:</TD>
+		<TD class="texto" width="397">${param.correoAdicional}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Fecha:</TD>
+		<TD class="texto" width="397">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Hora:</TD>
+		<TD class="texto" width="397">${param.hora}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="247">Codigo Operaci&oacute;n:</TD>
+		<TD class="texto" width="397">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" colspan="2">&nbsp;</TD>
+	
+	</tr>
+	
+	<tr>
+				<td class="texto1" colspan="2"><p align="justify">
+				
+				Declaro que la informaci&oacute;n consignada me corresponde y es verdadera, la misma que ser&aacute; tratada por el Banco de la Naci&oacute;n seg&uacute;n la Ley 
+				y Reglamento de Protecci&oacute;n de Datos Personales, si la informaci&oacute;n consignada cambia solicitar&eacute; su actualizaci&oacute;n.	
+				<BR/><BR/>
+				 No acepto que el Banco de la Naci&oacute;n use, de tratamiento y transfiera mis datos personales de manera directa o
+				 por medio de socios comerciales, con la finalidad de informarme acerca de productos y servicios que brinde 
+				 el Banco. Pudiendo ejercer mis derechos de acceso, rectificaci&oacute;n, cancelaci&oacute;n y oposici&oacute;n, enviando 
+				 una comunicaci&oacute;n por escrito al Banco.
+												
+			</p></td>
+		</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+
+</BODY>
+</HTML>

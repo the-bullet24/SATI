@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE CONSULTA <br>
+		DE CRONOGRAMA DE PAGOS<BR>
+		<BR></B></TD>
+		
+		
+	</tr>
+
+	<tr>
+		<TD class="texto" width="30%">Canal empleado:</TD>
+		<TD class="texto" width="70%">Multired Virtual</TD>
+	</tr>
+	
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="30%">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="70%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<tr>
+		<TD class="texto">Cliente:</TD>
+		<TD class="texto">${param.cliente}</TD>
+	</tr>
+	<tr>
+		<TD class="texto"><acronym title="Documento Oficial de Identificación">DOI</acronym>:</TD>
+		<TD class="texto">${param.DOI} ${param.nroDocumento}</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Direcci&oacute;n:</TD>
+		<TD class="texto">${param.direccion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Garante:</TD>
+		<TD class="texto">${param.garante}</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Importe del Préstamo:</TD>
+		<TD class="texto">S/ ${param.deudaActual}</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Pagar&eacute; n&uacute;mero:</TD>
+		<TD class="texto">${param.pagare}</TD>
+	</tr>
+	<tr>
+		<TD class="texto">Fecha Pr&eacute;stamo:</TD>
+		<TD class="texto">$date.format('dd/MM/yyyy',$param.fechaPrestamo)</TD>
+	</tr>
+</TABLE>
+<BR>
+<TABLE width="100%" align="center">
+	<TR>
+		<TD class="texto"><span>
+			N&deg;Cuota</span>
+		</TD>
+		<TD class="texto"><span>
+			Fecha Vencimiento</span>
+		</TD>
+		<TD class="texto"><span>
+			Amortizaci&oacute;n</span>
+		</TD>
+		<TD class="texto"><span>
+			Inter&eacute;s</span>
+		</TD>
+			<TD class="texto" align="center"><span>
+			Desgrav.</span>
+		</TD>
+		<TD class="texto"><span>
+			Cuota</span>
+		</TD>
+		<TD class="texto"><span>
+			Saldo</span>
+		</TD>
+		<TD class="texto"><span>
+			<abbr title="Situación">Sit.</abbr></span>
+		</TD>
+	</TR>
+	#if (0 < ${param.calendarioPrestamo.size()})
+		#foreach ($value in ${param.calendarioPrestamo})
+	<TR>
+		<TD class="texto"><span>
+			${value.id}</span>
+		</TD>
+		<TD class="texto"><span>
+			$date.format('dd/MM/yyyy',$value.fecha)</span>
+		</TD>
+		<TD class="texto"><span>
+			${value.amortizacion}</span>
+		</TD>
+		<TD class="texto"><span>
+			${value.interes}</span>
+		</TD>
+		<TD class="texto" align="center"><span>
+			${value.seguro}</span>
+		</TD>
+		<TD class="texto"><span>
+			${value.cuota}</span>
+		</TD>
+		<TD class="texto"><span>
+			${value.saldo}</span>
+		</TD>
+		<TD class="texto"><span>
+			${value.estado}</span>
+		</TD>
+	</TR>
+		#end
+	#else
+	<TR>
+		<TD colspan="3" class="texto" align="center">
+			<B>No existe un calendario de pagos asignado</B>
+		</TD>
+	</TR>
+	#end
+
+	
+</TABLE>
+
+<TABLE width="90%" align="center">
+	<TR>
+			<TD colspan="7">&nbsp;</TD>
+	</TR>
+<TR>
+		<TD colspan="7" class="texto" align="justify"><FONT size="-2" face="Arial">
+			<span>Situación de la Cuota se presenta actualizada a la fecha de consulta.</span><br/>
+					
+		 <span>NOTA - Intereses referenciales, que se cobraran actualizados a la fecha de pago de la cuota. 
+			El titular podrá acceder a un nuevo préstamo si el garante pagó 3 cuotas consecutivas y/o alternas o si se atrasó más de 120 días en el pago de una cuota,  con la condición de que deben haber pasado 2 años desde que el último préstamo otorgado al cliente fue cancelado. Los pagos pueden ser efectuados en cualquier ventanilla del banco.</span>
+			<br/><br/>
+		 
+			</FONT>
+		</TD>
+	</TR>
+
+</TABLE>
+</BODY>
+</HTML>

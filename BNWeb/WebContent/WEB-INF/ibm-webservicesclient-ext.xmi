@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wscext:WsClientExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wscext="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wscext.xmi" xmi:id="WsClientExtension_1177690775651">
+  <serviceRefs xmi:id="ServiceRef_1632149164625" serviceRefLink="service/WSPINBLOCK">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164625" portQnameLocalNameLink="WSPINBLOCKSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164626" serviceRefLink="service/WSDatosCuenta">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164626" portQnameLocalNameLink="WSDatosCuentaSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164628" serviceRefLink="service/WSCertiPINBLOCK">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164628" portQnameLocalNameLink="WSCertiPINBLOCKSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164629" serviceRefLink="service/WSCertiDatosCuenta">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164629" portQnameLocalNameLink="WSCertiDatosCuentaSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164630" serviceRefLink="service/WSPRDDatosCuenta">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164630" portQnameLocalNameLink="WSPRDDatosCuentaSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164631" serviceRefLink="service/WSPRDPINBLOCK">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164631" portQnameLocalNameLink="WSPRDPINBLOCKSoap"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1632149164634" serviceRefLink="service/ParametroInterfazService">
+    <portQnameBindings xmi:id="PortQnameBinding_1632149164634" portQnameLocalNameLink="ParametroInterfaz"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1697045959272" serviceRefLink="service/ServicioBNSmsService">
+    <portQnameBindings xmi:id="PortQnameBinding_1697045959272" portQnameLocalNameLink="ServicioBNSms"/>
+  </serviceRefs>
+  <serviceRefs xmi:id="ServiceRef_1699050912482" serviceRefLink="service/ServicioBNInteroperabilidadService">
+    <portQnameBindings xmi:id="PortQnameBinding_1699050912482" portQnameLocalNameLink="ServicioBNInteroperabilidad"/>
+  </serviceRefs>
+</com.ibm.etools.webservice.wscext:WsClientExtension>

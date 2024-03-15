@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="350">
+	<tr> 
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA <br>
+		DE ${tituloAfiliacion}<BR>
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto">Canal empleado:</TD>
+		<TD class="texto" width="187">Multired Virtual</TD>
+	</tr>
+
+	<TR>
+		<TD class="texto">Nro. Tarjeta:</TD>
+		<TD class="texto" width="187">${param.tarjetaOculta}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Nro. de Documento:</TD>
+		<TD class="texto" width="187">${param.numeroServicio}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Detalle de la Afiliaci&oacute;n:</TD>
+		<TD class="texto" width="187">${param.descripcion}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Fecha:</TD>
+		<TD class="texto" width="187">${param.fecha}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Hora:</TD>
+		<TD class="texto" width="187">${param.hora}</TD>
+	</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

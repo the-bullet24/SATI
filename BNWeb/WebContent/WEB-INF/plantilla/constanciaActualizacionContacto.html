@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: justify; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11.5px; 
+font-style: normal; 
+text-align: justify; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="550">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA<br>
+		CAMBIO DE CELULAR AFILIADO A TRANSFERENCIA<br>
+		 INTERBANCARIA A CONTACTOS<BR>
+		<BR></B></TD>
+	</tr>
+	
+	<br>
+
+	<tr>
+		<TD class="texto" width="247">Canal empleado:</TD>
+		<TD class="texto" width="397">Multired Virtual</TD>
+	</tr>
+
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="247">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="397">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<BR>
+	<tr>
+		<TD class="texto" width="247">Número celular personal afiliado:</TD>
+		<TD class="texto" width="397">${param.numeroCelularContacto}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Cuenta donde se recibirán fondos de transferencia:</TD>
+		<TD class="texto" width="60%" align="left">${param.cuentaOrigen.nombreTipoProducto} - ${param.cuentaOrigen.simboloMonedaProducto} - 
+		${param.cuentaOrigen.cuentaformateada}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="247">Tipo de cuenta:</TD>
+		<TD class="texto" width="397">${usuario.entidadCuenta} - ${usuario.entidadCuentaDesc} </TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="247">CCI del cliente:</TD>
+		<TD class="texto" width="397">${usuario.cciCliente}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="247">Estado de afiliación:</TD>
+		<TD class="texto" width="397">Activado</TD>
+	</tr>	
+	<tr>
+		<TD class="texto" width="247">Nro Operación:</TD>
+		<TD class="texto" width="397">${param.numOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Fecha:</TD>
+		<TD class="texto" width="397">${param.fechaAfiliacion}</TD>
+	</tr>
+
+	<tr>
+		<td colspan="2">  </td>
+	</tr>
+
+	
+
+
+</TABLE>
+
+</BODY>
+</HTML>

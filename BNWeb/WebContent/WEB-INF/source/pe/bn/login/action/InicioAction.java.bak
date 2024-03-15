@@ -1,0 +1,147 @@
+/*
+ * Creado el 12/02/2007
+ *
+ * TODO Para cambiar la plantilla de este archivo generado, vaya a
+ * Ventana - Preferencias - Java - Estilo de código - Plantillas de código
+ */
+package pe.bn.login.action;
+
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Vector;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+
+import pe.bn.login.domain.Menu;
+import pe.cosapi.action.GrandActionAbstract;
+import pe.cosapi.common.BNAplicacion;
+import pe.cosapi.common.Constante;
+import pe.cosapi.common.ConstanteSesion;
+import pe.cosapi.common.FacadeFactory;
+import pe.cosapi.domain.Banner;
+import pe.cosapi.domain.Branch;
+import pe.cosapi.domain.MasterTransaction;
+import pe.cosapi.domain.Usuario;
+
+/**
+ * @author cosapi_ati04
+ *
+ * TODO Para cambiar la plantilla de este comentario generado, vaya a
+ * Ventana - Preferencias - Java - Estilo de código - Plantillas de código
+ */
+public class InicioAction extends GrandActionAbstract {
+	BNAplicacion aplicacion = BNAplicacion.getInstance();
+	
+	/**
+	 * Metodo default de todos los actions
+	 * @throws Exception
+	 */
+	
+	
+	public ActionForward iniciar(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+	    //System.out.println("begin method iniciar");
+		
+		return null;
+	}
+	
+	public ActionForward cargarCabecera(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		Usuario usuario = (Usuario)request.getSession().getAttribute(ConstanteSesion.USUARIO_EN_SESION);
+		//aplicacion.getMensajes();
+		String imgTipoPersona 		= "";
+		String imgTipoPersonaFecha 	= "";
+		
+		String tipoPersona = usuario.getTipoPersona();
+		Branch branch 	   = BNAplicacion.getInstance().getBranch();
+		Calendar c 	= Calendar.getInstance();
+		Timestamp t = new Timestamp(c.getTime().getTime());
+		imgTipoPersonaFecha = branch.getBandef();
+		//System.out.println("banner es..............."+imgTipoPersonaFecha);
+		request.setAttribute("imgTipoPersona", imgTipoPersona);
+		request.setAttribute("imgTipoPersonaFecha", imgTipoPersonaFecha);
+		request.setAttribute("imgLogoBN",Constante.IMG_LOGO_BN);
+		
+		return mapping.findForward("cabecera");
+	}
+	
+	public ActionForward cargarMenu(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		Usuario usuario = (Usuario)request.getSession().getAttribute(ConstanteSesion.USUARIO_EN_SESION);
+
+		String tipoPersona 		= usuario.getTipoPersona();
+		String imgCerrarSession = "";
+		
+		Menu[] arrMenu = null;
+		//if(Constante.VER_LOG) System.out.println("antes de llamar tipoPersona="+tipoPersona);
+		//if(Constante.VER_LOG) System.out.println("usuario.getTipoTarjeta()="+usuario.getTipoTarjeta());
+		if (Constante.COD_PERSON_NAT.equals(tipoPersona) || Constante.COD_PERSON_NAT.equals(tipoPersona)){
+			//if(Constante.VER_LOG) System.out.println("antes de menu");
+			imgCerrarSession = Constante.IMG_CLOSE_SESSION_PN;
+			arrMenu = FacadeFactory.getLoginFacade().getMenuByCode(Constante.COD_PERSON_NAT,usuario.getTipoTarjeta());
+		}else{
+			arrMenu = FacadeFactory.getLoginFacade().getMenuByCode(tipoPersona,usuario.getTipoTarjeta());
+			imgCerrarSession = Constante.IMG_CLOSE_SESSION_PJ;
+		}
+		
+		MasterTransaction m = FacadeFactory.getGeneralFacade().getTransactionById("GC02");
+		//if(Constante.VER_LOG) System.out.println("m.isHoraAtencion()=="+m.isHoraAtencion());
+		
+		//boolean b = FacadeFactory.getGeneralFacade().validateLimits("", "", "", "", "",null,null);
+		
+		request.setAttribute("arrMenu",arrMenu);
+		request.setAttribute("imgCerrarSession",imgCerrarSession);
+		
+		return mapping.findForward("menu");
+	}
+	
+	public ActionForward cargarCuerpo(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		request.setAttribute("mensajeBienvenida",((Vector)aplicacion.getMensajePorCodigo("CL01","MB001")).elementAt(2).toString());
+		request.setAttribute("mensajeHora",((Vector)aplicacion.getMensajePorCodigo("CL01","MB002")).elementAt(2).toString());
+		return mapping.findForward("cuerpo");
+	}
+	public ActionForward cargarBarra(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		return mapping.findForward("barra");
+	}
+	public ActionForward cargarFooter(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		return mapping.findForward("footer");
+	}
+	
+	public ActionForward actualizarMenu(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String metodo = request.getParameter("metodo");
+		Usuario usuario = (Usuario)request.getSession().getAttribute(ConstanteSesion.USUARIO_EN_SESION);
+		String tipoPersona 		= usuario.getTipoPersona();
+		String imgCerrarSession = "";
+		Menu[] arrMenu = null;
+	
+		if (Constante.COD_PERSON_NAT.equals(tipoPersona) || Constante.COD_PERSON_NAT.equals(tipoPersona)){
+			//if(Constante.VER_LOG) System.out.println("antes de menu");
+			imgCerrarSession = Constante.IMG_CLOSE_SESSION_PN;
+	
+			request.removeAttribute("arrMenu");
+			arrMenu = FacadeFactory.getLoginFacade().getMenuByCodeOtros(Constante.COD_PERSON_NAT,usuario.getTipoTarjeta());
+			
+		}else{
+			arrMenu = FacadeFactory.getLoginFacade().getMenuByCode(tipoPersona,usuario.getTipoTarjeta());
+			imgCerrarSession = Constante.IMG_CLOSE_SESSION_PJ;
+		}
+	
+		request.setAttribute("arrMenu",arrMenu);
+		request.setAttribute("imgCerrarSession",imgCerrarSession);
+		
+		return mapping.findForward("menu");
+	}
+
+	public ActionForward logout(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		HttpSession session = request.getSession(false);
+		if(session!=null){		
+			session.setMaxInactiveInterval(1);		
+			session.invalidate();
+		}
+		//System.out.println("LOGOUT - Redirige a la pagina de Confirmacion de cerrar sesion");
+		return mapping.findForward("logout");
+	}
+}

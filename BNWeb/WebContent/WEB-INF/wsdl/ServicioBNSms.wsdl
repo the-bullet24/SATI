@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://ws.wscn.bn.com.pe" xmlns:impl="http://ws.wscn.bn.com.pe" xmlns:intf="http://ws.wscn.bn.com.pe" xmlns:tns2="http://configuracion.bean.wscn.bn.com.pe" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsi="http://ws-i.org/profiles/basic/1.1/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://configuracion.bean.wscn.bn.com.pe">
+   <complexType name="GeneraSmsAfiliacionRequest">
+    <sequence>
+     <element name="codCanal" nillable="true" type="xsd:string"/>
+     <element name="modeloCelular" nillable="true" type="xsd:string"/>
+     <element name="nombreCliente" nillable="true" type="xsd:string"/>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="cicCliente" nillable="true" type="xsd:string"/>
+     <element name="tipoDocumento" nillable="true" type="xsd:string"/>
+     <element name="numDocumento" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="GeneraSmsAfiliacionResponse">
+    <sequence>
+     <element name="codResult" nillable="true" type="xsd:string"/>
+     <element name="data" nillable="true" type="tns2:DataSms"/>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="msgError" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DataSms">
+    <sequence>
+     <element name="codeSMS" nillable="true" type="xsd:string"/>
+     <element name="fecha" nillable="true" type="xsd:string"/>
+     <element name="numOperacion" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ValidaSmsAfiliacionRequest">
+    <sequence>
+     <element name="codeSMS" nillable="true" type="xsd:string"/>
+     <element name="tipoDocumento" nillable="true" type="xsd:string"/>
+     <element name="numDocumento" nillable="true" type="xsd:string"/>
+     <element name="cicCliente" nillable="true" type="xsd:string"/>
+     <element name="numCelular" nillable="true" type="xsd:string"/>
+     <element name="modeloCelular" nillable="true" type="xsd:string"/>
+     <element name="canal" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ValidaSmsAfiliacionResponse">
+    <sequence>
+     <element name="codResult" nillable="true" type="xsd:string"/>
+     <element name="data" nillable="true" type="tns2:DataValidacion"/>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="msgError" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DataValidacion">
+    <sequence>
+     <element name="fecha" nillable="true" type="xsd:string"/>
+     <element name="codCliente" nillable="true" type="xsd:string"/>
+     <element name="numOperacion" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.wscn.bn.com.pe">
+   <import namespace="http://configuracion.bean.wscn.bn.com.pe"/>
+   <element name="opGenerarSmsAfiliacionResponse">
+    <complexType>
+     <sequence>
+      <element name="opGenerarSmsAfiliacionReturn" nillable="true" type="tns2:GeneraSmsAfiliacionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opValidarSMSAfliacion">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:ValidaSmsAfiliacionRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opValidarSMSAfliacionResponse">
+    <complexType>
+     <sequence>
+      <element name="opValidarSMSAfliacionReturn" nillable="true" type="tns2:ValidaSmsAfiliacionResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="opGenerarSmsAfiliacion">
+    <complexType>
+     <sequence>
+      <element name="request" nillable="true" type="tns2:GeneraSmsAfiliacionRequest"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  </wsdl:types>
+  <wsdl:message name="opGenerarSmsAfiliacionResponse">
+    <wsdl:part element="impl:opGenerarSmsAfiliacionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opValidarSMSAfliacionResponse">
+    <wsdl:part element="impl:opValidarSMSAfliacionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opGenerarSmsAfiliacionRequest">
+    <wsdl:part element="impl:opGenerarSmsAfiliacion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="opValidarSMSAfliacionRequest">
+    <wsdl:part element="impl:opValidarSMSAfliacion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServicioBNSms">
+    <wsdl:operation name="opGenerarSmsAfiliacion">
+      <wsdl:input message="impl:opGenerarSmsAfiliacionRequest" name="opGenerarSmsAfiliacionRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opGenerarSmsAfiliacionResponse" name="opGenerarSmsAfiliacionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opValidarSMSAfliacion">
+      <wsdl:input message="impl:opValidarSMSAfliacionRequest" name="opValidarSMSAfliacionRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:opValidarSMSAfliacionResponse" name="opValidarSMSAfliacionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioBNSmsSoapBinding" type="impl:ServicioBNSms">
+<wsaw:UsingAddressing wsdl:required="false"/>
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="opGenerarSmsAfiliacion">
+      <wsdlsoap:operation soapAction="opGenerarSmsAfiliacion"/>
+      <wsdl:input name="opGenerarSmsAfiliacionRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opGenerarSmsAfiliacionResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="opValidarSMSAfliacion">
+      <wsdlsoap:operation soapAction="opValidarSMSAfliacion"/>
+      <wsdl:input name="opValidarSMSAfliacionRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="opValidarSMSAfliacionResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioBNSmsService">
+    <wsdl:port binding="impl:ServicioBNSmsSoapBinding" name="ServicioBNSms">
+      <wsdlsoap:address location="http://10.7.12.129:9080/WSBNConfiguracion/services/ServicioBNSms"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

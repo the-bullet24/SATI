@@ -1,0 +1,506 @@
+@font-face {
+  font-family: DaxCompact-Regular;
+
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-regular.ttf);
+}
+
+@font-face {
+  font-family: DaxCompact-Medium;
+
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
+* {
+  padding: 0;
+
+  margin: 0;
+}
+
+body {
+  display: grid;
+
+  text-align: center;
+
+  justify-items: center;
+
+  align-content: center;
+}
+#maindiv {
+  width: 440px;
+
+  display: grid;
+
+  align-content: start;
+}
+
+h1 {
+  font-family: DaxCompact-Regular;
+
+  color: rgba(197, 20, 22, 1);
+
+  font-weight: 500;
+
+  font-size: 18px;
+
+  line-height: 22.89px;
+
+  margin-bottom: 19px;
+}
+
+#btndiv {
+  margin-top: 30px;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 440px;
+}
+
+button {
+  font-family: DaxCompact-Medium;
+
+  cursor: pointer;
+}
+
+button.btn1 {
+  border: solid 1px rgba(197, 20, 22, 1);
+
+  padding: 3px;
+
+  border-radius: 12px;
+
+  height: 26px;
+
+  width: 116px;
+
+  display: flex;
+
+  justify-content: space-evenly;
+
+  align-content: center;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  color: rgba(197, 20, 22, 1);
+
+  background-color: white;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+  font-weight: 17.93px;
+
+  text-align: center;
+}
+
+button.btn2 {
+  display: flex;
+
+  justify-content: space-evenly;
+
+  align-content: center;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  border: solid 1px rgba(197, 20, 22, 1);
+
+  padding: 3px;
+
+  border-radius: 12px;
+
+  height: 26px;
+
+  width: 116px;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+  font-weight: 17.93px;
+
+  text-align: center;
+
+  color: rgb(79, 79, 79);
+
+  background-color: rgb(215, 215, 215);
+
+  border-color: rgb(215, 215, 215);
+
+  cursor: default;
+}
+
+.label {
+  text-align: left;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-weight: 700;
+
+  font-size: 14px;
+
+  line-height: 16.1px;
+
+  color: rgba(79, 79, 79, 1);
+
+  margin-bottom: 16px;
+}
+
+/* Cuenta Container*/
+.CelularInfo {
+  border: solid 2px;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  border-color: rgba(215, 215, 215, 1);
+
+  height: 168px;
+
+  display: grid;
+
+  align-content: space-around;
+
+  padding: 8px;
+}
+
+.Celular {
+  margin-bottom: 16px;
+
+  height: 20px;
+}
+
+.CelularInfo h2 {
+  font-family: Arial;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 23px;
+
+  letter-spacing: 0.10000000149011612px;
+
+  text-align: center;
+
+  color: rgba(79, 79, 79, 1);
+}
+
+.CelularInfo p {
+  font-family: Arial;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  letter-spacing: 0em;
+
+  color: rgba(79, 79, 79, 1);
+}
+
+.operationcontainer {
+  margin-top: 24px;
+}
+
+.operationcontainer .Description {
+  font-family: Arial;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  letter-spacing: 0em;
+
+  text-align: justify;
+
+  margin-bottom: 18px;
+}
+
+.checkboxesContainer {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.radio-item {
+  display: flex;
+
+  text-align: left;
+
+  position: relative;
+
+  padding: 0 6px;
+
+  align-items: center;
+}
+
+.radio-item p {
+  font-family: Roboto;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  letter-spacing: 0.10000000149011612px;
+
+  color: rgba(79, 79, 79, 1);
+}
+
+.radio-item img {
+  margin-left: 4px;
+
+  margin-right: 13.5px;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item label {
+  font-family: Arial;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  letter-spacing: 0em;
+
+  text-align: left;
+
+  color: rgba(79, 79, 79, 1);
+}
+
+.radio-item label:before {
+  content: " ";
+
+  display: inline-block;
+
+  position: relative;
+
+  top: 2px;
+
+  margin: 0 5px 0 0;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 11px;
+
+  border: 2px solid rgba(197, 20, 22, 1);
+
+  background-color: transparent;
+
+  margin-right: 9px;
+
+  margin-bottom: -1.5px;
+}
+
+.radio-item input[type="radio"]:checked + label:after {
+  border-radius: 11px;
+
+  width: 16px;
+
+  height: 16px;
+
+  position: absolute;
+
+  top: 10.5px;
+
+  left: 10px;
+
+  content: " ";
+
+  display: block;
+
+  background: rgba(197, 20, 22, 1);
+}
+
+.PreguntaAccion {
+  font-family: Arial;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  line-height: 21px;
+
+  letter-spacing: 0em;
+
+  text-align: center;
+
+  color: rgba(79, 79, 79, 1);
+
+  margin-bottom: 24px;
+}
+
+#Formulario h1 {
+  font-family: Roboto;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  letter-spacing: 0.10000000149011612px;
+
+  text-align: center;
+
+  color: rgba(39, 60, 78, 1);
+
+  margin-bottom: 21px;
+}
+
+#Formulario input {
+  border: none;
+
+  border-bottom: solid 1px rgba(39, 60, 78, 1);
+
+  width: 320px;
+
+  text-align: center;
+
+  font-family: Roboto;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 21px;
+
+  letter-spacing: 0.10000000149011612px;
+
+  box-sizing: border-box;
+}
+
+.input-container {
+  position: relative;
+
+  display: inline-block;
+}
+
+input {
+  width: 80%;
+
+  padding: 4px 0 8px 0;
+
+  box-sizing: border-box;
+
+  margin-right: 5px;
+
+  outline: none;
+
+  border-color: rgba(39, 60, 78, 1);
+
+  color: rgba(79, 79, 79, 1);
+}
+
+#checkIcon {
+  position: absolute;
+
+  right: 5px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: none;
+}
+
+.thanks {
+  background-color: rgba(240, 240, 240, 1);
+
+  margin-top: 28px;
+
+  height: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.thanks p {
+  padding: 8px 20px 8px 20px;
+
+  font-family: Roboto;
+
+  font-weight: 400;
+
+  line-height: 19px;
+
+  letter-spacing: 0em;
+
+  text-align: center;
+
+  font-size: 16px;
+
+  font-style: italic;
+
+  color: rgba(125, 130, 145, 1);
+}
+
+#Formulario select {
+  width: 320px;
+
+  padding: 12px 0 12px 0;
+
+  font-family: Arial;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  letter-spacing: 0.1px;
+
+  color: rgba(79, 79, 79, 1);
+
+  -moz-appearance: none;
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+  border: none;
+
+  border-bottom: 1px solid rgba(39, 60, 78, 1);
+
+  background-image: url('<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/selectarrow.png'),
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+
+  background-repeat: no-repeat, repeat;
+
+  background-position: right 0.1em top 50%, 0 0;
+
+  background-size: 1em auto, 100%;
+
+  outline: none;
+
+  border-radius: 0px;
+}

@@ -1,0 +1,29 @@
+main mié ago 24 10:32:51.466 2011 peformanceApiSeg Listo para formatear
+main mié ago 24 10:32:51.545 2011 peformanceApiSeg Procesado a trama
+main mié ago 24 10:32:51.545 2011 peformanceApiSeg 83771 FORMATEOIN 103251 103251 79
+main mié ago 24 10:32:51.545 2011 peformanceApiSeg ejecutando en six
+main mié ago 24 10:32:52.232 2011 peformanceApiSeg ejecutado en six
+main mié ago 24 10:32:52.232 2011 peformanceApiSeg 83771 EJECUCIONSIX 103251 103252 687
+main mié ago 24 10:32:52.232 2011 peformanceApiSeg tranformando a objeto
+main mié ago 24 10:32:52.232 2011 peformanceApiSeg tranformado a objeto
+main mié ago 24 10:32:52.248 2011 peformanceApiSeg 83771 FORMATEOOU 103252 103252 16
+main mié ago 24 11:58:34.849 2011 peformanceApiSeg 130203 FORMATEOIN 115834 115834 0
+main mié ago 24 11:58:35.614 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110824115834NOVATRONIC  62016400112233       0151487            25                             45578801   4557880113654798                254                 
+main mié ago 24 11:58:35.614 2011 peformanceApiSeg 130203 EJECUCIONSIX 115834 115835 733
+main mié ago 24 11:58:35.614 2011 peformanceApiSeg 130203 FORMATEOOU 115835 115835 0
+main mié ago 24 12:00:11.553 2011 peformanceApiSeg 625851 FORMATEOIN 120011 120011 0
+main mié ago 24 12:00:12.100 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110824120011NOVATRONIC  93995400112233       0151487            25                             45578801   4557880113654798                254                 
+main mié ago 24 12:00:12.100 2011 peformanceApiSeg 625851 EJECUCIONSIX 120011 120012 547
+main mié ago 24 12:00:12.100 2011 peformanceApiSeg 625851 FORMATEOOU 120012 120012 0
+main mié ago 24 12:01:44.621 2011 peformanceApiSeg 832802 FORMATEOIN 120144 120144 16
+main mié ago 24 12:01:45.043 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110824120144NOVATRONIC  43514100112233       0151487            25                             45578801   4557880113654798                4557880112345678    
+main mié ago 24 12:01:45.043 2011 peformanceApiSeg 832802 EJECUCIONSIX 120144 120145 422
+main mié ago 24 12:01:45.043 2011 peformanceApiSeg 832802 FORMATEOOU 120145 120145 0
+main mié ago 24 12:02:32.516 2011 peformanceApiSeg 741126 FORMATEOIN 120232 120232 16
+main mié ago 24 12:02:33.047 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110824120232NOVATRONIC  11920000112233       0151487            25                             45578801   4557880113654798                4557880112345678    
+main mié ago 24 12:02:33.047 2011 peformanceApiSeg 741126 EJECUCIONSIX 120232 120233 531
+main mié ago 24 12:02:33.047 2011 peformanceApiSeg 741126 FORMATEOOU 120233 120233 0
+main mié ago 24 12:10:04.538 2011 peformanceApiSeg 357517 FORMATEOIN 121004 121004 16
+main mié ago 24 12:10:04.960 2011 peformanceApiSeg ****tramaRequest:01BR0100Emp0001    01SUX     20110824121004NOVATRONIC  14205800112233       0151487            25                             45578801   4557880112345678                4557880112345678    
+main mié ago 24 12:10:04.960 2011 peformanceApiSeg 357517 EJECUCIONSIX 121004 121004 422
+main mié ago 24 12:10:04.960 2011 peformanceApiSeg 357517 FORMATEOOU 121004 121004 0

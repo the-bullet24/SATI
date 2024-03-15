@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_2ghK0NiIEduNOekNlXdEzQ" type="Class" name="ModeloDAO.dnx">
+  <children xmi:id="_3AQa0NiIEduNOekNlXdEzQ" targetEdges="_3WJyUNiIEduNOekNlXdEzQ _la_X4diJEduNOekNlXdEzQ">
+    <children xmi:id="_3AQa09iIEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_3AQa1NiIEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_3AQa1diIEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3AQa1tiIEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3AQa19iIEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3AQa2NiIEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3AQa2diIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3AQa2tiIEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3AQa29iIEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3AQa3NiIEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3AQa3diIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_3AQa0diIEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AQa0tiIEduNOekNlXdEzQ" x="5088" y="2226"/>
+  </children>
+  <children xmi:id="_3V23YNiIEduNOekNlXdEzQ" sourceEdges="_3WJyUNiIEduNOekNlXdEzQ __dlzhdiIEduNOekNlXdEzQ">
+    <children xmi:id="_3V23Y9iIEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_3V23ZNiIEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_3V23ZdiIEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3V23ZtiIEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3V23Z9iIEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3V23aNiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3V23adiIEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3V23atiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3V23a9iIEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3V23bNiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_3V23bdiIEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_3V23btiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_3V23YdiIEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3V23YtiIEduNOekNlXdEzQ" x="10176" y="1590"/>
+  </children>
+  <children xmi:id="__cjRsNiIEduNOekNlXdEzQ" targetEdges="__dlzhdiIEduNOekNlXdEzQ _NcO4o9iJEduNOekNlXdEzQ _NcYCp9iJEduNOekNlXdEzQ _UZK1k9iJEduNOekNlXdEzQ _YdCTp9iJEduNOekNlXdEzQ">
+    <children xmi:id="__cjRs9iIEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="__cjRtNiIEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="__cjRtdiIEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    </children>
+    <children xmi:id="__cjRttiIEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    </children>
+    <children xmi:id="__cjRt9iIEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__cjRuNiIEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    </children>
+    <children xmi:id="__cjRudiIEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__cjRutiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    </children>
+    <children xmi:id="__cjRu9iIEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__cjRvNiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    </children>
+    <children xmi:id="__cjRvdiIEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="__cjRvtiIEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__cjRsdiIEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jbintype^vcore.target=uml2.Class^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__cjRstiIEduNOekNlXdEzQ" x="18444" y="9540"/>
+  </children>
+  <children xmi:id="_NZP2EtiJEduNOekNlXdEzQ" targetEdges="_NcYCmNiJEduNOekNlXdEzQ _la_X8diJEduNOekNlXdEzQ">
+    <children xmi:id="_NZZnENiJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_NZZnEdiJEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_NZZnEtiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NZZnE9iJEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NZZnFNiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NZZnFdiJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NZZnFtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NZZnF9iJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NZZnGNiJEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NZZnGdiJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NZZnGtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_NZP2E9iJEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NZP2FNiJEduNOekNlXdEzQ" x="3816" y="21942"/>
+  </children>
+  <children xmi:id="_NacI4NiJEduNOekNlXdEzQ" sourceEdges="_NcO4o9iJEduNOekNlXdEzQ _NcO4qtiJEduNOekNlXdEzQ _NcYCkNiJEduNOekNlXdEzQ" targetEdges="_NcYCkNiJEduNOekNlXdEzQ _la_X0diJEduNOekNlXdEzQ">
+    <children xmi:id="_NacI49iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_NacI5NiJEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_NacI5diJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NacI5tiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NacI59iJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NacI6NiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NacI6diJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NacI6tiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NacI69iJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NacI7NiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NacI7diJEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_NacI7tiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_NacI4diJEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NacI4tiJEduNOekNlXdEzQ" x="10176" y="14310"/>
+  </children>
+  <children xmi:id="_Navq4NiJEduNOekNlXdEzQ" sourceEdges="_NcYCmNiJEduNOekNlXdEzQ _NcYCn9iJEduNOekNlXdEzQ _NcYCp9iJEduNOekNlXdEzQ" targetEdges="_NcYCn9iJEduNOekNlXdEzQ">
+    <children xmi:id="_Navq49iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Navq5NiJEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Navq5diJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Navq5tiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Navq59iJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Navq6NiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Navq6diJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Navq6tiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Navq69iJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Navq7NiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Navq7diJEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Navq7tiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Navq4diJEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Navq4tiJEduNOekNlXdEzQ" x="10176" y="18444"/>
+  </children>
+  <children xmi:id="_NbyMsNiJEduNOekNlXdEzQ" targetEdges="_NcO4qtiJEduNOekNlXdEzQ _la_X6diJEduNOekNlXdEzQ">
+    <children xmi:id="_NbyMs9iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_NbyMtNiJEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_NbyMtdiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NbyMttiJEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NbyMt9iJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NbyMuNiJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NbyMudiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NbyMutiJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NbyMu9iJEduNOekNlXdEzQ" collapsed="true"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_NbyMvNiJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NbyMvdiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_NbyMsdiJEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NbyMstiJEduNOekNlXdEzQ" x="3498" y="15264"/>
+  </children>
+  <children xmi:id="_UYRdsNiJEduNOekNlXdEzQ" sourceEdges="_UZK1k9iJEduNOekNlXdEzQ _UZK1mtiJEduNOekNlXdEzQ _UZT_gNiJEduNOekNlXdEzQ" targetEdges="_UZT_gNiJEduNOekNlXdEzQ">
+    <children xmi:id="_UYRds9iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_UYRdtNiJEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_UYRdtdiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYRdttiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYRdt9iJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UYRduNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYRdudiJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UYRdutiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYRdu9iJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UYRdvNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYRdvdiJEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_UYRdvtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_UYRdsdiJEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UYRdstiJEduNOekNlXdEzQ" x="10176" y="9858"/>
+  </children>
+  <children xmi:id="_UYkYqdiJEduNOekNlXdEzQ" targetEdges="_UZK1mtiJEduNOekNlXdEzQ _la_X2diJEduNOekNlXdEzQ">
+    <children xmi:id="_UYkYrNiJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_UYkYrdiJEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_UYkYrtiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYkYr9iJEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYkYsNiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYkYsdiJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UYkYstiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYkYs9iJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UYkYtNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_UYkYtdiJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UYkYttiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_UYkYqtiJEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UYkYq9iJEduNOekNlXdEzQ" x="4452" y="9540"/>
+  </children>
+  <children xmi:id="_YclnsNiJEduNOekNlXdEzQ" targetEdges="_YdCToNiJEduNOekNlXdEzQ">
+    <children xmi:id="_Yclns9iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_YclntNiJEduNOekNlXdEzQ" width="530" height="530"/>
+    </children>
+    <children xmi:id="_YclntdiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YclnttiJEduNOekNlXdEzQ" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Yclnt9iJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YclnuNiJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_YclnudiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YclnutiJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Yclnu9iJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YclnvNiJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_YclnvdiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_YclnsdiJEduNOekNlXdEzQ" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YclnstiJEduNOekNlXdEzQ" x="5088" y="5406"/>
+  </children>
+  <children xmi:id="_YcuxoNiJEduNOekNlXdEzQ" sourceEdges="_YdCToNiJEduNOekNlXdEzQ _YdCTp9iJEduNOekNlXdEzQ">
+    <children xmi:id="_Ycuxo9iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_YcuxpNiJEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_YcuxpdiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YcuxptiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Ycuxp9iJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_YcuxqNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YcuxqdiJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_YcuxqtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Ycuxq9iJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_YcuxrNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_YcuxrdiJEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_YcuxrtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_YcuxodiJEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YcuxotiJEduNOekNlXdEzQ" x="10494" y="5406"/>
+  </children>
+  <children xmi:id="_laGnANiJEduNOekNlXdEzQ" sourceEdges="_la_X0diJEduNOekNlXdEzQ _la_X2diJEduNOekNlXdEzQ _la_X4diJEduNOekNlXdEzQ _la_X6diJEduNOekNlXdEzQ _la_X8diJEduNOekNlXdEzQ _mPmEkdiJEduNOekNlXdEzQ">
+    <children xmi:id="_laGnA9iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_laGnBNiJEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_laGnBdiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_laGnBtiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_laGnB9iJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_laGnCNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_laGnCdiJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_laGnCtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_laGnC9iJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_laGnDNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_laGnDdiJEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_laGnDtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_laGnAdiJEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_laGnAtiJEduNOekNlXdEzQ" x="-2862" y="12720"/>
+  </children>
+  <children xmi:id="_mPcTkNiJEduNOekNlXdEzQ" targetEdges="_mPmEkdiJEduNOekNlXdEzQ">
+    <children xmi:id="_mPcTk9iJEduNOekNlXdEzQ" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_mPcTlNiJEduNOekNlXdEzQ" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_mPcTldiJEduNOekNlXdEzQ" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_mPcTltiJEduNOekNlXdEzQ" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_mPcTl9iJEduNOekNlXdEzQ" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_mPcTmNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_mPcTmdiJEduNOekNlXdEzQ" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_mPcTmtiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_mPcTm9iJEduNOekNlXdEzQ" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_mPcTnNiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_mPcTndiJEduNOekNlXdEzQ" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_mPcTntiJEduNOekNlXdEzQ"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_mPcTkdiJEduNOekNlXdEzQ" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mPcTktiJEduNOekNlXdEzQ" x="-2544" y="7632"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_2ghK0diIEduNOekNlXdEzQ"/>
+  <edges xmi:id="_3WJyUNiIEduNOekNlXdEzQ" source="_3V23YNiIEduNOekNlXdEzQ" target="_3AQa0NiIEduNOekNlXdEzQ">
+    <children xmi:id="_3WJyU9iIEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_3WJyVdiIEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_3WJyVtiIEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_3WJyVNiIEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_3WJyUdiIEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3WJyUtiIEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="__dlzhdiIEduNOekNlXdEzQ" source="_3V23YNiIEduNOekNlXdEzQ" target="__cjRsNiIEduNOekNlXdEzQ">
+    <children xmi:id="__dlziNiIEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="__dlzitiIEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <children xmi:id="__dlzi9iIEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__dlzidiIEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="__dlzhtiIEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=AfiliacionIbatis[jcu^name=AfiliacionIbatis.java[jpack^name=pe.bn.afiliacion.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__dlzh9iIEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_NcO4o9iJEduNOekNlXdEzQ" source="_NacI4NiJEduNOekNlXdEzQ" target="__cjRsNiIEduNOekNlXdEzQ">
+    <children xmi:id="_NcO4ptiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_NcO4qNiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <children xmi:id="_NcO4qdiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NcO4p9iJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NcO4pNiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NcO4pdiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_NcO4qtiJEduNOekNlXdEzQ" source="_NacI4NiJEduNOekNlXdEzQ" target="_NbyMsNiJEduNOekNlXdEzQ">
+    <children xmi:id="_NcO4rdiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_NcO4r9iJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_NcO4sNiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NcO4rtiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NcO4q9iJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NcO4rNiJEduNOekNlXdEzQ" points="[0, 3691, 0, -5014]$[0, 5278, 0, -3427]"/>
+  </edges>
+  <edges xmi:id="_NcYCkNiJEduNOekNlXdEzQ" source="_NacI4NiJEduNOekNlXdEzQ" target="_NacI4NiJEduNOekNlXdEzQ">
+    <children xmi:id="_NcYCk9iJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_NcYCldiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_NcYCl9iJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_NcYCltiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NcYClNiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NcYCkdiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NcYCktiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_NcYCmNiJEduNOekNlXdEzQ" source="_Navq4NiJEduNOekNlXdEzQ" target="_NZP2EtiJEduNOekNlXdEzQ">
+    <children xmi:id="_NcYCm9iJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_NcYCndiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_NcYCntiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NcYCnNiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NcYCmdiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NcYCmtiJEduNOekNlXdEzQ" points="[0, 3691, 0, -5014]$[0, 5278, 0, -3427]"/>
+  </edges>
+  <edges xmi:id="_NcYCn9iJEduNOekNlXdEzQ" source="_Navq4NiJEduNOekNlXdEzQ" target="_Navq4NiJEduNOekNlXdEzQ">
+    <children xmi:id="_NcYCotiJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_NcYCpNiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_NcYCptiJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_NcYCpdiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NcYCo9iJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NcYCoNiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NcYCodiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_NcYCp9iJEduNOekNlXdEzQ" source="_Navq4NiJEduNOekNlXdEzQ" target="__cjRsNiIEduNOekNlXdEzQ">
+    <children xmi:id="_NcYCqtiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_NcYCrNiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <children xmi:id="_NcYCrdiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NcYCq9iJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NcYCqNiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=GeneralIbatis[jcu^name=GeneralIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NcYCqdiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_UZK1k9iJEduNOekNlXdEzQ" source="_UYRdsNiJEduNOekNlXdEzQ" target="__cjRsNiIEduNOekNlXdEzQ">
+    <children xmi:id="_UZK1ltiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_UZK1mNiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <children xmi:id="_UZK1mdiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_UZK1l9iJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_UZK1lNiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UZK1ldiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_UZK1mtiJEduNOekNlXdEzQ" source="_UYRdsNiJEduNOekNlXdEzQ" target="_UYkYqdiJEduNOekNlXdEzQ">
+    <children xmi:id="_UZK1ndiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_UZK1n9iJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_UZK1oNiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_UZK1ntiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_UZK1m9iJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UZK1nNiJEduNOekNlXdEzQ" points="[-14, 1164, -14, -2673]$[-14, 2752, -14, -1085]"/>
+  </edges>
+  <edges xmi:id="_UZT_gNiJEduNOekNlXdEzQ" source="_UYRdsNiJEduNOekNlXdEzQ" target="_UYRdsNiJEduNOekNlXdEzQ">
+    <children xmi:id="_UZT_g9iJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_UZT_hdiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_UZT_h9iJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_UZT_htiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_UZT_hNiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_UZT_gdiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginIbatis[jcu^name=LoginIbatis.java[jpack^name=pe.bn.login.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UZT_gtiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_YdCToNiJEduNOekNlXdEzQ" source="_YcuxoNiJEduNOekNlXdEzQ" target="_YclnsNiJEduNOekNlXdEzQ">
+    <children xmi:id="_YdCTo9iJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_YdCTpdiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_YdCTptiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_YdCTpNiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_YdCTodiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ConsultaDAO[jcu^name=ConsultaDAO.java[jpack^name=pe.bn.consulta.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YdCTotiJEduNOekNlXdEzQ" points="[-13, 807, -13, -2394]$[-13, 2394, -13, -807]"/>
+  </edges>
+  <edges xmi:id="_YdCTp9iJEduNOekNlXdEzQ" source="_YcuxoNiJEduNOekNlXdEzQ" target="__cjRsNiIEduNOekNlXdEzQ">
+    <children xmi:id="_YdCTqtiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_YdCTrNiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <children xmi:id="_YdCTrdiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_YdCTq9iJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_YdCTqNiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=ConsultaIbatis[jcu^name=ConsultaIbatis.java[jpack^name=pe.bn.consulta.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jbintype^name=org.springframework.orm.ibatis.support.SqlMapClientDaoSupport[project^vcore.target=uml2.Model^id=BNWeb]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YdCTqdiJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_la_X0diJEduNOekNlXdEzQ" source="_laGnANiJEduNOekNlXdEzQ" target="_NacI4NiJEduNOekNlXdEzQ">
+    <children xmi:id="_la_X1NiJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_la_X1tiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X2NiJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X19iJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_la_X1diJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_la_X0tiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogIbatis[jcu^name=SaraWebLogIbatis.java[jpack^name=pe.cosapi.dao.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_la_X09iJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_la_X2diJEduNOekNlXdEzQ" source="_laGnANiJEduNOekNlXdEzQ" target="_UYkYqdiJEduNOekNlXdEzQ">
+    <children xmi:id="_la_X3NiJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_la_X3tiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X4NiJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X39iJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_la_X3diJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_la_X2tiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=LoginDAO[jcu^name=LoginDAO.java[jpack^name=pe.bn.login.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_la_X29iJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_la_X4diJEduNOekNlXdEzQ" source="_laGnANiJEduNOekNlXdEzQ" target="_3AQa0NiIEduNOekNlXdEzQ">
+    <children xmi:id="_la_X5NiJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_la_X5tiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X6NiJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X59iJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_la_X5diJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_la_X4tiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=AfiliacionDAO[jcu^name=AfiliacionDAO.java[jpack^name=pe.bn.afiliacion.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_la_X49iJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_la_X6diJEduNOekNlXdEzQ" source="_laGnANiJEduNOekNlXdEzQ" target="_NbyMsNiJEduNOekNlXdEzQ">
+    <children xmi:id="_la_X7NiJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_la_X7tiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X8NiJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X79iJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_la_X7diJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_la_X6tiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=SaraWebLogDAO[jcu^name=SaraWebLogDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_la_X69iJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_la_X8diJEduNOekNlXdEzQ" source="_laGnANiJEduNOekNlXdEzQ" target="_NZP2EtiJEduNOekNlXdEzQ">
+    <children xmi:id="_la_X9NiJEduNOekNlXdEzQ" type="KindLabel">
+      <children xmi:id="_la_X9tiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X-NiJEduNOekNlXdEzQ" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_la_X99iJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_la_X9diJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_la_X8tiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=GeneralDAO[jcu^name=GeneralDAO.java[jpack^name=pe.cosapi.dao[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_la_X89iJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_mPmEkdiJEduNOekNlXdEzQ" source="_laGnANiJEduNOekNlXdEzQ" target="_mPcTkNiJEduNOekNlXdEzQ">
+    <children xmi:id="_mPmElNiJEduNOekNlXdEzQ" type="NameLabel">
+      <children xmi:id="_mPmEltiJEduNOekNlXdEzQ" type="Stereotype">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_mPvOgNiJEduNOekNlXdEzQ" type="Name">
+        <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_mPmEldiJEduNOekNlXdEzQ" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_mPmEktiJEduNOekNlXdEzQ" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="vizref:///#jgen^vcore.target=uml2.Generalization[jsrctype^name=DAOFactory[jcu^name=DAOFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=ObjectFactory[jcu^name=ObjectFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mPmEk9iJEduNOekNlXdEzQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

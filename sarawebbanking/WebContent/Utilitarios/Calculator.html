@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"><!-- Sample HTML file -->
+<HTML>
+<HEAD>
+<TITLE> Calculator </TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<TABLE border="2" width="200" cellspacing="0" cellpadding="0" bgcolor="#000000" style="border-color:black" onclick="previouskey=event.srcElement.innerText">
+  <TBODY>
+    <TR>
+      <TD width="100%" bgcolor="#FFFFFF" id="result" style="font:bold 20px Verdana;color:black;text-align='right'">0</TD>
+    </TR>
+    <TR>
+      <TD width="100%" valign="middle" align="center">
+      <TABLE border="0" width="100%" cellspacing="0" cellpadding="0" style="font:bold 20px Verdana;color:white">
+        <TBODY>
+          <TR>
+            <TD width="80%" align="center">
+            <TABLE border="1" width="100%" cellspacing="0" cellpadding="0" style="cursor:hand;font:bold 20px Verdana;color:white" onmouseover="if (event.srcElement.tagName=='TD')event.srcElement.style.color='yellow'" onmouseout="event.srcElement.style.color='white'" onselectStart="return false" onclick="calculate()" height="82">
+              <TBODY>
+                <TR>
+                  <TD width="25%" align="center" height="17">7</TD>
+                  <TD width="25%" align="center" height="17">8</TD>
+                  <TD width="25%" align="center" height="17">9</TD>
+                  <TD width="25%" align="center" height="17">/</TD>
+                </TR>
+                <TR>
+                  <TD width="25%" align="center" height="19">4</TD>
+                  <TD width="25%" align="center" height="19">5</TD>
+                  <TD width="25%" align="center" height="19">6</TD>
+                  <TD width="25%" align="center" height="19">*</TD>
+                </TR>
+                <TR>
+                  <TD width="25%" align="center" height="19">1</TD>
+                  <TD width="25%" align="center" height="19">2</TD>
+                  <TD width="25%" align="center" height="19">3</TD>
+                  <TD width="25%" align="center" height="19">-</TD>
+                </TR>
+                <TR>
+                  <TD width="25%" align="center" height="19">0</TD>
+                  <TD width="25%" align="center" height="19" onclick="pn();previouskey=1;event.cancelBubble=true">+/-</TD>
+                  <TD width="25%" align="center" height="19">.</TD>
+                  <TD width="25%" align="center" height="19">+</TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            </TD>
+            <TD width="20%">
+            <DIV align="left">
+            <TABLE border="1" width="100%" cellspacing="0" cellpadding="0">
+              <TBODY>
+                <TR>
+                  <TD width="100%" style="cursor:hand;font:bold 20px Verdana;color:white;text-align:center" onclick="result.innerText=0;results=''">C</TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            </DIV>
+            <DIV align="left">
+            <TABLE border="1" width="100%" cellspacing="0" cellpadding="0" height="81">
+              <TBODY>
+                <TR>
+                  <TD width="100%" style="cursor:hand;font:bold 32px Verdana;color:white;text-align:center" onmouseover="event.srcElement.style.color='yellow'" onmouseout="event.srcElement.style.color='white'" onclick="calculateresult()">=</TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            </DIV>
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<SCRIPT language="JavaScript1.2">
+
+/*
+DHTML Calculator Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+var results=''
+var previouskey=''
+var re=/(\/|\*|\+|-)/
+var re2=/(\/|\*|\+|-){2}$/
+var re3=/.+(\/|\*|\+|-).+/
+var re4=/\d|\./
+var re5=/^[^\/\*\+].+\d$/
+var re6=/\./
+
+function calculate(){
+if (event.srcElement.tagName=="TD"){
+if (event.srcElement.innerText.match(re4)&&previouskey=="=")
+results=''
+if (result.innerText.match(re3)&&event.srcElement.innerText.match(re)){
+if (!results.match(re5)){
+result.innerText="Error!"
+return
+}
+results=eval(results)
+if (results.toString().length>=12&&results.toString().match(re6))
+results=results.toString().substring(0,12)
+result.innerText=results
+}
+
+results+=event.srcElement.innerText
+if (results.match(re2))
+results=results.substring(0,results.length-2)+results.charAt(results.length-1)
+
+result.innerText=results
+}
+}
+
+function calculateresult(){
+if (!results.match(re5)){
+result.innerText="Error!"
+return
+}
+results=eval(results)
+if (results.toString().length>=12&&results.toString().match(re6))
+results=results.toString().substring(0,12)
+result.innerText=results
+}
+
+
+
+function pn(){
+if (result.innerText.charAt(0)!='-')
+result.innerText=results='-'+result.innerText
+else if (result.innerText.charAt(0)=='-')
+result.innerText=results=result.innerText*(-1)
+}
+
+</SCRIPT></BODY>
+</HTML>

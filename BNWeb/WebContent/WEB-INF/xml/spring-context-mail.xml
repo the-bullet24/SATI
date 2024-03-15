@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- Autenticador de correo -->
+	<bean id="smtpAuthenticator" class="pe.cosapi.common.SMTPAuthenticator">
+		<constructor-arg value="BNMultiredVirtual"/>
+		<constructor-arg value="BNMultiredVirtual"/>
+	</bean>
+	
+	<!-- Configuración de la sesión de correo -->
+	<bean id="mailSession" class="javax.mail.Session" factory-method="getInstance">
+		<constructor-arg>
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<!-- <prop key="mail.smtp.socketFactory.port">465</prop>
+				<prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop>
+				<prop key="mail.smtp.socketFactory.fallback">false</prop> -->
+			</props>
+		</constructor-arg>
+		<constructor-arg ref="smtpAuthenticator" />
+	</bean>
+
+	<!-- Configuración del servidor de correos -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		
+		
+	</bean>
+
+	<!-- Configuración del motor velocity para plantilla de correo electrónico -->	
+	<bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+		<property name="velocityProperties">
+			<value>
+				resource.loader=class
+				class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+			</value>
+		</property>
+	</bean>
+
+	<!--  Correos electrónicos -->
+
+	<bean id="mailSaldoPrestamo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Saldo - Préstamo Multired"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaSaldoPrestamo.html"/>
+	</bean>
+
+	<bean id="mailGeneracionClave" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Generación de Clave Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaGeneracionClave.html"/>
+	</bean>
+	
+	<bean id="mailGeneracionClaveVal" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia Clave Dinámica - Activación"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaActivacionTarjeta.html"/>
+	</bean>
+	<bean id="mailAfiliacionTDC" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia Tarjeta de Coordenadas - Solicitud de Afiliación"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionTDCMail.html"/>
+	</bean>
+	
+	<bean id="mailCambioClave" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Cambio de Clave Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaCambioClave.html"/>
+	</bean>
+
+	<bean id="mailDesafiliaClave" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Desafiliación de Clave Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaDesafiliaClave.html"/>
+	</bean>
+
+	<bean id="mailBloqueoTarjeta" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Bloqueo de Tarjeta"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaBloqueoTarjeta.html"/>
+	</bean>
+
+	<bean id="mailBloqueoTarjetaTDC" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia Clave Dinámica - Bloqueo"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaBloqueoTarjetaTDCMail.html"/>
+	</bean>
+	
+	<bean id="mailBloqueoTarjetaDni" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Bloqueo de Tarjeta"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaBloqueoTarjetaDni.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionServicio" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Servicios"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionServicio.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionTransferenciaBancaria" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación Transferencias Mismo Banco"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionTransferenciaBancaria.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionTransferenciaInterbancaria" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación Transferencias Interbancarias"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionTransferenciaInterbancaria.html"/>
+	</bean>
+
+	<bean id="mailTransferenciaInterbancariaMTOT" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Transferencias Interbancarias"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaTransferenciaInterbancariaMTOT.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionTarjeta" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Tarjetas de Crédito de Otros Bancos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionTarjeta.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionTelegiro" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Giros"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionTelegiro.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionOtroBanco" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Tarjetas de Crédito de Otros Bancos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionOtroBanco.html"/>
+	</bean>
+
+	<bean id="mailAfiliacionTraInterBancaria" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación Transferencias Interbancarias"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionTraInterBancaria.html"/>
+	</bean>
+
+	<bean id="mailDesafiliacion" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Desafiliación"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaDesafiliacion.html"/>
+	</bean>
+
+	<bean id="mailUltimosMovimientosAhorros" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Ultimos Movimientos - Cuenta de Ahorros"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaUltimosMovimientosAhorros.html"/>
+	</bean>
+
+	<bean id="mailUltimosMovimientosCorriente" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Ultimos Movimientos - Cuenta Corriente"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaUltimosMovimientosCorriente.html"/>
+	</bean>
+
+	<bean id="mailUltimosMovimientosCTS" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Ultimos Movimientos - Cuenta CTS"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaUltimosMovimientosCTS.html"/>
+	</bean>
+
+	<bean id="mailSaldoAhorros" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Saldo - Cuenta de Ahorros"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaSaldoAhorros.html"/>
+	</bean>
+
+	<bean id="mailSaldoCTS" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Saldo - Cuenta CTS"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaSaldoCTS.html"/>
+	</bean>
+
+
+	<bean id="mailSaldoCtaCte" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Saldo - Cuenta Corriente"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaSaldoCtaCte.html"/>
+	</bean>
+
+	<bean id="mailPagoMultired" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value= "BANCO DE LA NACION - Constancia de Pago de Cuota Préstamo Multired"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaPagoMultired.html"/>
+	</bean>
+
+	<bean id="mailCalendarioPago" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Calendario de Pagos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCalendarioPago.html"/>
+	</bean>
+
+	<bean id="mailTelegiroMN" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Giro"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTelegiroMN.html"/>
+	</bean>	
+	
+	<bean id="mailTelegiroME" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Giro"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTelegiroME.html"/>
+	</bean>	
+
+	<bean id="mailTransferenciaBancaria" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Transferencias Mismo Banco"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaBancaria.html"/>
+	</bean>
+
+	<bean id="mailTransferenciaInterbancaria" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Transferencias Interbancarias"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaInterbancaria.html"/>
+	</bean>
+
+	<bean id="mailPagoTarjeta" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Tarjeta de Crédito de Otro Banco"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjeta.html"/>
+	</bean>
+
+	<bean id="mailPagoTelefonica" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Servicios"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTelefonica.html"/>
+	</bean>
+
+	<bean id="mailITFAnualCuentaCorriente" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta Anual ITF - Cuenta Corriente"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaITFAnualCuentaCorriente.html"/>
+	</bean>
+
+	<bean id="mailITFAnualCuentaAhorros" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta Anual ITF - Cuenta de Ahorros"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaITFAnualCuentaAhorros.html"/>
+	</bean>
+
+	<bean id="mailCCIMN" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de CCI"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCCIMN.html"/>
+	</bean>
+
+	<bean id="mailCCICTACTE" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de CCI"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaCCICTACTE.html"/>
+	</bean>
+
+	<bean id="mailPagoSedapal" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Servicios: Agua - Sedapal"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoSedapal.html"/>
+	</bean>
+
+	<bean id="mailPagoTasas" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Tasas"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTasas.html"/>
+	</bean>
+
+	<bean id="mailRecargaTelefono" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Servicios"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaRecargaTelefono.html"/>
+	</bean>
+
+	<bean id="mailRecargaClaro" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Servicios"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaRecargaClaro.html"/>
+	</bean>
+
+	<bean id="mailPagoCuponera" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Servicio"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoCuponera.html"/>
+	</bean>
+
+	<bean id="mailPagoFactura" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Factura"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFactura.html"/>
+	</bean>
+	<bean id="mailPagoFacturaEsp" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Factura"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaEsp.html"/>
+	</bean>
+
+	<bean id="mailPagoFacturaWS" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Factura"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWS.html"/>
+	</bean>
+	
+	<bean id="mailPagoFacturaWSClaro" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Factura"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWSClaro.html"/>
+	</bean>
+	
+	<bean id="mailPagoFacturaWSP" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Factura"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWSParcial.html"/>
+	</bean>
+	
+	<bean id="mailPagoFacturaWSMod" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Factura"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoFacturaWSMod.html"/>
+	</bean>
+	<bean id="mailAfiliacionDebitoAutomatico" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Solicitud de Afiliación de Débito Automatico"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDebitoAutomatico.html"/>
+	</bean>
+	
+	<bean id="mailDesAfiliacionDebitoAutomatico" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Solicitud de Desafiliación de Débito Automatico"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafilDebitoAutomatico.html"/>
+	</bean>
+	
+	<bean id="mailAnulacionDebitoAutomatico" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Anulación de Débito Automatico"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAnulDebitoAutomatico.html"/>
+	</bean>
+	
+	<bean id="mailModificacionDebitoAutomatico" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Modificación de Monto Débito Automático"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaModDebitoAutomatico.html"/>
+	</bean>
+		<bean id="mailConsultaAliasBancaCelular" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Afiliaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaConsultaAlias.html"/>
+	</bean>
+	<bean id="mailAfiliacionBancaCelTransferencia" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Operaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelTrans.html"/>
+	</bean>
+	<bean id="mailAfiliacionBancaCelReca" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Operaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelReca.html"/>
+	</bean>
+	<bean id="mailAfiliacionBancaCelServ" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Operaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelServ.html"/>
+	</bean>
+	<bean id="mailAfiliacionBancaCelTasa" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliación de Operaciones -  Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionBancaCelTasa.html"/>
+	</bean>
+	<bean id="mailDesafiliacionBancaCel" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Desafiliación de Operaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafilBancaCel.html"/>
+	</bean>
+	<bean id="mailActivacionSms" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Activación de Operaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaActivacionClaveSms.html"/>
+	</bean>
+	<bean id="mailMigracionSms" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Migración de Operaciones - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaMigracionClaveSms.html"/>
+	</bean>
+	<bean id="mailVinculacionBancaCel" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Solicitud de Vinculación - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaVinculacion.html"/>
+	</bean>
+	<bean id="mailDesvinculacionBancaCel" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Solicitud de Desvinculación - Banca Celular"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesvinculacion.html"/>
+	</bean>
+	<bean id="mailDatosClienteAcepta" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDatosCliente.html"/>
+	</bean>
+	
+	<bean id="mailDatosClienteNoAcepta" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Actualización de Datos "/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDatosClienteNoAcepta.html"/>
+	</bean>
+	
+	<bean id="mailEleccionMedioEnvio" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Solicitud de Envío de Información Mensual de Estados de Cuenta"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaEleccionMedioEnvio.html"/>
+	</bean>
+	<bean id="mailEleccionMedioNoEnvio" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Solicitud de No Envío de Información Mensual de Estados de Cuenta"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaEleccionMedioNoEnvio.html"/>
+	</bean>
+	<bean id="mailSaldoTarjetaCredito" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Consulta de Saldo - Tarjeta de Crédito"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaSaldoTarjetaCredito.html"/>
+	</bean>
+	
+	<bean id="mailMovimientosTarjetaCredito" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Ultimos Movimientos - Tarjeta de Crédito"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaUltimosMovimientosTC.html"/>
+	</bean>
+	<bean id="mailPagoTarjetaCreditoBN" 	class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Tarjeta de Crédito BN"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaPagoTarjetaCreditoBN.html"/>
+	</bean>
+	
+	<bean id="mailPagoTarjetaCreditoOtrosBN" 	class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Tarjeta de Crédito BN"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaPagoTarjetaCreditoOtrosBN.html"/>
+	</bean>
+	<bean id="mailAfiliacionclaveInternet" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Generación Clave de Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionClaveInternet.html"/>
+	</bean>
+	
+	<bean id="mailOlvidoClaveInternet" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Generación por Olvido Clave de Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaOlvidoClaveInternet.html"/>
+	</bean>
+	
+	<bean id="mailExpiraClaveInternet" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Generación por Expiración Clave de Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaExpiraClaveInternet.html"/>
+	</bean>
+	
+	<bean id="mailAutoAfiliacionclaveInternet" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Correo Automático de Constancia de Generación Clave de Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaAfiliacionClaveInternet.html"/>
+	</bean>
+	
+	<bean id="mailAutoOlvidoClaveInternet" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Correo Automático de Constancia de Generación por Olvido Clave de Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaOlvidoClaveInternet.html"/>
+	</bean>
+	<bean id="mailAutoExpiraClaveInternet" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Correo Automático de Constancia de Generación por Expiración Clave de Internet"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaExpiraClaveInternet.html"/>
+	</bean>
+	<bean id="mailTransferenciaInterbancariaLinea" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Transferencias Interbancarias Inmediatas"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaTransferenciaInterbancariaLinea.html"/>
+	</bean>
+	<bean id="mailTransferenciaInterbancariaLineaRechazo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Transferencias Interbancarias Inmediatas - EN PROCESO"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" 		value="/WEB-INF/plantilla/constanciaTransferenciaInterbancariaLineaRechazo.html"/>
+	</bean>
+	<bean id="mailSeleccionMonto" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Selección de Monto Diario"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaSeleccionMonto.html"/>
+	</bean>
+	
+	<bean id="mailDatosClienteDireccion" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Actualización de Domicilio"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteDireccion.html"/>
+	</bean>
+	<bean id="mailAltaDatosClienteDireccion" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Alta de Domicilio"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAltaDatosClienteDireccion.html"/>
+	</bean>
+	<bean id="mailDatosClienteTelefonoFijo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteTelefonoFijo.html"/>
+	</bean>
+	<bean id="mailDatosClienteTelefonoMovil" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteTelefonoMovil.html"/>
+	</bean>
+	<bean id="mailDatosClienteTelefonoLaboral" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteTelefonoLaboral.html"/>
+	</bean>
+	
+	
+	<bean id="mailDatosClienteAltaTelefonoFijo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaTelefonoFijo.html"/>
+	</bean>
+	<bean id="mailDatosClienteAltaTelefonoMovil" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaTelefonoMovil.html"/>
+	</bean>
+	<bean id="mailDatosClienteAltaTelefonoLaboral" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaTelefonoLaboral.html"/>
+	</bean>
+
+	<bean id="mailDatosClienteBajaTelefonoFijo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaTelefonoFijo.html"/>
+	</bean>
+	<bean id="mailDatosClienteBajaTelefonoMovil" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaTelefonoMovil.html"/>
+	</bean>
+	<bean id="mailDatosClienteBajaTelefonoLaboral" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaTelefonoLaboral.html"/>
+	</bean>
+		
+	<bean id="mailDatosClienteAltaCorreo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteAltaCorreo.html"/>
+	</bean>
+	<bean id="mailDatosClienteBajaCorreo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteBajaCorreo.html"/>
+	</bean>
+	<bean id="mailDatosClienteCorreo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDatosClienteCorreo.html"/>
+	</bean>
+	
+	<bean id="mailLPDPCliente" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Autorización para el Uso de Datos Personales"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaLPDPCliente.html"/>
+	</bean>
+	
+	<bean id="mailNoLPDPCliente" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de No Autorización para el Uso de Datos Personales"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaNoLPDPCliente.html"/>
+	</bean>
+	
+	<bean id="mailPagoTarjetaLineaOB" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago Inmediato de Tarjeta de Crédito - Otros Bancos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjetaLineaOB.html"/>
+	</bean>
+	
+	<bean id="mailPagoTarjetaLineaOBRechazo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago Immediato de Tarjeta de Crédito - Otros Bancos (EN PROCESO)"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTarjetaLineaOBRechazo.html"/>
+	</bean>
+	
+		<bean id="mailRenovacionPrestamo" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Renovación de Préstamo Multired"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAprobacionPrestamo.html"/>
+	</bean>
+	
+	<bean id="mailPagoUniversidadOtros" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Universidad"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoUniversidadOtros.html"/>
+	</bean>
+	
+	<bean id="mailPagoUniversidadAlumno" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Universidad"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoUniversidadAlumno.html"/>
+	</bean>
+	
+	<bean id="mailRecargaOtros" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Servicios"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaRecargaOtros.html"/>
+	</bean>
+	<bean id="mailPagoTasasEducativas" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Pago de Universidad"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaPagoTasasEducativas.html"/>
+	</bean>
+	<bean id="mailConfTarjetaMN" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Confirmacion de Tarjeta"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaConfTarjetaMN.html"/>
+	</bean>	
+	<bean id="mailAfiliacionContacto" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Afiliacion a Contactos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionContacto.html"/>
+	</bean>	
+		
+	<bean id="mailDesafiliacionContacto" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Desafiliación a Contactos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaDesafiliacionContacto.html"/>
+	</bean>	
+	
+	<bean id="mailActualizacionContacto" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Actualización de Contactos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaActualizacionContacto.html"/>
+	</bean>	
+	
+	<bean id="mailTransferenciaContacto" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Transferencia Inmediata a Otro Banco"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaTransferenciaContacto.html"/>
+	</bean>	
+	
+	<bean id="mailDatosClienteCel" class="pe.cosapi.common.Mail">
+		<property name="from" 			value="BNenlinea@bn.com.pe"/>
+		<property name="subject"		value="BANCO DE LA NACION - Constancia de Actualización de Datos"/>
+		<property name="velocityEngine" ref="velocityEngine"/>
+		<property name="mailSender" 	ref="mailSender"/>
+		<property name="plantilla" value="/WEB-INF/plantilla/constanciaAfiliacionDatosClienteCel.html"/>
+	</bean>
+	
+</beans>

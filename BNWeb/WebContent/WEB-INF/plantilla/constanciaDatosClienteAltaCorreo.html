@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11.5px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="550">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE REGISTRO DE CORREO ELECTRONICO DEL CLIENTE<BR> 
+		<BR></B></TD>
+	</tr>
+
+	
+	<br>
+
+	<tr>
+		<TD class="texto" width="247">Canal empleado:</TD>
+		<TD class="texto" width="397">Multired Virtual</TD>
+	</tr>
+
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="247">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="397">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<BR>
+
+	<tr>
+		<TD class="texto" width="247">Tipo de Correo:</TD>
+		<TD class="texto" width="397">${param.inputAlta.codigoDirElectronica}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Correo:</TD>
+		<TD class="texto" width="397">${param.inputAlta.direccionElectronica}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Fecha:</TD>
+		<TD class="texto" width="397">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Hora:</TD>
+		<TD class="texto" width="397">${param.hora}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" colspan="2">&nbsp;</TD>
+	
+	</tr>
+	
+	<tr>
+				<td class="texto1" colspan="2"><p align="justify">
+					Declaro que la informaci&oacute;n consignada me corresponde y es verdadera, la misma que ser&aacute; tratada por el Banco de la Naci&oacute;n seg&uacute;n la Ley 
+				y Reglamento de Protecci&oacute;n de Datos Personales, si la informaci&oacute;n consignada cambia solicitar&eacute; su actualizaci&oacute;n.	
+				
+												
+			</p></td>
+		</tr>
+	
+	<tr>
+			<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+			<td class="texto1"colspan="2"><p align="justify">IMPORTANTE: </p></td>
+	</tr>
+	<tr>
+				<td class="texto1" colspan="2"><p align="justify">
+				
+				
+				Estimado cliente se le informa que en el registro y/o actualizaci&oacute;n de correos electrónicos personales, 
+				se considerar&aacute; para el envío de los Estados de Cuenta de sus Productos Pasivos, Cr&eacute;dito Hipotecario y/o 
+				Pr&eacute;stamo Multired; el &uacute;ltimo Correo Electrónico Personal que USTED registre en el canal Multired Virtual; 
+				siempre y cuando haya seleccionado como medio de env&iacute;o de sus Estados de Cuenta: Correo Electr&oacute;nico.
+		
+												
+			</p></td>
+		</tr>
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+
+</BODY>
+</HTML>

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11.5px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>SOLICITUD <br>
+		DE MODIFICACIÓN DE MONTO DEBITO AUTOMATICO<BR>
+		<BR></B></TD>
+	</tr>
+		<tr>
+	
+		<td class="texto" colspan="2" ><div align="justify">Solicito efectuar la modificaci&oacute;n del Servicio de D&eacute;bito Autom&aacute;tico respecto al Tope M&aacute;ximo de cargo en mi cuenta de ahorros MN, referente al servicio y/u obligaci&oacute;n que detallo a continuaci&oacute;n.</div><br><br></td>
+																																							
+	</tr>
+
+	<tr>
+		<TD class="texto" width="45%">Canal empleado:</TD>
+		<TD class="texto" width="55%">Multired Virtual</TD>
+	</tr>
+
+	<br>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="45%">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="55%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+
+	<tr>
+		<TD class="texto" width="45%">Nro. Cuenta Ahorro MN:</TD>
+		<TD class="texto" width="55%">${param.cuenta.cuentaformateada}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Tipo y N&uacute;mero de Documento:</TD>
+		<TD class="texto" width="55%">${param.docMostrar}-${param.nroDocumento}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Tipo Telefono Contacto:</TD>
+		<TD class="texto" width="55%">${param.telContactoMostrar}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Nro.Telefono Contacto:</TD>
+		<TD class="texto" width="55%">${param.telNumMostrar}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Email:</TD>
+		<TD class="texto" width="55%">${param.email}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Empresa:</TD>
+		<TD class="texto" width="55%">${param.empresaMostrar}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Servicio:</TD>
+		<TD class="texto" width="55%">${param.servicioMostrar}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Codigo Usuario o Suministro:</TD>
+		<TD class="texto" width="55%">${param.numSuministro}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Tope:</TD>
+		<TD class="texto" width="55%">${param.tope}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Monto Maximo:</TD>
+		<TD class="texto" width="55%">S/ ${param.montoDebito}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="45%">Fecha:</TD>
+		<TD class="texto" width="55%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Hora:</TD>
+		<TD class="texto" width="55%">${param.hora}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="45%">Codigo Operacion:</TD>
+		<TD class="texto" width="55%">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="45%">Confirmación Vía:</TD>
+		<TD class="texto" width="55%">${param.viaConfMostrar}<br><br></TD>
+	</tr>
+		<tr>
+			<TD class="texto" colspan="2"><b>(*) TERMINOS Y CONDICIONES DEL SERVICIO DE DEBITO AUTOMÁTICO</b></TD>
+	</tr>
+	<tr>
+				<td class="texto1" colspan="2"><p align="justify"><span>
+			El titular de la cuenta, deber&aacute; indicar el monto m&aacute;ximo en soles que se autoriza a debitar por el servicio. En caso el cliente no 
+			indique un monto, se considerar&aacute; que el d&eacute;bito no tiene l&iacute;mite m&aacute;ximo. Los cargos en la cuenta de ahorros se efectuar&aacute;n en la fecha 
+			y por el importe que el acreedor ordene, siempre y cuando &eacute;stos no excedan el monto m&aacute;ximo indicado por el cliente y la cuenta de 
+			ahorros mantenga los fondos disponibles para cargar el importe total de la obligaci&oacute;n. No se realizar&aacute;n cargos parciales. 
+			El banco no asumir&aacute; responsabilidad por los cargos que no pudieran efectuarse por insuficiencia de fondos o por exceder el monto 
+			m&aacute;ximo indicado por el titular de la cuenta. Asimismo, no asume responsabilidad alguna, en caso los montos ordenados por 
+			el acreedor sean errados, excesivos o insuficientes, lo cual deber&aacute; ser solucionado exclusivamente entre el titular de la cuenta y 
+			el acreedor. Si la obligaci&oacute;n materia de la presente solicitud fuera en moneda distinta a la de la cuenta de ahorros, 
+			el banco realizar&aacute; la conversión de moneda al tipo de cambio venta que tenga vigente en la fecha de la operaci&oacute;n. 
+			Los cargos efectuados en la cuenta de ahorros se podr&aacute;n visualizar en los estados de cuenta o en las consultas de &uacute;ltimos movimientos.
+			 El detalle de los mismos, podr&aacute; ser consultado sin costo alguno por el cliente a trav&eacute;s de nuestra p&aacute;gina web: www.bn.com.pe o 
+			 acerc&aacute;ndose a cualquiera de nuestras oficinas a nivel nacional. Los recibos, constancias, o comprobantes de pago de la obligación, 
+			 ser&aacute;n emitidos y entregados directamente por el acreedor. De efectuarse modificaciones en comisiones, gastos u otros aspectos 
+			 del servicio que afecten al cliente, &eacute;stas ser&aacute;n comunicadas previamente a trav&eacute;s de la v&iacute;a de confirmaci&oacute;n indicada por 
+			 el mismo y dentro de los plazos establecidos por ley, pudiendo &eacute;ste, al no estar de acuerdo, solicitar su desafiliaci&oacute;n al 
+			 servicio. Asimismo, el cliente podrá solicitar su desafiliación al servicio sin expresión de causa, mínimo con 48 horas de 
+			 anticipaci&oacute;n a la fecha de vencimiento de la obligación; en ambos casos la desafiliación se realizar&aacute; sin penalizaci&oacute;n alguna.
+			 Igualmente, el banco podr&aacute; poner fin al presente servicio por t&eacute;rmino del v&iacute;nculo contractual con el acreedor de la obligación
+			 o por indicaciones del mismo, lo cual sera comunicado al cliente a trav&eacute;s de la v&iacute;a de confirmaci&oacute;n indicada. 
+			 La presente solicitud &eacute;sta sujeta a la confirmación del acreedor.</span>
+			</p></td>
+		</tr>
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

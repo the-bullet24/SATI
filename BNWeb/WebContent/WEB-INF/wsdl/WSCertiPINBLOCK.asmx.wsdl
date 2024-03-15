@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://10.7.106.11/WSCertiPINBLOCK/WSCertiPINBLOCK" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://10.7.106.11/WSCertiPINBLOCK/WSCertiPINBLOCK">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://10.7.106.11/WSCertiPINBLOCK/WSCertiPINBLOCK">
+      <s:element name="OperacionesPINBLOCKAhorros">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="wcOperacion" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="NroTarjeta" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wPINEncrypt" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wPINBLOCKNew" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wPINBLOCKConf" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OperacionesPINBLOCKAhorrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="OperacionesPINBLOCKAhorrosResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OperacionesPINBLOCKCtasCtes">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="wcOperacion" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wTipoDocu" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wNroDocu" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wPINEncrypt" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wPINBLOCKNew" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="wPINBLOCKConf" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OperacionesPINBLOCKCtasCtesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="OperacionesPINBLOCKCtasCtesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="OperacionesPINBLOCKAhorrosSoapIn">
+    <part element="s0:OperacionesPINBLOCKAhorros" name="parameters"/>
+  </message>
+  <message name="OperacionesPINBLOCKAhorrosSoapOut">
+    <part element="s0:OperacionesPINBLOCKAhorrosResponse" name="parameters"/>
+  </message>
+  <message name="OperacionesPINBLOCKCtasCtesSoapIn">
+    <part element="s0:OperacionesPINBLOCKCtasCtes" name="parameters"/>
+  </message>
+  <message name="OperacionesPINBLOCKCtasCtesSoapOut">
+    <part element="s0:OperacionesPINBLOCKCtasCtesResponse" name="parameters"/>
+  </message>
+  <portType name="WSCertiPINBLOCKSoap">
+    <operation name="OperacionesPINBLOCKAhorros">
+      <input message="s0:OperacionesPINBLOCKAhorrosSoapIn"/>
+      <output message="s0:OperacionesPINBLOCKAhorrosSoapOut"/>
+    </operation>
+    <operation name="OperacionesPINBLOCKCtasCtes">
+      <input message="s0:OperacionesPINBLOCKCtasCtesSoapIn"/>
+      <output message="s0:OperacionesPINBLOCKCtasCtesSoapOut"/>
+    </operation>
+  </portType>
+  <binding name="WSCertiPINBLOCKSoap" type="s0:WSCertiPINBLOCKSoap">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="OperacionesPINBLOCKAhorros">
+      <soap:operation soapAction="http://10.7.106.11/WSCertiPINBLOCK/WSCertiPINBLOCK/OperacionesPINBLOCKAhorros" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="OperacionesPINBLOCKCtasCtes">
+      <soap:operation soapAction="http://10.7.106.11/WSCertiPINBLOCK/WSCertiPINBLOCK/OperacionesPINBLOCKCtasCtes" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="WSCertiPINBLOCK">
+    <port binding="s0:WSCertiPINBLOCKSoap" name="WSCertiPINBLOCKSoap">
+      <soap:address location="http://10.7.106.11/WSCertiPINBLOCK/WSCertiPINBLOCK.asmx"/>
+    </port>
+  </service>
+</definitions>

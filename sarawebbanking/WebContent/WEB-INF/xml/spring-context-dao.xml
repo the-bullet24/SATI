@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="commonDAO" class="pe.cosapi.common.dao.impl.CommonIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+
+	<bean id="bannerDAO" class="pe.cosapi.common.dao.impl.BannerIbatis" abstract="false" singleton="true" lazy-init="default" autowire="default" dependency-check="default">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="sqlMapClient"><ref local="ibatisSqlConfig" /> </property>
+	</bean>
+
+	<!-- datasoure ibatis para el schema sara web -->
+	<bean id="ibatisSqlConfig" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"><value>WEB-INF\xml\ibatisSqlConfig.xml</value></property>
+		<property name="dataSource"><ref bean="dataSource" />
+		</property>
+	</bean>
+
+
+</beans>

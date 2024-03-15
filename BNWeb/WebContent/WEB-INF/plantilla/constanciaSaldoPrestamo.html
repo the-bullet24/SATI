@@ -1,0 +1,78 @@
+
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+
+</HEAD>
+<BODY>
+<TABLE border="0" width="450">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSULTA DE SALDO - PRESTAMO MULTIRED<BR>
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="30%">Canal empleado:</TD>
+		<TD class="texto" width="70%">Multired Virtual</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="30%">Fecha:</TD>
+		<TD class="texto" width="70%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="30%">Hora:</TD>
+		<TD class="texto" width="70%">${param.hora}</TD>
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto">
+			Titular de Cuenta:
+		</td>
+		<td class="texto">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<TR>
+		<TD class="texto" width="30%">N&deg;&nbsp;Pr&eacute;stamo:</TD>
+		<TD class="texto" width="70%">${param.id}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Cliente:</TD>
+		<TD class="texto">${param.cliente}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Saldo a la fecha: </TD>
+		<TD class="texto" align="right">S/ ${param.saldoActual}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Inter&eacute;s a la fecha:</TD>
+		<TD class="texto" align="right">S/ ${param.interesActual}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Seguro Desgravamen a la fecha:</TD>
+		<TD class="texto" align="right">S/ ${param.segDesgravamen}</TD>
+	</TR>
+	<TR>
+		<TD class="texto">Deuda total a la fecha: </TD>
+		<TD class="texto" align="right">S/ ${param.deudaActual}</TD>
+	</TR>
+	
+	<tr>
+		<td class="texto" colspan="2" align="justify"><span> </span></td>
+	</tr>
+
+</TABLE>
+</BODY>
+</HTML>

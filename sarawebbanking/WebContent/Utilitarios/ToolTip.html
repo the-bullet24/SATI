@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"><!-- Sample HTML file -->
+<HTML>
+<HEAD>
+<TITLE> Put Your Title Here </TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF"><SCRIPT>
+/*
+Text Link/Image Map Tooltip Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+if (!document.layers && !document.all)
+	event="test"
+
+function showtip(current,e,text)
+{
+	if (document.all)
+	{
+		thetitle = text.split('<br>');
+		if (thetitle.length > 1)
+		{
+			thetitles = '';
+			for (i=0;i<thetitle.length;i++)
+				thetitles+=thetitle[i];
+			current.title = thetitles
+		}
+		else
+			current.title = text;
+	}
+	else if (document.layers)
+	{
+		document.tooltip.document.write('<layer bgColor="white" style="border:1px solid black;font-size:12px;">'+text+'</layer>');
+		document.tooltip.document.close();
+		document.tooltip.left=e.pageX+5;
+		document.tooltip.top=e.pageY+5;
+		document.tooltip.visibility="show";
+	}
+}
+
+function hidetip(){
+	if (document.layers)
+	{
+		document.tooltip.visibility="hidden";
+	}
+}
+</SCRIPT> <A href="http://dynamicdrive.com" onmouseover="showtip(this,event,'Visit Dynamic Drive for DHTML Scripts!')" onmouseout="hidetip()">Dynamic Drive</A> <MAP name="FrontPageMap0">
+<AREA shape="RECT" coords="57, 78, 135, 138" href="http://www.webreference.com" onmouseover="showtip(this,event,'Click here for Webreference')" onmouseout="hidetip()">
+<AREA shape="RECT" coords="103, 10, 174, 75" href="http://www.wsabstract.com" onmouseover="showtip(this,event,'Click here for Website Abstraction')" onmouseout="hidetip()">
+</MAP> <IMG src="/sarawebbanking/images/casaclarita.gif" width="188" height="173" border="0" alt="imagemap.gif (14679 bytes)" usemap="#FrontPageMap0"></BODY>
+</HTML>

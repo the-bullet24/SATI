@@ -1,0 +1,152 @@
+table {
+
+}
+
+
+thead tr {
+	background-color: #CC0000;
+	background-position: right;
+	color:white;;
+	font-weight: bold;
+	font: sans-serif;
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+
+th.sorted {
+	background-color: orange;
+}
+
+th a,th a:visited {
+	color: black;
+}
+
+th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+th.sorted a,th.sortable a {
+	background-position: right;
+	color: white;
+	display: block;
+	width: 100%;
+}
+
+th.sortable a {
+	background-image: url(../img/arrow_off.png);
+}
+
+th.order1 a {
+	background-image: url(../img/arrow_down.png);
+}
+
+th.order2 a {
+	background-image: url(../img/arrow_up.png);
+}
+
+tr.odd {
+	background-color: #fff
+	
+}
+
+tr.tableRowEven,tr.even {
+	background-color: #fea
+}
+
+div.exportlinks {
+	background-color: #eee;
+	color: black;
+	border: 1px ;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 79%;
+}
+
+span.export {
+	padding: 0 4px 1px 20px;
+	color: white;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+}
+
+span.excel {
+	background-image: url(../img/ico_file_excel.png);
+	color: black;
+}
+
+span.csv {
+	background-image: url(../img/ico_file_csv.png);
+	color: black;
+}
+
+span.xml {
+	background-image: url(../img/ico_file_xml.png);
+	color: black;
+}
+
+span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+	color: black;
+}
+
+span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+	color: black;
+}
+
+span.pagebanner {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 650px; /* ancho del footer*/
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;
+}
+
+span.pagelinks {
+	background-color: #CC0000;
+	color:white;
+	font-size:12px;
+	padding: 2px 8px 2px 8px;
+	width: 650px;/* ancho del footer*/
+	display: block;
+	border-top: none;
+	margin-bottom: -5px;
+}
+
+
+.group-1 {
+    font-weight:bold;
+    padding-bottom:10px;
+    border-top:1px solid black;
+}
+.group-2 {
+    font-style:italic;
+    border-top: 1px solid black;
+
+}
+.subtotal-sum, .grandtotal-sum {
+    font-weight:bold;
+    text-align:right;
+}
+.subtotal-header {
+    padding-bottom: 0px;
+	color: white;
+    border-top: 1px solid white;
+}
+.subtotal-label, .grandtotal-label {
+    border-top: 1px solid white;
+    font-weight: bold;
+}
+.grouped-table tr.even {
+    background-color: #fff;
+}
+.grouped-table tr.odd {
+    background-color: #fff;
+}
+.grandtotal-row {
+    border-top: 2px solid black;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	<TR>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE RETENCIONES - CUENTA CORRIENTE<BR>
+		</B></TD>
+	</TR>
+	<TR>
+		<TD align="center" class="texto" colspan="2"><FONT color="#C9242C" face="Arial" size="-1"><B> ${mensajeItf}</B></FONT><BR>
+		<BR>
+		<FONT color="navy"> </FONT></TD>
+	</TR>
+	<tr>
+		<TD class="texto" width="45%">Canal empleado:</TD>
+		<TD class="texto" width="55%">Multired Virtual</TD>
+	</tr>
+	<TR>
+		<TD class="texto" width="45%"><B>Banco de la Nación</B></TD>
+		<TD class="texto" width="55%" align="right"><B>RUC: 20100030595</B></TD>
+	</TR>
+	<TR>
+		<TD class="texto" valign="top" colspan="2"><HR></TD>
+	</TR>
+	<TR>
+		<TD class="texto" valign="top" colspan="2"></TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Fecha:</TD>
+		<TD class="texto" width="55%">${param.fecha}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Hora:</TD>
+		<TD class="texto" width="55%">${param.hora}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Nro. Cuenta Corriente:</TD>
+		<TD class="texto" width="55%">${param.cuentaformateada}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Moneda:</TD>
+		<TD class="texto" width="55%">${param.nombremoneda}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Documento:</TD>
+		<TD class="texto" width="55%">${param.documento}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Nombre:</TD>
+		<TD class="texto" width="55%">${param.nombre}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" valign="top" width="45%">Direcci&oacute;n:</TD>
+		<TD class="texto" width="55%">${param.direccion}</TD>
+	</TR>
+	<TR>
+		<TD colspan="2">
+		<HR>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="texto" align="center" width="45%">Retenciones de ITF</TD>
+		<TD class="texto" align="center" width="55%">Total
+		${param.nombremoneda}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Cargos</TD>
+		<TD class="texto" align="right" width="55%">${param.cargos}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Abonos</TD>
+		<TD class="texto" align="right" width="55%">${param.abonos}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Sub-Total Retenciones</TD>
+		<TD class="texto" align="right" width="55%">${param.retencion}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Devoluciones</TD>
+		<TD class="texto" align="right" width="55%">${param.devoluciones}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="45%">Total Efectivamente Retenido</TD>
+		<TD class="texto" align="right" width="55%">${param.total}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

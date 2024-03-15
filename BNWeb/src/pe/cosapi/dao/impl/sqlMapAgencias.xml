@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapAgencia">
+
+  	<resultMap id="agencias" class="pe.cosapi.domain.impl.AgenciaImpl">
+		<result property="departamento.codigo" 				column="depcod"/> 
+		<result property="departamento.descripcion" 		column="depdes"/> 
+		<result property="codigo" 							column="codigo"/> 
+		<result property="descripcion" 						column="descripcion"/> 
+	</resultMap>
+	<resultMap id="departamentos" class="pe.cosapi.domain.impl.AgenciaImpl">
+		<result property="departamento.codigo" 				column="depcod"/> 
+		<result property="departamento.descripcion" 		column="depdes"/> 
+	</resultMap>
+
+	<select id="getAgenciasSoles" resultMap="agencias">
+		SELECT 
+		       b.f02_cdepartamento as depcod,
+		       b.f02_departamento as depdes,
+		       a.COD_DEP4 as codigo,
+		       a.F01_AOFICINA as descripcion
+		  FROM PV_SWB.TAGEDAT a
+		  LEFT OUTER JOIN PV_SWB.TDEPDAT b ON a.COD_UBIGEO = b.f02_ubigeo_bnsif50
+				  WHERE
+					a.F01_COFICINA != 0	and
+	           b.f02_departamento is not null and (a.flg_moneda is null or a.flg_moneda='PEI')
+		 ORDER BY a.F01_AOFICINA, b.f02_departamento
+	</select>
+
+	<select id="getAgenciasDolares" resultMap="agencias">
+		SELECT 
+		       b.f02_cdepartamento as depcod,
+		       b.f02_departamento as depdes,
+		       a.COD_DEP4 as codigo,
+		       a.F01_AOFICINA as descripcion
+		  FROM PV_SWB.TAGEDAT a
+		  LEFT OUTER JOIN PV_SWB.TDEPDAT b ON a.COD_UBIGEO = b.f02_ubigeo_bnsif50
+				  WHERE
+					a.F01_COFICINA != 0	and
+	           b.f02_departamento is not null and (a.flg_moneda is null or a.flg_moneda='USD')
+		 ORDER BY a.F01_AOFICINA, b.f02_departamento
+	</select>
+	
+	<select id="getDepartamentos" resultMap="departamentos">
+		SELECT 
+		       distinct(b.f02_cdepartamento) as depcod,
+		       trim(b.f02_departamento) as depdes
+		      
+		  FROM PV_SWB.TAGEDAT a
+		  LEFT OUTER JOIN PV_SWB.TDEPDAT b ON a.COD_UBIGEO = b.f02_ubigeo_bnsif50
+				  WHERE
+					a.F01_COFICINA != 0	and
+	           b.f02_departamento is not null                            
+		 ORDER BY  b.f02_cdepartamento
+	</select>
+	
+	<select id="getListDetalleDepartamento" resultClass="pe.cosapi.domain.impl.DetalleAyudaDatosImpl">
+		select 
+				distinct f02_cdepartamento as codigoDetalleAyuda,
+				f02_departamento as descripcionDetalle
+ 				from bn_tablas.bntgf02_ubigeo 
+ 				order by  f02_cdepartamento asc
+	</select>
+	
+	
+	
+	<select id="getListDetalleProvincia" resultClass="pe.cosapi.domain.impl.DetalleAyudaDatosImpl">
+		select 
+				distinct f02_cprovincia as codigoDetalleAyuda,
+				f02_provincia as descripcionDetalle 
+				from bn_tablas.bntgf02_ubigeo 
+				where f02_cdepartamento  = #value# 
+				order by  f02_cprovincia asc 
+	</select>
+	
+	<select id="getListDetalleDistrito" resultClass="pe.cosapi.domain.impl.DetalleAyudaDatosImpl">
+	    select 
+            distinct f02_cdistrito as codigoDetalleAyuda,
+            f02_distrito as descripcionDetalle
+            from bn_tablas.bntgf02_ubigeo 
+			where f02_cubigeo like (#value#||'%') 
+			order by  f02_cdistrito asc
+	</select>
+
+</sqlMap>

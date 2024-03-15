@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation">
+  <notation:Diagram xmi:id="_OVpFsNixEduNOekNlXdEzQ" type="Sequence" element="_OVpFudixEduNOekNlXdEzQ" name="SecuenciaCambioClaveInternet.dnx">
+    <children xmi:id="_OVpFsdixEduNOekNlXdEzQ" element="_OVpFudixEduNOekNlXdEzQ">
+      <children xmi:id="_OVpFstixEduNOekNlXdEzQ" type="interaction_compartment" element="_OVpFudixEduNOekNlXdEzQ">
+        <children xmi:id="_Q7yoktixEduNOekNlXdEzQ" sourceEdges="_jLmA7NixEduNOekNlXdEzQ" targetEdges="_jMCs09ixEduNOekNlXdEzQ" element="_Q7yokNixEduNOekNlXdEzQ">
+          <children xmi:id="_Q7yoldixEduNOekNlXdEzQ" type="Name" element="_Q7yokNixEduNOekNlXdEzQ"/>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Q7yok9ixEduNOekNlXdEzQ" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q7yolNixEduNOekNlXdEzQ" x="265" y="4551"/>
+        </children>
+        <children xmi:id="_TdLAMtixEduNOekNlXdEzQ" sourceEdges="_jMCs09ixEduNOekNlXdEzQ _lAa0hNixEduNOekNlXdEzQ" targetEdges="_jLmA7NixEduNOekNlXdEzQ _lA3gc9ixEduNOekNlXdEzQ" element="_TdLAMNixEduNOekNlXdEzQ">
+          <children xmi:id="_TdLANdixEduNOekNlXdEzQ" type="Name" element="_TdLAMNixEduNOekNlXdEzQ"/>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TdLAM9ixEduNOekNlXdEzQ" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TdLANNixEduNOekNlXdEzQ" x="2520" y="-104" height="15875"/>
+        </children>
+        <children xmi:id="_fDZcctixEduNOekNlXdEzQ" sourceEdges="_lA3gc9ixEduNOekNlXdEzQ _nGFgiNixEduNOekNlXdEzQ" targetEdges="_lAa0hNixEduNOekNlXdEzQ" element="_fDZccNixEduNOekNlXdEzQ">
+          <children xmi:id="_fDZcddixEduNOekNlXdEzQ" type="Name" element="_fDZccNixEduNOekNlXdEzQ"/>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fDZcc9ixEduNOekNlXdEzQ" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fDZcdNixEduNOekNlXdEzQ" x="2386" y="-104" height="15875"/>
+        </children>
+        <children xmi:id="_hfHQ8tixEduNOekNlXdEzQ" targetEdges="_nGFgiNixEduNOekNlXdEzQ" element="_hfHQ8NixEduNOekNlXdEzQ">
+          <children xmi:id="_hfHQ9dixEduNOekNlXdEzQ" type="Name" element="_hfHQ8NixEduNOekNlXdEzQ"/>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_hfHQ89ixEduNOekNlXdEzQ" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hfHQ9NixEduNOekNlXdEzQ" x="1486" y="214" height="15875"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_OVpFs9ixEduNOekNlXdEzQ"/>
+      </children>
+      <children xmi:id="_OVpFtNixEduNOekNlXdEzQ" type="Name" element="_OVpFudixEduNOekNlXdEzQ"/>
+      <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OVpFtdixEduNOekNlXdEzQ" showStereotype="Label"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OVpFttixEduNOekNlXdEzQ"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_OVpFt9ixEduNOekNlXdEzQ"/>
+    <edges xmi:id="_jLmA7NixEduNOekNlXdEzQ" element="_jLmA4NixEduNOekNlXdEzQ" source="_Q7yoktixEduNOekNlXdEzQ" target="_TdLAMtixEduNOekNlXdEzQ">
+      <children xmi:id="_jLmA79ixEduNOekNlXdEzQ" type="MessageNameLabel" element="_jLmA4NixEduNOekNlXdEzQ">
+        <children xmi:id="_jLmA8dixEduNOekNlXdEzQ" type="Stereotype" element="_jLmA4NixEduNOekNlXdEzQ"/>
+        <children xmi:id="_jLmA8tixEduNOekNlXdEzQ" type="Name" element="_jLmA4NixEduNOekNlXdEzQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jLmA8NixEduNOekNlXdEzQ" y="-318"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jLmA7dixEduNOekNlXdEzQ" showStereotype="Text"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jLmA7tixEduNOekNlXdEzQ" points="[0, 0, -211, 0]$[211, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jLmA89ixEduNOekNlXdEzQ" id="4190:1613"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jLmA9NixEduNOekNlXdEzQ" id="4237:0"/>
+    </edges>
+    <edges xmi:id="_jMCs09ixEduNOekNlXdEzQ" element="_jLmA6NixEduNOekNlXdEzQ" source="_TdLAMtixEduNOekNlXdEzQ" target="_Q7yoktixEduNOekNlXdEzQ">
+      <children xmi:id="_jMCs1tixEduNOekNlXdEzQ" type="MessageNameLabel" element="_jLmA6NixEduNOekNlXdEzQ">
+        <children xmi:id="_jMCs2NixEduNOekNlXdEzQ" type="Stereotype" element="_jLmA6NixEduNOekNlXdEzQ"/>
+        <children xmi:id="_jMCs2dixEduNOekNlXdEzQ" type="Name" element="_jLmA6NixEduNOekNlXdEzQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jMCs19ixEduNOekNlXdEzQ" y="476"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jMCs1NixEduNOekNlXdEzQ" showStereotype="Text"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jMCs1dixEduNOekNlXdEzQ" points="[0, 0, 211, 0]$[-211, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jMCs2tixEduNOekNlXdEzQ" id="4238:1058"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jMCs29ixEduNOekNlXdEzQ" id="4239:0"/>
+    </edges>
+    <edges xmi:id="_lAa0hNixEduNOekNlXdEzQ" element="_k_0-oNixEduNOekNlXdEzQ" source="_TdLAMtixEduNOekNlXdEzQ" target="_fDZcctixEduNOekNlXdEzQ">
+      <children xmi:id="_lAklgNixEduNOekNlXdEzQ" type="MessageNameLabel" element="_k_0-oNixEduNOekNlXdEzQ">
+        <children xmi:id="_lAklgtixEduNOekNlXdEzQ" type="Stereotype" element="_k_0-oNixEduNOekNlXdEzQ"/>
+        <children xmi:id="_lAklg9ixEduNOekNlXdEzQ" type="Name" element="_k_0-oNixEduNOekNlXdEzQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lAklgdixEduNOekNlXdEzQ" y="-318"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_lAa0hdixEduNOekNlXdEzQ" showStereotype="Text"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lAa0htixEduNOekNlXdEzQ" points="[0, 0, -203, 0]$[203, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lAklhNixEduNOekNlXdEzQ" id="4248:476"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lAklhdixEduNOekNlXdEzQ" id="4330:0"/>
+    </edges>
+    <edges xmi:id="_lA3gc9ixEduNOekNlXdEzQ" element="_lAa0gNixEduNOekNlXdEzQ" source="_fDZcctixEduNOekNlXdEzQ" target="_TdLAMtixEduNOekNlXdEzQ">
+      <children xmi:id="_lA3gdtixEduNOekNlXdEzQ" type="MessageNameLabel" element="_lAa0gNixEduNOekNlXdEzQ">
+        <children xmi:id="_lA3geNixEduNOekNlXdEzQ" type="Stereotype" element="_lAa0gNixEduNOekNlXdEzQ"/>
+        <children xmi:id="_lA3gedixEduNOekNlXdEzQ" type="Name" element="_lAa0gNixEduNOekNlXdEzQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lA3gd9ixEduNOekNlXdEzQ" y="476"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_lA3gdNixEduNOekNlXdEzQ" showStereotype="Text"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lA3gddixEduNOekNlXdEzQ" points="[0, 0, 203, 0]$[-203, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lA3getixEduNOekNlXdEzQ" id="4331:820"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lA3ge9ixEduNOekNlXdEzQ" id="4332:0"/>
+    </edges>
+    <edges xmi:id="_nGFgiNixEduNOekNlXdEzQ" element="_nGFggNixEduNOekNlXdEzQ" source="_fDZcctixEduNOekNlXdEzQ" target="_hfHQ8tixEduNOekNlXdEzQ">
+      <children xmi:id="_nGFgi9ixEduNOekNlXdEzQ" type="MessageNameLabel" element="_nGFggNixEduNOekNlXdEzQ">
+        <children xmi:id="_nGFgjdixEduNOekNlXdEzQ" type="Stereotype" element="_nGFggNixEduNOekNlXdEzQ"/>
+        <children xmi:id="_nGFgjtixEduNOekNlXdEzQ" type="Name" element="_nGFggNixEduNOekNlXdEzQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nGFgjNixEduNOekNlXdEzQ" y="-318"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_nGFgidixEduNOekNlXdEzQ" showStereotype="Text"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nGFgitixEduNOekNlXdEzQ" points="[0, 0, -162, 0]$[162, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nGFgj9ixEduNOekNlXdEzQ" id="4349:635"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nGFgkNixEduNOekNlXdEzQ" id="4406:0"/>
+    </edges>
+  </notation:Diagram>
+  <uml:Collaboration xmi:id="_OVpFuNixEduNOekNlXdEzQ">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_OVpFudixEduNOekNlXdEzQ" name="Interacción1">
+      <ownedConnector xmi:id="_jLmA49ixEduNOekNlXdEzQ">
+        <end xmi:id="_jLmA5NixEduNOekNlXdEzQ" role="_Q7yokdixEduNOekNlXdEzQ"/>
+        <end xmi:id="_jLmA5dixEduNOekNlXdEzQ" role="_TdLAMdixEduNOekNlXdEzQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_k_0-o9ixEduNOekNlXdEzQ">
+        <end xmi:id="_k_0-pNixEduNOekNlXdEzQ" role="_TdLAMdixEduNOekNlXdEzQ"/>
+        <end xmi:id="_k_0-pdixEduNOekNlXdEzQ" role="_fDZccdixEduNOekNlXdEzQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_nGFgg9ixEduNOekNlXdEzQ">
+        <end xmi:id="_nGFghNixEduNOekNlXdEzQ" role="_fDZccdixEduNOekNlXdEzQ"/>
+        <end xmi:id="_nGFghdixEduNOekNlXdEzQ" role="_hfHQ8dixEduNOekNlXdEzQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_vCqVg9ixEduNOekNlXdEzQ">
+        <end xmi:id="_vC0GgNixEduNOekNlXdEzQ" role="_Q7yokdixEduNOekNlXdEzQ"/>
+        <end xmi:id="_vC0GgdixEduNOekNlXdEzQ" role="_fDZccdixEduNOekNlXdEzQ"/>
+      </ownedConnector>
+      <lifeline xmi:id="_Q7yokNixEduNOekNlXdEzQ" name="propiedad" coveredBy="_jLmA4dixEduNOekNlXdEzQ _jLmA69ixEduNOekNlXdEzQ" represents="_Q7yokdixEduNOekNlXdEzQ"/>
+      <lifeline xmi:id="_TdLAMNixEduNOekNlXdEzQ" name="propiedad2" coveredBy="_jLmA4tixEduNOekNlXdEzQ _jLmA59ixEduNOekNlXdEzQ _k_0-odixEduNOekNlXdEzQ _lAa0g9ixEduNOekNlXdEzQ" represents="_TdLAMdixEduNOekNlXdEzQ"/>
+      <lifeline xmi:id="_fDZccNixEduNOekNlXdEzQ" name="propiedad3" coveredBy="_k_0-otixEduNOekNlXdEzQ _k_0-p9ixEduNOekNlXdEzQ _nGFggdixEduNOekNlXdEzQ" represents="_fDZccdixEduNOekNlXdEzQ"/>
+      <lifeline xmi:id="_hfHQ8NixEduNOekNlXdEzQ" name="propiedad4" coveredBy="_nGFggtixEduNOekNlXdEzQ _nGFgh9ixEduNOekNlXdEzQ" represents="_hfHQ8dixEduNOekNlXdEzQ"/>
+      <message xmi:id="_jLmA4NixEduNOekNlXdEzQ" name="getTarjetaFacade" receiveEvent="_jLmA4tixEduNOekNlXdEzQ" sendEvent="_jLmA4dixEduNOekNlXdEzQ" connector="_jLmA49ixEduNOekNlXdEzQ">
+        <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=getTarjetaFacade^sign=()QTarjetaFacade%3b[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </message>
+      <message xmi:id="_jLmA6NixEduNOekNlXdEzQ" name="getTarjetaFacade" messageSort="synchSignal" receiveEvent="_jLmA69ixEduNOekNlXdEzQ" sendEvent="_jLmA59ixEduNOekNlXdEzQ" connector="_jLmA49ixEduNOekNlXdEzQ">
+        <eAnnotations xmi:id="_jLmA6dixEduNOekNlXdEzQ" source="keywords">
+          <details xmi:id="_jLmA6tixEduNOekNlXdEzQ" key="return"/>
+        </eAnnotations>
+        <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=getTarjetaFacade^sign=()QTarjetaFacade%3b[jsrctype^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </message>
+      <message xmi:id="_k_0-oNixEduNOekNlXdEzQ" name="cambiarClaveInternet" receiveEvent="_k_0-otixEduNOekNlXdEzQ" sendEvent="_k_0-odixEduNOekNlXdEzQ" connector="_k_0-o9ixEduNOekNlXdEzQ">
+        <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=cambiarClaveInternet^sign=(QUsuario%3bQString%3bQString%3bQString%3bQString%3bQString%3b)V[jsrctype^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </message>
+      <message xmi:id="_lAa0gNixEduNOekNlXdEzQ" name="cambiarClaveInternet" messageSort="synchSignal" receiveEvent="_lAa0g9ixEduNOekNlXdEzQ" sendEvent="_k_0-p9ixEduNOekNlXdEzQ" connector="_k_0-o9ixEduNOekNlXdEzQ">
+        <eAnnotations xmi:id="_lAa0gdixEduNOekNlXdEzQ" source="keywords">
+          <details xmi:id="_lAa0gtixEduNOekNlXdEzQ" key="return"/>
+        </eAnnotations>
+        <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=cambiarClaveInternet^sign=(QUsuario%3bQString%3bQString%3bQString%3bQString%3bQString%3b)V[jsrctype^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </message>
+      <message xmi:id="_nGFggNixEduNOekNlXdEzQ" name="loadVectors" messageSort="asynchCall" receiveEvent="_nGFggtixEduNOekNlXdEzQ" sendEvent="_nGFggdixEduNOekNlXdEzQ" connector="_nGFgg9ixEduNOekNlXdEzQ">
+        <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=loadVectors^sign=()V[jsrctype^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </message>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_jLmA4dixEduNOekNlXdEzQ" covered="_Q7yokNixEduNOekNlXdEzQ" sendMessage="_jLmA4NixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_jLmA4tixEduNOekNlXdEzQ" covered="_TdLAMNixEduNOekNlXdEzQ" receiveMessage="_jLmA4NixEduNOekNlXdEzQ" startExec="_jLmA5tixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_jLmA5tixEduNOekNlXdEzQ" start="_jLmA4tixEduNOekNlXdEzQ" finish="_jLmA59ixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_k_0-odixEduNOekNlXdEzQ" covered="_TdLAMNixEduNOekNlXdEzQ" sendMessage="_k_0-oNixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_k_0-otixEduNOekNlXdEzQ" covered="_fDZccNixEduNOekNlXdEzQ" receiveMessage="_k_0-oNixEduNOekNlXdEzQ" startExec="_k_0-ptixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_k_0-ptixEduNOekNlXdEzQ" start="_k_0-otixEduNOekNlXdEzQ" finish="_k_0-p9ixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_nGFggdixEduNOekNlXdEzQ" covered="_fDZccNixEduNOekNlXdEzQ" sendMessage="_nGFggNixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_nGFggtixEduNOekNlXdEzQ" covered="_hfHQ8NixEduNOekNlXdEzQ" receiveMessage="_nGFggNixEduNOekNlXdEzQ" startExec="_nGFghtixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_nGFghtixEduNOekNlXdEzQ" start="_nGFggtixEduNOekNlXdEzQ" finish="_nGFgh9ixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_nGFgh9ixEduNOekNlXdEzQ" covered="_hfHQ8NixEduNOekNlXdEzQ" finishExec="_nGFghtixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_k_0-p9ixEduNOekNlXdEzQ" covered="_fDZccNixEduNOekNlXdEzQ" sendMessage="_lAa0gNixEduNOekNlXdEzQ" finishExec="_k_0-ptixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_lAa0g9ixEduNOekNlXdEzQ" covered="_TdLAMNixEduNOekNlXdEzQ" receiveMessage="_lAa0gNixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_jLmA59ixEduNOekNlXdEzQ" covered="_TdLAMNixEduNOekNlXdEzQ" sendMessage="_jLmA6NixEduNOekNlXdEzQ" finishExec="_jLmA5tixEduNOekNlXdEzQ"/>
+      <fragment xmi:type="uml:EventOccurrence" xmi:id="_jLmA69ixEduNOekNlXdEzQ" covered="_Q7yokNixEduNOekNlXdEzQ" receiveMessage="_jLmA6NixEduNOekNlXdEzQ"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_Q7yokdixEduNOekNlXdEzQ" end="_jLmA5NixEduNOekNlXdEzQ _vC0GgNixEduNOekNlXdEzQ">
+      <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=CambiarClaveAction[jcu^name=CambiarClaveAction.java[jpack^name=pe.bn.tarjeta.action[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_TdLAMdixEduNOekNlXdEzQ" end="_jLmA5dixEduNOekNlXdEzQ _k_0-pNixEduNOekNlXdEzQ">
+      <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=FacadeFactory[jcu^name=FacadeFactory.java[jpack^name=pe.cosapi.common[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fDZccdixEduNOekNlXdEzQ" end="_k_0-pdixEduNOekNlXdEzQ _nGFghNixEduNOekNlXdEzQ _vC0GgdixEduNOekNlXdEzQ">
+      <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=TarjetaFacadeImpl[jcu^name=TarjetaFacadeImpl.java[jpack^name=pe.bn.tarjeta.facade.impl[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hfHQ8dixEduNOekNlXdEzQ" end="_nGFghdixEduNOekNlXdEzQ">
+      <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=Transaction[jcu^name=Transaction.java[jpack^name=pe.cosapi.sarabank.bean[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </ownedAttribute>
+  </uml:Collaboration>
+</xmi:XMI>

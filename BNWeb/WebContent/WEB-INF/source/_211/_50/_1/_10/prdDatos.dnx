@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_U1154F1kEdy2aqrunURT-g" type="Class" name="prd.dnx">
+  <children xmi:id="_evNLsF1kEdy2aqrunURT-g" sourceEdges="_e3GjcV1kEdy2aqrunURT-g" targetEdges="_e3GjeV1kEdy2aqrunURT-g _e3QUdV1kEdy2aqrunURT-g">
+    <children xmi:id="_evNLs11kEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_evNLtF1kEdy2aqrunURT-g" width="530" height="530"/>
+    </children>
+    <children xmi:id="_evNLtV1kEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evNLtl1kEdy2aqrunURT-g" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evNLt11kEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evNLuF1kEdy2aqrunURT-g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_evNLuV1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evNLul1kEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_evNLu11kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evNLvF1kEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_evNLvV1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_evNLsV1kEdy2aqrunURT-g" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_evNLsl1kEdy2aqrunURT-g" x="9858" y="7314"/>
+  </children>
+  <children xmi:id="_evgGoF1kEdy2aqrunURT-g">
+    <children xmi:id="_evgGo11kEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_evgGpF1kEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_evgGpV1kEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evgGpl1kEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evgGp11kEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_evgGqF1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evgGqV1kEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_evgGql1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evgGq11kEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_evgGrF1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_evgGrV1kEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_evgGrl1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_evgGoV1kEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaInformation[jcu^name=WSPRDDatosCuentaInformation.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_evgGol1kEdy2aqrunURT-g" x="1908" y="954"/>
+  </children>
+  <children xmi:id="_ewGjkF1kEdy2aqrunURT-g" sourceEdges="_e3GjeV1kEdy2aqrunURT-g _e3GjgF1kEdy2aqrunURT-g" targetEdges="_e3QUfV1kEdy2aqrunURT-g">
+    <children xmi:id="_ewGjk11kEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ewGjlF1kEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ewGjlV1kEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewGjll1kEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewGjl11kEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ewGjmF1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewGjmV1kEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ewGjml1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewGjm11kEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ewGjnF1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ewGjnV1kEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ewGjnl1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ewGjkV1kEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ewGjkl1kEdy2aqrunURT-g" x="16218" y="11130"/>
+  </children>
+  <children xmi:id="_excAUF1kEdy2aqrunURT-g" targetEdges="_e3GjcV1kEdy2aqrunURT-g _e3GjgF1kEdy2aqrunURT-g _e3QUhV1kEdy2aqrunURT-g _e3QUjF1kEdy2aqrunURT-g">
+    <children xmi:id="_excAU11kEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_excAVF1kEdy2aqrunURT-g" width="530" height="530"/>
+    </children>
+    <children xmi:id="_excAVV1kEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_excAVl1kEdy2aqrunURT-g" type="Kind">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_excAV11kEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_excAWF1kEdy2aqrunURT-g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_excAWV1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_excAWl1kEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_excAW11kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_excAXF1kEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_excAXV1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_excAUV1kEdy2aqrunURT-g" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_excAUl1kEdy2aqrunURT-g" x="2862" y="11448"/>
+  </children>
+  <children xmi:id="_exviU11kEdy2aqrunURT-g" sourceEdges="_e3QUdV1kEdy2aqrunURT-g _e3QUfV1kEdy2aqrunURT-g _e3QUhV1kEdy2aqrunURT-g">
+    <children xmi:id="_exviVl1kEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_exviV11kEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_exviWF1kEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_exviWV1kEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_exviWl1kEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_exviW11kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_exviXF1kEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_exviXV1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_exviXl1kEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_exviX11kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_exviYF1kEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_exviYV1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_exviVF1kEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_exviVV1kEdy2aqrunURT-g" x="8904" y="954"/>
+  </children>
+  <children xmi:id="_ezE_EF1kEdy2aqrunURT-g" sourceEdges="_e3QUjF1kEdy2aqrunURT-g">
+    <children xmi:id="_ezE_E11kEdy2aqrunURT-g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ezE_FF1kEdy2aqrunURT-g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ezE_FV1kEdy2aqrunURT-g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ezE_Fl1kEdy2aqrunURT-g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ezE_F11kEdy2aqrunURT-g" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ezE_GF1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ezE_GV1kEdy2aqrunURT-g" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ezE_Gl1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ezE_G11kEdy2aqrunURT-g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ezE_HF1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ezE_HV1kEdy2aqrunURT-g" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ezE_Hl1kEdy2aqrunURT-g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ezE_EV1kEdy2aqrunURT-g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezE_El1kEdy2aqrunURT-g" x="2226" y="5406"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_U1154V1kEdy2aqrunURT-g"/>
+  <edges xmi:id="_e3GjcV1kEdy2aqrunURT-g" source="_evNLsF1kEdy2aqrunURT-g" target="_excAUF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3GjdF1kEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_e3Gjdl1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3GjeF1kEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3Gjd11kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3GjdV1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3Gjcl1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3Gjc11kEdy2aqrunURT-g" points="[0, 1799, 3770, -2461]$[-3784, 3387, -14, -873]"/>
+  </edges>
+  <edges xmi:id="_e3GjeV1kEdy2aqrunURT-g" source="_ewGjkF1kEdy2aqrunURT-g" target="_evNLsF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3GjfF1kEdy2aqrunURT-g" type="NameLabel">
+      <children xmi:id="_e3Gjfl1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3Gjf11kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3GjfV1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3Gjel1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3Gje11kEdy2aqrunURT-g" points="[-14, 4538, 1746, -3386]$[-1760, 6125, 0, -1799]"/>
+  </edges>
+  <edges xmi:id="_e3GjgF1kEdy2aqrunURT-g" source="_ewGjkF1kEdy2aqrunURT-g" target="_excAUF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3Gjg11kEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_e3GjhV1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3Gjh11kEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3Gjhl1kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3GjhF1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3GjgV1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3Gjgl1kEdy2aqrunURT-g" points="[-2831, 370, 11377, 53]$[-5583, 370, 8625, 53]$[-11589, 370, 2619, 53]"/>
+  </edges>
+  <edges xmi:id="_e3QUdV1kEdy2aqrunURT-g" source="_exviU11kEdy2aqrunURT-g" target="_evNLsF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3QUeF1kEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_e3QUel1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3QUfF1kEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3QUe11kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3QUeV1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3QUdl1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuenta[jcu^name=WSPRDDatosCuenta.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3QUd11kEdy2aqrunURT-g" points="[53, 662, -661, -5371]$[635, 5398, -79, -635]"/>
+  </edges>
+  <edges xmi:id="_e3QUfV1kEdy2aqrunURT-g" source="_exviU11kEdy2aqrunURT-g" target="_ewGjkF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3QUgF1kEdy2aqrunURT-g" type="KindLabel">
+      <children xmi:id="_e3QUgl1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3QUhF1kEdy2aqrunURT-g" type="Kind">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3QUg11kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3QUgV1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3QUfl1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaLocator[jcu^name=WSPRDDatosCuentaLocator.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3QUf11kEdy2aqrunURT-g" points="[-1, 2632, -5544, -6125]$[5529, 4219, -14, -4538]"/>
+  </edges>
+  <edges xmi:id="_e3QUhV1kEdy2aqrunURT-g" source="_exviU11kEdy2aqrunURT-g" target="_excAUF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3QUiF1kEdy2aqrunURT-g" type="NameLabel">
+      <children xmi:id="_e3QUil1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3QUi11kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3QUiV1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3QUhl1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapProxy[jcu^name=WSPRDDatosCuentaSoapProxy.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3QUh11kEdy2aqrunURT-g" points="[-1, 2632, -14, -18309]$[-1, 20068, -14, -873]"/>
+  </edges>
+  <edges xmi:id="_e3QUjF1kEdy2aqrunURT-g" source="_ezE_EF1kEdy2aqrunURT-g" target="_excAUF1kEdy2aqrunURT-g">
+    <children xmi:id="_e3QUj11kEdy2aqrunURT-g" type="NameLabel">
+      <children xmi:id="_e3QUkV1kEdy2aqrunURT-g" type="Stereotype">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <children xmi:id="_e3QUkl1kEdy2aqrunURT-g" type="Name">
+        <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      </children>
+      <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e3QUkF1kEdy2aqrunURT-g" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_e3QUjV1kEdy2aqrunURT-g" showStereotype="Text"/>
+    <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=WSPRDDatosCuentaSoapStub[jcu^name=WSPRDDatosCuentaSoapStub.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]][jsrctype^name=WSPRDDatosCuentaSoap[jcu^name=WSPRDDatosCuentaSoap.java[jpack^name=_211._50._1._10[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e3QUjl1kEdy2aqrunURT-g" points="[-13, 1799, -5226, -2461]$[5199, 3387, -14, -873]"/>
+  </edges>
+</notation:Diagram>

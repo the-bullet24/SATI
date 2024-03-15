@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+
+</HEAD>
+<BODY>
+<TABLE width="100%" align="center">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE <BR>
+		TRANSFERENCIAS INTERBANCARIAS INMEDIATAS<BR>
+		<BR>
+		</B></TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="40%">Canal empleado:</TD>
+		<TD class="texto" width="60%">Multired Virtual</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. Cuenta Origen:</TD>
+		<TD class="texto" width="60%" align="left">${param.cuentaOrigen.nombreTipoProducto} - ${param.cuentaOrigen.simboloMonedaProducto} - 
+		${param.cuentaOrigen.cuentaformateada}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. CCI Destino:</TD>
+		<TD class="texto" width="60%" align="left">${param.afiliacion.numeroServicio}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="40%" align="left">Banco Destino:</TD>
+		<TD class="texto" width="60%" align="left">${param.afiliacion.objBenef.objBanco.descripcion}</TD>
+	</tr>
+	<TR>
+		<TD class="texto" width="30%" align="left">Moneda:</TD>
+		<TD class="texto" width="70%" align="left">${param.nombreMoneda}</TD>
+
+	</TR>
+	<TR>
+		<TD class="texto" width="30%" align="left">Importe:</TD>
+		<TD class="texto" align="right" width="70%">${param.simboloMonedaImporte}
+		${param.importeTransferido}</TD>
+
+	</TR>
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. Operaci&oacute;n:</TD>
+		<TD class="texto" width="60%" align="left">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="40%" align="left">Nro. Transferencia:</TD>
+		<TD class="texto" width="60%" align="left">${param.nroTransferencia}</TD>
+	</tr>	
+	<TR>
+		<TD class="texto" width="40%" align="left">Fecha:</TD>
+		<TD class="texto" width="60%" align="left">${fectransib}</TD>
+	</TR>
+	<TR>
+		<TD class="texto" width="40%" align="left">Hora:</TD>
+		<TD class="texto" width="60%" align="left">${hortransib}</TD>
+	</TR>
+	<TR>
+		<TD align="justify" class="texto" colspan="2"><BR>Estimado Cliente, su operación está siendo procesada. De acuerdo a las condiciones del servicio que usted acept&oacute;, el sistema del BN realizar&aacute; reintentos de esta operaci&oacute;n a fin de que la transferencia se llegue a concretar. Dichos reintentos se realizar&aacute;n hasta las 17:15 horas, y en caso que la transferencia sea rechazada o cancelada por alg&uacute;n motivo, la devoluci&oacute;n del importe se realizar&aacute; al siguiente d&iacute;a &uacute;til.</TD>
+	</TR>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+</BODY>
+</HTML>

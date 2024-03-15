@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="90%">
+	#if ($param.monedaProducto==$MONEDA_SOL)
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE CONSULTA DE <acronym title="Código de Cuenta Interbancario">CCI</acronym><br>
+		 CUENTA DE AHORROS EN MN<BR>
+		<BR></B></TD>
+	</tr>
+	#end
+	#if ($param.monedaProducto==$MONEDA_DOLAR)
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA DE CONSULTA DE <acronym title="Código de Cuenta Interbancario">CCI</acronym><br>
+		 CUENTA DE AHORROS EN ME<BR>
+		<BR></B></TD>
+	</tr>
+	#end
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="50%">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="50%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+
+	<tr>
+		<TD class="texto" width="50%">Canal empleado:</TD>
+		<TD class="texto" width="50%">Multired Virtual</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="50%">N&deg;&nbsp;Cuenta de Ahorros:</TD>
+		<TD class="texto" width="50%">${param.cuentaformateada}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">N&deg;&nbsp;<acronym title="Código de Cuenta Interbancario">CCI</acronym>:</TD>
+		<TD class="texto" width="50%">${param.nroCuentaCci}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Fecha:</TD>
+		<TD class="texto" width="50%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="50%">Hora:</TD>
+		<TD class="texto" width="50%">${param.hora}</TD>
+	</tr>
+
+</TABLE></BODY>
+</HTML>

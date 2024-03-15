@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PV_SWB" name="PV_SWB" comments="">
+  <domain href="ORACLE_V10_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

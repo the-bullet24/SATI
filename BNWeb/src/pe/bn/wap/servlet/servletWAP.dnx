@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_AsS5gFznEdyQAKTl1KLF2g" type="Class" name="servletWAP.dnx">
+  <children xmi:id="_BxSysFznEdyQAKTl1KLF2g">
+    <children xmi:id="_BxSys1znEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_BxSytFznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_BxSytVznEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxSytlznEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxSyt1znEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BxSyuFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxSyuVznEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BxSyulznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxSyu1znEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BxSyvFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxSyvVznEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_BxSyvlznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_BxSysVznEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletTipoCambio[jcu^name=ServletTipoCambio.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BxSyslznEdyQAKTl1KLF2g" x="1590" y="4770" width="4947"/>
+  </children>
+  <children xmi:id="_BxltoFznEdyQAKTl1KLF2g">
+    <children xmi:id="_Bxlto1znEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_BxltpFznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_BxltpVznEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxltplznEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Bxltp1znEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BxltqFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxltqVznEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BxltqlznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_Bxltq1znEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BxltrFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BxltrVznEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_BxltrlznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_BxltoVznEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletLimitePrestamo[jcu^name=ServletLimitePrestamo.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BxltolznEdyQAKTl1KLF2g" x="1590" y="636"/>
+  </children>
+  <children xmi:id="_ByCZkFznEdyQAKTl1KLF2g">
+    <children xmi:id="_ByCZk1znEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ByCZlFznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ByCZlVznEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByCZllznEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByCZl1znEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByCZmFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByCZmVznEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByCZmlznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByCZm1znEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByCZnFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByCZnVznEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ByCZnlznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ByCZkVznEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCICorriente[jcu^name=ServletCCICorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ByCZklznEdyQAKTl1KLF2g" x="14628" y="636" width="4868"/>
+  </children>
+  <children xmi:id="_ByVUglznEdyQAKTl1KLF2g">
+    <children xmi:id="_ByVUhVznEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ByVUhlznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ByVUh1znEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByVUiFznEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByVUiVznEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByVUilznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByVUi1znEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByVUjFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByVUjVznEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByVUjlznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByVUj1znEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ByVUkFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ByVUg1znEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaCorriente[jcu^name=ServletCuentaCorriente.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ByVUhFznEdyQAKTl1KLF2g" x="14628" y="4770"/>
+  </children>
+  <children xmi:id="_ByyAcFznEdyQAKTl1KLF2g">
+    <children xmi:id="_ByyAc1znEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ByyAdFznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ByyAdVznEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByyAdlznEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByyAd1znEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByyAeFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByyAeVznEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByyAelznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByyAe1znEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ByyAfFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_ByyAfVznEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ByyAflznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ByyAcVznEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCuentaAhorros[jcu^name=ServletCuentaAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ByyAclznEdyQAKTl1KLF2g" x="14628" y="9222" width="5185"/>
+  </children>
+  <children xmi:id="_BzFicFznEdyQAKTl1KLF2g">
+    <children xmi:id="_BzFic1znEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_BzFidFznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_BzFidVznEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzFidlznEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzFid1znEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BzFieFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzFieVznEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BzFielznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzFie1znEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BzFifFznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzFifVznEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_BzFiflznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_BzFicVznEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletCCIAhorros[jcu^name=ServletCCIAhorros.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BzFiclznEdyQAKTl1KLF2g" x="1590" y="9222" width="4868"/>
+  </children>
+  <children xmi:id="_BzYdZVznEdyQAKTl1KLF2g">
+    <children xmi:id="_BzYdaFznEdyQAKTl1KLF2g" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_BzYdaVznEdyQAKTl1KLF2g" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_BzYdalznEdyQAKTl1KLF2g" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzYda1znEdyQAKTl1KLF2g" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzYdbFznEdyQAKTl1KLF2g" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BzYdbVznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzhnUFznEdyQAKTl1KLF2g" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BzhnUVznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzhnUlznEdyQAKTl1KLF2g" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_BzhnU1znEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <children xmi:id="_BzhnVFznEdyQAKTl1KLF2g" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_BzhnVVznEdyQAKTl1KLF2g"/>
+      <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_BzYdZlznEdyQAKTl1KLF2g" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=ServletPrestamoMultired[jcu^name=ServletPrestamoMultired.java[jpack^name=pe.bn.wap.servlet[jsrcroot^srcfolder=JavaSource[project^vcore.target=uml2.Model^id=BNWeb]]]]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BzYdZ1znEdyQAKTl1KLF2g" x="7950" y="5406"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_AsS5gVznEdyQAKTl1KLF2g"/>
+</notation:Diagram>

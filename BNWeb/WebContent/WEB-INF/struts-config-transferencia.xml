@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Orígenes de datos -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulario -->
+	<form-beans>
+		<form-bean name="dummy" 	type="pe.bn.resources.DummyForm"></form-bean>
+		<!--  
+		<form-bean name="frmAfilPagoServicio" 	type="pe.bn.afiliacion.action.form.AfiliacionPgServiciosForm"></form-bean>
+		-->	
+	</form-beans>
+
+	<!-- Excepciones globales -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Reenvíos globales -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Correlaciones de acción --> 
+	<action-mappings>
+		<!-- +++++++++++++++++++++++++ Módulo de Transferencias Bancarias e Interbancarias ++++++++++++++++++++++ -->
+
+		<action path="/transferenciaInterbancaria" type="pe.bn.transferencia.action.TransferenciaIBAction" name="dummy" input="/WEB-INF/page/transferencia/ib/inicioTransferencia.jsp" validate="false">
+			<forward name="iniciar" 				path="/WEB-INF/page/transferencia/ib/inicioTransferencia.jsp"></forward>
+			<forward name="verTransferencia" 		path="/WEB-INF/page/transferencia/ib/verTransferencia.jsp"></forward>
+			<forward name="continuarTransferencia" 	path="/WEB-INF/page/transferencia/ib/continuarTransferencia.jsp"></forward>
+			<forward name="transferir" 				path="/WEB-INF/page/transferencia/ib/finTransferencia.jsp"></forward>
+			
+			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="operacionDesactivada" 	path="/WEB-INF/page/configuracionTarjetas/operacionesDesactivadas.jsp"></forward>
+			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>    
+		</action>
+
+
+		<action path="/transferenciaMismoBanco" type="pe.bn.transferencia.action.TransferenciaMBAction" name="dummy" input="/WEB-INF/page/transferencia/mb/inicioMBTransferencia.jsp" validate="false">
+			<forward name="iniciarMB" 					path="/WEB-INF/page/transferencia/mb/inicioMBTransferencia.jsp"		></forward>
+			<forward name="verMBTransferencia" 			path="/WEB-INF/page/transferencia/mb/verMBTransferencia.jsp"		></forward>
+			<forward name="confirmarMBTransferencia" 	path="/WEB-INF/page/transferencia/mb/confirmarMBTransferencia.jsp"	></forward>
+			<forward name="transferirMB" 				path="/WEB-INF/page/transferencia/mb/transferirMB.jsp"				></forward>			
+			
+			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="operacionDesactivada" 	path="/WEB-INF/page/configuracionTarjetas/operacionesDesactivadas.jsp"></forward>
+			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>    
+		</action>
+		
+		<action path="/transferenciaInterbancariaLinea" type="pe.bn.transferencia.action.TransferenciaIBLineaAction" name="dummy" input="/WEB-INF/page/transferenciaLinea/ib/inicioTransferenciaContacto.jsp" validate="false"> 
+ 			<forward name="iniciarContacto" 				path="/WEB-INF/page/transferenciaLinea/ib/inicioTransferenciaContacto.jsp"></forward> 
+ 			<forward name="iniciar" 				path="/WEB-INF/page/transferenciaLinea/ib/inicioTransferencia.jsp"></forward> 
+ 			<forward name="verTransferencia" 		path="/WEB-INF/page/transferenciaLinea/ib/verTransferencia.jsp"></forward> 
+			<forward name="continuarTransferencia" 	path="/WEB-INF/page/transferenciaLinea/ib/continuarTransferencia.jsp"></forward> 
+			<forward name="transferir" 				path="/WEB-INF/page/transferenciaLinea/ib/finTransferencia.jsp"></forward> 
+ 			<forward name="transferirRechazo" 		path="/WEB-INF/page/transferenciaLinea/ib/finTransferenciaRechazo.jsp"></forward> 
+ 			<forward name="restriccionPiloto" 		path="/WEB-INF/page/transferenciaLinea/ib/restriccionPiloto.jsp"></forward> 
+			<forward name="operacionDesactivada" 	path="/WEB-INF/page/configuracionTarjetas/operacionesDesactivadas.jsp"></forward> 
+ 			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward> 
+ 			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward> 
+ 			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward> 
+ 			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>   
+ 			
+ 			 <forward name="verTransferenciaContacto" 		path="/WEB-INF/page/transferenciaLinea/ib/verTransferenciaContacto.jsp"></forward> 
+ 			 <forward name="continuarTransferenciaContacto" 	path="/WEB-INF/page/transferenciaLinea/ib/continuarTransferenciaContacto.jsp"></forward> 
+ 			 <forward name="finTransferirContacto" 				path="/WEB-INF/page/transferenciaLinea/ib/finTransferenciaContacto.jsp"></forward> 
+ 			 
+			
+ 		</action> 
+
+	</action-mappings>
+
+
+</struts-config>

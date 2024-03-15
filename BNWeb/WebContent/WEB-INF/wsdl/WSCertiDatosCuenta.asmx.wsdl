@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://10.7.106.11/WSCertiDatosCuenta/WSCertiDatosCuenta" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://10.7.106.11/WSCertiDatosCuenta/WSCertiDatosCuenta">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://10.7.106.11/WSCertiDatosCuenta/WSCertiDatosCuenta">
+      <s:element name="OperacionesDatosCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="wNroCuenta" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OperacionesDatosCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="OperacionesDatosCuentaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="OperacionesDatosCuentaSoapIn">
+    <part element="s0:OperacionesDatosCuenta" name="parameters"/>
+  </message>
+  <message name="OperacionesDatosCuentaSoapOut">
+    <part element="s0:OperacionesDatosCuentaResponse" name="parameters"/>
+  </message>
+  <portType name="WSCertiDatosCuentaSoap">
+    <operation name="OperacionesDatosCuenta">
+      <input message="s0:OperacionesDatosCuentaSoapIn"/>
+      <output message="s0:OperacionesDatosCuentaSoapOut"/>
+    </operation>
+  </portType>
+  <binding name="WSCertiDatosCuentaSoap" type="s0:WSCertiDatosCuentaSoap">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="OperacionesDatosCuenta">
+      <soap:operation soapAction="http://10.7.106.11/WSCertiDatosCuenta/WSCertiDatosCuenta/OperacionesDatosCuenta" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="WSCertiDatosCuenta">
+    <port binding="s0:WSCertiDatosCuentaSoap" name="WSCertiDatosCuentaSoap">
+      <soap:address location="http://10.7.106.11/WSCertiDatosCuenta/WSCertiDatosCuenta.asmx"/>
+    </port>
+  </service>
+</definitions>

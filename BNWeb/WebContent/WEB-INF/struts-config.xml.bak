@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Orígenes de datos -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulario -->
+	<form-beans>
+		<form-bean name="frmLogin" 	type="pe.bn.login.action.form.LoginForm"></form-bean>
+		<form-bean name="dummy" 	type="pe.bn.resources.DummyForm"></form-bean>
+		<form-bean name="mailForm" 	type="pe.cosapi.action.form.MailForm"></form-bean>
+	</form-beans>
+
+	<!-- Excepciones globales -->
+	<global-exceptions>
+	</global-exceptions> 
+
+	<!-- Reenvíos globales -->
+	<global-forwards>
+		<forward name="sesion.expirada" 			path="/WEB-INF/page/sistema/cerrarSesion.jsp"></forward>
+		<forward name="error.generico" 				path="/WEB-INF/page/error/errorGenericoServer.jsp"></forward>
+		<forward name="sistema.inactivo"			path="/WEB-INF/page/sistema/inactivo.jsp"></forward>
+		<forward name="transaccion.noDisponible"	path="/WEB-INF/page/sistema/noDisponible.jsp"></forward>
+		<forward name="sesion.expirada.inicio" 		path="/WEB-INF/page/sistema/login.jsp"></forward>
+	</global-forwards>
+
+	<!-- Correlaciones de acción -->
+	<action-mappings>
+		<!-- Módulo de login -->
+		<action path="/login" type="pe.bn.login.action.LoginAction" name="frmLogin" input="/WEB-INF/page/sistema/login.jsp" validate="false">
+			<forward name="iniciar" 	path="/WEB-INF/page/sistema/login.jsp"></forward>
+			<forward name="exitoso" 	path="/WEB-INF/page/frame/frameInicio.jsp"></forward>
+			<forward name="errado" 		path="/WEB-INF/page/sistema/errado.jsp"></forward>
+			<forward name="ayuda" 		path="/WEB-INF/page/sistema/mensajecvv.jsp"></forward>
+			<forward name="cvv2" 		path="/WEB-INF/page/sistema/mensajeIndicacionesCvv2.jsp"></forward>
+			<forward name="salirExito" 	path="/WEB-INF/page/sistema/cerrarSesionExito.jsp"></forward>
+		</action>
+
+		<action path="/loginBloqueo" type="pe.bn.login.action.LoginBloqueoAction" name="frmLogin" input="/WEB-INF/page/sistema/login.jsp" validate="false">
+			<forward name="iniciaBloqueoDni" 		path="/WEB-INF/page/tarjeta/bloqueoDni/bloqueoInicio.jsp"></forward>
+			<forward name="errado" 			path="/WEB-INF/page/sistema/errado.jsp"></forward>
+			<forward name="ayuda" 			path="/WEB-INF/page/sistema/mensajecvv.jsp"></forward>
+			<forward name="salirExito" 		path="/WEB-INF/page/sistema/cerrarSesionExito.jsp"></forward>
+		</action>
+
+		<!-- Módulo de inicio, define el contenido de los frames en caso de que el login sea exitoso -->
+		<action path="/inicio" type="pe.bn.login.action.InicioAction">
+			<forward name="cabecera"	path="/WEB-INF/page/frame/cabecera.jsp"></forward>
+			<forward name="menu" 		path="/WEB-INF/page/frame/menu.jsp"></forward>
+			<forward name="cuerpo" 		path="/WEB-INF/page/frame/consultaInicial.jsp"></forward>
+			<forward name="barra" 		path="/WEB-INF/page/sistema/tipoCambio.jsp"></forward>
+			<forward name="footer" 		path="/WEB-INF/page/sistema/footer.jsp"></forward>
+		</action>
+
+	<!-- Módulo Util (envío de mails y refrendos) -->
+		<action path="/util" type="pe.cosapi.action.UtilAction" name="mailForm" input="/WEB-INF/page/sistema/mail.jsp" validate="true">
+			<forward name="refrendo" 		path="/WEB-INF/page/sistema/refrendo.jsp"></forward>
+			<forward name="constancia" 		path="/WEB-INF/page/sistema/constancia.jsp"></forward>
+			<forward name="mail" 			path="/WEB-INF/page/sistema/mail.jsp"></forward>
+			<forward name="mailEnviado" 	path="/WEB-INF/page/sistema/confirmacionMail.jsp"></forward>
+		</action>
+
+	<!-- Módulo de consulta -->
+		<action path="/consulta" type="pe.bn.consulta.action.ConsultaAction" name="dummy" input="/WEB-INF/page/consulta/consultaProducto.jsp" validate="false">
+			<forward name="iniciar" 							path="/WEB-INF/page/consulta/consultaProducto.jsp"></forward>
+
+			<forward name="iniciarDni" 							path="/WEB-INF/page/consulta/consultaProductoCtaCte.jsp"></forward>
+
+			<forward name="consultaSaldoCTS" 					path="/WEB-INF/page/consulta/cts/consultaSaldoCTS.jsp"></forward>
+			<forward name="consultaUtimosMovimientosCTS" 		path="/WEB-INF/page/consulta/cts/consultaMovimiento.jsp"></forward>
+
+
+			<forward name="consultaSaldoPrestamo" 				path="/WEB-INF/page/consulta/prestamo/consultaSaldoPrestamo.jsp"></forward>
+			<forward name="consultaCalendarioPago" 				path="/WEB-INF/page/consulta/prestamo/consultaCalendarioPago.jsp"></forward>
+
+			<forward name="consultaSaldoAhorro" 				path="/WEB-INF/page/consulta/ahorros/consultaSaldoAhorros.jsp"></forward>
+			<forward name="consultaUltimosMovimientosAhorros" 	path="/WEB-INF/page/consulta/ahorros/consultaMovimientoAhorros.jsp"></forward>
+			<forward name="consultaCCI" 						path="/WEB-INF/page/consulta/ahorros/consultaCci.jsp"></forward>
+			<forward name="consultaITFAnualCA" 					path="/WEB-INF/page/consulta/ahorros/consultaITFAnual.jsp"></forward>
+
+			<forward name="consultaUltimosMovimientosCCT" 		path="/WEB-INF/page/consulta/corriente/consultaMovimientoCCT.jsp"></forward>
+			<forward name="consultaITFAnualCC" 					path="/WEB-INF/page/consulta/corriente/consultaITFAnual.jsp"></forward>
+			<forward name="consultaCtaCteCCI" 					path="/WEB-INF/page/consulta/corriente/consultaCtaCteCci.jsp"></forward>
+			<forward name="consultaSaldoCtaCte" 				path="/WEB-INF/page/consulta/corriente/consultaSaldoCtaCte.jsp"></forward>
+
+			<forward name="consultaEstado" 						path="/WEB-INF/page/consulta/corriente/consultaEstado.jsp"></forward>
+			<forward name="estadoDefault" 						path="/WEB-INF/page/consulta/corriente/estadoDefault.jsp"></forward>
+			<forward name="consultaEstadoCtaCte" 				path="/WEB-INF/page/consulta/corriente/consultaEstadoCtaCte.jsp"></forward>
+
+		</action>
+
+	<!-- Módulo de consulta -->
+		<action path="/consultaCtaCte" type="pe.bn.consulta.action.ConsultaAction" name="dummy" input="/WEB-INF/page/consulta/consultaProductoCtaCte.jsp" validate="false">
+			<forward name="iniciar" 							path="/WEB-INF/page/consulta/consultaProducto.jsp"></forward>
+
+			<forward name="iniciarDni" 							path="/WEB-INF/page/consulta/consultaProductoCtaCte.jsp"></forward>
+
+			<forward name="consultaSaldoCTS" 					path="/WEB-INF/page/consulta/cts/consultaSaldoCTS.jsp"></forward>
+			<forward name="consultaUtimosMovimientosCTS" 		path="/WEB-INF/page/consulta/cts/consultaMovimiento.jsp"></forward>
+
+
+			<forward name="consultaSaldoPrestamo" 				path="/WEB-INF/page/consulta/prestamo/consultaSaldoPrestamo.jsp"></forward>
+			<forward name="consultaCalendarioPago" 				path="/WEB-INF/page/consulta/prestamo/consultaCalendarioPago.jsp"></forward>
+
+			<forward name="consultaSaldoAhorro" 				path="/WEB-INF/page/consulta/ahorros/consultaSaldoAhorros.jsp"></forward>
+			<forward name="consultaUltimosMovimientosAhorros" 	path="/WEB-INF/page/consulta/ahorros/consultaMovimientoAhorros.jsp"></forward>
+			<forward name="consultaCCI" 						path="/WEB-INF/page/consulta/ahorros/consultaCci.jsp"></forward>
+			<forward name="consultaITFAnualCA" 					path="/WEB-INF/page/consulta/ahorros/consultaITFAnual.jsp"></forward>
+
+			<forward name="consultaUltimosMovimientosCCT" 		path="/WEB-INF/page/consulta/corriente/consultaMovimientoCCT.jsp"></forward>
+			<forward name="consultaITFAnualCC" 					path="/WEB-INF/page/consulta/corriente/consultaITFAnual.jsp"></forward>
+			<forward name="consultaCtaCteCCI" 					path="/WEB-INF/page/consulta/corriente/consultaCtaCteCci.jsp"></forward>
+			<forward name="consultaSaldoCtaCte" 				path="/WEB-INF/page/consulta/corriente/consultaSaldoCtaCte.jsp"></forward>
+
+			<forward name="consultaEstado" 						path="/WEB-INF/page/consulta/corriente/consultaEstado.jsp"></forward>
+			<forward name="estadoDefault" 						path="/WEB-INF/page/consulta/corriente/estadoDefault.jsp"></forward>
+			<forward name="consultaEstadoCtaCte" 				path="/WEB-INF/page/consulta/corriente/consultaEstadoCtaCte.jsp"></forward>
+
+		</action>
+
+	<!-- Módulo de tarjeta -->
+		<action path="/generarClave" type="pe.bn.tarjeta.action.GenerarClaveAction" name="dummy" input="/WEB-INF/page/tarjeta/generacion/generarClaveInternet.jsp" validate="false">
+			<forward name="iniciarGeneracionClaveInternet" 		path="/WEB-INF/page/tarjeta/generacion/generarClaveInternet.jsp"></forward>
+			<forward name="confirmarGeneracionClaveInternet" 	path="/WEB-INF/page/tarjeta/generacion/confirmarGenerarClaveInternet.jsp"></forward>
+		</action>
+
+		<action path="/cambiarClave" type="pe.bn.tarjeta.action.CambiarClaveAction" name="dummy" input="/WEB-INF/page/tarjeta/cambio/cambiarClaveInternet.jsp" validate="false">
+			<forward name="iniciarCambiarClaveInternet" 	path="/WEB-INF/page/tarjeta/cambio/cambiarClaveInternet.jsp"></forward>
+			<forward name="confirmarCambiarClaveInternet" 	path="/WEB-INF/page/tarjeta/cambio/confirmarCambiarClaveInternet.jsp"></forward>
+		</action>
+
+		<action path="/bloquearTarjeta" type="pe.bn.tarjeta.action.BloquearTarjetaAction" name="dummy" input="/WEB-INF/page/tarjeta/bloqueo/bloquearTarjeta.jsp" validate="false">
+			<forward name="iniciarBloqueoTarjeta" 		path="/WEB-INF/page/tarjeta/bloqueo/bloquearTarjeta.jsp"></forward>
+			<forward name="AprobarBloqueoTarjeta" 		path="/WEB-INF/page/tarjeta/bloqueo/AprobarBloquearTarjeta.jsp"></forward>
+			<forward name="confirmarBloqueoTarjeta" 	path="/WEB-INF/page/tarjeta/bloqueo/confirmarBloquearTarjeta.jsp"></forward>
+		</action>
+
+		<action path="/bloquearTarjetaDni" type="pe.bn.tarjeta.action.BloquearTarjetaDniAction" name="dummy" input="/WEB-INF/page/tarjeta/bloqueoDni/bloqueoInicio.jsp" validate="false">
+			<forward name="iniciaBloqueoDni" 	path="/WEB-INF/page/tarjeta/bloqueoDni/bloqueoInicio.jsp"></forward>
+			<forward name="confirmarBloqueo" 	path="/WEB-INF/page/tarjeta/bloqueoDni/confirmaBloqueo.jsp"></forward>
+			<forward name="finBloqueo" 			path="/WEB-INF/page/tarjeta/bloqueoDni/finBloqueo.jsp"></forward>
+		</action>
+
+		<action path="/desafiliarClave" type="pe.bn.tarjeta.action.DesafiliarClaveAction" name="dummy" input="/WEB-INF/page/tarjeta/desafiliacion/desafiliarClaveInternet.jsp" validate="false">
+			<forward name="iniciarDesafiliarClave" 		path="/WEB-INF/page/tarjeta/desafiliacion/desafiliarClaveInternet.jsp"></forward>
+			<forward name="confirmarDesafiliarClave" 	path="/WEB-INF/page/tarjeta/desafiliacion/confirmarDesafiliacionClave.jsp"></forward>
+		</action>
+
+	<!-- Módulo de pagos -->
+		<action path="/pagoMultired" type="pe.bn.pago.action.PagoPrestamoMultiredAction" name="dummy" input="/WEB-INF/page/pago/multired/pagoPrestamoMultired.jsp" validate="false">
+			<forward name="inicioDefault" 		path="/WEB-INF/page/pago/multired/pagoPrestamoDefault.jsp"></forward>
+			<forward name="iniciarPago" 		path="/WEB-INF/page/pago/multired/pagoPrestamoMultired.jsp"></forward>
+			<forward name="confirmacionPago" 	path="/WEB-INF/page/pago/multired/confirmacionPagoPrestamoMultired.jsp"></forward>
+		</action>
+		<action path="/pagoTasas" type="pe.bn.pago.action.PagoTasasAction" name="dummy" input="/WEB-INF/page/pago/tasas/pagoTasas.jsp" validate="false">
+			<forward name="iniciarPago" 	path="/WEB-INF/page/pago/tasas/pagoTasas.jsp"></forward>
+			<forward name="confirmarPago" 	path="/WEB-INF/page/pago/tasas/confirmarPagoTasas.jsp"></forward>
+			<forward name="pagar" 			path="/WEB-INF/page/pago/tasas/pagarTasas.jsp"></forward>	
+		</action>
+	
+		<action path="/pagoTarjeta" type="pe.bn.pago.action.PagoTarjetaAction" name="dummy" input="/WEB-INF/page/pago/tarjeta/inicio.jsp" validate="false">
+			<forward name="iniciar" 		path="/WEB-INF/page/pago/tarjeta/inicio.jsp"></forward>
+			<forward name="verPago" 		path="/WEB-INF/page/pago/tarjeta/verPago.jsp"></forward>
+			<forward name="confirmarPago" 	path="/WEB-INF/page/pago/tarjeta/confirmarPago.jsp"></forward>
+			<forward name="pagar" 			path="/WEB-INF/page/pago/tarjeta/pagar.jsp"></forward>			
+		</action>
+
+		<action path="/pagoServicios" type="pe.bn.pago.action.PagoServiciosAction" name="dummy" input="/WEB-INF/page/pago/menu_servicios.jsp" validate="false">
+			<forward name="iniciaServicios" 	path="/WEB-INF/page/pago/menu_servicios.jsp"></forward>
+		</action>
+
+	<!--Módulo de Pago de Telefonia -->
+		<action path="/pagoTelefono" type="pe.bn.pago.action.PagoTelefonoAction" name="dummy" input="/WEB-INF/page/pago/telefonia/inicioPagoTelefono.jsp" validate="false">
+			<forward name="iniciar" 				path="/WEB-INF/page/pago/telefonia/inicioPagoTelefono.jsp"></forward>
+			<forward name="verPagoTelefono" 		path="/WEB-INF/page/pago/telefonia/verPagoTelefono.jsp"></forward>
+			<forward name="confirmarPagoTelefono" 	path="/WEB-INF/page/pago/telefonia/confirmarPagoTelefono.jsp"></forward>
+			<forward name="pagarReciboTelefono" 	path="/WEB-INF/page/pago/telefonia/pagarReciboTelefono.jsp"></forward>
+			<forward name="verRecargaTelefono" 		path="/WEB-INF/page/pago/telefonia/verRecargaTelefono.jsp"></forward>
+			<forward name="confirmarRecargaTelefono" 	path="/WEB-INF/page/pago/telefonia/confirmarRecargaTelefono.jsp"></forward>
+			<forward name="pagarRecargaTelefono" 	path="/WEB-INF/page/pago/telefonia/pagarRecargaTelefono.jsp"></forward>
+		</action>
+
+	<!--Módulo de Recarga de Telefonia -->
+		<action path="/recargaTelefono" type="pe.bn.pago.action.RecargaTelefonoAction" name="dummy" input="/WEB-INF/page/pago/recarga/inicioPagoTelefono.jsp" validate="false">
+			<forward name="iniciar" 				path="/WEB-INF/page/pago/recarga/inicioPagoTelefono.jsp"></forward>
+			<forward name="iniciarClaro" 				path="/WEB-INF/page/pago/recarga/inicioRecargaClaro.jsp"></forward>
+			<forward name="verRecargaMovistar" 		path="/WEB-INF/page/pago/recarga/verRecargaMovistar.jsp"></forward>
+			<forward name="confirmarRecargaMovistar" 	path="/WEB-INF/page/pago/recarga/confirmarRecargaMovistar.jsp"></forward>
+			<forward name="pagarRecargaMovistar" 	path="/WEB-INF/page/pago/recarga/pagarRecargaMovistar.jsp"></forward>
+			<forward name="verRecargaClaro" 		path="/WEB-INF/page/pago/recarga/verRecargaClaro.jsp"></forward>
+			<forward name="confirmarRecargaClaro" 	path="/WEB-INF/page/pago/recarga/confirmarRecargaClaro.jsp"></forward>
+			<forward name="pagarRecargaClaro" 		path="/WEB-INF/page/pago/recarga/pagarRecargaClaro.jsp"></forward>
+		</action>
+
+	<!--Módulo de Pago de Agua (Sedapal) -->
+		<action path="/pagoSedapal" type="pe.bn.pago.action.PagoSedapalAction" name="dummy" input="/WEB-INF/page/pago/sedapal/inicio.jsp" validate="false">
+			<forward name="inicio" 				path="/WEB-INF/page/pago/sedapal/inicio.jsp"></forward>
+			<forward name="elegirRecibo"		path="/WEB-INF/page/pago/sedapal/verPago.jsp"></forward>
+			<forward name="confirmarPago"		path="/WEB-INF/page/pago/sedapal/confirmar.jsp"></forward>
+			<forward name="pagar"				path="/WEB-INF/page/pago/sedapal/pagar.jsp"></forward>
+		</action>
+
+	<!-- Módulo de telegiros -->
+		<action path="/telegiros" type="pe.bn.telegiro.action.TelegiroAction" name="dummy" input="/WEB-INF/page/telegiro/telegiro.jsp" validate="false">
+			<forward name="iniciarTelegiro" 		path="/WEB-INF/page/telegiro/telegiro.jsp"></forward>
+			<forward name="verTelegiro" 			path="/WEB-INF/page/telegiro/verTelegiro.jsp"></forward>
+			<forward name="confirmarTelegiro" 		path="/WEB-INF/page/telegiro/confirmarTelegiro.jsp"></forward>
+			<forward name="telegirar" 				path="/WEB-INF/page/telegiro/telegirar.jsp"></forward>			
+		</action>
+
+	<!--Módulo de Pago de Cupones-->
+		<action path="/pagoCupones" type="pe.bn.pago.action.PagoCuponesAction" name="dummy" input="/WEB-INF/page/pago/cupones/inicioPagoCupones.jsp" validate="false">
+			<forward name="iniciar" 				path="/WEB-INF/page/pago/cupones/inicioPagoCupones.jsp"></forward>
+			<forward name="verPagoCupones" 			path="/WEB-INF/page/pago/cupones/verPagoCupones.jsp"></forward>
+			<forward name="confirmarPagoCupones" 	path="/WEB-INF/page/pago/cupones/confirmarPagoCupones.jsp"></forward>
+			<forward name="pagarCupones" 			path="/WEB-INF/page/pago/cupones/pagarCupones.jsp"></forward>
+		</action>
+
+	<!--Módulo de Pago de Facturas-->
+		<action path="/pagoFacturas" type="pe.bn.pago.action.PagoFacturasAction" name="dummy" input="/WEB-INF/page/pago/facturas/inicioPagoFacturas.jsp" validate="false">
+			<forward name="iniciar" 				path="/WEB-INF/page/pago/facturas/inicioPagoFacturas.jsp"></forward>
+			<forward name="verPagoFacturas"			path="/WEB-INF/page/pago/facturas/verPagoFacturas.jsp"></forward>
+			<forward name="confirmarPagoFacturas" 	path="/WEB-INF/page/pago/facturas/confirmarPagoFacturas.jsp"></forward>
+			<forward name="pagarFacturas" 		path="/WEB-INF/page/pago/facturas/pagarFacturas.jsp"></forward>
+		</action>
+
+		<action path="/pagoFacturasWS" type="pe.bn.pago.action.PagoFacturasWSAction" name="dummy" input="/WEB-INF/page/pago/facturas/inicioPagoFacturasWS.jsp" validate="false">
+			<forward name="iniciarWS" 				path="/WEB-INF/page/pago/facturas/inicioPagoFacturasWS.jsp"></forward>
+			<forward name="verPagoFacturasWS"			path="/WEB-INF/page/pago/facturas/verPagoFacturasWS.jsp"></forward>
+			<forward name="confirmarPagoFacturasWS" 	path="/WEB-INF/page/pago/facturas/confirmarPagoFacturasWS.jsp"></forward>
+			<forward name="pagarFacturasWS" 		path="/WEB-INF/page/pago/facturas/pagarFacturasWS.jsp"></forward>
+		</action>
+
+	</action-mappings>
+
+	<!-- Recursos de mensaje -->
+	<message-resources parameter="pe.bn.resources.mensajes"/>
+
+</struts-config>

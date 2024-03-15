@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapSABM">
+
+<!--  
+	<resultMap id="generalog" class="pe.cosapi.domain.impl.GeneracionLogConsultaImpl">
+		<result property="p_numLog" 				column="p_numLog"/> 
+		<result property="p_F32_FECHA_CRONO_OP" 	column="p_F32_FECHA_CRONO_OP"/> 
+		<result property="p_F32_CANAL" 				column="p_F32_CANAL"/> 
+		<result property="p_F32_IP_DIRECCION" 		column="p_F32_IP_DIRECCION"/>
+	</resultMap>
+
+	<select id="getGeneracionLog" 	
+	parameterClass="pe.cosapi.domain.impl.GeneracionLogConsultaImpl" 
+	resultClass="pe.cosapi.domain.impl.GeneracionLogConsultaImpl">
+					   
+		select 
+				F32_NUMLOG 				as F32_NUMLOG,
+				F32_FECHA_CRONO_OP 		as p_F32_FECHA_CRONO_OP,
+				F32_CANAL 				as p_F32_CANAL,
+				F32_IP_DIRECCION 		as p_F32_IP_DIRECCION
+
+		from 
+				bn_sabm.BNBMF32_LOG_GENERACION	   
+		where 
+				F32_NUMLOG='10'	   
+		 
+	</select>
+	 
+	 
+	<parameterMap id="getInfoCall" class="pe.cosapi.domain.impl.GeneracionLogImpl">
+    	<parameter property="p_F32_FECHA_CRONO_OP" 	jdbcType="TIMESTAMP" 		mode="IN"/>  	
+    	<parameter property="p_F32_CANAL" 			jdbcType="VARCHAR2"				mode="IN"/>
+    	<parameter property="p_F32_IP_DIRECCION" 	jdbcType="VARCHAR2"				mode="IN"/>
+    	<parameter property="p_F32_MAC" 			jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_NUM_TRANS" 		jdbcType="VARCHAR2" 		mode="IN"/>
+    	<parameter property="p_F32_CIC_CLTE" 		jdbcType="NUMERIC" 				mode="IN"/>
+    	<parameter property="p_F32_TIPO_DOCUMENTO" 	jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_NUM_DOCUMENTO" 	jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_TIPO_TARJETA" 	jdbcType="VARCHAR2" 			mode="IN"/>     	
+    	<parameter property="p_F32_NUM_TARJETA" 	jdbcType="VARCHAR2" 			mode="IN"/>    	
+    	<parameter property="p_F32_ESTADO" 			jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_FLAG_ERROR" 		jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_COD_APP" 		jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_COD_RET" 		jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_TOKEN" 			jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_EMAIL_OUT" 		jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_BENEF_OUT" 		jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_F32_TIPO_TOKEN" 		jdbcType="VARCHAR2" 			mode="IN"/>
+    	<parameter property="p_numLog" 				jdbcType="NUMERIC" 				mode="OUT"/> 
+    	<parameter property="pc_coderr" 			jdbcType="VARCHAR2" 			mode="OUT"/> 
+    	<parameter property="pc_msgerr" 			jdbcType="VARCHAR2" 			mode="OUT"/> 
+    	
+	</parameterMap>
+
+	<resultMap id="resultado" class="pe.cosapi.domain.impl.GeneracionLogImpl" >
+	  
+	    <result property="p_numLog" 			column="F32_NUMLOG" /> 
+    	
+	   
+	</resultMap>
+	
+	<procedure id="insertGeneraLog"  
+	parameterMap="getInfoCall" 
+	resultClass="pe.cosapi.domain.GeneracionLogResultado">
+	
+	parameterClass="pe.cosapi.domain.impl.GeneracionLogImpl" 
+	resultClass="pe.cosapi.domain.impl.GeneracionLogImpl">
+	
+	
+	
+         {call BMPKG_GENERACION_CLAVE_SEIS.BMSP_REGISTRAR_LOG_GENERACION
+         	(
+         	#p_F32_FECHA_CRONO_OP#, 	
+    		#p_F32_CANAL#,
+	    	#p_F32_IP_DIRECCION#,
+	    	#p_F32_MAC#,
+	    	#p_F32_NUM_TRANS#,
+	    	#p_F32_CIC_CLTE#,
+	    	#p_F32_TIPO_DOCUMENTO#,
+	    	#p_F32_NUM_DOCUMENTO#,
+	    	#p_F32_TIPO_TARJETA#,     	
+	    	#p_F32_NUM_TARJETA#,    	
+	    	#p_F32_ESTADO#,
+	    	#p_F32_FLAG_ERROR#,
+	    	#p_F32_COD_APP#,
+	    	#p_F32_COD_RET#,
+	    	#p_F32_TOKEN#,
+	    	#p_F32_EMAIL_OUT#,
+	    	#p_F32_BENEF_OUT#,
+	    	#p_F32_TIPO_TOKEN#,	    	 
+	    	{javaType="java.lang.Long", jdbcType=NUMERIC, mode=OUT},
+    		{javaType="java.lang.String", jdbcType=VARCHAR2, mode=OUT},
+    		{javaType="java.lang.String", jdbcType=VARCHAR2, mode=OUT}
+    	   	   
+         	) 
+         } 
+    </procedure>
+	
+	-->	
+	
+	
+	
+	
+
+</sqlMap>

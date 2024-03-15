@@ -1,0 +1,429 @@
+/*
+ * Creado el 23/02/2007
+ *
+ * TODO Para cambiar la plantilla de este archivo generado, vaya a
+ * Ventana - Preferencias - Java - Estilo de código - Plantillas de código
+ */
+package pe.bn.consulta.action;
+
+import java.io.File;
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import pe.bn.consulta.domain.Prestamo;
+import pe.bn.consulta.domain.impl.PrestamoImpl;
+import pe.bn.consulta.reportes.PedidoFicha;
+import pe.cosapi.action.GrandActionAbstract;
+import pe.cosapi.action.UtilAction;
+import pe.cosapi.common.ArrayRuleException;
+import pe.cosapi.common.BNAplicacion;
+import pe.cosapi.common.Constante;
+import pe.cosapi.common.ConstanteSesion;
+import pe.cosapi.common.FacadeFactory;
+import pe.cosapi.common.ObjectUtil;
+import pe.cosapi.domain.Cuenta;
+import pe.cosapi.domain.Itf;
+import pe.cosapi.domain.Movimiento;
+import pe.cosapi.domain.Usuario;
+import pe.cosapi.domain.impl.CuentaImpl;
+import pe.cosapi.domain.impl.ItfImpl;
+import pe.cosapi.domain.impl.MovimientoImpl;
+import pe.cosapi.domain.impl.OperacionImpl;
+
+public class ConsultaAction extends GrandActionAbstract{
+	BNAplicacion aplicacion = BNAplicacion.getInstance();
+	
+	public ActionForward iniciar(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		BNAplicacion aplicacion = BNAplicacion.getInstance();
+		request.setAttribute("mensajeBienvenida",((Vector)aplicacion.getMensajePorCodigo("CL01","00001")).elementAt(2).toString());
+		request.getSession().setAttribute("mensajeDiferenciaSaldo",((Vector)aplicacion.getMensajePorCodigo("CL01","00002")).elementAt(2).toString());
+		request.getSession().setAttribute("mensajeSaldoAhorro",((Vector)aplicacion.getMensajePorCodigo("CL01","00004")).elementAt(2).toString());
+		request.getSession().setAttribute("mensajeHorario",((Vector)aplicacion.getMensajePorCodigo("PP00","00003")).elementAt(2).toString());
+		request.getSession().setAttribute("mensajeCCI",((Vector)aplicacion.getMensajePorCodigo("CL01","00003")).elementAt(2).toString());
+		request.getSession().setAttribute("mensajeItf",((Vector)aplicacion.getMensajePorCodigo("CL01","ITF01")).elementAt(2).toString());
+		request.getSession().removeAttribute("06");
+    	request.getSession().removeAttribute("02");
+    	request.getSession().removeAttribute("13");
+		// CODIGO PARA SEGUIMIENTO DE SESSION
+		// LUEGO HACER CHECK OUT
+    	Usuario usuario = (Usuario)request.getSession().getAttribute(ConstanteSesion.USUARIO_EN_SESION);
+		List listaCuentas = usuario.getCuentas();
+		for(int i=0;i<listaCuentas.size();i++){
+			Cuenta cta= (Cuenta)listaCuentas.get(i);
+			//System.out.println("SEGUIMIENTO SESSION - Cta-"+i+":"+cta.getNumeroProducto().substring(8));
+		}
+		//System.out.println("***--- Ingreso a INICIAR Consulta usuario.getTipoTarjeta():"+usuario.getTipoTarjeta());
+		if (usuario.getTipoTarjeta().equals("01")){
+		    return mapping.findForward("iniciarDni");
+		} else {
+		    return mapping.findForward("iniciar");
+		}
+		
+	}
+	
+	public ActionForward mostrarReporte(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		
+		String numeroCuenta = request.getSession().getAttribute("hidCuenta").toString();
+		Constante.FLAG_CACHE = "1";
+		
+		HttpSession session=request.getSession(false); 
+		String destino = new String("failure");
+		BNAplicacion apli = BNAplicacion.getInstance(); 
+		HashMap parameters = new HashMap();
+		
+		String fechaPagina = ObjectUtil.timestampToString(new Timestamp(new Date().getTime()),"dd/MM/yyyy HH:mm:ss");
+		
+		parameters.put("numCta",numeroCuenta);
+		String rutaImage = apli.getRutaClasspath()+File.separator+"Images"+File.separator+"Logo_BN.jpg";
+		//if(Constante.VER_LOG)System.out.println("rutaImage:"+rutaImage);
+		parameters.put("logo",rutaImage);
+		// Comentar - Es solo para pruebas...
+		//parameters.put("numCta","00000335088");
+		parameters.put("nPeriodo", request.getParameter("txtAnio")+request.getParameter("optMes"));
+		//parameters.put("nPeriodo", "200512");
+		parameters.put("cFechaRep", fechaPagina);
+		//System.out.println("Parametro REPORTE EECC - Fecha Pagina:"+fechaPagina);
+		
+		InputStream reportStream = getServlet().getServletConfig().getServletContext().getResourceAsStream("/Reportes/Rpt_Pservicio.jasper");
+		/**
+		ServletOutputStream servletOutputStream = response.getOutputStream();
+	    InputStream reportStream = getServlet().getServletConfig().getServletContext().getResourceAsStream("/Reportes/Rpt_Pservicio.jasper");
+	    response.setContentType("application/pdf");
+	    */
+	    
+
+	    destino = "estadoDefault";
+	    int resultFicha = PedidoFicha.imprimeRepMovimiento(response, reportStream, parameters);
+	    //if(Constante.VER_LOG) System.out.println("Resultado de resultFicha:"+resultFicha);
+	    
+		if (resultFicha == 0){
+			return mapping.findForward("estadoDefault");
+		} else {
+			return mapping.findForward("consultaEstado");
+		}
+		
+	}
+	
+	public ActionForward consultaestado(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		Usuario usuario = (Usuario)request.getSession().getAttribute(ConstanteSesion.USUARIO_EN_SESION);
+		Constante.FLAG_CACHE = "1";
+		request.getSession().removeAttribute(ConstanteSesion.CONSULTA);
+		String numeroCuenta = request.getParameter("hidCuenta");
+		String codConsulta 	= request.getParameter("hidConsulta");
+		String codMoneda 	= request.getParameter("hidMoneda");
+		
+		// Validando que la cuenta existe, solo para CUENTA CORRIENTE - DNI
+		try{
+			if (usuario.getTipoTarjeta().equals("01")){
+			    FacadeFactory.getConsultaFacade().getVerificaCta(request.getRemoteAddr(), "5", numeroCuenta, usuario.getTarjeta().getNumero());
+			}
+		} catch(ArrayRuleException e){
+	        throw e;
+		}
+		
+			//if(Constante.VER_LOG)System.out.println("..........................numeroCuenta="+numeroCuenta);
+			//if(Constante.VER_LOG)System.out.println("..........................codConsulta="+codConsulta);
+			//if(Constante.VER_LOG)System.out.println("..........................codMoneda="+codMoneda);
+		request.getSession().setAttribute("hidCuenta",numeroCuenta);
+		request.getSession().setAttribute("hidMoneda",codMoneda);
+		CuentaImpl cuenta= new CuentaImpl();
+		cuenta.setMonedaProducto(codMoneda);
+		cuenta.setNumeroProducto(numeroCuenta);
+		request.getSession().setAttribute(ConstanteSesion.CONSULTA,cuenta);
+		return mapping.findForward("consultaEstado");
+	}
+	
+	public ActionForward consultar(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String numeroCuenta ="";
+		String codConsulta ="";
+		String codMoneda ="";
+		String numeroPrestamo="";
+		if(request.getParameter("hidConsulta")!=null){
+			numeroCuenta = request.getParameter("hidCuenta");
+				request.getSession().setAttribute("hidCuenta",request.getParameter("hidCuenta"));
+			codConsulta  = request.getParameter("hidConsulta");
+				request.getSession().setAttribute("hidConsulta",request.getParameter("hidConsulta"));
+			codMoneda 	 = request.getParameter("hidMoneda");
+				request.getSession().setAttribute("hidMoneda",request.getParameter("hidMoneda"));
+			numeroPrestamo = request.getParameter("hidNroPrestamo");
+				request.getSession().setAttribute("hidNroPrestamo",request.getParameter("hidNroPrestamo"));
+				
+		}else{
+			numeroCuenta = (String)request.getSession().getAttribute("hidCuenta");
+			codConsulta  = (String)request.getSession().getAttribute("hidConsulta");
+			codMoneda 	 = (String)request.getSession().getAttribute("hidMoneda");
+			numeroPrestamo = (String)request.getSession().getAttribute("hidNroPrestamo");
+		}
+		
+		request.getSession().setAttribute("hidMoneda",codMoneda);
+		request.getSession().setAttribute("MONEDA_SOL",Constante.MONEDA_SOL);
+		request.getSession().setAttribute("MONEDA_DOLAR",Constante.MONEDA_DOLAR);
+			//if(Constante.VER_LOG) System.out.println("..........................numeroCuenta="+numeroCuenta);
+			//if(Constante.VER_LOG) System.out.println("..........................codConsulta="+codConsulta);
+			//if(Constante.VER_LOG) System.out.println("..........................codMoneda="+codMoneda);
+		//System.out.println("..........................numeroCuenta="+numeroCuenta);
+		//System.out.println("..........................codConsulta="+codConsulta);
+		//System.out.println("..........................codMoneda="+codMoneda);
+		
+	
+		Usuario usuario = (Usuario)request.getSession().getAttribute(ConstanteSesion.USUARIO_EN_SESION);
+		request.getSession().removeAttribute(ConstanteSesion.CONSULTA);
+		
+		// Validando que la cuenta existe, solo para CUENTA CORRIENTE - DNI
+		if (usuario.getTipoTarjeta().equals("01")){
+		    String codTipoTrx = "";
+		    if (codConsulta.equals("05") || codConsulta.equals("18")){
+		        codTipoTrx = "1";
+		    } else if (codConsulta.equals("06") || codConsulta.equals("21")){
+		        codTipoTrx = "2";
+		    } else if (codConsulta.equals("08")){
+		        codTipoTrx = "3";
+		    } else if (codConsulta.equals("07") || codConsulta.equals("22")){
+		        codTipoTrx = "4";
+		    } else if (codConsulta.equals("05")){
+		        codTipoTrx = "5";
+		    }
+		    
+		    
+		    FacadeFactory.getConsultaFacade().getVerificaCta(request.getRemoteAddr(), codTipoTrx, numeroCuenta, usuario.getTarjeta().getNumero());
+		     
+		}
+		
+		try{
+			Map map = UtilAction.cargarVar(request,request.getSession().getAttribute(ConstanteSesion.CONSULTA));
+			OperacionImpl.setVariables(map);
+		    Object obj = null;
+		    Object x= (Object)request.getSession().getAttribute(codConsulta);
+		    if(x!=null){
+		    	obj=request.getSession().getAttribute(codConsulta);
+		    }else{
+		    	request.getSession().setAttribute("06",null);
+		    	request.getSession().setAttribute("02",null);
+		    	request.getSession().setAttribute("13",null);
+		    	obj=FacadeFactory.getConsultaFacade().consultar(codConsulta,numeroCuenta,codMoneda,numeroPrestamo, request.getRemoteAddr(),usuario,request);
+		    }
+		    
+		    if (codConsulta.equals("01") || codConsulta.equals("02") || codConsulta.equals("03")
+		    		|| codConsulta.equals("05") || codConsulta.equals("06") || codConsulta.equals("07")
+		            || codConsulta.equals("12") || codConsulta.equals("13"))
+		    {
+		    	
+		        request.getSession().setAttribute(ConstanteSesion.CONSULTA,getCuenta(obj));
+		        if(codConsulta.equals("06")|| codConsulta.equals("02") || codConsulta.equals("13")){
+		        	request.getSession().setAttribute(codConsulta,obj);
+		        	Cuenta cta=getCuenta(obj);
+		        	List movs= cta.getMovimientos();
+		        	ArrayList listaMov= new ArrayList();
+		        	SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
+		        	
+		        	for(int i=0;i<movs.size();i++){
+		        		MovimientoImpl mto=(MovimientoImpl)movs.get(i);
+
+		        		mto.setFechaFormat(sdf.format(mto.getFecha()));
+		        		if(i+1<10){
+		        			mto.setSecuencia("0"+(i+1));
+		        		}else
+		        			mto.setSecuencia(""+(i+1));
+		        		listaMov.add(i,mto);
+		        	}
+		        	request.getSession().setAttribute("listaMovs",listaMov);
+		        	request.setAttribute("listaMovs",listaMov);
+		        }
+		    }
+		    else if (codConsulta.equals("04") || codConsulta.equals("08")){
+		    	BNAplicacion aplicacion = BNAplicacion.getInstance();
+		    	request.getSession().setAttribute("mensajeItf",((Vector)aplicacion.getMensajePorCodigo("CL01","ITF01")).elementAt(2).toString());
+		        request.getSession().setAttribute(ConstanteSesion.CONSULTA,getItf(obj));
+		    }
+		    else if (codConsulta.equals("09") || codConsulta.equals("10")){
+		        request.getSession().setAttribute(ConstanteSesion.CONSULTA,getPrestamo(obj));
+		    }
+		}
+		catch(ArrayRuleException e){
+		    //setearSessionError(request,codConsulta);
+	        //String pagina = getForward(request,codConsulta);
+	        BNAplicacion aplicacion = BNAplicacion.getInstance();
+			request.setAttribute("mensajeBienvenida",((Vector)aplicacion.getMensajePorCodigo("CL01","00001")).elementAt(2).toString());
+	        //throw lanzarException(request,e,codConsulta);
+	        //e.setForward(pagina);
+	        throw e;
+		}
+		return getMappingConsulta(mapping,codConsulta);			
+	}
+	public ActionForward siguiente(ActionMapping mapping, ActionForm form,	HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		return getMappingConsulta(mapping,"06");	
+	}
+	//01,02,03,06,07,12,13
+	private Cuenta getCuenta(Object obj) throws Exception{
+	    Cuenta objCuenta =  (CuentaImpl)obj;
+	    return objCuenta;
+	}
+	
+	//04,08
+	private Itf getItf(Object obj) throws Exception{
+	    Itf objItf =  (ItfImpl)obj;
+	    return objItf;
+	}
+	
+	//09,10
+	private Prestamo getPrestamo(Object obj) throws Exception{
+	    Prestamo objPrestamo =  (PrestamoImpl)obj;
+	    return objPrestamo;
+	}
+	
+	private void setearSessionError(HttpServletRequest request,String codConsulta){
+	    if (codConsulta.equals("01") || codConsulta.equals("02") || codConsulta.equals("03")
+	            || codConsulta.equals("04") || codConsulta.equals("06") || codConsulta.equals("07")
+	            || codConsulta.equals("12") || codConsulta.equals("13")){
+	        request.getSession().setAttribute(ConstanteSesion.CONSULTA,new CuentaImpl());
+	    }else if (codConsulta.equals("04") || codConsulta.equals("08")){
+	        request.getSession().setAttribute(ConstanteSesion.CONSULTA,new ItfImpl());
+	    }else if (codConsulta.equals("09") || codConsulta.equals("10")){
+	        request.getSession().setAttribute(ConstanteSesion.CONSULTA,new PrestamoImpl());
+	    }
+	}
+	private ActionForward getMappingConsulta(ActionMapping mapping,String codConsulta){
+		if(codConsulta.equals("01")){
+			return mapping.findForward("consultaSaldoAhorro");
+		}
+		if(codConsulta.equals("02")){
+			return mapping.findForward("consultaUltimosMovimientosAhorros");
+		}
+		if(codConsulta.equals("03")){
+			return mapping.findForward("consultaCCI");
+		}
+		if(codConsulta.equals("04")){
+			return mapping.findForward("consultaITFAnualCA");
+		}
+		if(codConsulta.equals("05")){
+			return mapping.findForward("consultaSaldoCtaCte");
+		}
+		if(codConsulta.equals("06")){
+			return mapping.findForward("consultaUltimosMovimientosCCT");
+		}
+		if(codConsulta.equals("07")){
+			return mapping.findForward("consultaCtaCteCCI");
+		}
+		if(codConsulta.equals("08")){
+			return mapping.findForward("consultaITFAnualCC");
+		}
+		if(codConsulta.equals("09")){
+			return mapping.findForward("consultaSaldoPrestamo");
+		}
+		if(codConsulta.equals("10")){
+			return mapping.findForward("consultaCalendarioPago");
+		}
+		if(codConsulta.equals("12")){
+			return mapping.findForward("consultaSaldoCTS");
+		}
+		if(codConsulta.equals("13")){
+			return mapping.findForward("consultaUtimosMovimientosCTS");
+		}
+		if(codConsulta.equals("19")){
+			return mapping.findForward("consultaEstadoCtaCte");
+		}
+		return null;
+	}
+	
+	private String getForward(HttpServletRequest request,String codConsulta){
+	    String forward = "";
+	    if(codConsulta.equals("04")){
+	        forward = "consultaITFAnualCA";
+	    }
+	    else if(codConsulta.equals("08")){
+	        forward = "consultaITFAnualCC";
+	    }
+	    else if(codConsulta.equals("19")){
+	        forward = "consultaEstadoCtaCte";
+	    }
+	    else if(codConsulta.equals("01")){
+	        forward = "consultaSaldoAhorro";
+	    }
+	    else if(codConsulta.equals("02")){
+	        forward = "consultaUltimosMovimientosAhorros";
+	    }
+	    else if(codConsulta.equals("03")){
+	        forward = "consultaCCI";
+	    }
+	    else if(codConsulta.equals("05")){
+	        forward = "consultaSaldoCtaCte";
+	    }
+	    else if(codConsulta.equals("06")){
+	        forward = "consultaUltimosMovimientosCCT";
+	    }
+	    else if(codConsulta.equals("07")){
+	        forward = "consultaCtaCteCCI";
+	    }
+	    else if(codConsulta.equals("09")){
+	        forward = "consultaSaldoPrestamo";
+	    }
+	    else if(codConsulta.equals("10")){
+	        forward = "consultaCalendarioPago";
+	    }
+	    else if(codConsulta.equals("12")){
+	        forward = "consultaSaldoCTS";
+	    }
+	    else if(codConsulta.equals("13")){
+	        forward = "consultaUtimosMovimientosCTS";
+	    }
+	    return forward;
+	}
+	
+	private Exception lanzarException(HttpServletRequest request, Exception e, String codConsulta){
+		if(e instanceof ArrayRuleException){
+		    
+		    if(codConsulta.equals("04")){
+				((ArrayRuleException)e).setForward("consultaITFAnualCA");
+		    }
+		    else if(codConsulta.equals("08")){
+				((ArrayRuleException)e).setForward("consultaITFAnualCC");
+		    }
+		    else if(codConsulta.equals("19")){
+				((ArrayRuleException)e).setForward("consultaEstadoCtaCte");
+		    }
+			else if(codConsulta.equals("01")){
+				((ArrayRuleException)e).setForward("consultaSaldoAhorro");
+			}
+			else if(codConsulta.equals("02")){
+				((ArrayRuleException)e).setForward("consultaUltimosMovimientosAhorros");
+			}
+			else if(codConsulta.equals("03")){
+				((ArrayRuleException)e).setForward("consultaCCI");
+			}
+			else if(codConsulta.equals("05")){
+				((ArrayRuleException)e).setForward("consultaSaldoCtaCte");
+			}
+			else if(codConsulta.equals("06")){
+				((ArrayRuleException)e).setForward("consultaUltimosMovimientosCCT");
+			}
+			else if(codConsulta.equals("07")){
+				((ArrayRuleException)e).setForward("consultaCtaCteCCI");
+			}
+			else if(codConsulta.equals("09")){
+				((ArrayRuleException)e).setForward("consultaSaldoPrestamo");
+			}
+			else if(codConsulta.equals("10")){
+				((ArrayRuleException)e).setForward("consultaCalendarioPago");
+			}
+			else if(codConsulta.equals("12")){
+				((ArrayRuleException)e).setForward("consultaSaldoCTS");
+			}
+			else if(codConsulta.equals("13")){
+				((ArrayRuleException)e).setForward("consultaUtimosMovimientosCTS");
+			}
+		}
+		return e;
+	}
+} 

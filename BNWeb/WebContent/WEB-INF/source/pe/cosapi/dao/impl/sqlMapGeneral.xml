@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapGeneral">
+
+	<update id="setHoraInicioDia" parameterClass="java.lang.String">
+			Update 
+				PV_SWB.TBRAINF
+			set
+				houini=#hora#			
+	</update>
+
+	<update id="setBloqueoAgenciaVirtual" parameterClass="java.lang.String">
+			Update 
+				PV_SWB.TBRAINF
+			set
+				flgblkbra=#flag#			
+	</update>	
+  
+	<select id="getEsquema" resultClass="pe.cosapi.domain.impl.EsquemaImpl">
+		SELECT ttradat.codtra as codTra,
+		       ttradat.txttra as txtTra,
+		       ttrafas.codfas as codFas,
+		       ttrafas.codalt as codAlt,
+		       ttrafas.codclaalt as codClaAlt,
+		       ttrafas.codmetalt as codMetAlt,
+		       tschtra.numseq as numSeq,
+		       tschtra.codcla as codCla,
+		       tschtra.codmet as codMet,
+		       tcladat.txtcla as txtCla,
+		       tmetdat.txtmet as txtMet,
+		       tmetarg.numseqarg as numSeqArg,
+		       tmetarg.txtarg as txtarg
+		  FROM 
+			   PV_SWB.ttradat ttradat, PV_SWB.ttrafas ttrafas, PV_SWB.tschtra tschtra, 
+			   PV_SWB.tmetdat tmetdat, PV_SWB.tmetarg tmetarg, PV_SWB.tcladat tcladat
+		 WHERE ttradat.codtra = ttrafas.codtra
+		   and ttrafas.codtra = tschtra.codtra
+		   and ttrafas.codfas = tschtra.codfas
+		   and ttrafas.codalt = tschtra.codalt
+		   and tschtra.codcla = tmetdat.codcla
+		   and tschtra.codmet = tmetdat.codmet
+		   and tmetdat.codcla = tcladat.codcla
+		   and tschtra.codtra = tmetarg.codtra
+		   and tschtra.codfas = tmetarg.codfas
+		   and tschtra.codalt = tmetarg.codalt
+		   and tschtra.numseq = tmetarg.numseq
+		 ORDER BY ttrafas.codalt, ttradat.codtra, tschtra.numseq, tmetarg.numseqarg
+	</select>
+
+	<resultMap id="claves" class="com.cosapisoft.sarawebbranch.server.GeneralParameters">
+		<result property="keyDES_A" 				column="KEYDES_A"/> 
+		<result property="keyDES_B" 				column="KEYDES_B"/> 
+		<result property="keyMAC" 					column="KEYMAC"/> 
+		<result property="keyPinPad" 				column="KEYPINPAD"/> 
+		<result property="tipoEncripcion" 			column="typencripcion"/> 
+	</resultMap>
+
+	<select id="getClaves" resultMap="claves">
+		SELECT
+				KEYPINPAD,
+				KEYMAC,
+				KEYDES_A,
+				KEYDES_B,
+				typencripcion 
+		FROM 	
+				pv_swb.tbrainf 
+		WHERE 	
+				CODBRA='0001'
+	</select>
+
+
+	<select id="getDiccionario" resultClass="pe.cosapi.domain.impl.DiccionarioImpl">
+		select coddic as codDic,
+		       txtdes as txtDes,
+		       numlon as numLon,
+		       idedic as ideDic,
+		       txtfor as txtFor,
+		       tipdat as tipDat,
+		       txthlp as txtHlp
+		  from 
+			   PV_SWB.tdicdat
+	</select>
+
+	<select id="getControlTransaccion" resultClass="pe.cosapi.domain.impl.ControlTransaccionImpl">
+		select codtra as codTra,
+		       coddic as codDic,
+		       txtctr as txtCtr,
+		       flgnul as flgNul,
+		       codhlp as codHlp
+		  from 
+			   PV_SWB.tctrtra
+		 order by codtra
+	</select>
+
+	<select id="getParametro" resultClass="pe.cosapi.domain.impl.EsquemaImpl">
+		SELECT 
+			   ttradat.codtra as codTra,
+		       ttrafas.codclaalt as codClaAlt,
+		       ttrafas.codmetalt as codMetAlt,
+		       tcladat.txtcla as txtCla,
+		       tmetdat.txtmet as txtMet,
+		       tmetargalt.numseqarg as numSeqArg,
+		       tmetargalt.txtarg as txtArg
+		  FROM 
+			   PV_SWB.ttradat ttradat, PV_SWB.ttrafas ttrafas, 
+			   PV_SWB.tmetargalt tmetargalt, PV_SWB.tcladat tcladat, PV_SWB.tmetdat tmetdat
+		 WHERE 
+			   ttradat.codtra = ttrafas.codtra
+		   AND ttrafas.codclaalt = tcladat.codcla
+		   AND ttrafas.codclaalt = tmetdat.codcla
+		   AND ttrafas.codmetalt = tmetdat.codmet
+		   AND ttrafas.codtra = tmetargalt.codtra
+		   and ttrafas.codfas = tmetargalt.codfas
+		   and ttrafas.codalt = tmetargalt.codalt
+		 GROUP BY 
+				  ttradat.codtra,
+		          ttrafas.codclaalt,
+		          ttrafas.codmetalt,
+		          tcladat.txtcla,
+		          tmetdat.txtmet,
+		          tmetargalt.numseqarg,
+		          tmetargalt.txtarg
+		 order by 
+				  ttradat.codtra, tmetargalt.numseqarg		
+	</select>
+
+	<select id="getMensajesHost" resultClass="pe.cosapi.domain.impl.MensajeriaImpl">
+		select codaplicacion as codGrp, 
+		       codretorno as codMsg, 
+		       desmsgfront as desMsg, 
+		       desmsgtold as ideMsg
+		  from PV_SWB.tmsghst
+	</select>	
+
+	<select id="getMensajeriaApp" resultClass="pe.cosapi.domain.impl.MensajeriaImpl">
+		select codgrp as codGrp, 
+		       codmsg as codMsg, 
+		       desmsg as desMsg, 
+		       idemsg as ideMsg
+		  from PV_SWB.tmsgdat
+	</select>
+	
+	<select id="getMensajeria" resultClass="pe.cosapi.domain.impl.MensajeriaImpl">
+		select codgrp as codGrp, 
+		       codmsg as codMsg, 
+		       desmsg as desMsg, 
+		       idemsg as ideMsg
+		  from PV_SWB.tmsgpan
+	</select>
+	
+  <resultMap id="resultMsgComunication" class="pe.cosapi.domain.impl.MsgComunicationImpl">
+  
+    <result property="codDic"   		column="CODDIC" 	/>
+    <result property="txtMsgCom" 		column="TXTMSGCOM" 	/>
+    <result property="numBegPos"  		column="NUMBEGPOS"  />
+    <result property="numLonMsg"   		column="NUMLON" 	/>
+    <result property="txtFor" 			column="TXTFOR" 	/>
+    <result property="numLonDic"  		column="NUMLON1"  	/>
+    <result property="ideDic"  			column="IDEDIC"  	/>
+    
+  </resultMap>
+  
+  
+	<select id="getListMsgComunication" resultMap="resultMsgComunication">
+			SELECT 
+				TCOMMSG.CODDIC 	   AS CODDIC, 
+				TCOMMSG.TXTMSGCOM  AS TXTMSGCOM, 
+				TCOMMSG.NUMBEGPOS  AS NUMBEGPOS, 
+				TCOMMSG.NUMLON	   AS NUMLON, 
+				TDICDAT.TXTFOR     AS TXTFOR, 
+				TDICDAT.NUMLON 	   AS NUMLON1, 
+				TDICDAT.IDEDIC 	   AS IDEDIC 
+			FROM 
+				PV_SWB.TCOMMSG TCOMMSG,
+				PV_SWB.TDICDAT TDICDAT
+			WHERE
+				TCOMMSG.CODMSGCOM  = #value#
+				AND TCOMMSG.CODDIC = TDICDAT.CODDIC 
+			ORDER BY NUMSEQ
+	</select>
+	
+	<select id="getBannerByDate" parameterClass="java.util.HashMap" resultClass="pe.cosapi.domain.impl.BannerImpl">
+			SELECT 
+				TYPPER,
+				DATBEG,
+				DATEND,
+				FILNAM
+			FROM 
+				PV_SWB.TBANDAT
+			WHERE
+				TYPPER = #tipopersona#
+				AND DATBEG &lt;= #fecha# AND DATEND &gt;= #fecha# 
+			
+	</select>
+	
+	<select id="getBranchById" resultClass="pe.cosapi.domain.impl.BranchImpl">
+			SELECT
+				CODBRA,
+				NUMSUM,
+				FLGBLKBRA,
+				DAYPRGTRA,
+				BANDEF,
+				HOUINI,
+				HOUFIN,
+				BANPNA,
+				BANPJU
+		    FROM 
+		    	PV_SWB.TBRAINF
+			WHERE 
+				CODBRA = #value#
+	</select>
+
+	<select id="getEstilo" resultClass="pe.cosapi.domain.impl.EstiloImpl">
+		Select 
+			typper as id,
+			colbck as background,
+			coltit as title,
+			colsubtit as subtitle,
+			colrow1 as row_1,
+			colrow2 as row_2
+		From 
+			PV_SWB.tcoldat
+	</select>	
+	
+	<select id="getTransactionById" resultClass="pe.cosapi.domain.impl.MasterTransactionImpl">
+		SELECT 
+			CODTRA		as codTransaccion, 
+			CODGRP		as codGrupo, 
+			TXTTRA		as nomTransaccion, 
+			TXTPRCGDE	as guiaProc, 
+			FLGJOU		as flaglogOperacion, 
+			HOUINI		as horaInicio, 
+			HOUFIN		as horaFin, 
+			FLGENB 		as flagActTransaccion
+		FROM 
+			PV_SWB.TTRADAT
+		WHERE
+			CODTRA = #value#
+	</select>
+
+	
+	<resultMap id="resultMapLimits" class="pe.cosapi.domain.impl.MasterLimitsImpl">
+		 <result 	column="TYPPER"  		property="tipoPersona" 			/>
+		 <result 	column="TRAHST"  		property="codTransaccion" 		/>
+		 <result 	column="LIMOPEINF"  	property="limInfOperacion" 		/>
+		 <result 	column="LIMOPESUP"  	property="limSupOperacion" 		/>
+		 <result 	column="LIMDAYINF"  	property="limInfDiario" 		/>
+		 <result 	column="LIMDAYSUP"  	property="limSupDiario" 		/>
+		 <result 	column="CODCUR"  		property="codMoneda" 			/>
+	</resultMap>
+	
+	<select id="getLimitsById" parameterClass="java.util.HashMap" resultMap="resultMapLimits">
+		SELECT
+			TYPPER,
+			TRAHST,
+			LIMOPEINF,
+			LIMOPESUP,
+			LIMDAYINF,
+			LIMDAYSUP,
+			CODCUR
+		FROM 
+			PV_SWB.TLIMDAT
+		WHERE
+			TYPPER 		= #tipoPersona#
+			AND TRAHST  = #codTrx#
+	</select>
+	
+	<select id="getListDetalleAyuda" resultClass="pe.cosapi.domain.impl.DetalleAyudaDatosImpl">
+		SELECT 
+			  CODHLP as codigoAyuda,
+			  NUMSEQ as numeroSequencial,
+			  TXTHLP as descripcionDetalle, 
+			  TXTHLPDAT as codigoDetalleAyuda,
+			  CODHLPDAT as codigoDetalleAyuda1
+		FROM 
+			  PV_SWB.THLPDET
+		WHERE
+			  CODHLP = #value#	  
+	</select>
+
+	<select id="getListDetalleAyudaHijo" parameterClass="java.util.HashMap" resultClass="pe.cosapi.domain.impl.DetalleAyudaDatosImpl">
+		SELECT 
+			  CODHLP as codigoAyuda,
+			  NUMSEQ as numeroSequencial,
+			  TXTHLP as descripcionDetalle, 
+			  TXTHLPDAT as codigoDetalleAyuda,
+			  CODHLPDAT as codigoDetalleAyuda1
+		FROM 
+			  PV_SWB.THLPDET
+		WHERE
+			  CODHLP = #value#	  
+			  and trim(TXTHLPDAT) = trim(#codHijo#)
+	</select>
+	
+	<select id="getComboDetalleHlp" resultClass="pe.cosapi.common.ComboUtil">
+		SELECT 
+			  TXTHLPDAT as codigo,
+			  TXTHLP 	as descripcion
+		FROM 
+			  PV_SWB.THLPDET
+		WHERE
+			  CODHLP = #value#
+     	
+	</select>
+
+
+
+	<select id="getComboDetalleHlpHijo" resultClass="pe.cosapi.common.ComboUtil">
+		SELECT 
+			  NUMSEQ as codigo,
+			  TXTHLP 	as descripcion
+		FROM 
+			  PV_SWB.THLPDET
+		WHERE
+			  CODHLP 			= #codAyuda#
+        	  and trim(TXTHLPDAT) 	= trim(#codHijo#)
+		
+	</select>
+
+
+		<!--  Extrae los hijos de la tabla Ayuda segun el codigo Padre. -->
+   <select id="getComboAyudaHijo" resultClass="pe.cosapi.common.ComboUtil">
+			SELECT 
+			      T.CODHLP as codigo,
+			      T.TXTHLP as descripcion 
+			FROM
+			    PV_SWB.THLPDAT t
+			WHERE 
+			      T.CODFATHLP = #value#
+			
+	</select>
+
+	<select id="getJournalDiccionario" resultClass="pe.cosapi.domain.impl.DiccionarioJournalImpl">
+		select 
+			codtra as idTransaccion, 
+			coddic as codigoDiccionario, 
+			idefld as campoJournal
+		from
+			PV_SWB.tjoudic
+		<isNotNull property="value">
+		where
+			codtra = #value#
+		</isNotNull>
+	</select>
+
+	<select id="getComboDetHlp" resultClass="pe.cosapi.common.ComboUtil">
+		SELECT 
+			  TXTHLPDAT as codigo,
+			  TXTHLP 	as descripcion
+		FROM 
+			  PV_SWB.THLPDET
+		WHERE
+			  CODHLP = #value#
+		
+	</select>
+
+	<select id="getDescripcionLocalidad" resultClass="java.lang.String">
+			SELECT 
+					txthlp as value
+			FROM 
+					PV_SWB.THLPDET
+			WHERE
+			  		TXTHLPDAT	= #codAyuda#
+			  AND trim(CODHLPDAT) = trim(#codCiudad#)
+	</select>
+
+	<select id="getEstadoAplicacion" resultClass="java.lang.String">
+			SELECT 
+					flgblkbra as value
+			FROM 
+					PV_SWB.tbrainf
+	</select>
+
+
+	<select id="getObjDetHlp" parameterClass="java.util.HashMap" resultClass="pe.cosapi.common.ComboUtil">
+		SELECT 
+			  TXTHLPDAT as codigo,
+			  TXTHLP 	as descripcion
+		FROM 
+			  PV_SWB.THLPDET
+		WHERE
+			  CODHLP 		= #codAyuda#
+			  AND TXTHLPDAT = #codHijo#
+	</select>
+
+	<select id="getVerificarHorario" parameterClass="java.util.HashMap" resultClass="pe.cosapi.common.ComboUtil">
+		select DISTINCT t.codtra AS codigo
+		  from PV_SWB.ttrahor t
+		 where NOT EXISTS
+		 (SELECT DISTINCT 1 AS IDX FROM PV_SWB.ttrahor WHERE codtra = #transacccion#)
+		    OR (TO_CHAR(TO_DATE(#hora#,'DD/MM/YYYY hh24:mi:ss'), 'd') = t.coddia
+				and t.codtra = #transacccion# and
+		       (TO_DATE('01/01/1980 ' || TO_CHAR(TO_DATE(#hora#,'DD/MM/YYYY hh24:mi:ss'), 'hh24:mi:ss'),
+		                'dd/mm/yyyy hh24:mi:ss') between
+		       TO_DATE('01/01/1980 ' || TO_CHAR(t.horini, 'hh24:mi:ss'),
+		                'dd/mm/yyyy hh24:mi:ss') and
+		       TO_DATE('01/01/1980 ' || TO_CHAR(t.horfin, 'hh24:mi:ss'),
+		                'dd/mm/yyyy hh24:mi:ss')) )
+	</select>
+
+	<select id="getLimit" resultClass="pe.cosapi.domain.impl.LimitImpl">
+		SELECT 
+			LIM.TYPCTA as tipoCuenta,
+			LIM.LIMOPE as importeMaximo
+		FROM 
+			PV_SWB.TLIMTRA lIM
+		WHERE 
+			LIM.TYPCTA = #tipoCuenta#
+	</select>
+
+</sqlMap>

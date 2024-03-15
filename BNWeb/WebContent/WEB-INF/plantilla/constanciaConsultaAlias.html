@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 10px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+
+<TABLE width="90%">
+	<tr>
+		<TD align="center" class="texto" colspan="3"><B>
+		CONSTANCIA DE CONSULTA DE AFILIACIONES  <BR>BANCA CELULAR <br>
+		<BR>
+		</B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="35%">Canal empleado:</TD>
+		<TD class="texto" colspan="2">Multired Virtual</TD>
+	</tr>
+
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Titular de Cuenta:</td>
+		<td class="texto" colspan="2">${usuario.nombre}</td>
+	</tr>
+	#end
+
+
+	<tr>
+		<TD class="texto" width="35%">N&deg;&nbsp;Cuenta de Ahorros:</TD>
+		<TD class="texto" colspan="2">${param.cuenta.cuentaformateada}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="35%">Alias:</TD>
+		<TD class="texto" colspan="2">${param.alias}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Operador:</TD>
+		<TD class="texto" colspan="2">${param.mostrarOperador}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="35%">N&deg;&nbsp;Celular:</TD>
+		<TD class="texto" colspan="2">${param.numeroCelular}</TD>
+	</tr>
+			
+	<tr>
+		<TD class="texto" width="35%">Fecha:</TD>
+		<TD class="texto" colspan="2">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Hora:</TD>
+		<TD class="texto" colspan="2">${param.hora}</TD>
+	</tr>
+</TABLE>
+<BR/>
+<TABLE width="90%">
+	
+	<TR>
+		<TD class="texto" align="left" width="10%">
+			Nro
+		</TD>
+	
+		<TD class="texto" align="left" width="30%">
+			Servicio
+		</TD>
+		<TD class="texto" align="left" width="30%">
+			Alias
+		</TD>
+		<TD class="texto" align="left" width="30%">
+			Referencia
+		</TD>
+	
+	</TR>
+	#if (0 < ${param.afiliados.size()})
+	
+		#foreach ($value in ${param.afiliados})
+	
+	<TR>
+		
+		<TD class="texto" align="left" width="10%">${value.secuencia}</TD>
+		<TD class="texto" align="left" width="30%">${value.servicio}</TD>
+		<TD class="texto" align="left" width="30%">${value.aliasServicio}</TD>
+		<TD class="texto" align="left" width="30%">${value.numReferencia}</TD>
+	
+	</TR>
+	#end
+	#else
+	<TR>
+		<TD colspan="2" class="texto" align="center">
+			<B>No existen registros afiliados</B>
+		</TD>
+	</TR>
+	#end
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+
+</BODY>
+</HTML>

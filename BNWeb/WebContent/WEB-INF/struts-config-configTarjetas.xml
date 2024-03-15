@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Orígenes de datos -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulario -->
+	<form-beans>
+	</form-beans>
+
+	<!-- Excepciones globales -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Reenvíos globales -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Correlaciones de acción --> 
+	<action-mappings>
+
+	<!-- Módulo de Afiliaciones(Afil) - Pagos(Pago) -->
+	
+		<action path="/configuracionTarjetas" type="pe.bn.conftarj.action.ConfiguracionTarjetasAction" name="dummy1" input="/WEB-INF/page/consulta/consultaProducto.jsp"  validate="false" >
+			<forward name="iniciar" 						path="/WEB-INF/page/configuracionTarjetas/consultaTarjetas.jsp"></forward>
+			<forward name="iniciarError" 					path="/WEB-INF/page/configuracionTarjetas/consultaTarjetasError.jsp"></forward>
+			<forward name="detalleTarjeta" 					path="/WEB-INF/page/configuracionTarjetas/consultaTarjetaDetalle.jsp"></forward>			
+			<forward name="detalleTarjetaCredito" 			path="/WEB-INF/page/configuracionTarjetas/consultaTarjetaCreditoDetalle.jsp"></forward>			
+			<forward name="noPermiteOperaciones" 			path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 			path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="confirmarConfiguracionTarjeta" 	path="/WEB-INF/page/configuracionTarjetas/confirmarTarjetaDetalle.jsp"></forward>			
+			<forward name="mostrarConstanciaConfigTarjeta" 	path="/WEB-INF/page/configuracionTarjetas/reporteConfiguracionTarjeta.jsp"></forward>
+
+		</action>
+		
+		
+		
+	<!-- Módulo de Afiliaciones - Transferencias  path=AfilTranOther-->
+	
+	</action-mappings>
+
+	<!-- Recursos de mensaje -->
+
+</struts-config>

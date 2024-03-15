@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11.5px; 
+font-style: normal; 
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="95%">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>SOLICITUD DE ENVÍO DE INFORMACION MENSUAL <br>
+		DE ESTADOS DE CUENTA<BR>
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="35%">Canal empleado:</TD>
+		<TD class="texto" width="65%">Multired Virtual</TD>
+	</tr>
+
+	
+	<br>
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="65%">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<BR>
+	
+	<tr>
+		<TD class="texto" width="35%">Tipo y N&uacute;mero de Documento:</TD>
+		<TD class="texto" width="65%"">${param.docMostrar}-${param.numDocumento}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Producto:</TD>
+		<TD class="texto" width="65%">${param.cuenta.nombreTipoProducto}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Nro. de Cuenta:</TD>
+		<TD class="texto" width="65%">${param.cuenta.cuentaformateada}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Medio de Env&iacute;o:</TD>
+		<TD class="texto" width="65%">${param.desMedioEnvio}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Direcci&oacute;n de Correspondencia:</TD>
+		<TD class="texto" width="65%">${param.direccion}</TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="35%">Correo Electrónico:</TD>
+		<TD class="texto" width="65%">${param.correo}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="35%">Fecha:</TD>
+		<TD class="texto" width="65%">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="35%">Hora:</TD>
+		<TD class="texto" width="65%">${param.hora}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="35%">Codigo Operaci&oacute;n:</TD>
+		<TD class="texto" width="65%">${param.nroOperacion}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" colspan="2">&nbsp;</TD>
+	
+	</tr>
+	<tr>
+				<td class="texto1" colspan="2"><p align="justify">
+										
+				Usted solicita que el env&iacute;o de informaci&oacute;n se efectue por el medio elegido (f&iacute;sico y/o electr&oacute;nico) y 
+				de acuerdo al detalle arriba indicado por el mismo.
+				El Banco no asume responsabilidad alguna por errores en la informaci&oacute;n brindada por Usted.<br>
+
+				Usted declara conocer que, si la forma de entrega de informaci&oacute;n elegida es a trav&eacute;s de medio f&iacute;sico (Direcci&oacute;n de Correspondencia),
+				El Banco cobrar&aacute; la comisi&oacute;n establecida en el tarifario vigente a la fecha, autorizando a que dicha comisi&oacute;n sea cargada a sus
+				cuentas bancarias; en dicho caso El Banco solo proceder&aacute; al envio de la informaci&oacute;n si la cuenta indicada para tal 
+				fin mantiene los fondos suficientes para realizar el cobro total de la comisi&oacute;n.<br>
+
+				El Banco entregar&aacute; el estado de cuenta requerido dentro de los 30 d&iacute;as posteriores al cierre de cada mes.<br>
+
+				Esta solicitud solo tendr&aacute; validez en la medida que, a la fecha de su suscripci&oacute;n, Usted mantenga vigente con El Banco el producto materia de la presente solicitud.	
+				
+									
+			</p></td>
+		</tr>
+		<tr>
+			<td class="texto1" colspan="2">&nbsp;&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="texto1" colspan="2"><p align="justify">IMPORTANTE: </p></td>
+		</tr>
+		<tr>
+				<td class="texto1" colspan="2"><p align="justify">
+										
+				
+			Estimado cliente se le informa que en el registro y/o actualizaci&oacute;n de correos electr&oacute;nicos personales, se considerar&aacute; 
+			para el env&iacute;o de los Estados de Cuenta de sus Productos Pasivos, Cr&eacute;dito Hipotecario y/o Pr&eacute;stamo Multired; el &uacute;ltimo 
+			Correo Electr&oacute;nico Personal que USTED registre en el canal Multired Virtual; siempre y cuando haya seleccionado como 
+			medio de env&iacute;o de sus Estados de Cuenta: Correo Electr&oacute;nico.
+		
+			</p></td>
+		</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+</TABLE>
+
+</BODY>
+</HTML>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!-- <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<META name="GENERATOR" content="IBM Software Development Platform">
+<STYLE>
+<!--
+.texto {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+}
+
+.texto1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-style: normal; 
+text-align:justify;
+}
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE width="500">
+	<tr>
+		<TD align="center" class="texto" colspan="2"><B>CONSTANCIA 
+		DE AFILIACION DE <br>OPERACIONES DE BANCA CELULAR<BR>
+		<BR></B></TD>
+	</tr>
+
+	<tr>
+		<TD class="texto" width="247">Canal empleado:</TD>
+		<TD class="texto" width="397">Multired Virtual</TD>
+	</tr>
+
+	
+	<br>
+		#if ($usuario)
+	<tr>
+		<td class="texto" width="247">
+			Titular de Cuenta:
+		</td>
+		<td class="texto" width="397">
+			${usuario.nombre}
+		</td>
+	</tr>
+	#end
+	<BR>
+	<tr>
+		<TD class="texto" width="247">Nro. Cuenta Ahorro MN:</TD>
+		<TD class="texto" width="397">${param.cuenta.cuentaformateada}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="247">Operador Telefono Afiliado:</TD>
+		<TD class="texto" width="397">${param.operadorOrigen}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">N&uacute;mero Telefono Afiliado:</TD>
+		<TD class="texto" width="397">${param.numeroCelular}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="247">Tipo de Operaci&oacute;n:</TD>
+		<TD class="texto" width="397">${param.mostrarTipoAfil}</TD>
+	</tr>
+		
+	<tr>
+		<TD class="texto" width="247">Servicio:</TD>
+		<TD class="texto" width="397">${param.empresaMostrar}</TD>
+	</tr>
+		
+	<tr>
+		<TD class="texto" width="247">Empresa:</TD>
+		<TD class="texto" width="397">${param.servicioMostrar}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">N&uacute;mero Servicio Afiliado:</TD>
+		<TD class="texto" width="397">${param.mostrarNumAfil}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Alias de la Operaci&oacute;n:</TD>
+		<TD class="texto" width="397">${param.aliasOperacion}</TD>
+	</tr>
+	
+	<tr>
+		<TD class="texto" width="247">Correo:</TD>
+		<TD class="texto" width="397">${param.email}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Fecha:</TD>
+		<TD class="texto" width="397">${param.fecha}</TD>
+	</tr>
+	<tr>
+		<TD class="texto" width="247">Hora:</TD>
+		<TD class="texto" width="397">${param.hora}</TD>
+	</tr>
+		<tr>
+		<TD class="texto" width="247">Codigo Operaci&oacute;n:</TD>
+		<TD class="texto" width="397">${param.nroOperacion}</TD>
+	</tr>
+	#if ($usuario)
+	<tr>
+		<td class="texto" width="35%">Medio de seguridad:</td>
+		<td class="texto" width="65%">${usuario.claveDinamica.tipoElementoSeguridadFinal}</td>
+	</tr>
+	#end
+	
+</TABLE>
+
+</BODY>
+</HTML>

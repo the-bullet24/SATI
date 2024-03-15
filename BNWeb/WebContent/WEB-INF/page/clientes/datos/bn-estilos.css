@@ -1,0 +1,1693 @@
+/*Estilo tabla bienvenida */
+table td.tituloTabla{	
+	background: #c44141;
+	color: #fff;
+	font: 14px 'daxcompact-mediumregular';
+	margin: 0px 0px 2px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0px;
+	
+	/*height: 10px;*/
+}
+
+table td.tituloTabla1{	
+	background: #c44141;
+	color: #fff;
+	font: 14px 'daxcompact-mediumregular';
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+	margin: 0px 1px 1px 0px;
+	padding: 10px 13px 0px 13px;
+	
+	/*height: 10px;*/
+}
+#contenidos-informativos .sub-titulo-mod{
+	background: #c44141;
+	color: #fff;
+	height: 20px;
+	font: 14px/30px 'daxcompact-mediumregular';
+	text-align: center;
+	text-transform: uppercase;
+	margin: 8px 0px 25px 0px;
+}
+
+table td.tituloCelda{	
+	background: none repeat scroll 0 0 #CACACA;
+    color: #000000;
+    font: 12px arial;
+    margin: 0 0 1px;
+    padding: 12px 0 9px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table.table-cuentas
+{
+	border-spacing: 1px;
+}
+ table td.detalleCelda{	
+	background: #f1f1f1;
+	color: #000000;
+	height: 18px;
+	margin: 0px 0px 1px 0px;
+	font: 12px/18px arial;
+	padding: 5px 13px 5px 13px; /* 12 15 9 15 */
+	vertical-align: bottom;
+}
+
+table td.detalleCelda .select-bienvenidos{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-select.jpg) no-repeat;
+	height: 20px !important;
+	margin-left: -7px;
+	width: 115px !important;
+}
+
+table td.detalleCelda .select-bienvenidos .ui-selectmenu-status{
+	line-height: 20px !important;
+	padding: 0px 0px 0px 10px;
+}
+
+/*estilos tabla movimientos*/
+table.its thead tr {
+	background: #c44141;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font: 12px arial;
+	text-transform: uppercase;
+	padding: 10px 10px;
+	height: 30px;
+}
+table.its tr.text_fila {
+background: #f1f1f1;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	color: #000;
+	font: 11px arial;
+	padding: 9px 10px 6px;
+	height: 30px;
+}
+table.its tr.text_fila_2 {
+background: #f1f1f1;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	color: #000;
+	font: 11px arial;
+	height: 30px;
+	padding: 9px 10px 6px;
+}
+
+table.its th.sorted {
+	background-color: #d1d1d1;
+}
+
+table.its th a, table.its th a:visited {
+	color: #fff;
+}
+
+
+table.its th a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+table.its th.sorted a, table.its th.sortable a {
+	background-position: right;
+	color: #fff;
+	display: block;
+	text-align: center;
+    width: 100%;
+}
+span.pagelinks {
+	background-color: #c44141;
+	color:#000;
+	font: 12px 'daxcompact-regularregular';
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0px 0px 0px 13px;
+	width: 94%;/* ancho del footer*/
+	height: 22px;
+	display: block;
+	border-top: none;
+	margin-bottom: -5px;
+	text-align: center;
+
+	
+}
+span.pagelinks a {
+	color: #fff;
+	text-decoration: none;
+}
+/* Contenido estandar*/
+#contenidos-informativos h2{
+	color: #c51416;
+	font: 18px 'daxcompact-regularregular';
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0px 0px 10px 0px;
+}
+#contenidos-informativos h3{
+	color: #555555;
+	font: 13px arial;
+	text-align: center;
+	padding: 0px 0px 22px 0px;
+}
+
+#contenidos-informativos h4{
+	color: #555555;
+	font: 15px arial;
+	text-align: center;
+	padding: 0px 0px 22px 0px;
+}
+
+#contenidos-informativos p{
+	color: #555555;
+	font: 11px/13px arial;
+	text-align: justify;
+	padding: 7px 0px 7px 0px;
+}
+
+#contenidos-informativos p.pie{
+	color: #555555;
+	font: 11px/13px arial;
+	text-align: center;
+	padding: 7px 0px 7px 0px;
+}
+#contenidos-informativos .span{
+	color: #000;
+	font: 11px/13px arial;
+	text-align: justify;
+	color:#4f4f4f;
+}
+
+#contenidos-informativos .span1{
+	color: #000;
+	font: 12px/13px arial;
+	text-align: justify;
+	color:#4f4f4f;
+}
+
+#contenidos-informativos .span2{
+	color: #000;
+	font: 11px/12px arial;
+	text-align: justify;
+
+}
+
+#contenidos-informativos .span3{
+	color: #000;
+	font: 12px/13px arial;
+	text-align: justify;
+	
+}
+
+#contenidos-informativos p.importante{
+	color: #c51416;
+	font: 11px/13px arial;
+	text-align: justify;
+	padding: 10px 0px 10px 0px;
+}
+
+#contenidos-informativos p.mensajeTC{
+	color: #c51416;
+	font: 11px/13px arial;
+	text-align: justify;
+	padding: 10px 0px 10px 0px;
+}
+
+#contenidos-informativos p.mensaje{
+	
+	font: 11px/13px arial;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+#login p.mensaje{
+	color: #c51416;
+	font: 11px/13px arial;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+
+/*estilos paginas de saldos y movimientos con tablas*/
+#consulta-datos table tr td
+{
+	color: #000;
+	height: 20px;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 287px;
+	border:1px solid #fff;
+}
+#contenidos-informativos li{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bull.jpg) no-repeat 0px 4px;
+	color: #555555;
+	font: 11px/13px arial;
+	text-align: justify;
+	padding: 0px 0px 8px 10px;
+	width: 528px; 
+}
+
+#contenidos-informativos .fila-izquierda{
+	background: #d1d1d1;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 287px;
+}
+
+#contenidos-informativos .texto-derecha{
+	text-align: right;
+}
+
+#contenidos-informativos .fila-derecha{
+	background: #e3e3e3;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 13px 0px 13px;
+	width: 274px;
+}
+
+#contenidos-informativos .fila-derecha1{
+	background: #e3e3e3;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 13px 0px 13px;
+	width: 300px;
+}
+
+#consulta-saldo table tr td.ingreso
+{
+	background:#fff;
+	color: #000;
+	height: 30px;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 287px;
+	border:1px solid #fff;
+}
+
+
+#consulta-saldo table tr td:first-child{
+	/*background:#d1d1d1 !important;*/
+}
+
+.lineas-punteadas{
+	width:100%;
+	height:1px;
+	border-bottom: 1px dashed #b8b8b8;
+	clear:both;
+}
+
+#contenidos-informativos #consulta-saldo{
+	border-bottom: 1px dashed #b8b8b8;
+	padding: 0px 0px 15px 0px;
+}
+
+#transferencias table tr td
+{
+	background:#e3e3e3;
+	color: #000;
+	height: 30px;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 287px;
+	border:1px solid #fff;
+}
+
+#contenidos-informativos .titulo-constancia{
+	background: none repeat scroll 0 0 #484848;
+    color: #FFFFFF;
+    font: 14px/30px 'daxcompact-mediumregular';
+    height: 30px;
+    margin: 0 0 1px 2px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 630px;
+}
+
+/*Estilos tabla constancia*/
+table.constancia{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+table.constancia tr td{
+	background: #e3e3e3;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 13px 0px 13px;
+	width: 272px; /* 285 */
+	/*border:0px;*/
+	border:0px solid #fff;
+
+}
+
+/*Estilos tabla constancia*/
+table.busqueda{
+	width: 100%;
+	/*margin-bottom: 30px;*/
+}
+
+table.busqueda tr td{
+	background: #FAFAFA;;
+	color: #000;
+	float: left;
+	font: 12px/30px arial;
+	width: 180px;
+	
+}
+
+
+/*Estilos tabla constancia*/
+table.constanciaPrestamo{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+table.constanciaPrestamo tr td{
+	background: #e3e3e3;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 13px 0px 13px;
+	width: 160px; /* 285 */
+	/*border:0px;*/
+	border:0px solid #fff;
+
+}
+
+#contenidos-informativos #constancia{
+	border-bottom: 1px dashed #b8b8b8;
+	padding: 0px 0px 36px 0px;
+}
+
+#contenidos-informativos .titulo-constancia{
+	background: #484848;
+	color: #fff;
+	height: 30px;
+	font: 14px/30px 'daxcompact-mediumregular';
+	margin: 0px 0px 1px 2px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 597px;
+}
+
+
+
+#contenidos-informativos .texto-derecha{
+	text-align: right;
+}
+
+
+
+#contenidos-informativos #botones{
+	padding: 0px 0px 0px 0px;
+	
+}
+#contenidos-informativos #botones #continuar{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-continuar.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 25px;
+	float: left;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 0px 30px 0px 20px;/*30der */
+	/*padding: 0px 0px 0px 20px;*/
+	text-transform: uppercase;
+	width: 110px; /* 90 */ 
+	cursor:pointer;
+	text-align: center;
+}
+
+#contenidos-informativos #botones #regresar{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-regresar.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 25px;
+	float: left;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 0px 30px 0px 30px;
+	/*padding: 0px 0px 0px 34px;*/
+	text-transform: uppercase;
+	width: 110px; /* 76 */ 
+	cursor:pointer;
+	text-align:center;
+}
+
+#contenidos-informativos #botones #imprimir{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-imprimir.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 24px;
+	float: left;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 0px 30px 0px 0px;
+	/*padding: 0px 0px 0px 34px;*/
+	text-transform: uppercase;
+	width:110px ;/*66px*/
+	cursor:pointer;
+	text-align:center;
+}  
+
+#contenidos-informativos #botones #enviar{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-enviar.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 24px;
+	float: left;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 0px 30px 0px 0px;
+	/*padding: 0px 0px 0px 44px;*/
+	text-transform: uppercase;
+	width: 110px;/*56px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+#contenidos-informativos #botones #descargar{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-descargar.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 24px;
+	float: left;
+	font: 14px/24px 'daxcompact-mediumregular';
+	/*padding: 0px 0px 0px 28px;*/
+	text-transform: uppercase;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+
+#contenidos-informativos #botones #boton{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-boton.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 24px;
+	font: 12px/24px 'daxcompact-mediumregular';
+	margin: 10px 30px 0px 30px;
+	/*padding: 0px 0px 0px 28px;*/
+	text-transform: uppercase;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+#contenidos-informativos #botones #boton-ret{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-regresar.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 24px;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 10px 30px 0px 30px;
+	/*padding: 0px 0px 0px 28px;*/
+	text-transform: uppercase;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+#contenidos-informativos #botones #boton-cont{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-continuar.jpg) no-repeat;
+	color: #fff;
+	/*display: block;*/
+	height: 24px;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 10px 30px 0px 30px;
+	/*padding: 0px 0px 0px 28px;*/
+	text-transform: uppercase;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+#contenidos-informativos .boton {
+    border-top: 1px dashed rgb(184, 184, 184);
+    margin: 20px 0px 0px;
+    padding: 15px 0px 0px;
+    text-align: center;
+}
+
+
+
+#contenidos-informativos .boton1 {
+    margin: 20px 0px 0px;
+    padding: 15px 0px 0px;
+    text-align: center;
+}
+/*
+#contenidos-informativos .boton input{
+    background: url("../imagenes/bn/btn-submit.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 30px;
+    font: 16px/30px 'daxcompact-boldregular';
+    margin: 0px 20px 0px 20px;
+    width: 100px;
+}
+*/
+#contenidos-informativos .boton input{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-boton.jpg) no-repeat;
+	color: #fff;
+	border: medium none;
+	height: 24px;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 10px 30px 0px 30px;
+	/*padding: 0px 0px 0px 28px;*/
+	text-transform: uppercase;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+#contenidos-informativos .boton1 input{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-boton.jpg) no-repeat;
+	color: #fff;
+	border: medium none;
+	height: 24px;
+	font: 14px/24px 'daxcompact-mediumregular';
+	margin: 10px 30px 0px 30px;
+	/*padding: 0px 0px 0px 28px;*/
+	text-transform: uppercase;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+#contenidos-informativos .boton2 input{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/btn-botonPrest.jpg) no-repeat;
+	color: #fff;
+	border: medium none;
+	height: 24px;
+	font: 12px/24px 'Arial';
+	margin: 10px 30px 0px 30px;
+	width: 110px;/*72px;*/
+	cursor:pointer;
+	text-align:center;
+}
+
+/*Estilos para formularios*/
+#contenidos-informativos .sub-titulo{
+	background: #d7d7d7;
+	color: #343434;
+	height: 30px;
+	font: 14px/30px 'daxcompact-mediumregular';
+	text-align: center;
+	text-transform: uppercase;
+	margin: 8px 0px 25px 0px;
+}
+
+#contenidos-informativos .fila{
+	margin: 0px 0px 10px 0px; /*  0 0 31 0 */
+}
+
+.espacio-arriba{
+	padding: 20px 0px 10px 0px;
+}
+
+#contenidos-informativos label{
+	color: #4f4f4f;
+	display: block;
+	float: left;
+	text-align: right;
+	font: 13px/23px arial;
+	padding: 0px 5px 0px 0px;
+	width: 202px;
+}
+
+#contenidos-informativos label.prestamo{
+	color: #4f4f4f;
+	width: 30px;
+}
+
+
+#contenidos-informativos label.cliente{
+	color: #4f4f4f;
+	display: block;
+	float: center;
+	text-align: center;
+	font: 13px/23px arial;
+	padding: 0px 5px 0px 0px;
+	width: 602px;
+}
+
+#contenidos-informativos label.cerrar{
+	color: #4f4f4f;
+	display: block;
+	float: center;
+	text-align: center;
+	font: 13px/23px arial;
+	padding: 0px 5px 0px 0px;
+	width: 100%;
+}
+
+#contenidos-informativos label.pagos{
+	color: #4f4f4f;
+	display: block;
+	float: left;
+	text-align: left;
+	font: 13px/23px arial;
+	padding: 0px 5px 0px 0px;
+	width: 202px;
+}
+
+#contenidos-informativos label.radio{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/radio.jpg) no-repeat 7px 3px;
+	cursor: pointer;
+	margin: 0px 10px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	width: 36px !important;
+}
+
+#contenidos-informativos label.radio input{
+	margin: 0px;
+}
+#contenidos-informativos .opciones-radio
+{
+	float: left;
+	font: 12px/23px arial;
+	width: 300px;
+	color: #4f4f4f;
+}
+
+#contenidos-informativos .opciones-radio-pres
+{
+	float: left;
+	font: 12px/23px arial;
+	width: 100px;
+	color: #4f4f4f;
+}
+
+#contenidos-informativos .select-grande{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 10px;	
+	margin: 0px 10px 0px 0px;
+	width: 250px !important; /*240px*/
+}
+#contenidos-informativos .select-grande2{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-grande2.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 10px;	
+	margin: 0px 10px 0px 0px;
+	width: 320px !important; /*240px*/ 
+}
+.select-grande2 .ui-selectmenu-status{
+	width:285px !important;
+}
+.select-grande .ui-selectmenu-status{
+	width:215px !important;
+}
+.select-chico2 .ui-selectmenu-status{
+	width:125px !important;
+}
+.select-chico3 .ui-selectmenu-status{
+	width:100px !important;
+}
+.select-chico4 .ui-selectmenu-status{
+	width:100px !important;
+}
+.select-chico5 .ui-selectmenu-status{
+	width:110px !important;
+}
+.select-chico .ui-selectmenu-status{
+	width:35px !important;
+}
+.select-chico7 .ui-selectmenu-status{
+	width:150px !important;
+}
+.select-medio .ui-selectmenu-status{
+	width:55px !important;
+}
+#contenidos-informativos .select-grande span,
+#contenidos-informativos .select-grande2 span,
+#contenidos-informativos .select-medio span,
+#contenidos-informativos .select-chico2 span,
+#contenidos-informativos .select-chico3 span,
+#contenidos-informativos .select-chico4 span,
+#contenidos-informativos .select-chico5 span,
+#contenidos-informativos .select-chico7 span,
+#contenidos-informativos .select-chico8 span,
+#contenidos-informativos .select-chico span{
+	color: #4f4f4f;/* 7b7b7b */
+	font: 12px/23px arial;
+}
+
+#contenidos-informativos .select-medio{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-medio.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 10px;
+	margin: 0px 10px 0px 0px;
+	width: 90px !important; /*80*/
+}
+
+#contenidos-informativos .select-chico5{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-medio1.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 5px;
+	margin: 0px 10px 0px 0px;
+	width: 110px !important; /*80*/
+}
+
+#contenidos-informativos .select-chico{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-chico.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	margin: 0px 5px 0px 0px;
+	width: 70px !important; /*70*/
+}
+
+#contenidos-informativos .select-chico8{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-chico.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: rigth;
+	height: 23px;
+	padding: 0px 0px 0px 10px;
+	margin: 10px 10px 0px 0px;
+	width: 56px !important; /*70*/
+}
+
+#contenidos-informativos .select-chico2{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-chico2.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 10px;
+	margin: 0px 10px 0px 0px;
+	width: 160px !important; /*70*/
+}
+
+#contenidos-informativos .select-chico3{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-chico3.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 10px;
+	margin: 0px 5px 0px 0px;
+	width: 140px !important; /*70*/
+}
+
+#contenidos-informativos .select-chico4{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-chico3.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	padding: 0px 0px 0px 10px;
+	margin: 0px 5px 0px 0px;
+	width: 137px !important; /*70*/
+}
+
+#contenidos-informativos .select-chico7{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/select-chico3.jpg) no-repeat;
+	color: #4f4f4f;/* 7b7b7b */
+	float: left;
+	height: 23px;
+	width: 140px !important; /*70*/
+}
+
+#contenidos-informativos .input-grande{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/input-grande.jpg) no-repeat;
+	float: left;
+	border: none;
+	color: #4f4f4f;/* 7b7b7b */
+	font: 12px/23px arial;
+	height: 23px;
+	padding: 0px 10px 0px 10px;
+	width: 250px;
+}
+
+#contenidos-informativos .input-grande2{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/input-grande2.jpg) no-repeat;
+	float: left;
+	border: none;
+	color: #4f4f4f;/* 7b7b7b */
+	font: 12px/23px arial;
+	height: 23px;
+	padding: 0px 10px 0px 10px;
+	width: 335px;
+}
+
+#contenidos-informativos .input-grande2-min{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/input-grande2.jpg) no-repeat;
+	float: left;
+	border: none;
+	color: #4f4f4f;/* 7b7b7b */
+	font: 12px/23px arial;
+	height: 23px;
+	padding: 0px 10px 0px 10px;
+	width: 335px;
+	
+}
+
+#contenidos-informativos .input-grande6{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/input-grande7.jpg) no-repeat;
+	float: left;
+	border: none;
+	color: #4f4f4f;/* 7b7b7b */
+	font: 12px/23px arial;
+	height: 23px;
+	padding: 0px 10px 0px 10px;
+	width: 410px;
+	text-transform: uppercase;
+}
+
+#contenidos-informativos .textarea{
+	border: 1px solid #ececec;
+	font: 11px/13px arial;
+	color: #4f4f4f;/* 7b7b7b */
+}
+#contenidos-informativos .input-chico {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-input-small.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    float: left;
+    padding: 0px 10px;
+    width: 110px;
+    color: #4f4f4f;/* 7b7b7b */
+}
+
+#contenidos-informativos .input-chico8 {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-input-xxsmall.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 13px;
+    color: #4f4f4f;/* 7b7b7b */
+   
+     width: 10px;
+}
+
+#contenidos-informativos .input-chico3 {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/input-small3.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    float: left;
+    padding: 0px 10px;
+    width: 128px;
+    color: #4f4f4f;/* 7b7b7b */
+}
+
+#contenidos-informativos .input-chico4 {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/input-small4.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    float: left;
+    padding: 0px 10px;
+    width: 171px;
+    color: #4f4f4f;/* 7b7b7b */
+}
+
+#contenidos-informativos .input-chico7 {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-input-xsmall2.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    color: #4f4f4f;/* 7b7b7b */
+    float: left;
+    padding: 0px 10px;
+    width: 60px;
+    text-transform: uppercase;
+}
+
+#contenidos-informativos .input-chico-sinfloat {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-input-small.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    color: #4f4f4f;/* 7b7b7b */
+    padding: 0px 10px;
+    width: 110px;
+}
+#contenidos-informativos .input-chico2 {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-input-xsmall.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    color: #4f4f4f;/* 7b7b7b */
+    float: left;
+    padding: 0px 10px;
+    width: 40px;
+}
+
+#contenidos-informativos .izq_coordenada{
+	float:left;
+	width:200px;
+	height:23px;
+	line-height:23px;						
+}
+				
+#contenidos-informativos .txtCoordenada{
+	float:left;
+	margin-left:10px;
+					}
+
+#contenidos-informativos .coordenada{
+	float: left;
+	color: #bd1214;
+	font: 18px/23px 'daxcompact-boldregular';
+	height: 23px;
+	/*padding: 0px 0px 0px 10px;*/
+	margin-left:10px;
+	position: relative;
+}
+
+.combo-izquierda, .combo-derecha {
+    float: left;
+    margin: 0px 0px 20px;
+    width: 282px;
+}
+
+table.table-cuentas hr
+{
+	border: 1px dashed #b8b8b8;
+	height: 1px;
+}
+
+td.menu_act {
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-menu.jpg) repeat-x;
+	height: 38px;
+	width: 198px;
+}
+td.menu_act a{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/flecha-menu.jpg) no-repeat 14px 13px;
+	border-top: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+	color: #3b3b3b;
+	display: block;
+	height: 38px;
+	font: 12px/38px 'daxcompact-regularregular';
+	text-align: left;
+	padding: 0px 0px 0px 34px;
+}
+td.menu_act a:last-child{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/flecha-menu.jpg) no-repeat 14px 13px;
+	border-right: 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;	
+	color: #3b3b3b;
+	display: block;
+	height: 38px;
+	font: 12px/38px 'daxcompact-regularregular';
+	text-align: left;
+	padding: 0px 0px 0px 34px;
+}
+td.menu_act a:hover, td.menu_act a:link, td.menu_act a:visited
+{
+	text-decoration: none;
+}
+td.menu_act a:hover
+{
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/flecha-menu-active.jpg") no-repeat scroll 14px 16px transparent;
+}
+}
+td.csubmenu {
+	background: none repeat scroll 0% 0% rgb(215, 215, 215);
+}
+td.csubmenu a{
+	background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bull.jpg") no-repeat scroll 22px 12px transparent;
+	height: 28px;
+	font: 11px/28px arial;
+	border-right: 1px solid rgb(198, 198, 198);
+	border-bottom: 1px solid rgb(198, 198, 198);
+	color: rgb(59, 59, 59);
+	display: block;
+	text-align: left;
+	padding: 0px 0px 0px 34px;
+}
+td.csubmenu a:hover{
+	background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bull-active.jpg") no-repeat scroll 22px 12px transparent;
+color: rgb(153, 8, 9) !important;
+}
+div.cysErrorMsg {
+	background-color: #FFD5D5;
+    border: 1px solid #FF3C3C;
+    color: #4F4F4F;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 4px;
+    width: 90%;
+    font-family:'Arial';
+    text-align: center;
+}
+/* PARA FORMULARIOS - CDIAZ */
+
+.clear{
+	clear:both;
+}
+.formEstandar{
+	width:100%;
+	
+}
+.formEstandar .izq{
+	float:left;
+	width:200px;
+	text-align: right;
+	
+}
+.formEstandar .der{
+	float:left;
+	width:380px;
+	padding-left:10px;	
+}
+
+.formEstandar .grupoIzq{
+	float:left;
+	width:200px;
+	text-align: right;
+	height: 400px;
+	
+}
+.formEstandar .grupoDer{
+	float:left;
+	width:380px;
+	height: 450px;	
+	margin: 0px 1px 1px 0px;
+	padding: 10px 13px 0px 13px;
+}
+.formEstandar .izquierda{
+	float:left;
+	width:280px;
+	text-align: right;
+	
+}
+
+.formEstandar .izquierdaPres{
+	float:left;
+	width:150px;
+	text-align: left;
+	
+}
+.formEstandar .derecha{
+	float:left;
+	width:300px;
+	padding-left:10px;	
+}
+.formEstandar .centro{
+	float:left;
+	width:580px;
+		
+}
+
+.formEstandar .izq1{
+	float:left;
+	width:220px;
+	text-align: right;
+	
+}
+.formEstandar .der1{
+	float:left;
+	width:250px;
+	padding-left:10px;	
+}
+.cincopx{
+	height:5px;
+}
+.oculto{
+	display:none;
+}
+
+
+/* FIN PARA FORMULARIOS - CDIAZ */
+
+/* PARA CLAVE DE INTERNET -  */
+
+.clear{
+	clear:both;
+}
+.formClaveInternet{
+	width:100%;
+	
+}
+.formClaveInternet .izq{
+	float:left;
+	width:360px;
+	text-align: right;
+}
+
+.formClaveInternet .izq input{
+	float:left;
+	margin-top:6px;
+}
+.formClaveInternet .der{
+	float:left;
+	width:200px;
+}
+
+.formClaveInternetAfil{
+	width:80%;
+	
+}
+.formClaveInternetAfil .izq{
+	float:left;
+	width:90%;
+	text-align: right;
+}
+
+.formClaveInternetAfil .izq input{
+	float:left;
+	margin-top:6px;
+}
+
+.formClaveInternetAfil .der{
+	margin: 0px -5px 65px;
+	float:right;
+	width:8%;
+}
+
+.oculto{
+	display:none;
+}
+
+
+/* FIN PARA FORMULARIOS - CDIAZ */
+
+#botones-clave{
+    float: left;
+    padding: 0px 0px 0px 6px;
+    width: 102px !important;
+}
+
+#botones-clave div{
+    background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/home/btn-boton.jpg) no-repeat;
+    color: #343434;
+    display: block;
+    font: 16px/25px 'daxcompact-boldregular';
+    height: 25px;
+    float: left;
+    margin: 0px 5px 5px 0px;
+    text-align: center;
+    width: 25px;
+    cursor:pointer;
+}
+
+#botones-clave div:hover{
+    background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/home/btn-boton-active.jpg) no-repeat;
+    color: #fff;
+}
+
+#botones-clave div.limpiar{
+    background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/home/btn-limpiar.jpg) no-repeat;
+    color: #fff;
+    font: 12px/25px 'daxcompact-boldregular';
+    width: 55px;
+}
+
+#campo-clave{
+    float: left;
+    padding: 0px 0px 0px 40px;
+    width: 110px;
+}
+
+ #campo-clave p{
+    color: #7b7b7b;
+    font: 11px/13px arial;
+    text-align: center;
+    padding: 0px 5px 10px;
+}
+
+#campo-clave input{
+    background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/home/bg-input-small.jpg) no-repeat;
+    border: none;
+    height: 23px;
+    padding: 0px 20px;
+    width: 70px;
+}
+
+/* =============================================================================
+   OTROS
+   ========================================================================== */
+.limpiar:after { content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
+.limpiar{ display: inline-block;}
+* html .limpiar { height: 1%; }
+.limpiar{display:block;} 
+
+
+#menu-internas #bloqueo-tarjetas{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-bloqueo-tarjetas.jpg) repeat-x top left;
+	border: 1px solid #909090;
+	margin: 0px 0px 0px 20px;
+	padding: 6px 0px 12px 0px;
+	text-align: center;
+	width: 158px;
+}
+
+#menu-internas #bloqueo-tarjetas .titulo-bloqueo-tarjetas{
+	border-bottom: 1px dashed #717171; 
+	color: #343434;
+	font: 11px/12px 'daxcompact-mediumregular';
+	text-transform: uppercase;
+	padding: 0px 0px 7px 0px;
+}
+
+#menu-internas #bloqueo-tarjetas .titulo-bloqueo-tarjetas span{
+	color: #b71012;
+	font: 20px/21px 'daxcompact-boldregular'; 
+}
+
+#menu-internas #bloqueo-tarjetas .linea-telefonica{
+	padding: 10px 0px 0px 0px;
+	color: #343434;
+	font: 11px/20px 'daxcompact-mediumregular';
+	text-transform: uppercase;
+}
+
+#menu-internas #bloqueo-tarjetas .linea-telefonica .telefono{
+	font: 18px/20px 'daxcompact-boldregular'; 
+}
+
+#enlaces-rapidos{
+	margin: 0 0 0 20px;
+	padding: 16px 0px 0px 0px;
+	text-align: left;
+	width: 135px;
+}
+
+#enlaces-rapidos li{
+	padding: 0px 0px 6px 0px;
+	width: 190px;
+}
+
+#enlaces-rapidos a{
+	color: #3b3b3b;
+	display: block;
+	font: 12px/25px 'daxcompact-regularregular';
+}
+
+#enlaces-rapidos a:hover{
+	text-decoration: underline;
+}
+
+#enlaces-rapidos a img{
+	margin: 0px 5px 0px 0px;
+	vertical-align: middle;
+}
+
+/* Estilos para menu */
+#menu-internas{
+	float: left;
+	padding: 14px 0px 0px 0px;
+	text-align: left;
+	width: 220px;
+}
+
+#menu-internas div#navegacion{
+	border-top: 1px solid #c6c6c6;
+	width: 198px;
+	padding: 0px 0px 27px 0px;
+}
+
+#menu-internas div#navegacion div{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-menu.jpg) repeat-x;
+	width: auto;	/*198*/
+}
+#menu-internas div#navegacion .accordionButton{
+	height:39px;
+	border-right: 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;
+}
+
+
+#menu-internas div#navegacion div a{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/flecha-menu.jpg) no-repeat 14px 13px;	
+	color: #3b3b3b;
+	display: block;
+	height: 25px;/*38*/
+	font: 12px 'daxcompact-regularregular';
+	text-align: left;
+	padding: 13px 0px 0px 34px;
+
+}
+
+#menu-internas div#navegacion div a.active, 
+#menu-internas div#navegacion div a:hover{
+	background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/flecha-menu-active.jpg) no-repeat 14px 16px;
+}
+
+#menu-internas div#navegacion .accordionContent{
+	background: #d7d7d7;
+	display: none;
+}
+
+#menu-internas div#navegacion .accordionContent{
+	background: none;
+	height:auto;
+}
+
+#menu-internas div#navegacion .accordionContent a{
+/*	background:  url(../imagenes/bn/bull.jpg) no-repeat 22px 12px;*/
+	background:  #d7d7d7;	
+	height: 28px;
+	font: 11px/28px arial;
+	padding:0 0 0 34px;
+	border-right: 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;
+	width:auto; /*164*/
+}
+
+#menu-internas div#navegacion .accordionContent a:hover,
+#menu-internas div#navegacion .accordionContent a.sub-active{
+/*	background:  url(../imagenes/bn/bull-active.jpg) no-repeat 22px 12px;*/
+	background:  #d7d7d7;	
+	color: #990809 !important;
+}
+
+
+
+#menu-internas div#navegacion .accordionContent1{
+	background: #EFEEEE;
+	display: none;
+}
+
+#menu-internas div#navegacion .accordionContent1{
+	background: none;
+	height:auto;
+}
+
+#menu-internas div#navegacion .accordionContent1 a{
+	/*background:  url(../imagenes/bn/bull-active.jpg) no-repeat 35px 12px;*/
+	background:  #EFEEEE;	
+	height: 28px;
+	font: 11px/28px arial;
+	padding:0 0 0 34px;
+	border-right: 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;
+	width:auto; /*164*/
+}
+
+#menu-internas div#navegacion .accordionContent1 a:hover,
+#menu-internas div#navegacion .accordionContent1 a.sub-active{
+	/*background:  url(../imagenes/bn/bull-active.jpg) no-repeat 30px 12px;*/
+	background:  #EFEEEE;	
+	color: #990809 !important;
+}
+#login #login-contenido #campo-clave{
+    float: left;
+    padding: 0px 0px 0px 20px;
+    width: 150px;
+}
+
+#login #login-contenido #campo-clave p{
+    color: #4f4f4f; /* 7b7b7b */;
+    font: 11px/13px arial;
+    text-align: center;
+    padding: 0px 5px 10px;
+}
+
+#login #login-contenido #campo-clave input{
+    background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/home/bg-input-small.jpg) no-repeat;
+    border: none;
+    height: 23px;
+    padding: 0px 20px;
+    width: 70px;
+    color:#4f4f4f; /* 7b7b7b */;
+}
+
+#campo-clave .olvido-clave {
+    padding: 20px 0px 0px 0px;
+    position: relative;
+}
+
+#campo-clave div.olvide-clave{
+    background: url(../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/home/olvide-clave.jpg) no-repeat;
+    color: #ba1113;
+    display: block;
+    font: 12px arial;
+    height: 24px;
+    font: 12px/24px arial;
+    text-align: left;
+    text-decoration: underline;
+    padding: 0px 0px 0px 27px;
+    cursor:pointer;
+}
+
+
+
+#campo-clave .texto-olvide-clave{
+    display: none;
+    position: absolute;
+    right: -140px;
+    top: 2px;
+}
+
+#campo-clave .olvido-clave:hover .texto-olvide-clave{
+    display: block;
+}
+
+#campo-clave .texto-olvide-clave img{
+    position: absolute;
+    top: 23px;
+    left: -15px;
+}
+
+#campo-clave .texto-olvide-clave div{
+    background: #000;
+    color: #d5d5d5;
+    height: auto;
+    text-align: center;
+    font: 11px/12px arial;
+    padding: 5px 0px;
+    width: 120px;
+}
+
+#consulta-multipago table tr td
+{
+	background:#fff;
+	color: #000;
+	height: 30px;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 180px;
+	border:1px solid #fff;
+}
+
+#consulta-multipago .titulo{
+	
+    color: #484848;
+    font: 14px/30px 'daxcompact-mediumregular';
+    margin: 0px 0px 1px -5px;
+    text-align: left;
+    width: 500px;
+}
+
+#consulta-multipago .titulo-rojo{
+	
+	/*color: #c51416;*/
+	color: #bd1214;
+    font: 14px/30px 'daxcompact-mediumregular';
+    margin: 0px 0px 1px -5px;
+    text-align: left;
+    width: 500px;
+}
+
+
+#consulta-multipago .fila-izquierda-1{
+	background: #d1d1d1;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 180px !important;
+	border:0px solid #fff;
+	}
+
+#consulta-multipago .fila-derecha-2{
+	background: #e3e3e3;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 13px 0px 13px;
+	width: 274px;
+	border:0px solid #fff;
+}
+
+#consulta-multipago .etiqueta{
+	
+	
+	display: block;
+	float: left;
+	text-align: right;
+	font: 13px/23px arial;
+	padding: 0px 5px 0px 0px;
+	width: 190px;
+}
+
+
+#seleccion-monto table tr td
+{
+	background:#fff;
+	color: #000;
+	height: 30px;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 180px;
+	border:1px solid #fff;
+}
+
+#seleccion-monto .titulo{
+	
+    color: #484848;
+    font: 14px/30px 'daxcompact-mediumregular';
+    margin: 0px 0px 1px -5px;
+    text-align: left;
+    width: 500px;
+}
+
+#seleccion-monto .titulo-rojo{
+	
+	/*color: #c51416;*/
+	color: #bd1214;
+    font: 14px/30px 'daxcompact-mediumregular';
+    margin: 0px 0px 1px -5px;
+    text-align: left;
+    width: 500px;
+}
+
+
+#seleccion-monto .izq_coordenada{
+	float:left;
+	width:200px;
+	height:23px;
+	line-height:23px;						
+}
+				
+#seleccion-monto .txtCoordenada{
+	float:left;
+	margin-left:10px;
+					}
+
+#seleccion-monto .coordenada{
+	float: left;
+	color: #bd1214;
+	font: 18px/23px 'daxcompact-boldregular';
+	height: 23px;
+	/*padding: 0px 0px 0px 10px;*/
+	margin-left:10px;
+	position: relative;
+}
+
+#login-contenido .input-chico {
+    background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/bn/bg-input-small.jpg") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    font: 12px/23px arial;
+    height: 23px;
+    float: left;
+    padding: 0px 10px;
+    width: 110px;
+    color: #4f4f4f;/* 7b7b7b */
+}
+
+
+/*Estilos tabla constancia*/
+table.constancia1{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+table.constancia1 tr td{
+	background: #e3e3e3;
+	color: #000;
+	height: 30px;
+	float: left;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 13px 0px 13px;
+	width: 200px; /* 285 */
+	border:0px;
+	border:0px solid #fff;
+}
+
+
+#contenidos-informativos #constancia1{
+	border-bottom: 1px dashed #b8b8b8;
+	padding: 0px 0px 20px 0px;
+}
+
+#contenidos-informativos .titulo-constancia1{
+	background: #484848;
+	color: #fff;
+	height: 30px;
+	font: 14px/30px 'daxcompact-mediumregular';
+	margin: 0px 0px 1px 2px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 450px;
+	
+}
+
+#contenidos-informativos table tr td.ingreso
+{
+	background:#fff;
+	color: #000;
+	height: 30px;
+	font: 12px/30px arial;
+	margin: 0px 1px 1px 0px;
+	padding: 0px 0px 0px 13px;
+	width: 287px;
+	border:1px solid #fff;
+}
+
+div.msgPrestamo {
+	background: url("../../../../../../../../Proyectos-RAD7/SATI-Enero2018/BNWeb/WebContent/imagenes/prestamo/Icono.png") no-repeat scroll 0% 46%;
+	background-color: #fab405;
+    border: 1px solid #fab405;
+    color: #4F4F4F;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+    width: 90%;
+    height:24px;
+    font-family:'Arial';
+    text-align: center;
+    
+	}
+	
+#grupoIzq label{
+	color: #4f4f4f;
+	display: block;
+	float: left;
+	text-align: left;
+	font: 13px/23px arial;
+	padding: 0px 5px 0px 0px;
+	width: 202px;
+}
+}
+

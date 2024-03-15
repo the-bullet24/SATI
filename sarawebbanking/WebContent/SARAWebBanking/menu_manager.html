@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<SCRIPT language="JavaScript">
+if (history.forward(1)){location.replace(history.forward(1))} 
+</script>
+<SCRIPT language=javascript type=text/javascript>
+function mensaje()
+{alert("No posee permiso para esta opción");
+}
+<!--//
+var men="";
+function limpiar(deta){
+    deta.main.click()
+}
+function accion(deta){
+    deta.kike.click()
+}
+function f1(Menu){
+  //if (DivAnt!=null) DivAnt.style.display="none"; 
+  if(Menu.style.display == "")
+    Menu.style.display = "none";
+  else
+    Menu.style.display = "";
+	
+  //DivAnt=Menu
+  men=Menu;
+}
+function mostrar(id1,id2){
+ document.getElementById(id1).style.display = "block"; 
+ document.getElementById(id2).style.display = "block";   
+}
+function sobre(src,Color) 
+{    if (!src.contains(event.fromElement)) {
+	  src.style.cursor = 'hand';
+	  src.bgColor = Color;}}
+function fuera(src,Color02) {
+	if (!src.contains(event.toElement)) {
+	  src.style.cursor = 'default';
+	  src.bgColor = Color02;}}
+function pulsar(src,Menu) {
+    if(event.srcElement.tagName=='TD'){
+	  src.children.tags('A')[0].click();}
+	  f1(Menu);
+	  }
+
+
+//-->
+</SCRIPT>
+<META name="GENERATOR" content="IBM WebSphere Page Designer V3.5 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>Menú Principal</TITLE>
+</HEAD>
+<BODY text="#333333" vlink="#0000ff" alink="#0000ff" bgcolor="#ffffff" background="/sarawebbanking/images/fondo1.JPG">
+<FORM id="f1">
+<TABLE style="font-size: 12pt">
+  <TBODY>
+    <TR>
+      <TD align="left" width="157"><IMG src="/sarawebbanking/images/1999CS.GIF" width="130" height="30" border="0"></TD>
+    </TR>
+    <!--<TR>
+      <TD width="130">
+      <TABLE width="130">
+        <TBODY>
+          <TR>
+            <TD width="130"><B><FONT color="#954a00" size="2" face="Arial">Información de la Sucursal Virtual</FONT></B></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/InformacionDeAgenciasServlet?BtnInf=Otro" target="body">Información de la Sucursal Virtual</A></B></FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>-->
+    <TR>
+      <TD width="157">
+      <TABLE>
+        <TBODY>
+          <TR>
+            <TD width="152"><B><FONT color="#954a00" size="2" face="Arial">Tablas</FONT></B></TD>
+          </TR>
+          <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/MensajesDeComunicacionServlet?BtnCom=Otro" target="body">Mensajística de Comunicaciones</A></B></FONT></TD>
+          </TR>
+          <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/AyudaDeCampoServlet?BtnHlp=Otro" target="body">Ayudas de Campo</A></B></FONT></TD>
+          </TR>
+          <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/GrupoDeMensajesServlet?BtnGrp=Otro" target="body">Mensajes del Aplicativo</A></B></FONT></TD>
+          </TR>
+		  <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/GrupoPantallasServlet?BtnGrp=Otro" target="body">Mensajes Preestablecidos por pantalla</A></B></FONT></TD>
+          </TR>
+		  <TR style="display: none">
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/LimitesServlet?BtnLim=Otro" target="body">Límites</A></B></FONT></TD>
+          </TR>
+
+          <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/LimitsServlet" target="body">Límites</A></B></FONT></TD>
+          </TR>
+		  <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/InformacionDeAgenciasServlet?BtnAge=Otro" target="body">Agencia Virtual</A></B></FONT></TD>
+          </TR>
+		  <TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/BannerPromocionalServlet?BtnBnn=Otro" target="body">Banner Promocional</A></B></FONT></TD>
+          </TR>
+		  <TR style="display: none">
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/ColorTipoPersonaServlet?BtnCol=Otro" target="body">Color por Tipo de Persona</A></B></FONT></TD>
+          </TR>
+<TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/MenuServlet?BtnMen=Otro" target="body">Menú</A></B></FONT></TD>
+          </TR>
+<TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/TrahorServlet?BtnHor=Otro" target="body">Horario por Transacción</A></B></FONT></TD>
+          </TR>
+<TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/MsgHstServlet?BtnHst=Otro" target="body">Mensajes del Host</A></B></FONT></TD>
+          </TR>
+<TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/DepartamentoServlet?BtnDep=Otro" target="body">Departamentos</A></B></FONT></TD>
+          </TR>
+<TR>
+            <TD width="152"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/OficinaServlet?BtnOfi=Otro" target="body">Agencias</A></B></FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+    
+<TR>
+      <TD width="157">
+      <TABLE>
+        <TBODY>
+		  <TR>
+            <TD width="153"><FONT color="#954a00" size="2" face="Arial"><b>Reportes Estadísticos</b></FONT></TD>
+          </TR>
+		  <TR>
+            <TD onclick="pulsar(this,M1)" height="20" width="153"><FONT color="#954a00" size="1" face="Arial"><B><A href="javascript:void(null)">Constancias</A></B></FONT></TD>
+		  </TR>
+		  <tr>
+			<td width="153">
+    		<div id="M1" style="display:none;">
+    		  <table border=0>
+			 	<TR>
+					<TD width="230" onclick="pulsar(this,M2)"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="javascript:void(null)">Pago de Servicios</a></FONT></B></TD>
+          		</TR>
+				<tr>
+					<td>
+    				<div id="M2" style="display:none;">
+    		  			<table border=0>
+			 				<tr>
+								<td width=10 colspan="2"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;<A href="/sarawebbanking/servlet/PagosServlet?BtnEst=Agua" target="body">Agua</A></FONT></B></td>
+							</tr>  
+							<tr>
+								<td width=10 colspan="2"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;<A href="/sarawebbanking/servlet/PagosServlet?BtnEst=Telefonia" target="body">Telefonía</A></FONT></B></td>
+							</tr>          
+                		 </table>
+    				</div>
+    				</td>
+				</tr>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/PagosServlet?BtnEst=Pago de Tasas" target="body">Pago de Tasas</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/PagosServlet?BtnEst=Préstamo Multired" target="body">Préstamo Multired</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/PagosServlet?BtnEst=Pago Tarjeta" target="body">Pago Tarjeta</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/PagosServlet?BtnEst=Emision de Giros" target="body">Emisión de Giros</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/PagosServlet?BtnEst=Transferencia Mismo Banco" target="body">Transferencia Mismo Banco</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/PagosServlet?BtnEst=Transferencia Interbancaria" target="body">Transferencia Interbancaria</a></FONT></B></TD>
+          		</TR>
+
+			</table>
+			</div>
+			</td>
+			</tr>
+		<TR>
+            <TD onclick="pulsar(this,M3)" height="20" width="153"><FONT color="#954a00" size="1" face="Arial"><B><A href="javascript:void(null)">Estadísticas</A></b></FONT>
+		  	</TD>
+		</TR>
+		<tr>
+			<td width="153">
+    		<div id="M3" style="display:none;">
+    		  <table border=0>
+			 	<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/ConsolidadoServlet?BtnCon=Mostrar&Modulo=manager" target="body">Afiliaciones Consolidadas</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/AgenciasServlet?BtnAge=Otro&Modulo=manager" target="body">Afiliaciones por Agencias</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/AfiliacionesClienteServlet?BtnAfiCli=Inicio&Modulo=manager" target="body">Afiliaciones por Clientes</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="230"><B><FONT color="#954a00" size="1" face="Arial">&nbsp;&nbsp;<a href="/sarawebbanking/servlet/AfiliacionesServlet?BtnAfi=4" target="body">Afiliaciones de Servicios</a></FONT></B></TD>
+          		</TR>
+				
+				
+			</table>
+			</div>
+			</td>
+			</tr>
+<TR>
+            <TD onclick="pulsar(this,M4)" height="20" width="153"><FONT color="#954a00" size="1" face="Arial"><B><A href="javascript:void(null)">Estadísticas WAP</A></b></FONT>
+		  	</TD>
+		</TR>
+		<tr>
+			<td width="153">
+    		<div id="M4" style="display:none;">
+    		  <table border=0>
+			 	<TR>
+					<TD width="146"><B><FONT color="#954a00" size="1" face="Arial"><a href="/sarawebbanking/servlet/WAPCtaAhoServlet?BtnEst=Inicio&Modulo=manager" target="body">Saldos Cta. Ahorros MN</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="146"><B><FONT color="#954a00" size="1" face="Arial"><a href="/sarawebbanking/servlet/WAPCtaCteServlet?BtnEst=Inicio&Modulo=manager" target="body">Saldos Cta. Cte. MN</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="146"><B><FONT color="#954a00" size="1" face="Arial"><a href="/sarawebbanking/servlet/WAPPreMulServlet?BtnEst=Inicio&Modulo=manager" target="body">Saldo Préstamo Multired</a></FONT></B></TD>
+          		</TR>
+<TR>
+								<TD width="146"><B><FONT color="#954a00" size="1" face="Arial"><A
+									href="/sarawebbanking/servlet/WAPCCIAhoServlet?BtnEst=Inicio&amp;Modulo=manager"
+									target="body">CCI Cta Ahorros MN</A></FONT></B></TD>
+							</TR>							
+<TR>
+								<TD width="146"> <B><FONT color="#954a00" size="1" face="Arial"><A
+									href="/sarawebbanking/servlet/WAPCCICteServlet?BtnEst=Inicio&amp;Modulo=manager"
+									target="body">CCI Cta. Cte. MN</A></FONT></B></TD>
+							</TR>
+							
+							<TR>
+					<TD width="146"><B><FONT color="#954a00" size="1" face="Arial"><a href="/sarawebbanking/servlet/WAPTipCamServlet?BtnEst=Inicio" target="body">Tipo de cambio</a></FONT></B></TD>
+          		</TR>
+				<TR>
+					<TD width="146"><B><FONT color="#954a00" size="1" face="Arial"><a href="/sarawebbanking/servlet/WAPConsolidadoServlet?BtnEst=Inicio" target="body">Consolidadas</a></FONT></B></TD>
+          		</TR>
+				
+				
+			</table>
+			</div>
+			</td>
+			</tr>
+		</TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+
+
+
+    <TR>
+      <TD width="157">
+      <TABLE width="130">
+        <TBODY>
+          <TR>
+            <TD width="130"><B><FONT color="#954a00" size="2" face="Arial">Seguridad</FONT></B></TD>
+          </TR>
+		  <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/DiarioElectronicoServlet?BtnDia=Otro&Modulo=manager&flgTable" target="body">Diario Eléctronico</A></B></FONT></TD>
+          </TR>
+		  <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/DiarioHistoricoServlet?BtnDia=Otro&Modulo=manager&flgTable=historico" target="body">Diario Histórico</A></B></FONT></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/LogDeOperacionesManagerServlet?BtnLog=Otro&Modulo=manager" target="body">Log de Operaciones</A></B></FONT></TD>
+          </TR>
+		   <TR>
+            <TD width="130"></TD>
+          </TR>
+
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+    <!--<TR>
+      <TD width="130">
+      <TABLE width="130">
+        <TBODY>
+          <TR>
+            <TD width="130"><B><FONT color="#954a00" size="2" face="Arial">Creación de Productos</FONT></B></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/ProductosAhorrosServlet?BtnAct=Otro" target="body">Cuentas de Ahorros</A></B></FONT></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/ProductosCteServlet?BtnAct=Otro" target="body">Cuentas Corrientes</A></B></FONT></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/ProductosCredServlet?BtnAct=Otro" target="body">Cartera</A></B></FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <TABLE width="130">
+        <TBODY>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>-->
+    <TR>
+      <TD width="157">
+      <TABLE width="130">
+        <TBODY>
+          <TR>
+            <TD width="130"><B><FONT color="#954a00" size="2" face="Arial">Inicio</FONT></B></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/InicioSesionServlet?Modulo=SARA_Web_Manager&BtnLogin=Otro" target="_top">Inicio de Sesión</A></B></FONT></TD>
+          </TR>
+          <TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/sarawebbanking.html" target="_top">Selección de Módulo</A></B></FONT></TD>
+          </TR>
+          <!--<TR>
+            <TD width="130"><FONT color="#000000" size="1" face="Arial"><B><A href="/sarawebbanking/servlet/BloqueoDeOficinaServlet?BtnInf=Otro&Modulo=manager" target="body">Bloqueo de la Sucursal Virtual</A></B></FONT></TD>
+          </TR>-->
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>

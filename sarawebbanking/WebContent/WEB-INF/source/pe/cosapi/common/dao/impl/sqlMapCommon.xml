@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapCommon">
+
+	<select id="getLimitById" resultClass="pe.cosapi.common.domain.impl.LimitImpl">
+		SELECT 
+			LIM.TYPCTA as tipoCuenta,
+			LIM.LIMOPE as importeMaximo
+		FROM 
+			PV_SWB.TLIMTRA lIM
+		WHERE 
+			LIM.TYPCTA = #value#
+	</select>
+
+	<select id="getArrayLimit" resultClass="pe.cosapi.common.domain.impl.LimitImpl">
+		SELECT 
+			LIM.TYPCTA as tipoCuenta,
+			LIM.LIMOPE as importeMaximo
+		FROM 
+			PV_SWB.TLIMTRA lIM
+	</select>
+
+	<update id="update" parameterClass="pe.cosapi.common.domain.impl.LimitImpl">
+		UPDATE 
+			PV_SWB.TLIMTRA 
+       	SET 
+			LIMOPE = #importeMaximo#
+		WHERE 
+			TYPCTA = #tipoCuenta#
+	</update>
+	
+	<insert id="insert" parameterClass="pe.cosapi.common.domain.impl.LimitImpl">
+		INSERT INTO PV_SWB.TLIMTRA 
+			(TYPCTA
+			<isNotNull property="importeMaximo">
+			,LIMOPE
+			</isNotNull> 
+			)
+		VALUES 
+			(#tipoCuenta#
+			<isNotNull property="importeMaximo">
+			,#importeMaximo#
+			</isNotNull> 
+			)
+	</insert>
+
+	<delete id="delete" parameterClass="pe.cosapi.common.domain.impl.LimitImpl">
+		DELETE 
+		FROM 
+			PV_SWB.TLIMTRA 
+		WHERE 
+			TYPCTA = #tipoCuenta#
+	</delete>
+	<update id="updateBanner" parameterClass="pe.cosapi.common.domain.impl.BannerImpl">
+		UPDATE 
+			PV_SWB.TBANDAT 
+       	SET 
+			DATBEG = #fechaInicio#,
+			DATEND = #fechaFin#,
+			FILNAM = #nombreArchivo#
+		WHERE 
+			TYPPER = #tipoPersona#
+	</update>
+<select id="getBannerById" resultClass="pe.cosapi.common.domain.impl.BannerImpl">
+		SELECT 
+			BAN.DATBEG as fechaInicio,
+			BAN.DATEND as fechaFin,
+			BAN.FILNAM as nombreArchivo,
+			BAN.TYPPER as tipoPersona
+		FROM 
+			PV_SWB.TBANDAT BAN
+		WHERE 
+			BAN.TYPPER = #value#
+	</select>
+
+
+</sqlMap>

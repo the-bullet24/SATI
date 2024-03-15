@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Orígenes de datos -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Beans de formulario -->
+	<form-beans>
+		<form-bean name="frmAfilPagoServicio" 	type="pe.bn.afiliacion.action.form.AfiliacionPgServiciosForm"></form-bean>
+		<form-bean name="frmDesafiliacion" 		type="pe.bn.afiliacion.action.form.DesafiliacionForm"></form-bean>
+		<form-bean name="frmAfilTB" 			type="pe.bn.afiliacion.action.form.AfiliacionTransferenciaBancariaForm"></form-bean>
+		<form-bean name="frmAfilTelegiro" 		type = "pe.bn.afiliacion.action.form.AfiliacionTelegiroForm"></form-bean>
+		<form-bean name="frmAfilOtroBanco" 		type = "pe.bn.afiliacion.action.form.AfiliacionOtroBancoForm"></form-bean>
+		<form-bean name="frmAfilTInterB" 		type="pe.bn.afiliacion.action.form.AfiliacionTransferenciaInterBancariaForm"></form-bean>
+		<form-bean name="dummy" 				type="pe.bn.resources.DummyForm"></form-bean>
+		
+		<form-bean name="frmAfilDebito" 				type="pe.bn.afiliacion.action.form.AfiliacionDebitoAutomaticoForm"></form-bean>
+		<form-bean name="frmAfilCelular" 				type="pe.bn.afiliacion.action.form.AfiliacionBancaCelularForm"></form-bean>
+		<form-bean name="frmDatosClientes" 				type="pe.bn.afiliacion.action.form.AfiliacionDatosClientesForm"></form-bean>
+		<!-- <form-bean name="frmAnulacionDebito" 		type="pe.bn.afiliacion.action.form.DesafiliacionForm"></form-bean> -->
+		<form-bean name="frmDesafiliaDebito"    	    type="pe.bn.afiliacion.action.form.DesafiliacionForm"></form-bean> 
+			
+	</form-beans>
+
+	<!-- Excepciones globales -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Reenvíos globales -->
+	<global-forwards>
+	</global-forwards>
+
+	<!-- Correlaciones de acción --> 
+	<action-mappings>
+		
+
+	<!-- Módulo de Afiliaciones(Afil) - Pagos(Pago) -->
+	
+		<action path="/AfilPagoServicios" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.PagoServiciosAction" input="/WEB-INF/page/afiliacion/pago/servicios.jsp" validate="true" parameter="method">
+			<forward name="inicioTBasica" 	path="/WEB-INF/page/afiliacion/pago/servicios.jsp"></forward>
+			<forward name="inicioTerra" 	path="/WEB-INF/page/afiliacion/pago/servicios.jsp"></forward>
+			<forward name="inicioCMagico" 	path="/WEB-INF/page/afiliacion/pago/servicios.jsp"></forward>
+			<forward name="afiliar" 		path="/WEB-INF/page/afiliacion/pago/finAfiliacion.jsp"></forward>
+		</action>
+		<action path="/afilSedapal" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionSedapalAction" input="/WEB-INF/page/afiliacion/pago/servicios/sedapal/afSedapal.jsp" validate="true" parameter="method">
+			<forward name="inicioAfSedapal" path="/WEB-INF/page/afiliacion/pago/servicios/sedapal/afSedapal.jsp"></forward>
+			<forward name="finAfSedapal" path="/WEB-INF/page/afiliacion/pago/servicios/sedapal/finAfSedapal.jsp"></forward>
+		</action>
+		<action path="/afilCable" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionCableAction" input="/WEB-INF/page/afiliacion/pago/servicios/cable/afCable.jsp" validate="true" parameter="method">
+			<forward name="inicioAfCable" path="/WEB-INF/page/afiliacion/pago/servicios/cable/afCable.jsp"></forward>
+			<forward name="finAfCable" path="/WEB-INF/page/afiliacion/pago/servicios/cable/finAfCable.jsp"></forward>
+		</action>
+		<action path="/afilTerra" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionTerraAction" input="/WEB-INF/page/afiliacion/pago/servicios/terra/afTerra.jsp" validate="true" parameter="method">
+			<forward name="inicioAfTerra" path="/WEB-INF/page/afiliacion/pago/servicios/terra/afTerra.jsp"></forward>
+			<forward name="finAfTerra" 	  path="/WEB-INF/page/afiliacion/pago/servicios/terra/finAfTerra.jsp"></forward>
+		</action>
+		<action path="/afilTelefonia" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionTelefoniaAction" input="/WEB-INF/page/afiliacion/pago/servicios/telefonia/afTelefonia.jsp" validate="true" parameter="method">
+			<forward name="inicioAfTelefonia" path="/WEB-INF/page/afiliacion/pago/servicios/telefonia/afTelefonia.jsp"></forward>
+			<forward name="finAfTelefonia"    path="/WEB-INF/page/afiliacion/pago/servicios/telefonia/finAfTelefonia.jsp"></forward>
+		</action>
+		
+		<action path="/afilTelefoniaClaro" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionTelefoniaClaroAction" input="/WEB-INF/page/afiliacion/pago/servicios/telefonia/afTelefoniaClaro.jsp" validate="true" parameter="method">
+			<forward name="inicioAfTelefonia" path="/WEB-INF/page/afiliacion/pago/servicios/telefonia/afTelefoniaClaro.jsp"></forward>
+			<forward name="finAfTelefonia"    path="/WEB-INF/page/afiliacion/pago/servicios/telefonia/finAfTelefonia.jsp"></forward>
+		</action>
+		
+		<action path="/afilCelular" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionCelularAction" input="/WEB-INF/page/afiliacion/pago/servicios/celular/afCelular.jsp" validate="true" parameter="method">
+			<forward name="inicioAfCelular" path="/WEB-INF/page/afiliacion/pago/servicios/celular/afCelular.jsp"></forward>
+			<forward name="finAfCelular" path="/WEB-INF/page/afiliacion/pago/servicios/celular/finAfCelular.jsp"></forward>
+		</action>
+
+		<action path="/afilRegarcaMov" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionRecargaMovistarAction" input="/WEB-INF/page/afiliacion/pago/servicios/recarga/afRecargaMovistar.jsp" validate="true" parameter="method">
+			<forward name="inicioAfCelMovistar" path="/WEB-INF/page/afiliacion/pago/servicios/recarga/afRecargaMovistar.jsp"></forward>
+			<forward name="finAfCelMovistar" path="/WEB-INF/page/afiliacion/pago/servicios/recarga/finRecargaMovistar.jsp"></forward>
+		</action>
+
+		<action path="/afilRegarcaCla" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionRecargaClaroAction" input="/WEB-INF/page/afiliacion/pago/servicios/recarga/afRecargaClaro.jsp" validate="true" parameter="method">
+			<forward name="inicioAfCelClaro" path="/WEB-INF/page/afiliacion/pago/servicios/recarga/afRecargaClaro.jsp"></forward>
+			<forward name="finAfCelClaro" path="/WEB-INF/page/afiliacion/pago/servicios/recarga/finRecargaClaro.jsp"></forward>
+		</action>
+
+		<action path="/afilCupones" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionCuponesAction" input="/WEB-INF/page/afiliacion/pago/servicios/cupones/afCupones.jsp" validate="true" parameter="method">
+			<forward name="inicioAfCupones" path="/WEB-INF/page/afiliacion/pago/servicios/cupones/afCupones.jsp"></forward>
+			<forward name="finAfCupones" path="/WEB-INF/page/afiliacion/pago/servicios/cupones/finAfCupones.jsp"></forward>
+		</action>
+
+		<action path="/afilFacturas" name="frmAfilPagoServicio" type="pe.bn.afiliacion.action.AfiliacionFacturasAction" input="/WEB-INF/page/afiliacion/pago/servicios/facturas/afFacturas.jsp" validate="true" parameter="method">
+			<forward name="inicioAfFacturas" path="/WEB-INF/page/afiliacion/pago/servicios/facturas/afFacturas.jsp"></forward>
+			<forward name="finAfFacturas" path="/WEB-INF/page/afiliacion/pago/servicios/facturas/finAfFacturas.jsp"></forward>
+		</action>
+
+		<action path="/desafCable" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafCableAction" input="/WEB-INF/page/desafiliacion/pago/servicios/cable/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/cable/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/cable/finDesafiliacion.jsp"></forward>
+		</action>
+
+		<action path="/desafCelular" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafCelularAction" input="/WEB-INF/page/desafiliacion/pago/servicios/celular/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/celular/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/celular/finDesafiliacion.jsp"></forward>
+		</action>
+
+		<action path="/desafRecargaMov" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafRecargaMovAction" input="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafMovistar" 	path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafMovistar.jsp"></forward>
+			<forward name="finDesafMovistar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/finDesafMovistar.jsp"></forward>
+		</action>
+
+		<action path="/desafRecargaCla" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafRecargaClaAction" input="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafClaro" 	path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafClaro.jsp"></forward>
+			<forward name="finDesafClaro" 			path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/finDesafClaro.jsp"></forward>
+		</action>
+
+		<action path="/desafRecargaBitel" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafRecargaBitelAction" input="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafBitel" 	path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafBitel.jsp"></forward>
+			<forward name="finDesafBitel" 			path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/finDesafBitel.jsp"></forward>
+		</action>
+		
+		<action path="/desafRecargaEntel" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafRecargaEntelAction" input="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafEntel" 	path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/inicioDesafEntel.jsp"></forward>
+			<forward name="finDesafEntel" 			path="/WEB-INF/page/desafiliacion/pago/servicios/recarga/finDesafEntel.jsp"></forward>
+		</action>
+		
+		<action path="/desafCupones" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafCuponesAction" input="/WEB-INF/page/desafiliacion/pago/servicios/cupones/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/cupones/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/cupones/finDesafiliacion.jsp"></forward>
+		</action>
+
+		<action path="/desafFacturas" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafFacturasAction" input="/WEB-INF/page/desafiliacion/pago/servicios/cupones/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/facturas/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/facturas/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafSedapal" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafSedapalAction" input="/WEB-INF/page/desafiliacion/pago/servicios/sedapal/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/sedapal/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/sedapal/finDesafiliacion.jsp"></forward>
+		</action>
+
+		<action path="/desafTelefonia" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTelefoniaAction" input="/WEB-INF/page/desafiliacion/pago/servicios/telefonia/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/telefonia/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/telefonia/finDesafiliacion.jsp"></forward>
+		</action>
+		<action path="/desafTelefoniaClaro" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTelefoniaClaroAction" input="/WEB-INF/page/desafiliacion/pago/servicios/telefonia/inicioDesafiliaClaro.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/telefonia/inicioDesafiliaClaro.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/telefonia/finDesafiliacionClaro.jsp"></forward>
+		</action>
+		
+		<action path="/desafTerra" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTerraAction" input="/WEB-INF/page/desafiliacion/pago/servicios/terra/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/servicios/terra/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/servicios/terra/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafTarjeta" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTarjetaAction" input="/WEB-INF/page/desafiliacion/pago/tarjeta/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/tarjeta/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/tarjeta/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafTarjetaLinea" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTarjetaLineaAction" input="/WEB-INF/page/desafiliacion/pago/tarjetaLinea/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/tarjetaLinea/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/tarjetaLinea/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafTarjetaBN" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTarjetaBNAction" input="/WEB-INF/page/desafiliacion/pago/tarjetaBN/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/pago/tarjetaBN/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/pago/tarjetaBN/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafGiro" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafGiroAction" input="/WEB-INF/page/desafiliacion/giro/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/giro/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/giro/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafTransfBancaria" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTransfBancariaAction" input="/WEB-INF/page/desafiliacion/transferencia/bancaria/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/transferencia/bancaria/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/transferencia/bancaria/finDesafiliacion.jsp"></forward>
+		</action>
+
+		<action path="/desafTransfInterBancaria" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTransfInterBancariaAction" input="/WEB-INF/page/desafiliacion/transferencia/interbancaria/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/transferencia/interbancaria/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/transferencia/interbancaria/finDesafiliacion.jsp"></forward>
+		</action>
+		
+		<action path="/desafTransfInterBancariaLinea" name="frmDesafiliacion" type="pe.bn.afiliacion.action.DesafTransfIBLineaAction" input="/WEB-INF/page/desafiliacion/transferenciaLinea/interbancaria/inicioDesafilia.jsp" validate="true">
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/transferenciaLinea/interbancaria/inicioDesafilia.jsp"></forward>
+			<forward name="finDesafiliar" 			path="/WEB-INF/page/desafiliacion/transferenciaLinea/interbancaria/finDesafiliacion.jsp"></forward>
+		</action>
+
+		<action path="/AfilTransferenciaBancaria" name="frmAfilTB" type="pe.bn.afiliacion.action.TransferenciaBancariaAction" input="/WEB-INF/page/afiliacion/transferenciaBancaria/afiliacion.jsp" validate="true">
+			<forward name="inicio" 		path="/WEB-INF/page/afiliacion/transferenciaBancaria/afiliacion.jsp"></forward>
+			<forward name="afiliar" 	path="/WEB-INF/page/afiliacion/transferenciaBancaria/confirmacion.jsp"></forward>
+		</action>
+
+		<action path="/AfilTransferenciaInterBancaria" name="frmAfilTInterB" type="pe.bn.afiliacion.action.TransferenciaInterBancariaAction" input="/WEB-INF/page/afiliacion/transferenciaIBancaria/pgAfiliacion.jsp" validate="true">
+			<forward name="inicio" 		path="/WEB-INF/page/afiliacion/transferenciaIBancaria/pgAfiliacion.jsp"></forward>
+			<forward name="afiliar" 	path="/WEB-INF/page/afiliacion/transferenciaIBancaria/finAfiliacion.jsp"></forward>
+			<forward name="ayuda" 		path="/WEB-INF/page/afiliacion/transferenciaIBancaria/ayudaCCI.jsp"></forward>
+		</action>
+
+		<action path="/AfilTelegiros" name="frmAfilTelegiro" type="pe.bn.afiliacion.action.AfiliacionTelegirosAction" input="/WEB-INF/page/afiliacion/giros/pgTelegiro.jsp" validate="true">
+			<forward name="inicio" 		path="/WEB-INF/page/afiliacion/giros/pgTelegiro.jsp"></forward>
+			<forward name="afiliar" 	path="/WEB-INF/page/afiliacion/giros/finAfiliacionTelegiro.jsp"></forward>
+		</action>
+
+		<action path="/AfilOtroBanco" name="frmAfilOtroBanco" type="pe.bn.afiliacion.action.AfiliacionOtroBancoAction" input="/WEB-INF/page/afiliacion/pago/ob/pgOtroBanco.jsp" validate="true">
+			<forward name="inicio" 		path="/WEB-INF/page/afiliacion/pago/ob/pgOtroBanco.jsp"></forward>
+			<forward name="afiliar" 	path="/WEB-INF/page/afiliacion/pago/ob/finAfiliacionOtroBanco.jsp"></forward>
+		</action>
+		
+		<action path="/AfilDebitoAutomatico"  type="pe.bn.afiliacion.action.AfiliacionDebitoAutomaticoAction" name="frmAfilDebito" input="/WEB-INF/page/afiliacion/debito/afiliacion.jsp" >
+			<forward name="verCondiciones" 		path="/WEB-INF/page/afiliacion/debito/iniciar.jsp"></forward>
+			<forward name="inicio" 		path="/WEB-INF/page/afiliacion/debito/afiliacion.jsp"></forward>
+			<forward name="afiliar" 	path="/WEB-INF/page/afiliacion/debito/confirmacion.jsp"></forward>
+			
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/debito/iniciar.jsp"></forward>
+			<forward name="iniciarModificacion" 	path="/WEB-INF/page/modificacion/debito/iniciar.jsp"></forward>
+			<forward name="consultaAfiliacion" 		path="/WEB-INF/page/desafiliacion/debito/consultaDesafilia.jsp"></forward>
+			<forward name="comprobarDesafilia" 		path="/WEB-INF/page/desafiliacion/debito/completarDesafilia.jsp"></forward>
+			<forward name="comprobarAnula" 		path="/WEB-INF/page/desafiliacion/debito/completarAnulacion.jsp"></forward>
+			<forward name="consultaModificacion" 	path="/WEB-INF/page/modificacion/debito/consultaModificacion.jsp"></forward>
+			<forward name="comprobarModificacion" 	path="/WEB-INF/page/modificacion/debito/completarModifica.jsp"></forward>
+			<forward name="finDesafiliar" 		    path="/WEB-INF/page/desafiliacion/debito/finDesafiliacion.jsp"></forward>
+			<forward name="finAnular" 		    path="/WEB-INF/page/desafiliacion/debito/finAnular.jsp"></forward>
+			<forward name="finModificar" 		    path="/WEB-INF/page/modificacion/debito/finModificacion.jsp"></forward>
+			<forward name="generarClaveSms" 		path="/WEB-INF/page/afiliacion/debito/afiliacion.jsp"></forward>
+			
+			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>    
+		</action>
+		
+		<action path="/AfilBancaCelular" name="frmAfilCelular" type="pe.bn.afiliacion.action.AfiliacionBancaCelularAction"  input="/WEB-INF/page/afiliacion/bancaCelular/afiliacion.jsp" validate="true">
+			<forward name="verCondiciones" 			path="/WEB-INF/page/consulta/bancaCelular/iniciar.jsp"></forward>
+			<forward name="mostrarConsulta" 		path="/WEB-INF/page/consulta/bancaCelular/consultaAlias.jsp"></forward>
+			<forward name="iniciarAfiliacion" 		path="/WEB-INF/page/afiliacion/bancaCelular/iniciarAfiliacion.jsp"></forward>
+			<forward name="consultaCelAfiliacion" 	path="/WEB-INF/page/afiliacion/bancaCelular/consultaCelular.jsp"></forward>
+			<forward name="mostrarAfiliacion" 		path="/WEB-INF/page/afiliacion/bancaCelular/afiliacion.jsp"></forward>
+			<forward name="finAfiliacionTrans" 		path="/WEB-INF/page/afiliacion/bancaCelular/confirmacion_transf.jsp"></forward>
+			<forward name="finAfiliacionReca" 		path="/WEB-INF/page/afiliacion/bancaCelular/confirmacion_reca.jsp"></forward>
+			<forward name="finAfiliacionServ" 		path="/WEB-INF/page/afiliacion/bancaCelular/confirmacion_serv.jsp"></forward>
+			<forward name="finAfiliacionTasa" 		path="/WEB-INF/page/afiliacion/bancaCelular/confirmacion_tasa.jsp"></forward>
+			<forward name="iniciarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/bancaCelular/iniciar.jsp"></forward>
+			<forward name="mostrarDesafiliacion" 	path="/WEB-INF/page/desafiliacion/bancaCelular/consultaDesafiliacion.jsp"></forward>
+			<forward name="finDesafiliacion" 		path="/WEB-INF/page/desafiliacion/bancaCelular/finDesafiliacion.jsp"></forward>
+		
+			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>    
+		</action>
+		
+		<action path="/VincBancaCelular" name="frmAfilCelular" type="pe.bn.afiliacion.action.AfiliacionBancaCelularAction"  input="/WEB-INF/page/vinculacion/bancaCelular/mostrarVinculacion.jsp" validate="true">
+			
+			<forward name="iniciarVinculacion" 		path="/WEB-INF/page/vinculacion/bancaCelular/iniciarVinculacion.jsp"></forward>
+			<forward name="mostrarVinculacion" 		path="/WEB-INF/page/vinculacion/bancaCelular/mostrarVinculacion.jsp"></forward>
+			<forward name="finVinculacion" 			path="/WEB-INF/page/vinculacion/bancaCelular/finVinculacion.jsp"></forward>
+			<forward name="finDesvinculacion" 		path="/WEB-INF/page/vinculacion/bancaCelular/finDesvinculacion.jsp"></forward>
+	
+			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>    
+		</action>
+		
+			<action path="/AfilDatosClientes" name="frmDatosClientes" type="pe.bn.afiliacion.action.AfiliacionDatosClientesAction"  input="/WEB-INF/page/clientes/datos/inicioValida.jsp" validate="true">
+			
+			<forward name="inicioValida" 				path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>
+			<forward name="consultaDatos" 				path="/WEB-INF/page/clientes/datos/consultaDatos.jsp"></forward>
+			<forward name="finActualizacionAcepta" 		path="/WEB-INF/page/clientes/datos/confirmacionAcepta.jsp"></forward>
+			<forward name="finActualizacionNoAcepta" 	path="/WEB-INF/page/clientes/datos/confirmacionNoAcepta.jsp"></forward>
+			<forward name="consultaMedioEnvio" 			path="/WEB-INF/page/clientes/medioEnvio/consultaMedioEnvio.jsp"></forward>
+			<forward name="consultaMedioEnvioNCB" 		path="/WEB-INF/page/clientes/medioEnvio/consultaMedioEnvioNCB.jsp"></forward>
+			
+			<forward name="inicioValidaEstadoCuenta" 	path="/WEB-INF/page/clientes/medioEnvio/inicioEstadoCuenta.jsp"></forward>
+			<forward name="finMedioEnvio" 				path="/WEB-INF/page/clientes/medioEnvio/confirmacionEnvio.jsp"></forward>
+			<forward name="finMedioNoEnvio" 			path="/WEB-INF/page/clientes/medioEnvio/confirmacionNoEnvio.jsp"></forward>
+			<forward name="iniciarDirCorresp" 			path="/WEB-INF/page/clientes/medioEnvio/inicioDireccionCorresp.jsp"></forward>
+			
+			<forward name="verMarcaPD" 					path="/WEB-INF/page/clientes/datos/marcaLPDP/consultaLPDP.jsp"></forward>
+			<forward name="guardarMarcaPD" 				path="/WEB-INF/page/clientes/datos/marcaLPDP/confirmacionLPDP.jsp"></forward>
+			<forward name="guardarMarcaNoPD" 			path="/WEB-INF/page/clientes/datos/marcaLPDP/confirmacionNoLPDP.jsp"></forward>
+			<forward name="listarDomicilio" 			path="/WEB-INF/page/clientes/datos/domicilio/listaDomicilio.jsp"></forward>
+			<forward name="consultaDireccion" 			path="/WEB-INF/page/clientes/datos/domicilio/consultaDireccion.jsp"></forward>
+			<forward name="registrarDomicilio" 			path="/WEB-INF/page/clientes/datos/domicilio/registroDireccion.jsp"></forward>
+			<forward name="guardarDireccion" 			path="/WEB-INF/page/clientes/datos/domicilio/confirmacionDireccion.jsp"></forward>
+			<forward name="guardarDomicilio" 			path="/WEB-INF/page/clientes/datos/domicilio/confirmacionAltaDomicilio.jsp"></forward>
+			<forward name="consultaCorreo" 				path="/WEB-INF/page/clientes/datos/consultaCorreo.jsp"></forward>
+			<forward name="listarTelefono" 				path="/WEB-INF/page/clientes/datos/telefono/listaTelefono.jsp"></forward>
+			<forward name="listarCorreo" 				path="/WEB-INF/page/clientes/datos/correo/listaCorreo.jsp"></forward>
+			<forward name="registrarTelefono" 			path="/WEB-INF/page/clientes/datos/telefono/registroTelefono.jsp"></forward>
+			<forward name="registrarCorreo" 			path="/WEB-INF/page/clientes/datos/correo/registroCorreo.jsp"></forward>
+			<forward name="consultarTelefonoFijo" 		path="/WEB-INF/page/clientes/datos/telefono/consultaTelefonoFijo.jsp"></forward>
+			<forward name="consultarTelefonoLaboral" 	path="/WEB-INF/page/clientes/datos/telefono/consultaTelefonoLaboral.jsp"></forward>
+			<forward name="consultarTelefonoMovil" 		path="/WEB-INF/page/clientes/datos/telefono/consultaTelefonoMovil.jsp"></forward>
+			<forward name="consultarTelefonoExtranjero" path="/WEB-INF/page/clientes/datos/telefono/consultaTelefonoExtranjero.jsp"></forward>
+			<forward name="consultarCorreo" 			path="/WEB-INF/page/clientes/datos/correo/consultaCorreo.jsp"></forward>
+			
+			<forward name="guardarTelefonoFijo" 		path="/WEB-INF/page/clientes/datos/telefono/confirmacionAltaTelefonoFijo.jsp"></forward>
+			<forward name="guardarTelefonoLaboral" 		path="/WEB-INF/page/clientes/datos/telefono/confirmacionAltaTelefonoLaboral.jsp"></forward>
+			<forward name="guardarTelefonoMovil" 		path="/WEB-INF/page/clientes/datos/telefono/confirmacionAltaTelefonoMovil.jsp"></forward>
+			<forward name="guardarTelefonoExtranjero" 	path="/WEB-INF/page/clientes/datos/telefono/confirmacionAltaTelefonoExtranjero.jsp"></forward>
+			<forward name="guardarCorreo" 				path="/WEB-INF/page/clientes/datos/correo/confirmacionAltaCorreo.jsp"></forward>
+			
+			<forward name="actualizarTelefonoFijo" 		path="/WEB-INF/page/clientes/datos/telefono/confirmacionTelefonoFijo.jsp"></forward>
+			<forward name="actualizarTelefonoLaboral" 	path="/WEB-INF/page/clientes/datos/telefono/confirmacionTelefonoLaboral.jsp"></forward>
+			<forward name="actualizarTelefonoMovil" 	path="/WEB-INF/page/clientes/datos/telefono/confirmacionTelefonoMovil.jsp"></forward>
+			<forward name="actualizarTelefonoExtranjero" path="/WEB-INF/page/clientes/datos/telefono/confirmacionTelefonoExtranjero.jsp"></forward>
+			<forward name="actualizarCorreo" 			path="/WEB-INF/page/clientes/datos/correo/confirmacionCorreo.jsp"></forward>
+			
+			<forward name="bajaTelefonoFijo" 			path="/WEB-INF/page/clientes/datos/telefono/confirmacionBajaTelefonoFijo.jsp"></forward>
+			<forward name="bajaTelefonoLaboral" 		path="/WEB-INF/page/clientes/datos/telefono/confirmacionBajaTelefonoLaboral.jsp"></forward>
+			<forward name="bajaTelefonoMovil" 			path="/WEB-INF/page/clientes/datos/telefono/confirmacionBajaTelefonoMovil.jsp"></forward>
+			<forward name="bajaTelefonoExtranjero" 		path="/WEB-INF/page/clientes/datos/telefono/confirmacionBajaTelefonoExtranjero.jsp"></forward>
+			<forward name="bajaCorreo"		 			path="/WEB-INF/page/clientes/datos/correo/confirmacionBajaCorreo.jsp"></forward>
+		
+		
+			<forward name="cuerpoAfiliarClaveSms" 	path="/WEB-INF/page/claveSms/activacion/iniciarAfiliacion.jsp"></forward>
+			<forward name="noPermiteOperaciones" 	path="/WEB-INF/page/claveSms/activacion/errorNoPermiteOperaciones.jsp"></forward>
+			<forward name="pendienteEnrolamiento" 	path="/WEB-INF/page/claveSms/activacion/errorPendienteEnrolamiento.jsp"></forward>
+			<forward name="actualizarDatosPersona"     path="/WEB-INF/page/clientes/datos/inicioActualizarDatos.jsp"></forward>    
+		</action>
+		
+		
+
+		
+		
+	<!-- Módulo de Afiliaciones - Transferencias  path=AfilTranOther-->
+	
+	</action-mappings>
+
+	<!-- Recursos de mensaje -->
+
+</struts-config>

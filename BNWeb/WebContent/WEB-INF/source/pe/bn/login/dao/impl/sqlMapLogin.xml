@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapLogin">
+	
+	<select id="getMenuByCode" parameterClass="java.util.HashMap" resultClass="pe.bn.login.domain.impl.MenuImpl">
+		SELECT 
+		    CODPER AS codePerson, 
+		    CODOPT AS codeOption, 
+		    OPTMEN AS messageOption, 
+		    TXTMEN AS descriptionOption, 
+		    CODPAD AS codeFather, 
+		    ORDMEN AS ordenMenu
+		FROM 
+		    PV_SWB.TMENDAT PADRE
+		WHERE 
+		    PADRE.CODPER 	= #codigoPersona#
+			AND PADRE.CODTAR = #codigoTarjeta#
+		    AND PADRE.CODPAD IS NULL
+			AND PADRE.FLGACT = '1'
+		ORDER BY PADRE.ORDMEN ASC
+	</select>
+	
+
+
+<select id="getSubMenuByCode" resultClass="pe.bn.login.domain.impl.MenuImpl">	
+		SELECT
+		    HIJO.CODPER AS codePerson, 
+		    HIJO.CODOPT AS codeOption, 
+		    HIJO.OPTMEN AS messageOption, 
+		    HIJO.TXTMEN AS descriptionOption, 
+		    HIJO.CODPAD AS codeFather, 
+		    HIJO.ORDMEN AS ordenMenu
+		FROM 
+		    PV_SWB.TMENDAT PADRE,
+		    PV_SWB.TMENDAT HIJO
+		WHERE 
+		    PADRE.CODPER 		= HIJO.CODPER
+		    AND HIJO.CODPER 	= #codePerson#
+		    AND PADRE.CODOPT 	= HIJO.CODPAD
+		    AND HIJO.CODPAD 	= #codeFather#
+			AND HIJO.FLGACT	= '1'
+		ORDER BY HIJO.ORDMEN ASC    
+	</select>
+
+
+
+<select id="getMenuByCodeOtros" parameterClass="java.util.HashMap" resultClass="pe.bn.login.domain.impl.MenuImpl">
+		SELECT 
+		    CODPER AS codePerson, 
+		    CODOPT AS codeOption, 
+		    OPTMEN AS messageOption, 
+		    TXTMEN AS descriptionOption, 
+		    CODPAD AS codeFather, 
+		    ORDMEN AS ordenMenu
+		FROM 
+		    PV_SWB.TMENDAT PADRE
+		WHERE 
+		    PADRE.CODPER 	= '01'
+			AND PADRE.CODTAR = '02'
+            AND PADRE.CODOPT='006'
+		    AND PADRE.CODPAD IS NULL
+			AND PADRE.FLGACT = '1'
+		ORDER BY PADRE.ORDMEN ASC
+	</select>
+
+
+<select id="getSubMenuByCodeOtros" resultClass="pe.bn.login.domain.impl.MenuImpl">	
+		SELECT
+		    HIJO.CODPER AS codePerson, 
+		    HIJO.CODOPT AS codeOption, 
+		    HIJO.OPTMEN AS messageOption, 
+		    HIJO.TXTMEN AS descriptionOption, 
+		    HIJO.CODPAD AS codeFather, 
+		    HIJO.ORDMEN AS ordenMenu
+		FROM 
+		    PV_SWB.TMENDAT PADRE,
+		    PV_SWB.TMENDAT HIJO
+		WHERE 
+		    PADRE.CODPER 		= HIJO.CODPER
+		    AND HIJO.CODPER 	= '01'
+		    AND PADRE.CODOPT 	= HIJO.CODPAD
+		    AND HIJO.CODPAD 	= '006'
+			AND HIJO.FLGACT = '1'
+		ORDER BY HIJO.ORDMEN ASC    
+	</select>
+
+
+</sqlMap>

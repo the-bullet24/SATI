@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="sqlMapTarjetaCredito">
+
+    
+   	<resultMap id="formatoMap" class="pe.bn.tcredito.domain.Formato">
+		<result property="contenido" column="CONTENIDO" jdbcType="BINARY" />
+	</resultMap>
+	
+<select id="encontrarFormato" parameterClass="pe.bn.tcredito.domain.Formato" resultMap="formatoMap">
+		SELECT CONTENIDO FROM PV_SWB.TECTARCRED
+		WHERE NUMTAR='4214100487500045' 
+</select>
+
+</sqlMap>
